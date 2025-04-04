@@ -1,0 +1,330 @@
+<?php
+
+use Drupal\migrate\Row;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_migrate_source_row_alter().
+ *
+ * Permite modificar la fila de origen antes de construir el objeto Row.
+ *
+ * @param array &$row
+ *   La fila de origen.
+ * @param \Drupal\migrate\Plugin\MigrationInterface $migration
+ *   La migración en proceso.
+ */
+function icbf_migrations_migrate_source_row_alter(array &$row, \Drupal\migrate\Plugin\MigrationInterface $migration) {
+  if ($migration->id() === 'upgrade_d7_field_instance') {
+    if (!isset($row['settings']) || !is_array($row['settings'])) {
+      $row['settings'] = [];
+    }
+    if (!isset($row['settings']['handler_settings']) || !is_array($row['settings']['handler_settings'])) {
+      $row['settings']['handler_settings'] = [];
+    }
+    if (!isset($row['settings']['handler_settings']['sort']) || !is_array($row['settings']['handler_settings']['sort'])) {
+      $row['settings']['handler_settings']['sort'] = [];
+      \Drupal::logger('mymodule')->notice('En source alter: normalizando handler_settings[sort] a un array vacío.');
+    }
+  }
+}
+
+
+/**
+ * Implementa hook_migrate_pre_row().
+ */
+function icbf_migrations_migrate_pre_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $settings = $row->getSourceProperty('settings');
+  if (is_null($settings)) {
+    $row->setSourceProperty('settings', []);
+    \Drupal::logger('icbf_migrations')->notice('Entro a icbf_migrations_migrate_pre_row.');
+  }
+
+  if ($migration->id() == 'upgrade_d7_field_instance') {
+    \Drupal::logger('mymodule')->notice('Normalizando handler_settings[sort] a un array vacío.');
+    $settings = $row->getSourceProperty('settings');
+    if (!is_array($settings)) {
+      $settings = [];
+    }
+    if (!isset($settings['handler_settings']) || !is_array($settings['handler_settings'])) {
+      $settings['handler_settings'] = [];
+    }
+
+    if (!isset($settings['handler_settings']['sort']) || !is_array($settings['handler_settings']['sort'])) {
+      $settings['handler_settings']['sort'] = [];
+      \Drupal::logger('mymodule')->notice('Normalizando handler_settings[sort] a un array vacío.');
+    }
+    $row->setSourceProperty('settings', $settings);
+  }
+}
+
+/**
+ * Intercepta el preguardado para corregir la configuración del campo de imagen.
+ */
+function icbf_migrations_entity_presave(EntityInterface $entity) {
+  // Verificamos que se trate de una configuración de campo.
+  if ($entity instanceof FieldConfig && $entity->getType() === 'image') {
+    $settings = $entity->getSettings();
+
+    // Comprobamos si existe la clave 'default_image' y que no sea un array.
+    if (isset($settings['default_image']) && !is_array($settings['default_image'])) {
+      // Corrigimos el valor asignándole un array por defecto.
+      $settings['default_image'] = [
+        'uuid' => NULL,
+        'fid' => NULL,
+        // Se pueden agregar otros valores por defecto según sea necesario.
+      ];
+      $entity->set('settings', $settings);
+      \Drupal::logger('icbf_migrations')->notice('Se corrigió la configuración del campo de imagen: se esperaba un array y se encontró un string.');
+    }
+  }
+}
+
+
+/**
+* Implements hook_migrate_prepare_row().
+*/
+function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $source = $row->getSource();
+  $instances = $row->getSourceProperty('instances');
+  if (isset($source['entity_type']) && $source['entity_type'] == 'comment') {
+    $bundle = $row->getSourceProperty('bundle');
+    $bundle = substr($bundle, 0, 32);
+    $row->setSourceProperty('bundle', $bundle);
+  }
+
+  if (is_array($instances) && !empty($instances)) {
+    $instance_changed = FALSE;
+    foreach ($instances as $key => &$instance) {
+      if ($instance['entity_type'] == 'comment') {
+        $instance['bundle'] = substr($instance['bundle'], 0, 32);
+        $instance_changed = TRUE;
+      }
+    }
+    if ($instance_changed) {
+      $row->setSourceProperty('instances', $instances);
+    }
+  }
+
+  switch ($migration->id()) {
+    case 'upgrade_d7_field':
+    case 'upgrade_d7_field_instance':
+    case 'upgrade_d7_field_instance_widget_settings':
+      $type = $row->getSourceProperty('type');
+      if ($type == 'text_long' || $type == 'text_with_summary') {
+        $instances = $row->getSourceProperty('instances');
+        foreach ($instances as $key => $instance) {
+          if (isset($instance['data'])) {
+            $data = unserialize($instance['data']);
+            if (isset($data['settings']['text_processing'])) {
+              // Set all text processing to filtered text.
+              $data['settings']['text_processing'] = 1;
+
+              if (!empty($data['display'])) {
+                foreach ($data['display'] as &$display_value) {
+                  if ($display_value['type'] == 'text_glazed_builder') {
+                    $display_value['type'] = 'text_default';
+                    $display_value['module'] = 'text';
+                  }
+                }
+              }
+
+              $instance['data'] = serialize($data);
+              $instances[$key] = $instance;
+              $row->setSourceProperty('instances', $instances);
+            }
+          }
+        }
+      }
+      elseif ($type == 'sarnia') {
+        return FALSE;
+      }
+      break;
+
+    case 'upgrade_d7_comment_type':
+      if (!$row->getSourceProperty('field_name')) {
+        $row->setSourceProperty('field_name', 'comment_body');
+      }
+      break;
+
+    case 'upgrade_d7_view_modes':
+      $entity_type = $row->getSourceProperty('entity_type');
+      if ($entity_type == 'sarnia_sarnia') {
+        return FALSE;
+      }
+      elseif ($entity_type == 'bean') {
+        $row->setSourceProperty('entity_type', 'block_content');
+        $instances = $row->getSourceProperty('instances');
+        foreach ($instances as $key => $instance) {
+          $instance['entity_type'] = 'block_content';
+          $instances[$key] = $instance;
+          $row->setSourceProperty('instances', $instances);
+        }
+      }
+      break;
+
+    case 'upgrade_d7_filter_format':
+      if ($row->hasSourceProperty('filters')) {
+        $filters = $row->getSourceProperty('filters');
+
+        foreach ($filters as &$filter) {
+          if (isset($filter['module']) && $filter['module'] === 'ds_format') {
+            $filter = [
+              'format' => 'php',
+              'module' => 'php',
+              'name' => 'ds_code',
+              'weight' => '0',
+              'status' => '1',
+              'settings' => [],
+            ];
+          }
+        }
+        $row->setSourceProperty('filters', $filters);
+      }
+      break;
+
+    case 'upgrade_d7_node_complete_webform':
+      // Assign default title to Webform nodes.
+      if (!$row->hasSourceProperty('title') || empty($row->getSourceProperty('title'))) {
+        $row->setSourceProperty('title', 'Webform sin título ' . $row->getSourceProperty('nid'));
+      }
+      break;
+
+    case 'upgrade_d7_field_formatter_settings':
+      $entity_type = $row->getSourceProperty('entity_type');
+      $bundle = $row->getSourceProperty('bundle');
+      $field_name = $row->getSourceProperty('field_name');
+
+
+      // if (!is_array($source) || empty($source) || $entity_type == 'bean') {
+      //   return FALSE;
+      // }
+
+      $type = $row->getSourceProperty('type');
+      // if ($bundle == 'news' && $field_name == 'field_images') {
+      //   $instances = $row->getSourceProperty('instances');
+
+      //   foreach ($instances as $key => $instance) {
+      //     if (isset($instance['data'])) {
+      //       $data = unserialize($instance['data']);
+      //       if ($data['display']['default']['type'] == 'slick') {
+      //         $data['display']['default']['type'] == 'slick_image';
+      //         $data['display']['default']['module'] == 'slick';
+      //         $instance['data'] = serialize($data);
+      //         $instances[$key] = $instance;
+      //       }
+      //     }
+      //   }
+      //   $row->setSourceProperty('instances', $instances);
+      // }
+
+      if ($type == 'text_long' || $type == 'text_with_summary') {
+
+        $instances = $row->getSourceProperty('instances');
+        foreach ($instances as $key => $instance) {
+          if (isset($instance['data'])) {
+            $data = unserialize($instance['data']);
+            if (isset($data['settings']['text_processing'])) {
+              // Set all text processing to filtered text.
+              $data['settings']['text_processing'] = 1;
+
+              if (!empty($data['display'])) {
+                foreach ($data['display'] as &$display_value) {
+                  if ($display_value['type'] == 'text_glazed_builder') {
+                    $display_value['type'] = 'text_default';
+                    $display_value['module'] = 'text';
+                  }
+                }
+              }
+              $instance['data'] = serialize($data);
+              $instances[$key] = $instance;
+              $row->setSourceProperty('instances', $instances);
+
+            }
+          }
+        }
+      }
+      // elseif ($entity_type == 'bean') {}
+    //   if (!$row->hasSourceProperty('field_name')) {
+    //     $row->setSourceProperty('field_name', 'default_field');
+    //   }
+    // // Deserializar 'data' si está en formato serializado.
+    // $data = $row->getSourceProperty('data');
+    // if (is_string($data) && str_starts_with($data, 'a:')) {
+    //   $data = unserialize($data);
+    //   if ($data !== false) {
+    //     $row->setSourceProperty('data', $data);
+    //   }
+    // }
+
+    // // Deserializar 'field_definition["data"]'
+    // if ($row->hasSourceProperty('field_definition')) {
+    //   $field_definition = $row->getSourceProperty('field_definition');
+    //   if (isset($field_definition['data']) && is_string($field_definition['data']) && str_starts_with($field_definition['data'], 'a:')) {
+    //     $field_definition['data'] = unserialize($field_definition['data']);
+    //     $row->setSourceProperty('field_definition', $field_definition);
+    //   }
+    // }
+    //   if (!$row->hasSourceProperty('settings') || !is_array($row->getSourceProperty('settings'))) {
+    //     $row->setSourceProperty('settings', ['text_processing' => 0, 'user_register_form' => false]);
+    //   }
+    //   if (!$row->hasSourceProperty('formatter') || !is_array($row->getSourceProperty('formatter'))) {
+    //     $row->setSourceProperty('formatter', [
+    //       'label' => 'above',
+    //       'type' => 'text_default',
+    //       'settings' => ['field_formatter_class' => ''],
+    //       'module' => 'text',
+    //       'weight' => 11,
+    //     ]);
+    //   }
+      break;
+
+    case 'upgrade_d7_bean_block':
+      if (!$row->getSourceProperty('title')) {
+        $label = $row->getSourceProperty('label');
+        $row->setSourceProperty('title', $label);
+      }
+
+      break;
+  }
+}
+
+/**
+ * Implements hook_migrate_process_alter().
+ *
+ * Se ejecuta después de aplicar los plugins de proceso.
+ */
+function icbf_migrations_migrate_process_alter(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  if ($migration->id() === 'd7_field_instance') {
+    $settings = $row->getSourceProperty('settings');
+    if (is_array($settings)) {
+      if (isset($settings['handler_settings']) && is_array($settings['handler_settings'])) {
+        if (!isset($settings['handler_settings']['sort']) || !is_array($settings['handler_settings']['sort'])) {
+          $settings['handler_settings']['sort'] = [];
+          $row->setSourceProperty('settings', $settings);
+          \Drupal::logger('mimodulo')->notice('hook_migrate_process_alter: forzado settings.handler_settings.sort a array.');
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implementa hook_views_migration_alter().
+ *
+ * Permite modificar la definición de migración de vistas.
+ */
+function icbf_migrations_views_migration_alter(array &$migration) {
+  if (isset($migration['id']) && strpos($migration['id'], 'd7_view') !== FALSE) {
+    if (!empty($migration['process']['display:default']['filters'])) {
+      foreach ($migration['process']['display:default']['filters'] as $key => $filter) {
+        if (strpos($key, 'tid') !== FALSE) {
+          unset($migration['process']['display:default']['filters'][$key]);
+          \Drupal::logger('icbf_migrations')->notice('Filtro de taxonomía eliminado de la migración: ' . $key);
+        }
+      }
+    }
+  }
+}

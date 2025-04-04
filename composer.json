@@ -30,6 +30,7 @@
     "require": {
         "composer/installers": "^2.0",
         "contrib/audit_log": "*",
+        "cweagans/composer-patches": "^1.7",
         "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.5",
         "drupal/adminimal_admin_toolbar": "^2.0",
@@ -163,11 +164,12 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
+            "phpstan/extension-installer": true,
             "wikimedia/composer-merge-plugin": true
         },
         "sort-packages": true
@@ -236,8 +238,14 @@
             ]
         },
         "patches": {
+            "drupal/fivestar": {
+                "Migration from D7 to D10": "https://www.drupal.org/files/issues/2022-04-01/fivestar_field_migration-3138309-21.patch"
+            },
             "drupal/audit_log": {
-            "Reemplaza getVocabularyId() por bundle()": "patchs/audit_log_getVocabularyId.patch"
+                "The getVocabularyId() method had been deprecated": "https://www.drupal.org/files/issues/2021-07-15/3223737_1.patch"
+            },
+            "drupal/core": {
+                "Fix error in FieldInstanceSettings (handler_settings sort)": "https://www.drupal.org/files/issues/2020-06-09/d7_field_instance-sort-3080034-6.patch"
             }
         }
     }

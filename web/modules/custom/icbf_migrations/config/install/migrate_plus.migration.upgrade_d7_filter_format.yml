@@ -1,0 +1,21 @@
+id: upgrade_d7_filter_format
+label: 'Drupal 7 Filter Formats'
+migration_group: custom_migrations
+source:
+  plugin: d7_filter_format
+process:
+  format: format
+  name: name
+  filters:
+    plugin: sub_process
+    source: filters
+    process:
+      module: module
+      name:
+        plugin: filter_map
+      status: status
+destination:
+  plugin: entity:filter_format
+migration_dependencies:
+  required: []
+  optional: []
