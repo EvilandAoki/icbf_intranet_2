@@ -42,6 +42,7 @@
         "drupal/autologout": "^2.0",
         "drupal/backup_migrate": "^5.1",
         "drupal/better_exposed_filters": "^7.0",
+        "drupal/better_permissions_page": "^1.0",
         "drupal/block_class": "^4.0",
         "drupal/bootstrap": "^5.0",
         "drupal/bootstrap_layout_builder": "^2.2",
