@@ -16,20 +16,20 @@ use Drupal\field\Entity\FieldConfig;
  * @param \Drupal\migrate\Plugin\MigrationInterface $migration
  *   La migración en proceso.
  */
-function icbf_migrations_migrate_source_row_alter(array &$row, \Drupal\migrate\Plugin\MigrationInterface $migration) {
-  if ($migration->id() === 'upgrade_d7_field_instance') {
-    if (!isset($row['settings']) || !is_array($row['settings'])) {
-      $row['settings'] = [];
-    }
-    if (!isset($row['settings']['handler_settings']) || !is_array($row['settings']['handler_settings'])) {
-      $row['settings']['handler_settings'] = [];
-    }
-    if (!isset($row['settings']['handler_settings']['sort']) || !is_array($row['settings']['handler_settings']['sort'])) {
-      $row['settings']['handler_settings']['sort'] = [];
-      \Drupal::logger('mymodule')->notice('En source alter: normalizando handler_settings[sort] a un array vacío.');
-    }
-  }
-}
+// function icbf_migrations_migrate_source_row_alter(array &$row, \Drupal\migrate\Plugin\MigrationInterface $migration) {
+//   if ($migration->id() === 'upgrade_d7_field_instance') {
+//     if (!isset($row['settings']) || !is_array($row['settings'])) {
+//       $row['settings'] = [];
+//     }
+//     if (!isset($row['settings']['handler_settings']) || !is_array($row['settings']['handler_settings'])) {
+//       $row['settings']['handler_settings'] = [];
+//     }
+//     if (!isset($row['settings']['handler_settings']['sort']) || !is_array($row['settings']['handler_settings']['sort'])) {
+//       $row['settings']['handler_settings']['sort'] = [];
+//       \Drupal::logger('mymodule')->notice('En source alter: normalizando handler_settings[sort] a un array vacío.');
+//     }
+//   }
+// }
 
 
 /**
@@ -286,7 +286,52 @@ function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $s
         $label = $row->getSourceProperty('label');
         $row->setSourceProperty('title', $label);
       }
+      // dump($source);
 
+      break;
+    case 'd7_menu_links':
+      $uri = $row->getSourceProperty('link_uri');
+      if (is_string($uri) && str_starts_with($uri, 'entity:')) {
+        $parts = explode(':', $uri);
+        if (count($parts) === 3) {
+          [$prefix, $entity_type, $entity_id] = $parts;
+          $entity_storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+          $entity = $entity_storage->load($entity_id);
+          if ($entity) {
+            $row->setSourceProperty('link_uri', "entity:$entity_type:$entity_id");
+          }
+          else {
+            \Drupal::logger('mi_modulo')->warning('Entidad no encontrada para URI: @uri', ['@uri' => $uri]);
+            $row->setSourceProperty('link_uri', NULL); // Eliminar el link roto
+          }
+        }
+        else {
+          \Drupal::logger('mi_modulo')->notice('Formato inesperado en link_uri: @uri', ['@uri' => $uri]);
+          $row->setSourceProperty('link_uri', NULL);
+        }
+      }
+  
+      // Validación para internal:*
+      elseif (is_string($uri) && str_starts_with($uri, 'internal:')) {
+        $internal_path = str_replace('internal:/', '', $uri);
+  
+        // Ignorar rutas admin/* o node/add/*
+        if (str_starts_with($internal_path, 'admin/') || str_starts_with($internal_path, 'node/add/')) {
+          \Drupal::logger('mi_modulo')->notice('Ruta ignorada en menú: @uri', ['@uri' => $uri]);
+          $row->setSourceProperty('link_uri', NULL);
+          return;
+        }
+  
+        // Validar existencia de terminos taxonomy/term/*
+        if (str_starts_with($internal_path, 'taxonomy/term/')) {
+          $tid = (int) str_replace('taxonomy/term/', '', $internal_path);
+          $exists = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($tid);
+          if (!$exists) {
+            \Drupal::logger('mi_modulo')->warning('Término no encontrado para URI: @uri', ['@uri' => $uri]);
+            $row->setSourceProperty('link_uri', NULL);
+          }
+        }
+      }
       break;
   }
 }
