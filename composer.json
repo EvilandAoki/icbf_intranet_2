@@ -66,6 +66,7 @@
         "drupal/date_recur": "^3.6",
         "drupal/devel": "^5.3",
         "drupal/diff": "^2.0@beta",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/easy_email": "^3.0",
         "drupal/email_registration": "^2.0@RC",
         "drupal/entity_reference_tree": "^2.4",
