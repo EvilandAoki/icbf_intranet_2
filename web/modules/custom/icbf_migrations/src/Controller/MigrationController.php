@@ -5,32 +5,42 @@ namespace Drupal\icbf_migrations\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\migrate\MigrateExecutable;
 use Drupal\migrate\MigrateMessage;
+use Drupal\migrate\Plugin\MigrationInterface;
 
-/**
- * Controlador para ejecutar la migración de archivos Drupal 7.
- */
 class MigrationController extends ControllerBase {
 
-  /**
-   * Lanza la migración upgrade_d7_file.
-   */
   public function runD7File() {
-    // Instancia de la migración definida en el YAML.
     $migration = \Drupal::service('plugin.manager.migration')
       ->createInstance('d7_file');
 
-    // Ejecutable de migración con logger.
     $executable = new MigrateExecutable(
       $migration,
       new MigrateMessage()
     );
 
-    // Importa todos los archivos públicos de D7 a D10.
-    $executable->import();
+    $result = $executable->import();
+
+    switch ($result) {
+      case MigrationInterface::RESULT_COMPLETED:
+        $message = $this->t('Migración completada exitosamente.');
+        break;
+
+      case MigrationInterface::RESULT_INCOMPLETE:
+        $message = $this->t('Migración incompleta. Algunos elementos no se migraron.');
+        break;
+
+      case MigrationInterface::RESULT_FAILED:
+        $message = $this->t('La migración falló. Revisa los registros para más detalles.');
+        break;
+
+      default:
+        $message = $this->t('Resultado desconocido de la migración.');
+        break;
+    }
 
     return [
-      '#type'   => 'markup',
-      '#markup' => $this->t('Migración de archivos D7 iniciada. Revisa los registros de migración para detalles.'),
+      '#type' => 'markup',
+      '#markup' => $message,
     ];
   }
 
