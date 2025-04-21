@@ -18,7 +18,7 @@ run_migration() {
   echo "=== Ejecutando migración: $MIGRATION ===" | tee -a "$LOGFILE"
   
   # Captura la salida y el código de salida del comando.
-  output=$(vendor/bin/drush migrate:import "$MIGRATION" 2>&1)
+  output=$(drush migrate:import "$MIGRATION" 2>&1)
   exit_status=$?
   
   # Registra la salida del comando.
@@ -79,14 +79,14 @@ run_migration "d7_filter_format"
 run_migration "d7_node_type"
 run_migration "upgrade_d7_taxonomy_vocabulary"
 run_migration "d7_user_role"
+run_migration "upgrade_d7_field"
+run_migration "upgrade_d7_field_instance"
 run_migration "d7_field_collection_type"
 run_migration "block_content_body_field"
 run_migration "d7_custom_block"
 run_migration "block_content_entity_form_display"
 run_migration "block_content_entity_display"
 run_migration "fivestar_vote_type"
-run_migration "upgrade_d7_field"
-run_migration "upgrade_d7_field_instance"
 run_migration "language"
 run_migration "default_language"
 run_migration "user_picture_field"
@@ -94,6 +94,7 @@ run_migration "user_picture_field_instance"
 run_migration "user_picture_entity_display"
 run_migration "user_picture_entity_form_display"
 run_migration "d7_user"
+run_migration "d7_view_modes"
 run_migration "upgrade_d7_view_modes"
 run_migration "upgrade_d7_field_instance_widget_settings"
 run_migration "upgrade_d7_field_formatter_settings"
@@ -109,8 +110,8 @@ run_migration "upgrade_d7_bean_block_type"
 run_migration "upgrade_fontawesome_settings"
 run_migration "upgrade_d7_bean_block"
 run_migration "d7_node_title_label"
-run_migration "d7_rdf_mappings"
+run_migration "d7_taxonomy_vocabulary"
+run_migration "upgrade_youtube_settings"
 
 # Registra el final del proceso.
 echo "=== Fin de migraciones: $(date) ===" >> "$LOGFILE"
-

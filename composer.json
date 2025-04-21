@@ -45,6 +45,7 @@
         "drupal/better_permissions_page": "^1.0",
         "drupal/block_class": "^4.0",
         "drupal/bootstrap": "^5.0",
+        "drupal/bootstrap5": "4.0",
         "drupal/bootstrap_layout_builder": "^2.2",
         "drupal/bootstrap_layouts": "^5.5",
         "drupal/cacheexclude": "^2.0",
