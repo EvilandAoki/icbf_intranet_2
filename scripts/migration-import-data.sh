@@ -18,7 +18,7 @@ run_migration() {
   echo "=== Ejecutando migración: $MIGRATION ===" | tee -a "$LOGFILE"
   
   # Captura la salida y el código de salida del comando.
-  output=$(drush migrate:import "$MIGRATION" 2>&1)
+  output=$(vendor/bin/drush migrate:import "$MIGRATION" 2>&1)
   exit_status=$?
   
   # Registra la salida del comando.
