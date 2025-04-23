@@ -19,7 +19,7 @@ for ID in \
   upgrade_d7_file
 do
   echo "⏳ Eliminando: migrate_plus.migration.$ID"
-  drush config:delete "migrate_plus.migration.$ID" -y
+  vendor/bin/drush config:delete "migrate_plus.migration.$ID" -y
 done
 
 echo "✅ ¡Listo! Todas las configuraciones fueron eliminadas."
