@@ -282,7 +282,7 @@
                 "Fix error in FieldInstanceSettings (handler_settings sort)": "https://www.drupal.org/files/issues/2020-06-09/d7_field_instance-sort-3080034-6.patch"
             },
             "drupal/simple_page_manager": {
-                "Add defaults to entity.page.devel_load route (Issue #3438993)": "https://www.drupal.org/files/issues/2024-08-14/page-manager-3438993-MR34-24.patch"
+                "Arregla fallo de traducción (issue 3438993)": "https://www.drupal.org/files/issues/2024-08-14/page-manager-3438993-MR34-24.patch"
             }
         }
     }
