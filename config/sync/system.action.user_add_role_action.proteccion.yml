@@ -1,0 +1,14 @@
+uuid: 1f6328bb-f831-46bd-9e0a-895536094168
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.proteccion
+  module:
+    - user
+id: user_add_role_action.proteccion
+label: 'Añade el rol Protección al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: proteccion

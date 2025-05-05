@@ -1,0 +1,13 @@
+uuid: db2e95fd-8daf-44e4-a88b-90525d0de375
+langcode: es
+status: false
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dTfAUHooYV0uOVPO3saGpgv-c5PppJXDwxvwRTJOycM
+id: media.full
+label: Full
+description: ''
+targetEntityType: media
+cache: true

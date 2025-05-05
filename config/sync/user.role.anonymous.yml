@@ -1,0 +1,19 @@
+uuid: f78ccfb7-0593-4d52-b8af-184d8dddff20
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'search content'
+  - 'use advanced search'

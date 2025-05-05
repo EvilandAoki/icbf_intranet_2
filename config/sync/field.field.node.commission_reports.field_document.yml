@@ -1,0 +1,27 @@
+uuid: 66147aca-4830-4744-a4dc-b3425756529a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.commission_reports
+  module:
+    - file
+id: node.commission_reports.field_document
+field_name: field_document
+entity_type: node
+bundle: commission_reports
+label: Documento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

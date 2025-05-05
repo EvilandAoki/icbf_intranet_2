@@ -1,0 +1,22 @@
+uuid: 178fa8e4-802c-4739-a1e7-53d6830c7d9e
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - icbf
+_core:
+  default_config_hash: JuFEJgxG6flTa5yy9FFGCFUXvup7GnEb1Rg2AIbxrrI
+id: icbf_help
+theme: icbf
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

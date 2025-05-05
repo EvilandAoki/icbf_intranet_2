@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: hR8jzmf3zYLsp3e4C46PQ9fiJ1XcvqXbPogsawp1igg
+defaultFont: serif
+dpi: 96
+fontHeightRatio: 1.1
+pdfBackend: CPDF
+pdflibLicense: ''
+isPhpEnabled: false
+isRemoteEnabled: true
+isJavascriptEnabled: true
+chroot:
+  - .
+fontDir: 'temporary://'
+fontCache: 'temporary://'
+tempDir: 'temporary://'
+debugPng: false
+debugKeepTemp: false
+debugCss: false
+debugLayout: false
+debugLayoutLines: true
+debugLayoutBlocks: true
+debugLayoutInline: true
+debugLayoutPaddingBox: true

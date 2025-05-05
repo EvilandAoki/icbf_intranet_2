@@ -1,0 +1,59 @@
+uuid: beeca387-add5-4fbb-961c-002050286156
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.enlace.field_content
+    - field.field.node.enlace.field_date
+    - field.field.node.enlace.field_file_categoria
+    - field.field.node.enlace.field_link_url
+    - node.type.enlace
+  module:
+    - datetime
+    - text
+    - user
+id: node.enlace.default
+targetEntityType: node
+bundle: enlace
+mode: default
+content:
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

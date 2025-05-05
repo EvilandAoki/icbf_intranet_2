@@ -1,0 +1,8 @@
+uuid: ff0672c2-c6e5-4035-9de2-d8f496d0a014
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_eventos_galeria
+label: 'Eventos de Galería comment'
+target_entity_type_id: node
+description: null

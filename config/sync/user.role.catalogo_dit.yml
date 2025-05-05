@@ -1,0 +1,19 @@
+uuid: 6b317a7e-cb49-47d1-a528-4bf060437cae
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: catalogo_dit
+label: 'Catálogo DIT'
+weight: 8
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

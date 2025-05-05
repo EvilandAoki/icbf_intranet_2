@@ -1,0 +1,41 @@
+uuid: 40630b24-7ed2-43f9-a94e-a8f61d21604b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_region
+    - node.type.contacto_nacional
+  module:
+    - image
+id: node.contacto_nacional.field_imagen_region
+field_name: field_imagen_region
+entity_type: node
+bundle: contacto_nacional
+label: 'Imagen Región'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

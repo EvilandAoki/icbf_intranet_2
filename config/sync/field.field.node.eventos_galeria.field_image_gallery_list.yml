@@ -1,0 +1,41 @@
+uuid: 869f69a5-35f0-4730-933e-77d4534303a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_gallery_list
+    - node.type.eventos_galeria
+  module:
+    - image
+id: node.eventos_galeria.field_image_gallery_list
+field_name: field_image_gallery_list
+entity_type: node
+bundle: eventos_galeria
+label: 'Imágenes secundarias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '300 KB'
+  max_resolution: 995x690
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

@@ -1,0 +1,14 @@
+uuid: ab1d8758-b3dc-491f-8c55-e8c71c96c014
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_vichada
+  module:
+    - user
+id: user_add_role_action.regional_vichada
+label: 'Añade el rol Regional Vichada al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_vichada

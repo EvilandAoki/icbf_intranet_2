@@ -1,0 +1,19 @@
+uuid: 7ce580a1-fe54-4d3a-9993-461f0fce29a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: gestion_humana
+label: 'Gestión Humana'
+weight: 12
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

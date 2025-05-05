@@ -1,0 +1,107 @@
+uuid: c33de43e-7775-4ee8-a728-9db57c79beeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.centro_de_ayuda.field_allowed_roles
+    - field.field.taxonomy_term.centro_de_ayuda.field_allowed_users
+    - field.field.taxonomy_term.centro_de_ayuda.field_category_helpcenter
+    - field.field.taxonomy_term.centro_de_ayuda.field_dit_service_related
+    - field.field.taxonomy_term.centro_de_ayuda.field_header_area
+    - field.field.taxonomy_term.centro_de_ayuda.field_icono_ca
+    - field.field.taxonomy_term.centro_de_ayuda.field_imagen_principal_ca
+    - field.field.taxonomy_term.centro_de_ayuda.field_link_url
+    - field.field.taxonomy_term.centro_de_ayuda.field_multimedia
+    - field.field.taxonomy_term.centro_de_ayuda.field_priority
+    - taxonomy.vocabulary.centro_de_ayuda
+  module:
+    - file
+    - image
+    - text
+id: taxonomy_term.centro_de_ayuda.default
+targetEntityType: taxonomy_term
+bundle: centro_de_ayuda
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_category_helpcenter:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_dit_service_related:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icono_ca:
+    type: image
+    label: inline
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_principal_ca:
+    type: image
+    label: inline
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_multimedia:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_priority:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,13 @@
+uuid: 864753eb-7b3d-4988-97a9-d9196e2bc413
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_caqueta
+label: 'Regional Caquetá'
+weight: 23
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

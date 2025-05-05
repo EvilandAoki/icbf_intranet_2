@@ -1,0 +1,13 @@
+uuid: 09dd237e-33a4-4b1d-802a-d42a8927e842
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_antioquia
+label: 'Regional Antioquia'
+weight: 16
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

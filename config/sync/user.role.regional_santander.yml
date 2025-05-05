@@ -1,0 +1,12 @@
+uuid: 4f405ea9-682b-4ebc-bbfa-6e5ea678ce0f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_santander
+label: 'Regional Santander'
+weight: 42
+is_admin: null
+permissions:
+  - 'view the administration theme'

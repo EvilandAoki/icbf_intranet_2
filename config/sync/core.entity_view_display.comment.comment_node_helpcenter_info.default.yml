@@ -1,0 +1,29 @@
+uuid: 5316528c-9e70-49ce-8225-037ab05f6850
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_helpcenter_info
+    - field.field.comment.comment_node_helpcenter_info.comment_body
+  module:
+    - text
+id: comment.comment_node_helpcenter_info.default
+targetEntityType: comment
+bundle: comment_node_helpcenter_info
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

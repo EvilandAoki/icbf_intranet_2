@@ -1,0 +1,14 @@
+uuid: aac1bc62-0ad5-4ab4-9ef6-698af1006d71
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_meta
+  module:
+    - user
+id: user_add_role_action.regional_meta
+label: 'Añade el rol Regional Meta al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_meta

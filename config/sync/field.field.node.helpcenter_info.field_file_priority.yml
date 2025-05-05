@@ -1,0 +1,21 @@
+uuid: abdbe9fe-4d7a-4276-b7e9-cc1f51c10774
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_priority
+    - node.type.helpcenter_info
+  module:
+    - options
+id: node.helpcenter_info.field_file_priority
+field_name: field_file_priority
+entity_type: node
+bundle: helpcenter_info
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

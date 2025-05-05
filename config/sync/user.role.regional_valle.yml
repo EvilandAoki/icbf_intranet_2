@@ -1,0 +1,12 @@
+uuid: 71d40db0-3f77-45fc-abdc-8629c0305e1f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_valle
+label: 'Regional Valle'
+weight: 45
+is_admin: null
+permissions:
+  - 'view the administration theme'

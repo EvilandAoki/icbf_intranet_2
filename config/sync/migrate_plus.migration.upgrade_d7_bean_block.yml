@@ -1,0 +1,36 @@
+uuid: 54a2aad5-73db-4fd5-9dde-b34ea4adf137
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nttd8v556KpEY1buDgadjb767PHnrMIfp4JnZq9HPRQ
+id: upgrade_d7_bean_block
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Block
+migration_group: custom_migrations
+label: 'Migrate D7 Bean Blocks to D10'
+source:
+  plugin: bean_block
+  source_module: bean
+process:
+  id: delta
+  type: bundle
+  uuid: uuid
+  label: label
+  info: title
+  field_builder/value: field_builder_value
+  field_builder/format: field_builder_format
+  changed: changed
+  created: created
+  revision_uid: uid
+  revision_timestamp: changed
+  langcode: language
+destination:
+  plugin: 'entity:block_content'
+migration_dependencies:
+  required:
+    - upgrade_d7_bean_block_type

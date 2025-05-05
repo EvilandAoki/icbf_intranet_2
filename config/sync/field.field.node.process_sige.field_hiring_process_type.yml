@@ -1,0 +1,26 @@
+uuid: 9ae7f6a0-b977-4db0-8277-bf9d5e22f1fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hiring_process_type
+    - node.type.process_sige
+    - taxonomy.vocabulary.sige_process_type
+id: node.process_sige.field_hiring_process_type
+field_name: field_hiring_process_type
+entity_type: node
+bundle: process_sige
+label: 'Tipo de Proceso SIGE'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      sige_process_type: sige_process_type
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 62d7d42b-c687-44dc-9b84-1e2d05343541
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_guainia
+  module:
+    - user
+id: user_remove_role_action.regional_guainia
+label: 'Elimina el rol Regional Guainía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_guainia

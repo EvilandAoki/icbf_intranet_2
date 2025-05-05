@@ -1,0 +1,27 @@
+uuid: db6a31e1-cfa5-4aa4-8aa7-ef2e937216a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - node.type.cartelera
+  module:
+    - file
+id: node.cartelera.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: cartelera
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'mp3 mpeg wmv mp4'
+  max_filesize: 60mb
+  description_field: false
+field_type: file

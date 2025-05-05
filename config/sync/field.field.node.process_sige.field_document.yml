@@ -1,0 +1,27 @@
+uuid: ee9b13c9-5c8e-433b-a7be-66fdeed36cf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.process_sige
+  module:
+    - file
+id: node.process_sige.field_document
+field_name: field_document
+entity_type: node
+bundle: process_sige
+label: Documento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: procesos
+  file_extensions: 'pdf doc xls xlsx docx ppt pptx xlm xlsm zip accdb xlsb'
+  max_filesize: '25 MB'
+  description_field: true
+field_type: file

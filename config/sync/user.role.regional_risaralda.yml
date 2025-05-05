@@ -1,0 +1,12 @@
+uuid: 54f4f840-6e25-4a67-a282-61c99abf102f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_risaralda
+label: 'Regional Risaralda'
+weight: 40
+is_admin: null
+permissions:
+  - 'view the administration theme'

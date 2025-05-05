@@ -1,0 +1,26 @@
+uuid: 77ea4571-4d02-493c-8359-84e3141d24f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.eventos_galeria
+    - taxonomy.vocabulary.locations
+id: node.eventos_galeria.field_location
+field_name: field_location
+entity_type: node
+bundle: eventos_galeria
+label: Ubicación
+description: 'Direcciones Regionales y Centro Zonales'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: 7dba5074-28f3-4531-a2ae-095261e1e2ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.encuesta_interna.body
+    - node.type.encuesta_interna
+  module:
+    - text
+    - user
+id: node.encuesta_interna.teaser
+targetEntityType: node
+bundle: encuesta_interna
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

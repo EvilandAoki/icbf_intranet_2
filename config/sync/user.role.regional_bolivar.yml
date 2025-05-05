@@ -1,0 +1,13 @@
+uuid: 9145884e-61f5-40ff-ad76-ed0fbb86bd53
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_bolivar
+label: 'Regional Bolívar'
+weight: 21
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

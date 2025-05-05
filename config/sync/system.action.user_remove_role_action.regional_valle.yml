@@ -1,0 +1,14 @@
+uuid: 78c82209-9463-47c5-af6f-21b827673ebf
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_valle
+  module:
+    - user
+id: user_remove_role_action.regional_valle
+label: 'Elimina el rol Regional Valle al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_valle

@@ -1,0 +1,33 @@
+uuid: 5e83e292-e0ed-4926-9bfb-7ea009664a98
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.forum
+    - node.type.page
+  module:
+    - filter
+    - node
+    - search
+    - system
+    - view_unpublished
+id: migracion
+label: migracion
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'create forum content'
+  - 'create page content'
+  - 'delete own forum content'
+  - 'edit any page content'
+  - 'edit own forum content'
+  - 'edit own page content'
+  - 'search content'
+  - 'use text format full_html'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

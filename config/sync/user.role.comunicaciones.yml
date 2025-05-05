@@ -1,0 +1,24 @@
+uuid: 46f3a5c8-b9c0-43bf-95be-4968e5df8218
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.webform
+  module:
+    - filter
+    - node
+    - system
+id: comunicaciones
+label: Comunicaciones
+weight: 5
+is_admin: null
+permissions:
+  - 'create webform content'
+  - 'delete any webform content'
+  - 'delete own webform content'
+  - 'edit any webform content'
+  - 'edit own webform content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

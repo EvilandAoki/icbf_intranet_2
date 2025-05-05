@@ -1,0 +1,23 @@
+uuid: 461edc0d-cc00-49fd-9651-256ec85818cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.multimedia
+id: node.multimedia.field_priority
+field_name: field_priority
+entity_type: node
+bundle: multimedia
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

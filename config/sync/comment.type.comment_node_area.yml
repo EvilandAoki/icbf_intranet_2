@@ -1,0 +1,8 @@
+uuid: 1ebe18ac-e7fc-4bc1-8608-bc43383f4faa
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_area
+label: 'Área comment'
+target_entity_type_id: node
+description: null

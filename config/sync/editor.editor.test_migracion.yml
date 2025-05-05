@@ -1,0 +1,28 @@
+uuid: e46a6c3e-9265-4241-ace0-bbb827e78dee
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.test_migracion
+  module:
+    - ckeditor5
+format: test_migracion
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    media_media:
+      allow_view_mode_override: false
+image_upload:
+  status: false

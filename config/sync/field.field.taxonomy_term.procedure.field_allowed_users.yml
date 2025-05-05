@@ -1,0 +1,21 @@
+uuid: 823502a1-7e88-45e7-bf82-fc90971244dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.procedure
+id: taxonomy_term.procedure.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: procedure
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

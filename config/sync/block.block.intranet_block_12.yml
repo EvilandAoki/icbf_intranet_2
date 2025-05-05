@@ -1,0 +1,30 @@
+uuid: 832e46fe-e6d3-4f9f-94a6-57bde6381e7b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - icbf
+id: intranet_block_12
+theme: icbf
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+settings:
+  id: 'block_content:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /informacion-y-tecnologia/catalogo-de-servicios-dit

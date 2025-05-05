@@ -1,0 +1,26 @@
+uuid: c3f07306-4a4e-4e7d-905f-5badb51993b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regional
+    - node.type.minutes_regional_strategic_commu
+    - taxonomy.vocabulary.locations
+id: node.minutes_regional_strategic_commu.field_regional
+field_name: field_regional
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: Ubicación
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,13 @@
+uuid: 5041e055-7dfe-4528-a3b6-a9521704fb51
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_huila
+label: 'Regional Huila'
+weight: 33
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

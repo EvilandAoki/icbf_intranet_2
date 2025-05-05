@@ -1,0 +1,86 @@
+uuid: 18641a52-6af1-450e-a291-1cd9d5b6c477
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.documentos_juridica.field_content_profile
+    - field.field.node.documentos_juridica.field_date
+    - field.field.node.documentos_juridica.field_docs
+    - field.field.node.documentos_juridica.field_documento
+    - field.field.node.documentos_juridica.field_file_categoria
+    - field.field.node.documentos_juridica.field_person_area
+    - field.field.node.documentos_juridica.field_resume
+    - node.type.documentos_juridica
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.documentos_juridica.default
+targetEntityType: node
+bundle: documentos_juridica
+mode: default
+content:
+  field_content_profile:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_docs:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_documento:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_person_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_resume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: 619edec6-666c-4eb3-98c6-03c22560870b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: true
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Boletin Interno'
+type: boletin_interno
+description: 'boletin vive icbf 2018'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

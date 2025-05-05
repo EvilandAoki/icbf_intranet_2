@@ -1,0 +1,26 @@
+uuid: 2045b5dd-375f-46dc-abee-3128430fc45a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_address
+    - taxonomy.vocabulary.locations
+  module:
+    - address
+id: taxonomy_term.locations.field_address
+field_name: field_address
+entity_type: taxonomy_term
+bundle: locations
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: null
+  field_overrides: {  }
+  fields: {  }
+field_type: address

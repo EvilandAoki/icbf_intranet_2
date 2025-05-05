@@ -1,0 +1,21 @@
+uuid: 8b07a8cc-bf04-4f7c-83a9-50dd24816649
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zona_home
+    - node.type.promocionales_home
+  module:
+    - options
+id: node.promocionales_home.field_zona_home
+field_name: field_zona_home
+entity_type: node
+bundle: promocionales_home
+label: 'Zona en Home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

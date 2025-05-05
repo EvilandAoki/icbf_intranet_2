@@ -1,0 +1,26 @@
+uuid: 543e114c-f8b9-4290-bc2f-25fb1630ea57
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_helpcenter_category
+    - node.type.helpcenter_info
+    - taxonomy.vocabulary.centro_de_ayuda
+id: node.helpcenter_info.field_helpcenter_category
+field_name: field_helpcenter_category
+entity_type: node
+bundle: helpcenter_info
+label: 'Categoría Centro de Ayuda'
+description: 'Profile type content'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      centro_de_ayuda: centro_de_ayuda
+    sort:
+      field: _none
+field_type: entity_reference

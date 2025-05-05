@@ -1,0 +1,14 @@
+uuid: 9dfab05f-70b9-4714-8a36-b70ab6fb7b9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_antioquia
+  module:
+    - user
+id: user_add_role_action.regional_antioquia
+label: 'Añade el rol Regional Antioquia al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_antioquia

@@ -1,0 +1,21 @@
+uuid: d55f04ca-7f14-49f9-a18f-1072b3993454
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+id: taxonomy_term.cat_logo_servicios_dit.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: cat_logo_servicios_dit
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 59d1cb29-6203-414e-83dd-20e1166dcfb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.centro_de_ayuda
+  module:
+    - user
+id: user_add_role_action.centro_de_ayuda
+label: 'Añade el rol Centro de Ayuda al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: centro_de_ayuda

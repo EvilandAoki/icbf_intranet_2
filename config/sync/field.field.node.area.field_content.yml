@@ -1,0 +1,24 @@
+uuid: 6ffadb27-d910-44fd-a04b-850f96ddc04c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.area
+  module:
+    - text
+id: node.area.field_content
+field_name: field_content
+entity_type: node
+bundle: area
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: .
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,34 @@
+uuid: ef88c1ad-0e41-4984-b1b2-3b1507090b5c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.eventos_galeria.field_date
+    - field.field.node.eventos_galeria.field_description_gallery
+    - field.field.node.eventos_galeria.field_event_type
+    - field.field.node.eventos_galeria.field_image_gallery_cover
+    - field.field.node.eventos_galeria.field_image_gallery_list
+    - field.field.node.eventos_galeria.field_location
+    - node.type.eventos_galeria
+  module:
+    - user
+id: node.eventos_galeria.teaser
+targetEntityType: node
+bundle: eventos_galeria
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_description_gallery: true
+  field_event_type: true
+  field_image_gallery_cover: true
+  field_image_gallery_list: true
+  field_location: true
+  langcode: true
+  search_api_excerpt: true

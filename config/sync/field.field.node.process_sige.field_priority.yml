@@ -1,0 +1,23 @@
+uuid: 7e26051f-d059-4c9d-9237-c1216e8756d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.process_sige
+id: node.process_sige.field_priority
+field_name: field_priority
+entity_type: node
+bundle: process_sige
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

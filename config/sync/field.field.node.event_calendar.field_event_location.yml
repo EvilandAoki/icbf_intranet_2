@@ -1,0 +1,21 @@
+uuid: c951c2dc-4cfb-49b1-ab30-fbcf115b6f5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.event_calendar
+  module:
+    - geofield
+id: node.event_calendar.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: event_calendar
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

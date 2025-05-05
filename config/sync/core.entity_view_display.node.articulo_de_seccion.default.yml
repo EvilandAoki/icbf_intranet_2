@@ -1,0 +1,65 @@
+uuid: a4630160-316e-48e0-a414-415e8320e26a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.articulo_de_seccion.body
+    - field.field.node.articulo_de_seccion.field_constructor_glazedb
+    - field.field.node.articulo_de_seccion.field_file_categoria
+    - field.field.node.articulo_de_seccion.field_file_priority
+    - field.field.node.articulo_de_seccion.field_post_documents
+    - field.field.node.articulo_de_seccion.field_post_image
+    - field.field.node.articulo_de_seccion.field_post_resume
+    - field.field.node.articulo_de_seccion.field_section
+    - field.field.node.articulo_de_seccion.field_tabs_dit1
+    - node.type.articulo_de_seccion
+  module:
+    - file
+    - image
+    - user
+id: node.articulo_de_seccion.default
+targetEntityType: node
+bundle: articulo_de_seccion
+mode: default
+content:
+  field_post_documents:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_post_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_constructor_glazedb: true
+  field_file_categoria: true
+  field_file_priority: true
+  field_post_resume: true
+  field_tabs_dit1: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 923fedc0-cf77-44e0-8d24-bb6c59c53344
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.preview
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_folder
+  module:
+    - file
+id: file.image.preview
+targetEntityType: file
+bundle: image
+mode: preview
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  field_folder: true
+  langcode: true

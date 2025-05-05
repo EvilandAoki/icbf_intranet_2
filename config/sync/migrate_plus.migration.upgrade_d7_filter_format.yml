@@ -1,0 +1,31 @@
+uuid: c14ba1b7-3d6b-4ced-a415-3798501a80d1
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rWH-YoP4vztkeIzKp4NHHQXE_gc2OvAXk6R1O51HXbs
+id: upgrade_d7_filter_format
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: custom_migrations
+label: 'Drupal 7 Filter Formats'
+source:
+  plugin: d7_filter_format
+process:
+  format: format
+  name: name
+  filters:
+    plugin: sub_process
+    source: filters
+    process:
+      module: module
+      name:
+        plugin: filter_map
+      status: status
+destination:
+  plugin: 'entity:filter_format'
+migration_dependencies:
+  required: {  }
+  optional: {  }

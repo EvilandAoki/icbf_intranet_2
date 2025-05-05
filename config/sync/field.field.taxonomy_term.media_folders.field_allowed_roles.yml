@@ -1,0 +1,21 @@
+uuid: e28bec7e-ca9e-42ee-8de6-5fb600bd866e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.media_folders
+id: taxonomy_term.media_folders.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: media_folders
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

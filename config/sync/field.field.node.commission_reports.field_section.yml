@@ -1,0 +1,26 @@
+uuid: d20af64d-513f-41cc-a714-d2f27cac0d93
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.commission_reports
+    - taxonomy.vocabulary.secctions
+id: node.commission_reports.field_section
+field_name: field_section
+entity_type: node
+bundle: commission_reports
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 25d88207-9882-4b44-a2f9-7482834ffacc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_proceedings
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - file
+id: node.minutes_regional_strategic_commu.field_document_proceedings
+field_name: field_document_proceedings
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: Documento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf doc docx xls xlsx ppt pptx zip xlm msg jpg xlsm'
+  max_filesize: ''
+  description_field: true
+field_type: file

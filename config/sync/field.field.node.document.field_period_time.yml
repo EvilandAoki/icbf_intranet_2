@@ -1,0 +1,26 @@
+uuid: 1066eb75-9201-472e-98f8-df509f46d837
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_period_time
+    - node.type.document
+    - taxonomy.vocabulary.periodo
+id: node.document.field_period_time
+field_name: field_period_time
+entity_type: node
+bundle: document
+label: Periodicidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      periodo: periodo
+    sort:
+      field: _none
+field_type: entity_reference

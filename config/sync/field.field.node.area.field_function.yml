@@ -1,0 +1,22 @@
+uuid: 486a15cf-e784-4be5-ba8a-3e5654a433a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_function
+    - node.type.area
+  module:
+    - text
+id: node.area.field_function
+field_name: field_function
+entity_type: node
+bundle: area
+label: Funciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

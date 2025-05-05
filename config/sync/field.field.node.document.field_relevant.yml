@@ -1,0 +1,21 @@
+uuid: 9cb67c55-4f57-4ca9-9c8c-a9047efbe7ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relevant
+    - node.type.document
+  module:
+    - options
+id: node.document.field_relevant
+field_name: field_relevant
+entity_type: node
+bundle: document
+label: Relevancia
+description: 'Importancia según si es vigente o de archivo histórico'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

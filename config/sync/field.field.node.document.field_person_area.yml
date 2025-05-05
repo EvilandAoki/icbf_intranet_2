@@ -1,0 +1,26 @@
+uuid: 3a79fa41-3148-4520-b7f5-988993723a44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_area
+    - node.type.document
+    - taxonomy.vocabulary.dependencies
+id: node.document.field_person_area
+field_name: field_person_area
+entity_type: node
+bundle: document
+label: Dependencia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      dependencies: dependencies
+    sort:
+      field: _none
+field_type: entity_reference

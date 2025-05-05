@@ -1,0 +1,13 @@
+uuid: 729f2037-0658-4509-89fc-e9df0e7e6772
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_narino
+label: 'Regional Nariño'
+weight: 36
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

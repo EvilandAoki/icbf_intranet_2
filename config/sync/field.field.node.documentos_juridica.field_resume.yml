@@ -1,0 +1,22 @@
+uuid: ac9d41de-e48c-4453-b81c-469f481d230e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.documentos_juridica
+  module:
+    - text
+id: node.documentos_juridica.field_resume
+field_name: field_resume
+entity_type: node
+bundle: documentos_juridica
+label: Tema
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

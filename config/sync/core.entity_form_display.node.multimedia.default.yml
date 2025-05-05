@@ -1,0 +1,195 @@
+uuid: b1d1f4ec-790e-422f-8513-4c0543afba51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.multimedia.field_content
+    - field.field.node.multimedia.field_date
+    - field.field.node.multimedia.field_file_categoria
+    - field.field.node.multimedia.field_images
+    - field.field.node.multimedia.field_link_url
+    - field.field.node.multimedia.field_list_image
+    - field.field.node.multimedia.field_location
+    - field.field.node.multimedia.field_multimedia
+    - field.field.node.multimedia.field_priority
+    - field.field.node.multimedia.field_resume
+    - field.field.node.multimedia.field_section
+    - field.field.node.multimedia.field_video_file
+    - node.type.multimedia
+  module:
+    - datetime
+    - file
+    - path
+    - text
+    - video
+    - workbench_moderation
+id: node.multimedia.default
+targetEntityType: node
+bundle: multimedia
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_content:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_categoria:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_images:
+    type: file_generic
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_link_url:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_list_image:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_location:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_multimedia:
+    type: file_generic
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_priority:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_resume:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_section:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_file:
+    type: video_upload
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      uri_scheme: public
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

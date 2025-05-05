@@ -1,0 +1,22 @@
+uuid: 96a9fa81-1620-4972-a62c-f994eba8ebd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_header_area
+    - taxonomy.vocabulary.secctions
+  module:
+    - text
+id: taxonomy_term.secctions.field_header_area
+field_name: field_header_area
+entity_type: taxonomy_term
+bundle: secctions
+label: 'Header Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

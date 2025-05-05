@@ -1,0 +1,8 @@
+uuid: ae2b65a5-9f5d-40dc-aeaf-bbff9d453831
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_minutes_regional_st
+label: 'Actas Comité Estratégico Regional comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,14 @@
+uuid: 5868dcdc-ac51-42ac-b94d-8ee3b9ba673a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_choco
+  module:
+    - user
+id: user_remove_role_action.regional_choco
+label: 'Elimina el rol Regional Chocó al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_choco

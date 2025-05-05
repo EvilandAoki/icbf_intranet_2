@@ -1,0 +1,60 @@
+uuid: ee9bb02f-95de-4f2d-a0aa-61ae6ddf561a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1700
+template: false
+archive: false
+id: webform_53894
+title: 'Formulario Ubicaciones (GH).'
+description: null
+categories: {  }
+elements: |-
+  c_dula_de_ciudadan_a:
+    '#type': textfield
+    '#title': 'Cédula de Ciudadanía'
+  nombre_del_servidor_p_blico:
+    '#type': textfield
+    '#title': 'Nombre del Servidor Público'
+  estudios:
+    '#type': textfield
+    '#title': Estudios
+  cargo_desempe_ado:
+    '#type': textfield
+    '#title': 'Cargo desempeñado'
+  ubicaci_n_actual:
+    '#type': textfield
+    '#title': 'Ubicación actual'
+  ubicaci_n_solicitada:
+    '#type': textfield
+    '#title': 'Ubicación solicitada'
+  rol_de_empleo_que_desempe_a:
+    '#type': textfield
+    '#title': 'Rol de empleo que desempeña'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

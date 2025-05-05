@@ -1,0 +1,22 @@
+uuid: fe614ab6-7278-45c9-bcd3-533567d6f242
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.multimedia
+  module:
+    - text
+id: node.multimedia.field_resume
+field_name: field_resume
+entity_type: node
+bundle: multimedia
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,12 @@
+uuid: c2c2d294-980d-4991-a8d4-0e63fa22ec63
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_tolima
+label: 'Regional Tolima'
+weight: 44
+is_admin: null
+permissions:
+  - 'view the administration theme'

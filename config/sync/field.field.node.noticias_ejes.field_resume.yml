@@ -1,0 +1,22 @@
+uuid: 2ebbcb31-0e1f-4c1c-905d-6f56eadd0b1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.noticias_ejes
+  module:
+    - text
+id: node.noticias_ejes.field_resume
+field_name: field_resume
+entity_type: node
+bundle: noticias_ejes
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

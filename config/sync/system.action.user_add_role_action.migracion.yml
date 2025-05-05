@@ -1,0 +1,14 @@
+uuid: f897e49a-e827-4452-85cf-797845d245e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.migracion
+  module:
+    - user
+id: user_add_role_action.migracion
+label: 'Añade el rol migracion al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: migracion

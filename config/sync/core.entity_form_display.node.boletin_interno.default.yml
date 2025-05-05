@@ -1,0 +1,151 @@
+uuid: 9ebfc1fc-0ef7-4333-a2f4-d573c2bc6374
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.boletin_interno.field_builder
+    - field.field.node.boletin_interno.field_date
+    - field.field.node.boletin_interno.field_document
+    - field.field.node.boletin_interno.field_file_categoria
+    - field.field.node.boletin_interno.field_images
+    - field.field.node.boletin_interno.field_list_image
+    - field.field.node.boletin_interno.field_multimedia
+    - field.field.node.boletin_interno.field_youtube
+    - node.type.boletin_interno
+  module:
+    - datetime
+    - file
+    - path
+    - text
+    - workbench_moderation
+    - youtube
+id: node.boletin_interno.default
+targetEntityType: node
+bundle: boletin_interno
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_builder:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_document:
+    type: file_generic
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_file_categoria:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_images:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_list_image:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_multimedia:
+    type: file_generic
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_youtube:
+    type: youtube
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

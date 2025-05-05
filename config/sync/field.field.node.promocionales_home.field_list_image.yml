@@ -1,0 +1,41 @@
+uuid: 4651dc91-3471-4b6a-9302-b3d36ccddc74
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_image
+    - node.type.promocionales_home
+  module:
+    - image
+id: node.promocionales_home.field_list_image
+field_name: field_list_image
+entity_type: node
+bundle: promocionales_home
+label: 'Imagen Listado'
+description: 'pieza gráfica'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 600kb
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

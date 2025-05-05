@@ -1,0 +1,14 @@
+uuid: 172240ae-8752-4920-b924-061cc686901b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.dit
+  module:
+    - user
+id: user_remove_role_action.dit
+label: 'Elimina el rol DIT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dit

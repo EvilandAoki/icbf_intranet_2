@@ -1,0 +1,26 @@
+uuid: b3b9dc8b-1933-4af6-8205-a3f8642f3ede
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regional
+    - node.type.contacto_nacional
+    - taxonomy.vocabulary.locations
+id: node.contacto_nacional.field_regional
+field_name: field_regional
+entity_type: node
+bundle: contacto_nacional
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

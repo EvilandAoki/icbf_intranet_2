@@ -1,0 +1,14 @@
+uuid: e5f23aef-ff71-473b-a679-20fc4afb4ad4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_sucre
+  module:
+    - user
+id: user_remove_role_action.regional_sucre
+label: 'Elimina el rol Regional Sucre al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_sucre

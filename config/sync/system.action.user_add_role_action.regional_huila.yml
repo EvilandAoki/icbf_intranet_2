@@ -1,0 +1,14 @@
+uuid: a1abfc55-3af4-431f-b820-f9fde33c46c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_huila
+  module:
+    - user
+id: user_add_role_action.regional_huila
+label: 'Añade el rol Regional Huila al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_huila

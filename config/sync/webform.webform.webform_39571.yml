@@ -1,0 +1,42 @@
+uuid: fdbaba9b-aa53-4efe-aab4-51e9cd67e67b
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_39571
+title: 'Pregunta de la Semana Oct 2021'
+description: null
+categories: {  }
+elements: |-
+  _cu_l_es_la_secci_n_de_bolet_n_virtual_vive_icbf_m_s_interesante_para_ti_:
+    '#type': textarea
+    '#title': '¿Cuál es la sección de Boletín Virtual Vive ICBF más interesante para ti?'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: "<p>Gracias por sus respuestas.</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

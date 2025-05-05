@@ -1,0 +1,24 @@
+uuid: 0bc55e60-0563-44a9-b620-7258b0860a8f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - roleassign
+    - statistics
+    - system
+id: administrador_infraestructura
+label: 'Administrador Infraestructura'
+weight: 47
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access user profiles'
+  - 'administer permissions'
+  - 'administer users'
+  - 'assign roles'
+  - 'view own unpublished content'
+  - 'view post access counter'
+  - 'view the administration theme'

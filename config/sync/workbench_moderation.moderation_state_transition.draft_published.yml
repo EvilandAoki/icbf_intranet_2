@@ -1,0 +1,14 @@
+uuid: 2f9e3679-61ec-4536-b981-bb031e81ca6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.published
+_core:
+  default_config_hash: qTergiISOB-CWMTXkWxPk2qgmA2r9iviwM0iw93UmlU
+id: draft_published
+label: Publicar
+stateFrom: draft
+stateTo: published
+weight: -9

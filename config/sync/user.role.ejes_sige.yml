@@ -1,0 +1,12 @@
+uuid: 514c227e-2b02-49b5-a2fd-12c89ca699e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: ejes_sige
+label: 'Ejes SIGE'
+weight: 50
+is_admin: null
+permissions:
+  - 'access administration pages'

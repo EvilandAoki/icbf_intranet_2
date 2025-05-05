@@ -1,0 +1,21 @@
+uuid: d5f5fa93-c8d8-4972-a252-1d33b369f667
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+id: taxonomy_term.cat_logo_servicios_dit.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: cat_logo_servicios_dit
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

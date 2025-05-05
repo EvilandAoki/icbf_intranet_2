@@ -1,0 +1,14 @@
+uuid: e6d723a7-b154-429b-a93c-d11382a8cfcd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.proceso_sige
+  module:
+    - user
+id: user_remove_role_action.proceso_sige
+label: 'Elimina el rol Proceso SIGE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: proceso_sige

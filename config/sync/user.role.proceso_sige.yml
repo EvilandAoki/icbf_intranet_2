@@ -1,0 +1,18 @@
+uuid: b81737de-fc8f-4b3e-8574-53f91392f810
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: proceso_sige
+label: 'Proceso SIGE'
+weight: 6
+is_admin: null
+permissions:
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

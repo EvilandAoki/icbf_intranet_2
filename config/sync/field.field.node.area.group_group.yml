@@ -1,0 +1,23 @@
+uuid: 53f4a663-0b47-4a22-bad5-3fcae7f062c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.group_group
+    - node.type.area
+id: node.area.group_group
+field_name: group_group
+entity_type: node
+bundle: area
+label: Grupo
+description: 'Determina si este es un grupo OG.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Group
+  off_label: 'Not a group'
+field_type: boolean

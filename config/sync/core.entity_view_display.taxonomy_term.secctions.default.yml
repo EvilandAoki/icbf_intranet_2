@@ -1,0 +1,56 @@
+uuid: 3a6121f3-9ba4-43a1-b49c-b281bf9b8525
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.secctions.field_allowed_roles
+    - field.field.taxonomy_term.secctions.field_allowed_users
+    - field.field.taxonomy_term.secctions.field_content
+    - field.field.taxonomy_term.secctions.field_docs
+    - field.field.taxonomy_term.secctions.field_header_area
+    - field.field.taxonomy_term.secctions.field_multimedia_complement
+    - field.field.taxonomy_term.secctions.field_taxonomy_image
+    - taxonomy.vocabulary.secctions
+  module:
+    - file
+    - image
+    - text
+id: taxonomy_term.secctions.default
+targetEntityType: taxonomy_term
+bundle: secctions
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_docs:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_taxonomy_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  field_content: true
+  field_header_area: true
+  field_multimedia_complement: true
+  langcode: true
+  search_api_excerpt: true

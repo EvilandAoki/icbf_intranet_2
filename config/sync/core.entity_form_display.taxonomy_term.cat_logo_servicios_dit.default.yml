@@ -1,0 +1,95 @@
+uuid: 15bdb657-9325-462e-8eed-575097ced651
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_roles
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_users
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_bg
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_icon
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+  module:
+    - file
+    - path
+    - text
+    - workbench_moderation
+id: taxonomy_term.cat_logo_servicios_dit.default
+targetEntityType: taxonomy_term
+bundle: cat_logo_servicios_dit
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_allowed_roles:
+    type: options_buttons
+    weight: 102
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_allowed_users:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cat_dit_bg:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cat_dit_icon:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  menu:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

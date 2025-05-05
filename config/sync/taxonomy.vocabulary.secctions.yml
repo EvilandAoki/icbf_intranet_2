@@ -1,0 +1,9 @@
+uuid: fea858f1-53ab-4baf-a43e-989deb79788e
+langcode: es
+status: true
+dependencies: {  }
+name: Secciones
+vid: secctions
+description: null
+weight: 1
+new_revision: false

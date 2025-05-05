@@ -1,0 +1,49 @@
+uuid: 2ab95411-6009-4887-a36b-361827a5826f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.minutes_regional_strategic_commu.field_date
+    - field.field.node.minutes_regional_strategic_commu.field_direccion
+    - field.field.node.minutes_regional_strategic_commu.field_document_proceedings
+    - field.field.node.minutes_regional_strategic_commu.field_file_categoria
+    - field.field.node.minutes_regional_strategic_commu.field_regional
+    - field.field.node.minutes_regional_strategic_commu.field_resume
+    - field.field.node.minutes_regional_strategic_commu.field_section
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - address
+    - text
+    - user
+id: node.minutes_regional_strategic_commu.default
+targetEntityType: node
+bundle: minutes_regional_strategic_commu
+mode: default
+content:
+  field_direccion:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_resume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_document_proceedings: true
+  field_file_categoria: true
+  field_regional: true
+  field_section: true
+  langcode: true
+  search_api_excerpt: true

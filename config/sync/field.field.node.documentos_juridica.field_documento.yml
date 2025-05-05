@@ -1,0 +1,27 @@
+uuid: 0ea09a3c-fd84-473c-acae-fbcfd01ae25e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documento
+    - node.type.documentos_juridica
+  module:
+    - file
+id: node.documentos_juridica.field_documento
+field_name: field_documento
+entity_type: node
+bundle: documentos_juridica
+label: 'Número de Providencia'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,8 @@
+uuid: 66c68713-5e8d-423a-b01e-0c0f4a971f1e
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_frase_de_la_semana
+label: 'Frase de la semana comment'
+target_entity_type_id: node
+description: null

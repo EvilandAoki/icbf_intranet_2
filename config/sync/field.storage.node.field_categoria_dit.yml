@@ -1,0 +1,24 @@
+uuid: bdb4a5d2-361b-499b-9a38-a6fb1ce13c83
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_categoria_dit
+field_name: field_categoria_dit
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

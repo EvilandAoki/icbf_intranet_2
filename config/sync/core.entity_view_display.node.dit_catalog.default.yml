@@ -1,0 +1,43 @@
+uuid: 1c95f2ea-76f3-407b-ad29-617bb87cb0fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.dit_catalog.field_categoria_dit
+    - field.field.node.dit_catalog.field_documento
+    - field.field.node.dit_catalog.field_file_categoria
+    - field.field.node.dit_catalog.field_header_area
+    - field.field.node.dit_catalog.field_infografia_dit
+    - field.field.node.dit_catalog.field_list_image
+    - field.field.node.dit_catalog.field_section
+    - node.type.dit_catalog
+  module:
+    - file
+    - user
+id: node.dit_catalog.default
+targetEntityType: node
+bundle: dit_catalog
+mode: default
+content:
+  field_documento:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_categoria_dit: true
+  field_file_categoria: true
+  field_header_area: true
+  field_infografia_dit: true
+  field_list_image: true
+  field_section: true
+  langcode: true
+  search_api_excerpt: true

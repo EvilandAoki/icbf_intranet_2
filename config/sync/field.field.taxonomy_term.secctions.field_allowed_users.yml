@@ -1,0 +1,21 @@
+uuid: 29bfccbd-95cb-4039-982a-981813aa4485
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.secctions
+id: taxonomy_term.secctions.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: secctions
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

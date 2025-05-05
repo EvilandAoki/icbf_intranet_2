@@ -1,0 +1,14 @@
+uuid: 2cbb9233-810e-400f-8635-3d970b75a09b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.builder
+  module:
+    - user
+id: user_remove_role_action.builder
+label: 'Elimina el rol Builder al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: builder

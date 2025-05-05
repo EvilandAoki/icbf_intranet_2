@@ -1,0 +1,22 @@
+uuid: 3b760ae1-4033-48e2-979e-69919860f6e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_profile
+    - node.type.documentos_juridica
+  module:
+    - text
+id: node.documentos_juridica.field_content_profile
+field_name: field_content_profile
+entity_type: node
+bundle: documentos_juridica
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

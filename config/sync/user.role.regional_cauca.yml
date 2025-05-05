@@ -1,0 +1,13 @@
+uuid: 05edb955-b772-43bd-a574-e56198ee9a13
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_cauca
+label: 'Regional Cauca'
+weight: 25
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

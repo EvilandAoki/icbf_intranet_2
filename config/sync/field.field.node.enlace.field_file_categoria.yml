@@ -1,0 +1,30 @@
+uuid: 7fcbe4b2-0d07-4a66-a0ff-36c940eb5ab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_categoria
+    - node.type.enlace
+    - taxonomy.vocabulary.file_category
+id: node.enlace.field_file_categoria
+field_name: field_file_categoria
+entity_type: node
+bundle: enlace
+label: 'Categoría del archivo'
+description: 'Enlaces grupo familia oficina juridica'
+required: true
+translatable: false
+default_value:
+  -
+    tid: '7103'
+  -
+    tid: '7330'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      file_category: file_category
+    sort:
+      field: _none
+field_type: entity_reference

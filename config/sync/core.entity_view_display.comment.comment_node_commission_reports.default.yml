@@ -1,0 +1,29 @@
+uuid: 7b20b10e-c69f-4ed8-a6f7-8e9aea90facf
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_commission_reports
+    - field.field.comment.comment_node_commission_reports.comment_body
+  module:
+    - text
+id: comment.comment_node_commission_reports.default
+targetEntityType: comment
+bundle: comment_node_commission_reports
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

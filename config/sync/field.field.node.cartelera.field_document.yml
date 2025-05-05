@@ -1,0 +1,27 @@
+uuid: ba7cb6d3-1046-4e66-af29-e39ac22679ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.cartelera
+  module:
+    - file
+id: node.cartelera.field_document
+field_name: field_document
+entity_type: node
+bundle: cartelera
+label: Documento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,8 @@
+uuid: a7ec7f62-17a0-4288-a416-1903f848eb62
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_institutional_stati
+label: 'Papelería Institucional comment'
+target_entity_type_id: node
+description: null

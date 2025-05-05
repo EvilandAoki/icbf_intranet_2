@@ -1,0 +1,14 @@
+uuid: f709f974-84f8-4b93-b2c7-229bf99cb54b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_arauca
+  module:
+    - user
+id: user_add_role_action.regional_arauca
+label: 'Añade el rol Regional Arauca al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_arauca

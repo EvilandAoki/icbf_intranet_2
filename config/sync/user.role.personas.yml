@@ -1,0 +1,19 @@
+uuid: c0f269fe-4a65-4c3c-b471-3edfd3984ef7
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: personas
+label: Personas
+weight: 49
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

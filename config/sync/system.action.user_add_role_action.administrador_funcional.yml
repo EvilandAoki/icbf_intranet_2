@@ -1,0 +1,14 @@
+uuid: bc46f75b-21a8-47c3-b7ee-e447dccfc9ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_funcional
+  module:
+    - user
+id: user_add_role_action.administrador_funcional
+label: 'Añade el rol Administrador Funcional al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_funcional

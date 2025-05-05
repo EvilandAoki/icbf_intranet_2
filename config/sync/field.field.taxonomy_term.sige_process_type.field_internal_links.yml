@@ -1,0 +1,22 @@
+uuid: a78a34ff-8117-4cee-ade4-99e97f35d602
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_internal_links
+    - taxonomy.vocabulary.sige_process_type
+  module:
+    - text
+id: taxonomy_term.sige_process_type.field_internal_links
+field_name: field_internal_links
+entity_type: taxonomy_term
+bundle: sige_process_type
+label: 'Enlaces Relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

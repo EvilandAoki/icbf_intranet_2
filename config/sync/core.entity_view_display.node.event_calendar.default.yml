@@ -1,0 +1,58 @@
+uuid: 9ea76807-3ee4-4203-9e42-86989994ac2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.event_calendar.body
+    - field.field.node.event_calendar.event_calendar_date
+    - field.field.node.event_calendar.event_calendar_status
+    - field.field.node.event_calendar.field_address
+    - field.field.node.event_calendar.field_body
+    - field.field.node.event_calendar.field_event_location
+    - node.type.event_calendar
+  module:
+    - address
+    - datetime
+    - geofield
+    - user
+id: node.event_calendar.default
+targetEntityType: node
+bundle: event_calendar
+mode: default
+content:
+  event_calendar_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_location:
+    type: geofield_default
+    label: hidden
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  event_calendar_status: true
+  field_body: true
+  langcode: true
+  search_api_excerpt: true

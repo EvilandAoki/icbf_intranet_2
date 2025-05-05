@@ -1,0 +1,22 @@
+uuid: 62b201fb-84d8-40d3-9c04-beaac8ea8f51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_profile
+    - node.type.persona
+  module:
+    - text
+id: node.persona.field_content_profile
+field_name: field_content_profile
+entity_type: node
+bundle: persona
+label: Perfil
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

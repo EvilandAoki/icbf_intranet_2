@@ -1,0 +1,23 @@
+uuid: 529056d1-a876-4efe-a1db-86b37f18439f
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_category_helpcenter
+field_name: field_category_helpcenter
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

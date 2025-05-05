@@ -1,0 +1,14 @@
+uuid: 8e216df3-bfeb-45c8-b58a-940e930c818c
+langcode: es
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_review
+    - workbench_moderation.moderation_state.published
+_core:
+  default_config_hash: VXyoFvRkXMLJtm0BpblTlBBrGiznxeDSoycaEEYsBVM
+id: needs_review_published
+label: Publicar
+stateFrom: needs_review
+stateTo: published
+weight: -7

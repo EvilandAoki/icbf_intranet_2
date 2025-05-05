@@ -1,0 +1,21 @@
+uuid: 1ba7b449-f1cf-4d3d-926e-bdbd571f1640
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.periodo
+id: taxonomy_term.periodo.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: periodo
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

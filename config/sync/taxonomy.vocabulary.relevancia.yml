@@ -1,0 +1,9 @@
+uuid: 246ad464-19b2-48f2-b82c-c9af091c69dd
+langcode: es
+status: true
+dependencies: {  }
+name: Relevancia
+vid: relevancia
+description: 'Peso de la categoria'
+weight: 0
+new_revision: false

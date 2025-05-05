@@ -1,0 +1,22 @@
+uuid: 778b3d6a-0a76-4f1b-a045-74df8ef6bec3
+langcode: es
+status: true
+dependencies:
+  theme:
+    - olivero
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: olivero_secondary_local_tasks
+theme: olivero
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

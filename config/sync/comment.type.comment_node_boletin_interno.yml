@@ -1,0 +1,8 @@
+uuid: af42c0d7-50e9-4908-b421-2ad34bca0bc7
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_boletin_interno
+label: 'Boletin Interno comment'
+target_entity_type_id: node
+description: null

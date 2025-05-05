@@ -1,0 +1,21 @@
+uuid: b6e1f719-c5d7-4196-9de5-afa9e616946d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_publicacion
+    - node.type.frase_de_la_semana
+  module:
+    - datetime_range
+id: node.frase_de_la_semana.field_fecha_publicacion
+field_name: field_fecha_publicacion
+entity_type: node
+bundle: frase_de_la_semana
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

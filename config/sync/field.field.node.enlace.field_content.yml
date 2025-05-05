@@ -1,0 +1,22 @@
+uuid: 9d61b01d-545d-40d7-97d7-8b3f7070f5e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.enlace
+  module:
+    - text
+id: node.enlace.field_content
+field_name: field_content
+entity_type: node
+bundle: enlace
+label: Contenido
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

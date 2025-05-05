@@ -1,0 +1,10 @@
+uuid: 800a0af1-b1b9-4296-a66f-6051cfc0b4ff
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: E8rvf3S2TDty4MHxR-ghhPB5UcR61WAPj1RKt6lBLaA
+id: draft
+label: Borrador
+published: false
+default_revision: false

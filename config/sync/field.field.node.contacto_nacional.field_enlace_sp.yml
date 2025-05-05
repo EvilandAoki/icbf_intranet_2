@@ -1,0 +1,19 @@
+uuid: b4ec2933-04eb-419b-9934-a092634671a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace_sp
+    - node.type.contacto_nacional
+id: node.contacto_nacional.field_enlace_sp
+field_name: field_enlace_sp
+entity_type: node
+bundle: contacto_nacional
+label: 'Enlace Subdirección de Programación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

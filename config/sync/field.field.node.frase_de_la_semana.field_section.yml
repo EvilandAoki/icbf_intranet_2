@@ -1,0 +1,26 @@
+uuid: d3b46164-e930-4bfd-a5c1-69ce9f12fc4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.frase_de_la_semana
+    - taxonomy.vocabulary.secctions
+id: node.frase_de_la_semana.field_section
+field_name: field_section
+entity_type: node
+bundle: frase_de_la_semana
+label: Sección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 32acf569-818f-408f-9977-2128a5759b65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.cifras_proteccion
+    - taxonomy.vocabulary.locations
+id: node.cifras_proteccion.field_location
+field_name: field_location
+entity_type: node
+bundle: cifras_proteccion
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

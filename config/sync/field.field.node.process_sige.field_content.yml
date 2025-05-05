@@ -1,0 +1,22 @@
+uuid: 083ca793-69f6-4bdd-a3ee-952fecdf1e14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.process_sige
+  module:
+    - text
+id: node.process_sige.field_content
+field_name: field_content
+entity_type: node
+bundle: process_sige
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,11 @@
+uuid: b731f785-294f-4362-9b2c-b46d0881eefb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.live_results_search
+label: live_results_search
+description: ''
+targetEntityType: node
+cache: true

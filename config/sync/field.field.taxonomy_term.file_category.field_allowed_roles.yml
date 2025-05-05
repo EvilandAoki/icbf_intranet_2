@@ -1,0 +1,21 @@
+uuid: 86d61afe-4e5c-4428-a6fc-daaf2bc388e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.file_category
+id: taxonomy_term.file_category.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: file_category
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: c72d4615-92b2-4f68-aa0b-7ea7cb19a563
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.catalogo_dit
+  module:
+    - user
+id: user_add_role_action.catalogo_dit
+label: 'Añade el rol Catálogo DIT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: catalogo_dit

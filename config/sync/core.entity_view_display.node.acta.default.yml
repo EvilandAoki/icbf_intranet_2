@@ -1,0 +1,30 @@
+uuid: 555a91bd-b25c-4121-96c3-e1e6fc19a35a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.acta.body
+    - node.type.acta
+  module:
+    - text
+    - user
+id: node.acta.default
+targetEntityType: node
+bundle: acta
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

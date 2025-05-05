@@ -1,0 +1,91 @@
+uuid: a9ef6f26-62ed-4cd0-9748-07812e64f217
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.noticias_ejes.field_date
+    - field.field.node.noticias_ejes.field_document
+    - field.field.node.noticias_ejes.field_list_image
+    - field.field.node.noticias_ejes.field_location
+    - field.field.node.noticias_ejes.field_resume
+    - field.field.node.noticias_ejes.field_section
+    - field.field.node.noticias_ejes.field_section_tag
+    - node.type.noticias_ejes
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.noticias_ejes.default
+targetEntityType: node
+bundle: noticias_ejes
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_document:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_list_image:
+    type: image
+    label: inline
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_resume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_section_tag:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

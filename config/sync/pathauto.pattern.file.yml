@@ -1,0 +1,12 @@
+uuid: cc8708b9-66d2-45b9-a40f-9e0329de2015
+langcode: es
+status: true
+dependencies: {  }
+id: file
+label: 'Archivo - default'
+type: 'canonical_entities:file'
+pattern: 'file/[file:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

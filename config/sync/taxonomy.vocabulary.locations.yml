@@ -1,0 +1,9 @@
+uuid: 8ea35a27-d0ee-4bc3-a0f4-846b1c81443c
+langcode: es
+status: true
+dependencies: {  }
+name: Ubicaciones
+vid: locations
+description: null
+weight: 0
+new_revision: false

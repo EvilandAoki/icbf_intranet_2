@@ -1,0 +1,77 @@
+uuid: 0d102f53-1f66-4a20-a462-2b0428299284
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tags.field_allowed_roles
+    - field.field.taxonomy_term.tags.field_allowed_users
+    - taxonomy.vocabulary.tags
+  module:
+    - path
+    - text
+    - workbench_moderation
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_allowed_roles:
+    type: options_buttons
+    weight: 102
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_allowed_users:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  menu:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

@@ -1,0 +1,19 @@
+uuid: 785a41de-1598-49cd-b591-cbcf044f921b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_gallery
+    - node.type.eventos_galeria
+id: node.eventos_galeria.field_description_gallery
+field_name: field_description_gallery
+entity_type: node
+bundle: eventos_galeria
+label: 'Descripción del evento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

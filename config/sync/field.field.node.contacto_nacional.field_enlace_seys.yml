@@ -1,0 +1,19 @@
+uuid: d7e85a0e-9482-4050-be30-3e21176ca13a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace_seys
+    - node.type.contacto_nacional
+id: node.contacto_nacional.field_enlace_seys
+field_name: field_enlace_seys
+entity_type: node
+bundle: contacto_nacional
+label: 'Enlace Subdrección de Montoreo y Evaluación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 06201f92-954f-4242-8d4e-5b491e3f59b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_norte_de_santander
+  module:
+    - user
+id: user_remove_role_action.regional_norte_de_santander
+label: 'Elimina el rol Regional Norte de Santander al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_norte_de_santander

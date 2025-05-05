@@ -1,0 +1,14 @@
+uuid: fb74bfb8-2050-4dd5-9d8d-14c3bb2083bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_casanare
+  module:
+    - user
+id: user_add_role_action.regional_casanare
+label: 'Añade el rol Regional Casanare al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_casanare

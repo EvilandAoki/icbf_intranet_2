@@ -1,0 +1,25 @@
+uuid: 52e1285c-ba79-4a18-ab1d-aa69be5c3425
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_process_code
+field_name: field_process_code
+entity_type: node
+type: string
+settings:
+  max_length: 50
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: fbf236af-6461-419e-aa9a-653bfb1666f8
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_promocionales_home
+label: 'Promocionales Home comment'
+target_entity_type_id: node
+description: null

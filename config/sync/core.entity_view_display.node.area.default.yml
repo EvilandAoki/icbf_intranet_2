@@ -1,0 +1,98 @@
+uuid: 5a3fdf5e-8ac7-4b8c-9b27-66be9e65cf89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.area.field_content
+    - field.field.node.area.field_document
+    - field.field.node.area.field_function
+    - field.field.node.area.field_header_area
+    - field.field.node.area.field_list_image
+    - field.field.node.area.field_multimedia
+    - field.field.node.area.field_person_area
+    - field.field.node.area.field_section
+    - field.field.node.area.field_taxonomy_image
+    - field.field.node.area.group_group
+    - node.type.area
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.area.default
+targetEntityType: node
+bundle: area
+mode: default
+content:
+  field_document:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_function:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_multimedia:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_person_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_taxonomy_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_header_area: true
+  group_group: true
+  langcode: true
+  search_api_excerpt: true

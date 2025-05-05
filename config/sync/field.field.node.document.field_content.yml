@@ -1,0 +1,22 @@
+uuid: f3a766ae-b602-47b0-b291-47adfa42808b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.document
+  module:
+    - text
+id: node.document.field_content
+field_name: field_content
+entity_type: node
+bundle: document
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

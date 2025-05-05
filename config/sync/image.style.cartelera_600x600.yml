@@ -1,0 +1,15 @@
+uuid: 45c731d6-a365-4ef5-9aff-f6fbff89b01c
+langcode: es
+status: true
+dependencies: {  }
+name: cartelera_600x600
+label: 'Cartelera 600x600'
+effects:
+  513e6d7b-d13c-491b-aa71-0f6b261ab975:
+    uuid: 513e6d7b-d13c-491b-aa71-0f6b261ab975
+    id: image_scale
+    weight: 1
+    data:
+      width: 765
+      height: 765
+      upscale: true

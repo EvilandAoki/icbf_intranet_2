@@ -1,0 +1,13 @@
+uuid: aaa6244c-edf2-484f-89e0-87cd15605456
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_la_guajira
+label: 'Regional La Guajira'
+weight: 30
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

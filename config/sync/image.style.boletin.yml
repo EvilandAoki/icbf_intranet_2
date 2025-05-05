@@ -1,0 +1,15 @@
+uuid: 9b4b3931-093b-4dfd-8170-2029044f6c54
+langcode: es
+status: true
+dependencies: {  }
+name: boletin
+label: Boletin
+effects:
+  6272b2d7-dfc6-45ae-a1ca-0456fd87e103:
+    uuid: 6272b2d7-dfc6-45ae-a1ca-0456fd87e103
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 265
+      anchor: center-center

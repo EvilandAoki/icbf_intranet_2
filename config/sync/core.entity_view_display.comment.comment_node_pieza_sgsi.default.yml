@@ -1,0 +1,29 @@
+uuid: 93c579b5-fec7-44cd-a1ae-068631424b15
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_pieza_sgsi
+    - field.field.comment.comment_node_pieza_sgsi.comment_body
+  module:
+    - text
+id: comment.comment_node_pieza_sgsi.default
+targetEntityType: comment
+bundle: comment_node_pieza_sgsi
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

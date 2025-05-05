@@ -1,0 +1,49 @@
+uuid: aeb67445-9178-4ba1-bf1b-53021a6ec0a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_roles
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_users
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_bg
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_icon
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+  module:
+    - image
+    - text
+id: taxonomy_term.cat_logo_servicios_dit.default
+targetEntityType: taxonomy_term
+bundle: cat_logo_servicios_dit
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cat_dit_bg:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cat_dit_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  langcode: true
+  search_api_excerpt: true

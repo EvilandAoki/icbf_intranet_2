@@ -1,0 +1,19 @@
+uuid: edb851f7-c5e4-4625-bb32-459c38aa4117
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: proteccion
+label: Protección
+weight: 9
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'
