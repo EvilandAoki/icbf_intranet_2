@@ -53,45 +53,111 @@
 #}
 {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
 
-<div id="page-wrapper">
-  <div id="page">
-    <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
-      {% block head %}
+
+{% block top_menu %}
+  {% if page.top_menu %}
+    {{ page.top_menu }}
+  {% endif %}        
+{% endblock %}
+<header id="navbar" role="banner" class="navbar  navbar-default">
+<div class="container-fluid">
+    <div class="navbar-header">
+      {% block header %}
         {% if page.header %}
           {{ page.header }}
         {% endif %}        
       {% endblock %}
-    </header>    
-    
-    <div id="main-wrapper" class="layout-main-wrapper clearfix">
-      {% block content %}
-        <div id="main" class="{{ container }}">
-          {{ page.featured_top }}
-
-          <div class="breadcrumb">
-           <div class="breadcrumb-container">
-             <p class="breadcrumb-title">{{ 'Usted está en: ' }}</p>
-             <div class="breadcrumb-content"> {{ page.breadcrumb }}</div>
-           </div>
-          </div>
-          
-          <div class="row row-offcanvas row-offcanvas-left clearfix">
-            <main{{ content_attributes }}>
-              {{ page.content }}
-            </main>
-          </div>
+     </div>
+  </div>
+  <div class="navbar" id="navbar-collapse">
+        <div class="container-fluid">
+          <nav role="navigation">
+             {% block navigation %}
+                {% if page.navigation %}
+                  {{ page.navigation }}
+                {% endif %}        
+              {% endblock %}
+          </nav>
         </div>
-      {% endblock %}
-    </div>
+      </div>
+</header>
 
-    <footer class="site-footer">
-      {% block footer %}
-        <div class="{{ container }}">
-          {% if page.footer %}
-            {{ page.footer }}
-          {% endif %}
+<div{{ attributes.addClass('main-container', container_class) }}>
+  <dev id="page-header" class="py-3 border-bottom mb-4">
+    {% if site_slogan %}
+      <p class="h5 text-muted mb-0">{{ site_slogan }}</p>
+    {% endif %}
+    {{ page.top_bar }}
+  </dev>
+
+  <div class="row gx-4 gy-3">
+    {% if page.sidebar_first %}
+      <aside class="col-lg-3">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    <main class="{{ content_column_class }}">
+      {% if page.highlighted %}
+        <div class="alert alert-info">{{ page.highlighted }}</div>
+      {% endif %}
+
+      {% if breadcrumb %}
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">{{ 'Usted está en:'|t }}</li>
+            {{ breadcrumb }}
+          </ol>
+        </nav>
+      {% endif %}
+
+      <a id="main-content" tabindex="-1"></a>
+      {{ title_prefix }}
+      {% if title %}
+        <h1 class="display-4 mb-3">{{ title }}</h1>
+      {% endif %}
+      {{ title_suffix }}
+
+      {{ messages }}
+
+      {% if tabs %}
+        <div class="mb-3">
+          {{ tabs }}
         </div>
-      {% endblock %}
-    </footer>
+      {% endif %}
+
+      {% if page.help %}
+        <div class="mb-3">{{ page.help }}</div>
+      {% endif %}
+
+      {% if action_links %}
+        <ul class="list-inline mb-3">{{ action_links }}</ul>
+      {% endif %}
+
+      {{ page.content }}
+    </main>
+
+    {% if page.sidebar_second %}
+      <aside class="col-lg-3">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
   </div>
 </div>
+
+{% if page.footer_top %}
+  <div class="{{ container_class }} py-4">
+    {{ page.footer_top }}
+  </div>
+{% endif %}
+
+{% if page.footer %}
+  <footer class="{{ container_class }} py-3 border-top">
+    {{ page.footer }}
+  </footer>
+{% endif %}
+
+
+
+
+

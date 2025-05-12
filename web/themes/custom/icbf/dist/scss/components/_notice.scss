@@ -1,0 +1,167 @@
+@use "../abstracts/variables" as var;
+
+.notice{
+    &-section_news{
+        margin: auto;
+    }
+    &-news{
+        &_main{
+            padding-right: 4rem;
+            h1{
+                font-size: 2em;
+                font-family: var.$font-montserrat;
+                line-height: normal;
+                margin: 20px 0 10px;
+                color: var.$color-text-gray;
+            }
+        }
+        &_city{
+            margin: 7px 0 19px 0px;
+        }
+        &-place{
+            display: flex;
+            padding: 17px 0px;
+        }
+        &-imgp{
+            border-radius: 5px;
+            object-fit: cover;
+            width: 100%;
+            height: 476px;
+            vertical-align: middle;
+        }
+        &-social{
+            padding: 17px 0px;
+            .notice-social-icons{
+                a{
+                    border-radius: 50%;
+                    box-shadow: 0 .1rem .5rem #ccc;
+                    display: inline-block;
+                    filter: grayscale(100%);
+                    height: auto;
+                    margin-right: 3px;
+                    transition: all ease .2s;
+                    width: auto;
+                    &:hover{
+                        box-shadow: 0 .1rem .5rem #999;
+                        filter: grayscale(0%);
+                    }
+                }
+                img{ 
+                    height: 22px;
+                    padding: 3px;
+                    width: auto;
+                }
+            }
+        }
+        &-field-city{
+            span{
+                color: var.$color-primary-green;
+            }
+        }
+        &-fiel-separator {
+            margin: 0 10px 0 2px;
+        }
+        &-field-paragraph{
+            p{
+                font-size: 15.4px;
+                font-family: var.$font-montserrat-regular;
+                color: var.$color-text-gray;
+            }
+        }
+        &-field-abstract{
+            p{
+                font-weight: 500;
+                font-size: 1.1em;
+                font-family: var.$font-montserrat;
+                line-height: 1.56em;
+                color: var.$color-text-gray;
+                margin-bottom: 2rem;
+            }
+        }
+        &-separator-content{
+            hr:not([size]) {
+                height: 2px;
+                margin: 2rem 0;
+            }
+        }
+        &-intranet_name {
+            font-weight: bold;
+            font-size: 14px;
+            font-family: var.$font-montserrat;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        &-intranet_city {
+            font-size: 14px;
+            font-family: var.$font-montserrat;
+            margin-bottom: 0.5rem;
+        }
+        &-intranet_link {
+            display: table-caption;
+            font-family: var.$font-montserrat;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+    } 
+    &-more{
+        &-title{
+            padding-bottom: 3px;
+            border-bottom: 2px solid #ddd;
+            font-family: var.$font-montserrat;
+            line-height: normal;
+            font-size: 1.2em;
+        }
+        &-cards {
+            background: #f9f9f9;
+            padding: .3em .6em;
+        }  
+        &-title-notice {
+            font-family: var.$font-montserrat-regular;
+            font-weight: 500;
+            line-height: normal;
+            padding-top: .5em;
+            font-size: 1.1em;
+            margin: 0 1px 4px;
+        }
+        &-latest{
+            border-bottom: 1px solid #ddd;
+            margin: .2em 0;
+            padding: 1em 0;
+            display: inline-block;
+        }
+        &-place {
+            border-right: 1px solid #999;
+            color: var.$color-primary-green;
+            font-family: var.$font-montserrat-regular;
+            margin-right: 5px;
+            padding-right: 5px;
+            font-size: .82em;
+        }
+        &-single{
+            color: #333;
+            font-family: var.$font-montserrat-regular;
+            font-size: .82em;
+        }
+        &-img{
+            margin-top: 0.5rem;
+            justify-content: center;
+            display: flex;
+            padding-right: 0;
+            img{
+                border-radius: 5px;
+            }
+        }
+    }
+    &-cards{
+        &-separator {
+            height: 2rem;
+        }
+        &-title {
+            font-family: var.$font-montserrat;
+            line-height: normal !important;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #ddd;
+            font-size: 16.8px;
+        }
+    }
+}

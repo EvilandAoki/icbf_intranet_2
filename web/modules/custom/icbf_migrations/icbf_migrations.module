@@ -240,7 +240,36 @@ function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $s
         $row->setSourceProperty('parent_link_path', $link_path);
       }
       break;
-    case 'd7_views_migration':
+    case 'search_api_server':
+      $plugin_id = $row->getSourceProperty('plugin_id') ?: 'search_api_db';
+      $row->setSourceProperty('plugin_id', $plugin_id);
+
+      $options = $row->getSourceProperty('options');
+      if (is_string($options)) {
+        $un = @unserialize($options);
+        $row->setSourceProperty('backend_config', is_array($un) ? $un : []);
+      }
+      elseif (is_array($options)) {
+        $row->setSourceProperty('backend_config', $options);
+      }
+      else {
+        $row->setSourceProperty('backend_config', []);
+      }
+      break;
+    case 'search_api_index':
+      foreach (['options', 'datasource_configuration', 'tracker_configuration'] as $prop) {
+        $value = $row->getSourceProperty($prop);
+        if (is_string($value)) {
+          $un = @unserialize($value);
+          $row->setSourceProperty($prop, is_array($un) ? $un : []);
+        }
+        elseif (!is_array($value)) {
+          $row->setSourceProperty($prop, []);
+        }
+      }
+      return TRUE;
+        break;
+    case 'upgrade_d7_views_migration':
       $views_id = [
         'usuarios',
         'editorial_last_content',

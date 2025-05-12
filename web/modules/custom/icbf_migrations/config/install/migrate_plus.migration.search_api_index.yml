@@ -1,0 +1,29 @@
+id: search_api_index
+label: 'Migración Search API Indexes D7'
+migration_group: custom_migrations
+
+source:
+  plugin: d7_search_api_index
+  key: migrate
+
+process:
+  id: machine_name
+  name: name
+  description: description
+  server: server
+  datasource: item_type
+  options: options
+  datasource_configuration: datasource_configuration
+  tracker_configuration: tracker_configuration
+  enabled: enabled
+  read_only: read_only
+  status: status
+  module: module
+
+destination:
+  plugin: 'entity:search_api_index'
+
+migration_dependencies:
+  required:
+    - upgrade_d7_search_api_server
+  optional: []

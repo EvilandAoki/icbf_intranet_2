@@ -16,6 +16,10 @@ for ID in \
   upgrade_fontawesome_settings \
   upgrade_taxonomy_manager_settings \
   upgrade_youtube_settings \
+  upgrade_d7_views_migration \
+  search_api_index \
+  upgrade_d7_search_api_server \
+  page_manager_pages \
   upgrade_d7_file
 do
   echo "⏳ Eliminando: migrate_plus.migration.$ID"

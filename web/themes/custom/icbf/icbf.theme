@@ -4,3 +4,55 @@
  * @file
  * icbf theme file.
  */
+
+ /**
+ * Implements hook_preprocess_page().
+ */
+function icbf_preprocess_page(array &$variables) {
+  // Fixed vs fluid.
+  $fluid = \Drupal::config('icbf.settings')->get('fluid_breakpoint');
+  $variables['container_class'] = $fluid ? 'container-fluid' : 'container';
+
+  // Columna de contenido según sidebars.
+  $has_first  = !empty($variables['page']['sidebar_first']);
+  $has_second = !empty($variables['page']['sidebar_second']);
+
+  if ($has_first && $has_second) {
+    $variables['content_column_class'] = 'col-lg-6';
+  }
+  elseif ($has_first || $has_second) {
+    $variables['content_column_class'] = 'col-lg-9';
+  }
+  else {
+    $variables['content_column_class'] = 'col-lg-12';
+  }
+}
+
+/**
+ * Permite que TB Mega Menu liste **todos** los bloques definidos
+ * (incluso los no colocados en una región), para asignarlos a ítems.
+ *
+ * @param array  $blocks
+ *   Listado de bloques permitidos para TB Mega Menu. Se recibe por referencia.
+ * @param string $menu_name
+ *   Nombre de la instancia de menú que se está editando.
+ */
+function icbf_tb_megamenu_allowed_blocks_alter(array &$blocks, $menu_name) {
+   // Obtiene el gestor de plugins de bloque.
+  $manager = \Drupal::service('plugin.manager.block');
+  // Recupera la definición de todos los plugins de bloque.
+  $definitions = $manager->getDefinitions();
+  dump($definitions);
+  foreach ($definitions as $plugin_id => $definition) {
+    // Si ya existe en la lista, continúa.
+    if (isset($blocks[$plugin_id])) {
+      continue;
+    }
+    // Añade el bloque, usando su etiqueta administrativa.
+    $blocks[$plugin_id] = [
+      'plugin_id' => $plugin_id,
+      'label'     => $definition['admin_label'] ?? $plugin_id,
+    ];
+  }
+}
+
