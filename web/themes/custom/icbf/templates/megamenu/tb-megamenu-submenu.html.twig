@@ -1,0 +1,17 @@
+{#
+  Tema override: tb-megamenu-submenu.html.twig
+  Objetivo: renderizar el bloque completo en cada celda del grid
+#}
+
+<div{{ attributes }}>
+  <div class="mega-dropdown-inner">
+    {% for row in rows %}
+       {% set title_id = row['#row'][0]['col_content'][0]['block_id'] %}
+      <div id="submenu-row-{{ title_id }}">
+        {{ row }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
