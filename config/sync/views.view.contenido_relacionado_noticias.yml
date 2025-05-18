@@ -1,4 +1,4 @@
-uuid: 32b59822-752f-450f-8e36-27349c84150c
+uuid: 23c6a2c8-0cec-4c3e-bfb2-e89d50d50f61
 langcode: es
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_date
     - field.storage.node.field_list_image
     - field.storage.node.field_lugar
+    - field.storage.node.field_section_tag
     - node.type.news
   module:
     - datetime
@@ -91,10 +92,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_list_image:
-          id: field_list_image
-          table: node__field_list_image
-          field: field_list_image
+        field_section_tag:
+          id: field_section_tag
+          table: node__field_section_tag
+          field: field_section_tag
           relationship: none
           group_type: group
           admin_label: ''
@@ -141,13 +142,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: entity_reference_label
           settings:
-            image_link: ''
-            image_style: ''
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -212,6 +210,72 @@ display:
             timezone_override: ''
             format_type: medium
           group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_list_image:
+          id: field_list_image
+          table: node__field_list_image
+          field: field_list_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: ''
+            image_loading:
+              attribute: lazy
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -324,7 +388,41 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
-      arguments: {  }
+      arguments:
+        field_section_tag_target_id:
+          id: field_section_tag_target_id
+          table: node__field_section_tag
+          field: field_section_tag_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_target_id
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
       filters:
         status:
           id: status
@@ -367,29 +465,32 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date'
         - 'config:field.storage.node.field_list_image'
         - 'config:field.storage.node.field_lugar'
+        - 'config:field.storage.node.field_section_tag'
   relacionado_noticias:
     id: relacionado_noticias
     display_title: 'Contenido relacionado (Noticias)'
     display_plugin: block
     position: 1
     display_options:
-      display_description: ''
+      display_description: 'Contenido relacionado (Noticias)'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date'
         - 'config:field.storage.node.field_list_image'
         - 'config:field.storage.node.field_lugar'
-
+        - 'config:field.storage.node.field_section_tag'
