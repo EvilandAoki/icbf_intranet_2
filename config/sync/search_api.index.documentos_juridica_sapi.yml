@@ -1,0 +1,106 @@
+uuid: ce8c12a0-2c03-4e1d-9d08-1d63ac714825
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: documentos_juridica_sapi
+name: 'Documentos Jurídica SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - documentos_juridica
+  fields:
+    field_date:
+      type: date
+    'field_docs:description':
+      type: list<text>
+    'field_docs:file':
+      type: list<integer>
+      entity_type: file
+    'field_docs:file:fid':
+      type: list<integer>
+    'field_docs:file:field_file_image_alt_text':
+      type: list<text>
+    'field_docs:file:field_file_image_title_text':
+      type: list<text>
+    'field_docs:file:field_folder':
+      type: list<integer>
+      entity_type: taxonomy_term
+    'field_docs:file:mime':
+      type: list<text>
+    'field_docs:file:name':
+      type: list<text>
+    'field_docs:file:owner':
+      type: list<integer>
+      entity_type: user
+    'field_docs:file:size':
+      type: list<integer>
+    'field_docs:file:timestamp':
+      type: list<date>
+    'field_docs:file:type':
+      type: list<string>
+    'field_docs:file:url':
+      type: list<text>
+    'field_documento:file':
+      type: integer
+      entity_type: file
+    'field_documento:file:fid':
+      type: integer
+    'field_documento:file:field_file_image_alt_text':
+      type: text
+    'field_documento:file:field_file_image_title_text':
+      type: text
+    'field_documento:file:field_folder':
+      type: integer
+      entity_type: taxonomy_term
+    'field_documento:file:mime':
+      type: text
+    'field_documento:file:name':
+      type: text
+    'field_documento:file:owner':
+      type: integer
+      entity_type: user
+    'field_documento:file:size':
+      type: integer
+    'field_documento:file:timestamp':
+      type: date
+    'field_documento:file:type':
+      type: string
+    'field_documento:file:url':
+      type: text
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_person_area:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    title:
+      type: text
+server: local_solr

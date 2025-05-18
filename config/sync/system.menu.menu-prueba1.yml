@@ -1,0 +1,8 @@
+uuid: 56f99e03-adfc-4a32-a64c-e8bad2fe14de
+langcode: en
+status: true
+dependencies: {  }
+id: menu-prueba1
+label: 'Menu Intranet'
+description: 'Menu principal de contenidos'
+locked: false

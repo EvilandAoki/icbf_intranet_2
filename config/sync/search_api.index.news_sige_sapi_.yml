@@ -1,0 +1,59 @@
+uuid: f5f37ce3-e47f-4125-b86e-919fc1401dec
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: news_sige_sapi_
+name: 'News_SIGE (SAPI)'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - noticias_ejes
+  fields:
+    field_date:
+      type: date
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    field_section_tag:
+      type: list<integer>
+      entity_type: taxonomy_term
+    is_new:
+      type: boolean
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    status:
+      type: integer
+    title:
+      type: text
+    title_az_glossary:
+      type: string
+server: local_solr

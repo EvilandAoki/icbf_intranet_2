@@ -1,0 +1,13 @@
+uuid: d2f80d30-2bcc-42f6-9b98-a671f7a69993
+langcode: es
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database_local
+name: 'Database local'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3

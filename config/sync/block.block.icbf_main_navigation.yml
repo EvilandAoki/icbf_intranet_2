@@ -1,6 +1,6 @@
 uuid: ad8666ab-ca53-4d5d-b6ac-6d9c6b3ab988
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,7 +12,7 @@ _core:
   default_config_hash: fkODwMc3c30Ha261NVgAjJfAp4liZlcvRAFuvw3TJm0
 id: icbf_main_navigation
 theme: icbf
-region: nav_main
+region: navigation
 weight: -6
 provider: null
 plugin: 'system_menu_block:main'

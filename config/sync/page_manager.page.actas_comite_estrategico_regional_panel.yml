@@ -1,0 +1,12 @@
+uuid: e1edd31c-7104-45d3-aea9-216486a76164
+langcode: es
+status: true
+dependencies: {  }
+id: actas_comite_estrategico_regional_panel
+label: 'Actas Comité Estratégico Regional'
+description: ''
+use_admin_theme: null
+path: /actas-comite-estrategico-regional/region
+access_logic: and
+access_conditions: {  }
+parameters: {  }

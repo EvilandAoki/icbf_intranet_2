@@ -1,0 +1,57 @@
+uuid: 3235c0fe-f3be-46bb-a695-cbed8adcb9a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: sige_sapi
+name: 'SIGE SAPI'
+description: 'Piezas SIGE'
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - pieza_sgsi
+  fields:
+    field_date:
+      type: date
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_file_priority:
+      type: integer
+    field_hiring_process_type:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    title:
+      type: text
+    type:
+      type: string
+server: local_solr

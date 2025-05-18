@@ -1,6 +1,6 @@
 uuid: 5a030dda-4d3f-4d1c-9982-d636d9619c66
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: icbf_footer
 theme: icbf
 region: footer
-weight: -6
+weight: -14
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

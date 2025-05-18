@@ -1,0 +1,25 @@
+uuid: f005d3a9-00b4-405e-882b-1006c02ad905
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc9d9263-d6f9-4e22-a53e-1cc4fc861d37'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_menuiniciobotton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:dc9d9263-d6f9-4e22-a53e-1cc4fc861d37'
+settings:
+  id: 'block_content:dc9d9263-d6f9-4e22-a53e-1cc4fc861d37'
+  label: 'Menu Inicio - botton'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

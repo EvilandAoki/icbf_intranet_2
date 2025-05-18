@@ -1,0 +1,25 @@
+uuid: 1db6b16d-672f-4b84-8a5f-edd0a72a2a89
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dfcb8bcb-a9f1-40e0-9497-79cdb62fbfa6'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_mediostop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:dfcb8bcb-a9f1-40e0-9497-79cdb62fbfa6'
+settings:
+  id: 'block_content:dfcb8bcb-a9f1-40e0-9497-79cdb62fbfa6'
+  label: 'Medios - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

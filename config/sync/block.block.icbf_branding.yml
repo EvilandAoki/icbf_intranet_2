@@ -1,6 +1,6 @@
 uuid: 51bb8794-3d01-48fc-9070-2f036c58ed7b
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: JSYtkM2_rrC4BQ-AVWDSLkVE9fUuqDyYfQ_3BmtuiuM
 id: icbf_branding
 theme: icbf
-region: nav_branding
+region: navigation
 weight: -6
 provider: null
 plugin: system_branding_block

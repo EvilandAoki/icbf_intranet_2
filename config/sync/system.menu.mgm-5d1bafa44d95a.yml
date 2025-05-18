@@ -1,0 +1,8 @@
+uuid: cb106b42-243f-4290-86de-c4335a8fbe82
+langcode: en
+status: true
+dependencies: {  }
+id: mgm-5d1bafa44d95a
+label: 'Menu2 Intranet'
+description: 'Menu principal de contenidos'
+locked: false

@@ -1,0 +1,25 @@
+uuid: 99a77167-962c-459f-9f87-e1dc2fdcb586
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:be33f057-9e60-433c-8bc9-a13accc96ac9'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_sigbotton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:be33f057-9e60-433c-8bc9-a13accc96ac9'
+settings:
+  id: 'block_content:be33f057-9e60-433c-8bc9-a13accc96ac9'
+  label: 'SIG - botton'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

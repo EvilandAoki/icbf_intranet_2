@@ -1,0 +1,25 @@
+uuid: bc5407f7-c0c6-48f7-bf21-9b971b83ff07
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7cec6989-bcbb-40e8-b838-ee1f4ed025c2'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_cifrasbutton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:7cec6989-bcbb-40e8-b838-ee1f4ed025c2'
+settings:
+  id: 'block_content:7cec6989-bcbb-40e8-b838-ee1f4ed025c2'
+  label: 'Cifras - Button'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: 32376768-7f41-4d46-bc68-d353d93f02e9
+langcode: es
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: test
+name: 'Sarnia Principal'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3

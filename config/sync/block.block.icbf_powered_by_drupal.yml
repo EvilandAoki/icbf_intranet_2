@@ -1,6 +1,6 @@
 uuid: 09ef1132-9f4f-477f-876a-64773021c4fa
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: icbf_powered_by_drupal
 theme: icbf
 region: footer
-weight: 0
+weight: -13
 provider: null
 plugin: system_powered_by_block
 settings:

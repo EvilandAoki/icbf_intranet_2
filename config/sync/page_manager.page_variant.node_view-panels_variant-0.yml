@@ -1,0 +1,41 @@
+uuid: b3a318ff-abb2-4064-b13f-033a50dc73eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - node
+    - panels
+id: node_view-panels_variant-0
+label: Noticias
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: 1adecdd7-cb74-42e0-9be4-43376b7ea824
+  blocks: {  }
+  page_title: Noticias
+  layout: layout_threecol_25_50_25
+  layout_settings:
+    label: Noticias
+  builder: standard
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  css_classes:
+    - ''
+  html_id: ''
+  css_styles: ''
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+static_context: {  }

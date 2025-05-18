@@ -1,6 +1,6 @@
 uuid: a2c9b3f9-a2e2-46e0-9b07-fa79b9e3b191
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: InBpEtwjlcfi4KXVg0KR1ZqVGZ0QdVWAr-QsLxqAHeM
 id: icbf_account_menu
 theme: icbf
-region: nav_additional
+region: navigation
 weight: -7
 provider: null
 plugin: 'system_menu_block:account'
