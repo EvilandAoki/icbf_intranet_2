@@ -56,7 +56,6 @@ function icbf_theme_suggestions_page_alter(array &$suggestions, array $variables
   if ($node = $route_match->getParameter('node')) {
     if ($node instanceof NodeInterface) {
       $bundle = $node->bundle();
-      dump($bundle);
       \Drupal::logger('theme_suggestions')->debug('Bundle: ' . $bundle);
       $suggestions[] = 'page__node__' . $bundle;
     }
