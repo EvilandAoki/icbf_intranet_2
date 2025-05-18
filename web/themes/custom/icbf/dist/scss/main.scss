@@ -11,5 +11,13 @@
 @use 'layout/taxonomias/taxonomia';
 
 
-@use 'components/breadcrumb';
+
 @use 'components/notice';
+@use 'components/regional-acts';
+@use 'components/institutional-stationery';
+@use 'components/syndicate-publications';
+
+@use 'components/elements/breadcrumb';
+@use 'components/elements/slide';
+@use 'components/elements/custom-table';
+@use 'components/elements/internal-page';

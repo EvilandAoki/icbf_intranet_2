@@ -7,6 +7,9 @@
     &-news{
         &_main{
             padding-right: 4rem;
+            @media (max-width: 767px){
+                padding-right: 0;
+            }
             h1{
                 font-size: 2em;
                 font-family: var.$font-montserrat;
