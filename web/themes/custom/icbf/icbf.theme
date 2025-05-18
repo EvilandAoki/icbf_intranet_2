@@ -29,30 +29,36 @@ function icbf_preprocess_page(array &$variables) {
 }
 
 /**
- * Permite que TB Mega Menu liste **todos** los bloques definidos
- * (incluso los no colocados en una región), para asignarlos a ítems.
- *
- * @param array  $blocks
- *   Listado de bloques permitidos para TB Mega Menu. Se recibe por referencia.
- * @param string $menu_name
- *   Nombre de la instancia de menú que se está editando.
+ * Implements hook_theme_registry_alter().
  */
-function icbf_tb_megamenu_allowed_blocks_alter(array &$blocks, $menu_name) {
-   // Obtiene el gestor de plugins de bloque.
-  $manager = \Drupal::service('plugin.manager.block');
-  // Recupera la definición de todos los plugins de bloque.
-  $definitions = $manager->getDefinitions();
-  dump($definitions);
-  foreach ($definitions as $plugin_id => $definition) {
-    // Si ya existe en la lista, continúa.
-    if (isset($blocks[$plugin_id])) {
-      continue;
+function icbf_theme_registry_alter(array &$theme_registry) {
+  $theme_path = \Drupal::service('extension.list.theme')->getPath('icbf');
+
+  foreach ($theme_registry as $key => &$info) {
+    if (str_starts_with($key, 'page__node__')) {
+      // Redirige estos templates a la carpeta 'layout'
+      $template_file = $theme_path . '/layout/' . str_replace('__', '--', $key) . '.html.twig';
+      if (file_exists($template_file)) {
+        $info['path'] = $theme_path . '/layout';
+      }
     }
-    // Añade el bloque, usando su etiqueta administrativa.
-    $blocks[$plugin_id] = [
-      'plugin_id' => $plugin_id,
-      'label'     => $definition['admin_label'] ?? $plugin_id,
-    ];
   }
 }
 
+
+
+/**
+ * Implementa hook_theme_suggestions_page_alter().
+ */
+function icbf_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $route_match = \Drupal::routeMatch();
+
+  if ($node = $route_match->getParameter('node')) {
+    if ($node instanceof NodeInterface) {
+      $bundle = $node->bundle();
+      dump($bundle);
+      \Drupal::logger('theme_suggestions')->debug('Bundle: ' . $bundle);
+      $suggestions[] = 'page__node__' . $bundle;
+    }
+  }
+}
