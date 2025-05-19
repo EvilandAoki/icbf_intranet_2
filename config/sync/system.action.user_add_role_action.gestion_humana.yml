@@ -1,0 +1,14 @@
+uuid: b667d7ae-3a82-487c-b6d6-fc6a32bb4cdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestion_humana
+  module:
+    - user
+id: user_add_role_action.gestion_humana
+label: 'Añade el rol Gestión Humana al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestion_humana

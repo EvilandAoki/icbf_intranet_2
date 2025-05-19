@@ -1,0 +1,54 @@
+uuid: e0f92679-93ab-4d6c-b1a8-c83c7ce4c226
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.helpcenter_info.field_file_categoria
+    - field.field.node.helpcenter_info.field_file_priority
+    - field.field.node.helpcenter_info.field_header_area
+    - field.field.node.helpcenter_info.field_helpcenter_category
+    - field.field.node.helpcenter_info.field_helpcenter_content_body
+    - field.field.node.helpcenter_info.field_helpcenter_document
+    - field.field.node.helpcenter_info.field_helpcenter_tooltip
+    - field.field.node.helpcenter_info.field_list_image
+    - field.field.node.helpcenter_info.field_multimedia
+    - node.type.helpcenter_info
+  module:
+    - file
+    - user
+id: node.helpcenter_info.default
+targetEntityType: node
+bundle: helpcenter_info
+mode: default
+content:
+  field_helpcenter_document:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_multimedia:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_file_categoria: true
+  field_file_priority: true
+  field_header_area: true
+  field_helpcenter_category: true
+  field_helpcenter_content_body: true
+  field_helpcenter_tooltip: true
+  field_list_image: true
+  langcode: true
+  search_api_excerpt: true

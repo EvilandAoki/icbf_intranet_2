@@ -1,0 +1,26 @@
+uuid: 43861df1-1417-4441-842f-efc236f87d26
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regional
+    - node.type.publicaciones_sindicato
+    - taxonomy.vocabulary.locations
+id: node.publicaciones_sindicato.field_regional
+field_name: field_regional
+entity_type: node
+bundle: publicaciones_sindicato
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

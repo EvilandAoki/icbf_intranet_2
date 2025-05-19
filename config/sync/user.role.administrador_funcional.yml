@@ -1,0 +1,164 @@
+uuid: 3a97b70b-c473-47d4-a46b-1babbd297b6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.forum
+    - node.type.page
+    - node.type.webform
+  module:
+    - advagg
+    - autologout
+    - block
+    - block_class
+    - captcha
+    - comment
+    - context_ui
+    - contextual
+    - devel
+    - entityqueue
+    - facets
+    - field_permissions
+    - filter
+    - fivestar
+    - forum
+    - google_analytics
+    - image
+    - language
+    - locale
+    - node
+    - path
+    - pathauto
+    - poll
+    - quicktabs
+    - recaptcha
+    - roleassign
+    - rules
+    - search
+    - search_api
+    - security_review
+    - shortcut
+    - smtp
+    - statistics
+    - system
+    - taxonomy
+    - toolbar
+    - view_unpublished
+    - views_ui
+    - votingapi
+    - xmlsitemap
+    - youtube
+id: administrador_funcional
+label: 'Administrador Funcional'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access devel information'
+  - 'access private fields'
+  - 'access rules debug'
+  - 'access security review list'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'add JS snippets for google analytics'
+  - 'administer CAPTCHA settings'
+  - 'administer actions'
+  - 'administer autologout'
+  - 'administer block classes'
+  - 'administer blocks'
+  - 'administer comments'
+  - 'administer content types'
+  - 'administer contexts'
+  - 'administer entityqueue'
+  - 'administer facets'
+  - 'administer field permissions'
+  - 'administer filters'
+  - 'administer forums'
+  - 'administer google analytics'
+  - 'administer image styles'
+  - 'administer languages'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer quicktabs'
+  - 'administer recaptcha'
+  - 'administer rules'
+  - 'administer search'
+  - 'administer search_api'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer smtp module'
+  - 'administer software updates'
+  - 'administer statistics'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer views'
+  - 'administer voting api'
+  - 'administer xmlsitemap'
+  - 'administer youtube'
+  - 'assign roles'
+  - 'bypass advanced aggregation'
+  - 'bypass node access'
+  - 'bypass rules access'
+  - 'cancel account'
+  - 'cancel own vote'
+  - 'change own logout threshold'
+  - 'change own username'
+  - 'create article content'
+  - 'create forum content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'create webform content'
+  - 'customize shortcut links'
+  - 'delete any article content'
+  - 'delete any forum content'
+  - 'delete any page content'
+  - 'delete any webform content'
+  - 'delete own article content'
+  - 'delete own forum content'
+  - 'delete own page content'
+  - 'delete own webform content'
+  - 'edit any article content'
+  - 'edit any forum content'
+  - 'edit any page content'
+  - 'edit any webform content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own forum content'
+  - 'edit own page content'
+  - 'edit own webform content'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
+  - 'notify of path changes'
+  - 'post comments'
+  - 'rate content'
+  - 'run security checks'
+  - 'search content'
+  - 'select account cancellation method'
+  - 'skip CAPTCHA'
+  - 'skip comment approval'
+  - 'switch shortcut sets'
+  - 'switch users'
+  - 'translate interface'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'view any unpublished article content'
+  - 'view any unpublished content'
+  - 'view any unpublished forum content'
+  - 'view any unpublished page content'
+  - 'view any unpublished webform content'
+  - 'view own unpublished content'
+  - 'view post access counter'
+  - 'view the administration theme'

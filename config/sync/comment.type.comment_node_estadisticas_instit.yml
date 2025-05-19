@@ -1,0 +1,8 @@
+uuid: 3df4c5cb-d9bf-4072-8232-09e63612a9ec
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_estadisticas_instit
+label: 'Estadísticas Institucionales comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,11 @@
+uuid: bed60887-2472-4d97-897b-4218f96bab39
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+description: ''
+targetEntityType: media
+cache: true

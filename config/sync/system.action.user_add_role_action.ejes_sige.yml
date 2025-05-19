@@ -1,0 +1,14 @@
+uuid: f8f5a908-98a9-49b2-be1d-ad67a155faa9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ejes_sige
+  module:
+    - user
+id: user_add_role_action.ejes_sige
+label: 'Añade el rol Ejes SIGE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ejes_sige

@@ -1,0 +1,13 @@
+uuid: 8c1b70ec-850c-41c4-9591-dc75ac1c5371
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_cordoba
+label: 'Regional Córdoba'
+weight: 28
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

@@ -1,0 +1,14 @@
+uuid: c4401fd3-c71d-4cc2-8d0f-4dabce640788
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_funcional
+  module:
+    - user
+id: user_remove_role_action.administrador_funcional
+label: 'Elimina el rol Administrador Funcional al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_funcional

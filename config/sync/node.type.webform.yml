@@ -1,0 +1,35 @@
+uuid: f9f45b28-ac89-44a3-b8ca-ec841fcd4ac4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+  enforced:
+    module:
+      - webform_node
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+_core:
+  default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
+name: Webform
+type: webform
+description: 'Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

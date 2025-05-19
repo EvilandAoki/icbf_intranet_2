@@ -1,0 +1,14 @@
+uuid: 6a61ca84-bc36-4106-992a-43586666070b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_cesar
+  module:
+    - user
+id: user_add_role_action.regional_cesar
+label: 'Añade el rol Regional Cesar al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_cesar

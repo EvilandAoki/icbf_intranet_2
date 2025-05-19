@@ -1,0 +1,12 @@
+uuid: 2d258267-3075-4aee-af15-025054e8a2ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_sucre
+label: 'Regional Sucre'
+weight: 43
+is_admin: null
+permissions:
+  - 'view the administration theme'

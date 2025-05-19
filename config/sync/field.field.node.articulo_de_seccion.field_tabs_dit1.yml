@@ -1,0 +1,21 @@
+uuid: e2b187a8-1d20-46f6-b8b3-2eace780265d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tabs_dit1
+    - node.type.articulo_de_seccion
+  module:
+    - options
+id: node.articulo_de_seccion.field_tabs_dit1
+field_name: field_tabs_dit1
+entity_type: node
+bundle: articulo_de_seccion
+label: 'TABS dit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

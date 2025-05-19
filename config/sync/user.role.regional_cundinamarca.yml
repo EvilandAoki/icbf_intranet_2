@@ -1,0 +1,13 @@
+uuid: f3ace2fa-fef2-464b-ba54-ccba59bd08a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_cundinamarca
+label: 'Regional Cundinamarca'
+weight: 29
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

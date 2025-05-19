@@ -1,0 +1,25 @@
+uuid: 78631131-5a28-437a-90bf-f57117b3999b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ac8be4e5-c8a4-408b-8e21-611846bce6fd'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_ittop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:ac8be4e5-c8a4-408b-8e21-611846bce6fd'
+settings:
+  id: 'block_content:ac8be4e5-c8a4-408b-8e21-611846bce6fd'
+  label: 'IT - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

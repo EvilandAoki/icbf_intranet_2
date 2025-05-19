@@ -1,0 +1,9 @@
+uuid: 45a4c35d-2b7e-4f28-be12-eaa2c3e35da0
+langcode: es
+status: true
+dependencies: {  }
+name: Etiquetas
+vid: section_labels
+description: null
+weight: -2
+new_revision: false

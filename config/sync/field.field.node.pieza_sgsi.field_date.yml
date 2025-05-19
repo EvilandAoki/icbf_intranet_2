@@ -1,0 +1,21 @@
+uuid: 99cbba37-ab59-44a4-b677-4b8dd28c8768
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.pieza_sgsi
+  module:
+    - datetime
+id: node.pieza_sgsi.field_date
+field_name: field_date
+entity_type: node
+bundle: pieza_sgsi
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

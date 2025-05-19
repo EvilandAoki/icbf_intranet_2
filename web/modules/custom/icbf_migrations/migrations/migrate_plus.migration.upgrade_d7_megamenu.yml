@@ -1,0 +1,369 @@
+id: upgrade_d7_megamenu
+label: 'Megamenu migration'
+migration_group: custom_migrations
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+source:
+  plugin: embedded_data
+  data_rows:
+    - delta: 1796
+      description_block: 'Menu Inicio Top - left'
+      content_block: |
+        <h2>Información General</a></h2>
+        <div class="m20-separator"></div>
+            <div class="m20-link">
+                <a href="https://www.icbf.gov.co/instituto" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Acerca de ICBF</a>
+            </div>
+        <div class="m20-link">
+                <a href="https://www.icbf.gov.co/instituto/funciones-deberes" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Funciones y Deberes</a>
+            </div>
+        <div class="m20-link">
+                <a href="https://www.icbf.gov.co/instituto/funcionarios-directivos" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Funcionarios Directivos</a>
+            </div>
+        <div class="m20-link">
+                <a href="https://www.icbf.gov.co/instituto/funcionarios-regionales" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Funcionarios Directivos Regionales</a>
+            </div>
+        <div class="m20-link">
+                <a href="https://www.icbf.gov.co/normativa" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Normograma ICBF</a>
+        </div>    
+    - delta: 1797
+      description_block: 'Menu Inicio Top - center'
+      content_block: |
+        <h2>Documentos de Interés General</a></h2>
+        <div class="m20-separator"></div>
+            <div class="m20-link">
+                <a href="/actas-comite-estrategico-regional" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Actas Comité Estratégico Regional</a>
+            </div>
+        <div class="m20-link">
+                <a href="/documentos-de-interes-general/notificaciones-internas" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Notificaciones Internas</a>
+            </div>
+        <div class="m20-link">
+                <a href="/documentos-de-interes-general/papeleria-institucional" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Papelería Institucional</a>
+            </div>
+        <div class="m20-link">
+                <a href="/publicaciones-sindicato" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Publicaciones Sindicato</a>
+        </div>
+    - delta: 1798
+      description_block: 'Menu Inicio Top - right'
+      content_block: |
+        <h2>Correos de Contacto</a></h2>
+        <div class="m20-separator"></div>
+            <div class="m20-link">
+                <a href="mailto:https://mail.icbf.gov.co/" title="clic para enviar correo" target="_blank"><span class="m20-icon-l"></span> Correo Interno</a>
+            </div>
+        <div class="m20-link">
+                <a href="mailto:mis@icbf.gov.co" title="clic para enviar correo" target="_blank"><span class="m20-icon-l"></span> Mesa Informática de Soluciones - MIS</a>
+            </div>
+        <div class="m20-link">
+                <a href="mailto:SiATuServicio@icbf.gov.co" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> SI A Tu Servicio</a>
+            </div>
+        <div class="m20-link">
+                <a href="mailto:direccion.humana@icbf.gov.co" title="clic para enviar correo" target="_blank"><span class="m20-icon-l"></span> Dirección de Gestión Humana</a>
+            </div>
+        <div class="m20-link">
+                <a href="mailto:certificaciones.contratistas@icbf.gov.co" title="clic para consultar información de la entidad" target="_blank"><span class="m20-icon-l"></span> Certificaciones Contratistas ICBF</a>
+        </div>
+    - delta: 1799 
+      description_block: 'Menu Inicio - botton'
+      content_block: |
+        <div class="m20-separator"></div>
+        <div class="wcenter">
+        <a href="https://intranet.icbf.gov.co/el-instituto/cultura-organizacional-icbf" title="Ir a Micrositio" target="_blank" class="btn-mm1">Cultura Organizacional ICBF</a>
+
+        <a href="https://www.icbf.gov.co" title="Ir a Portal Web ICBF" target="_blank" class="btn-mm2">Portal Web ICBF</a>
+
+        <a href="https://www.icbf.gov.co/portafolio-de-servicios-icbf" title="Ir a Portafolio de Servicios ICBF" class="btn-mm2" target="_blank">Portafolio de Servicios ICBF</a>
+
+        <a href="https://www.icbf.gov.co/transparencia-y-acceso-informacion-publica" title="Ir a Transparencia y Acceso a la Información Pública ICBF" class="btn-mm2" target="_blank">Transparencia y Acceso a Información Pública</a>
+        </div>
+    - delta: 1800
+      description_block: 'IT - Top'
+      content_block: |
+        <div class="col-md-7">
+        <h2>Información y Tecnología</h2>
+        <span class="mm-info">TI, aplicativos, servicios y herramientas tecnológicas para la comunidad ICBF</span>
+        </div>
+        <div class="col-md-5" align="right">
+        <a href="https://www.icbf.gov.co/gobierno-digital" class="btn-mm1" target="_blank">Gobierno Digital</a>
+        </div>
+        <div class="hspace"></div>
+        <div class="m20-separator"></div>
+    - delta: 1801
+      description_block: 'IT - botton'
+      content_block: |
+        <div class="mm-dit1 wcenter">
+        <a href="/direccion-de-informacion-y-tecnologia" title="consultar más sobre Información y Tecnología ICBF"><span class="mm-icond1"></span>
+          ICBF TIC </a>
+        </div>
+        <div class="mm-dit2 wcenter">
+        <a href="/informacion-y-tecnologia/catalogo-de-servicios-dit" title="consultar catálogo de servicios dit"><span class="mm-icond2"></span>
+          Catálogo DIT </a>
+        </div>
+        <div class="mm-dit3 wcenter">
+        <a href="https://mis.icbf.gov.co/login" title="clic para ingresar a Módulo de Autoservicio" ><span class="mm-icond3"></span>
+          MIS Web</a>
+        </div>
+    - delta: 1802
+      description_block: 'SIG - Top'
+      content_block: |
+        <div class="col-md-7">
+        <h2>Modelo de Planeación y Sistema Integrado de Gestión</h2>
+        <span>Consulta las dimensiones del modelo integrado de planeación y gestión y los ejes del sistema integrado de gestión</span>
+        </div>
+        <div class="col-md-5">
+        <div class="mm-mpg">
+          <a href="https://www.icbf.gov.co/modelo-planeacion-y-sistema-integrado-gestion" class="btn-mm-mpg" target="_blank">
+                <span class="id-mm-mpg">MIPG</span> Modelo de Planeación 
+          </a>
+        </div>
+        <div class="mm-mpg2">
+            <a href="https://www.icbf.gov.co/modelo-planeacion-y-sistema-integrado-gestion/sistema-integrado-de-gestion" class="btn-mm-mpg" target="_blank">
+                <span class="id-mm-mpg">SIGE</span>Sistema Integrado de Gestión</a>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <a href="/sistema-integrado-de-gestion/procesos" title="clic para consultar documentación modelo operación por procesos" class="btn-mm2">Modelo de Operación por Procesos</a>
+        <a href="https://www.icbf.gov.co/planeacion/certificaciones-icbf" class="btn-mm1" target="_blank">Certificaciones ICBF</a>
+        <a href="https://www.icbf.gov.co/innovacion-icbf" class="btn-mm1" target="_blank">Conocimiento e Innovación</a>
+        <a href="https://bpla.icbf.gov.co/" class="btn-mm1" target="_blank">Plataforma de Buenas Prácticas y Lecciones Aprendidas</a>
+        </div>
+        <div class="hspace"></div>
+        <div class="m20-separator"></div>
+    - delta: 1803
+      description_block: 'SIG - botton'
+      content_block: |
+        <div class="mm-ejes mm-ejeve">
+        <a href="/sistema-integrado-de-gestion/eje-ambiental" title="clic para consultar Eje Ambiental">
+        <img src="/sites/default/files/sige-mascotas_02.png" />
+        <span>Eje Ambiental</span></a>
+        </div>
+        <div class="mm-ejes mm-ejena">
+        <a href="/sistema-integrado-de-gestion/eje-de-calidad" title="clic para consultar eje de calidad">
+        <img src="/sites/default/files/sige-mascotas_01.png" />
+        <span>Eje de Calidad</span></a>
+        </div>
+        <div class="mm-ejes mm-ejeaz">
+        <a href="/sistema-integrado-de-gestion/eje-seguridad-de-la-informacion" title="consultar eje SGSI">
+        <img src="/sites/default/files/sige-mascotas_04.png" /> 
+        <span>Eje Seguridad de la Información</span>
+        </a>
+        </div>
+        <div class="mm-ejes mm-ejeam">
+        <a href="/sistema-integrado-de-gestion/eje-seguridad-y-salud-en-el-trabajo" title="consultar eje SST">
+            <img src="/sites/default/files/sige-mascotas_03.png" alt="eje SST">
+            <span> Eje Seguridad y Salud en el Trabajo</span>
+        </a>
+        </div>
+    - delta: 1804
+      description_block: 'Estructura - Top'
+      content_block: |
+        <div class="col-md-4"><h2>Estructura Orgánica ICBF</h2></div>
+        <div class="col-md-8" align="right"><a href="/estructura-organica" title="clic para ir consultar organigrama icbf" class="btn-mm1">Consultar Organigrama ICBF</a></div>
+        <div class="hspace"></div>
+        <div class="m20-separator"></div>
+    - delta: 1805
+      description_block: 'Estructura - center'
+      content_block: |
+        <div class="m20-link">
+        <a href="/direccion-general" title="clic para consultar direccion general"><span class="m20-icon-l"></span> Dirección General</a>
+        </div>
+         <div class="m20-link">
+        <a href="/subdireccion-general" title="clic para consultar direccion general"><span class="m20-icon-l"></span> Subdirección General</a>
+        </div>
+         <div class="m20-link">
+        <a href="https://www.icbf.gov.co/instituto/puntos-atencion" target="_blank" title="datos de Contacto Direcciones Regionales ICBF"><span class="m20-icon-l"></span> Direcciones Regionales</a>
+        </div>
+        <div class="m20-link">
+                <a href="/actas-comite-estrategico-regional" title="clic para consultar Actas de Comité Estratégico Regional">Actas Comité Estratégico Regional</a>
+        </div>
+    - delta: 1806
+      description_block: 'Estructura - botton'
+      content_block: |
+        <h2><a href="/secretaria-general">Secretaría General</a></h2>
+        <div class="m20-link">
+          <a href="/secretaria-general/direccion-administrativa" title="clic para consultar dirección administrativa"><span class="m20-icon-l"></span> Dirección Administrativa</a>
+        </div>
+        <div class="m20-link">
+          <a href="/secretaria-general/direccion-de-abastecimiento" title="clic para consultar dirección abastecimiento"><span class="m20-icon-l"></span> Dirección de Abastecimiento</a>
+        </div>
+        <div class="m20-link">
+          <a href="/secretaria-general/direccion-de-contratacion" title="clic para consultar dirección de contratacion"><span class="m20-icon-l"></span> Dirección de Contratación</a>
+        </div>
+        <div class="m20-link">
+          <a href="/secretaria-general/direccion-financiera" title="clic para consultar dirección financiera"><span class="m20-icon-l"></span> Dirección Financiera</a>
+        </div>
+        <div class="m20-link">
+          <a href="/secretaria-general/direccion-de-gestion-humana" title="clic para consultar dirección de gestion humana"><span class="m20-icon-l"></span> Dirección de Gestión Humana</a>
+        </div>
+        <div class="m20-link">
+            <a href="/secretaria-general/direccion-de-servicios-y-atencion" title="clic para consultar dirección de servicios y atencion"><span class="m20-icon-l"></span> Dirección de Servicios y Atención</a>
+        </div>
+        <div class="m20-link">
+          <a href="/secretaria-general/oficina-de-control-interno-disciplinario" title="clic para consultar oficina control interno disciplinario"><span class="m20-icon-l"></span> Oficina de Control Interno Disciplinario</a>
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+        <h3><a href="/direccion-de-planeacion-y-control-de-gestion"> Dirección de Planeación y Control de Gestión</a></h3>
+        </div>
+        <div class="m20-link">
+          <a href="/direccion-de-planeacion-y-control-de-gestion/subdireccion-de-mejoramiento-organizacional"><span class="m20-icon-l"></span> Subdirección de Mejoramiento Organizacional</a>
+        </div>
+        <div class="m20-link">
+          <a href="/direccion-de-planeacion-y-control-de-gestion/subdireccion-de-monitoreo-y-evaluacion"><span class="m20-icon-l"></span> Subdirección de Monitoreo y Evaluación</a>
+        </div>
+        <div class="m20-link">
+          <a href="/direccion-de-planeacion-y-control-de-gestion/subdireccion-de-programacion"><span class="m20-icon-l"></span> Subdirección de Programación</a>
+        </div>
+        <div class="m20-separator"></div>
+        <h3><a href="/direccion-de-informacion-y-tecnologia" target="_self">Dirección de Información y Tecnología</a></h3>
+        <div class="m20-link">  
+          <a href="/direccion-de-informacion-y-tecnologia/subdireccion-de-recursos-tecnologicos" title="clic para consultar informacion general"><span class="m20-icon-l"></span> Subdirección de Recursos Tecnológicos</a>
+        </div>
+        <div class="m20-link">  
+          <a href="/direccion-de-informacion-y-tecnologia/subdireccion-de-sistemas-integrados-de-informacion" title="clic para consultar informacion general"><span class="m20-icon-l"></span> Subdirección de Sistemas Integrados de Información</a>
+        </div>
+        <br />
+        <div class="m20-link">
+          <a href="/direccion-de-primera-infancia" title="clic para consultar area"><span class="m20-icon-l"></span> Dirección de Primera Infancia</a>
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+          <span class="m20-icon-l"></span> Dirección de Infancia
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+          <a href="/direccion-de-adolescencia-y-juventud" title="clic para consultar area"><span class="m20-icon-l"></span> Dirección de Adolescencia y Juventud</a>
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+          <a href="/direccion-de-familias-y-comunidades" title="clic para consultar area"><span class="m20-icon-l"></span> Dirección de Familias y Comunidades</a>
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+          <a href="/direccion-de-nutricion-0" title="clic para consultar area"><span class="m20-icon-l"></span> Dirección de Nutrición</a>
+        </div>
+        <div class="m20-separator"></div>
+        <div class="m20-link">
+          <a href="/direccion-de-proteccion" title="clic para consultar area"><span class="m20-icon-l"></span> Dirección de Protección</a>
+        </div>
+        <h2>Oficinas</h2>
+        <div class="m20-link">
+          <a href="/oficinas/oficina-asesora-de-comunicaciones" title=""><span class="m20-icon-l"></span> Oficina Asesora de Comunicaciones</a>
+        </div>
+        <div class="m20-link">
+          <a href="/oficinas/oficina-asesora-juridica" title=""><span class="m20-icon-l"></span> Oficina Asesora Jurídica</a>
+        </div>
+        <div class="m20-link">
+          <a href="/oficinas/oficina-de-aseguramiento-la-calidad" title=""><span class="m20-icon-l"></span> Oficina de Aseguramiento a la Calidad</a>
+        </div>
+        <div class="m20-link">
+            <a href="/oficinas/oficina-de-cooperacion-y-convenios" title=""><span class="m20-icon-l"></span> Oficina de Cooperación y Convenios</a>
+        </div>
+        <div class="m20-link">
+          <a href="/oficinas/oficina-de-control-interno" title=""><span class="m20-icon-l"></span> Oficina de Control Interno</a>
+        </div>
+        <div class="m20-link">
+          <a href="/oficinas/oficina-de-gestion-regional" title=""><span class="m20-icon-l"></span> Oficina de Gestión Regional</a>
+        </div>
+        <div class="m20-separator"></div>
+        <h3><a href="/direccion-snbf" target="_self">Dirección del SNBF</a></h3>
+        <div class="m20-link">  
+          <a href="/direccion-snbf/subdireccion-de-articulacion-nacional" title="clic para consultar informacion general"><span class="m20-icon-l"></span> Subdirección de Articulación Nacional del SNBF</a>
+        </div>
+        <div class="m20-link">  
+          <a href="/direccion-snbf/subdireccion-de-articulacion-territorial" title="clic para consultar informacion general"><span class="m20-icon-l"></span> Subdirección de Articulación Territorial del SNBF</a>
+        </div>
+    - delta: 1807
+      description_block: 'Estadisticas - Top'
+      content_block: |
+        <div class="col-md-4"><h2>Estadísticas Institucionales</h2></div>
+        <div class="col-md-8" align="right">
+        <a href="/estadisticas-institucionales" title="clic para consultar estadisticas institucionales" class="btn-mm2">Más información</a>
+        <a href="https://www.icbf.gov.co/bienestar/observatorio-bienestar-ninez" class="btn-mm1" target="_blank">Observatorio de Bienestar de la Niñez</a>
+        <a href="http://www.suin-snbf.gov.co/suin/Default.aspx" class="btn-mm1" target="_blank">SUIN</a>
+        </div>
+        <div class="hspace"></div>
+        <div class="m20-separator"></div>
+    - delta: 1808
+      description_block: 'Estadisticas - Button'
+      content_block: | 
+         <div class="m20-link">
+           <a href="/estadisticas-institucionales/fichas-oferta-institucional" title="clic para consultar fichas oferta institucional"><span class="m20-icon-l"></span> Fichas Oferta Institucional</a>
+         </div>
+         <div class="m20-link">
+           <a href="/estadisticas-institucionales/metas-sociales-y-financieras" title="clic para consultar metas sociales y financieras"><span class="m20-icon-l"></span> Metas Sociales y Financieras</a>
+         </div>
+         <div class="m20-link">
+           <a href="/estadisticas-institucionales/informacion-georeferenciada" title="clic para consultar georeferenciacion"><span class="m20-icon-l"></span> Información Georeferenciada</a>
+         </div>
+         <div class="m20-link">
+          <a href="/estadisticas-institucionales/atencion-icbf" title="clic para consultar atención icbf"><span class="m20-icon-l"></span> Atención ICBF</a>
+         </div>
+    - delta: 1809
+      description_block: 'Cifras - Top'
+      content_block: |
+          <div class="col-md-6"><h2>Cifras de Protección</h2>
+          <span>Informes según modalidades de atención por población atendida</span>
+          </div>
+          <div class="col-md-6" align="right">
+          <a href="/cifras-proteccion" title="clic para consultar cifras de proteccion" class="btn-mm2">Más información</a>
+          <a href="https://www.icbf.gov.co/programa-adopciones" class="btn-mm1" target="_blank">ADA - Asistente de Adopciones</a>
+          </div>
+          <div class="hspace"></div>
+          <div class="m20-separator"></div>
+    - delta: 1810
+      description_block: 'Cifras - Button'
+      content_block: |
+          <div class="m20-link">
+            <a href="/cifras-proteccion/cifras-pard" title="consultar cifras del Proceso Administrativo de Restablecimiento de Derechos"><span class="m20-icon-l"></span> <strong>Cifras PARD</strong><br />
+            Proceso Administrativo de Restablecimiento de Derechos</a></div>
+          <div class="m20-link">
+          <a href="/cifras-proteccion/cifras-srpa" title="consultar cifras del Sistema de Responsabilidad Penal para Adolescentes"><span class="m20-icon-l"></span> <strong>Cifras SRPA</strong><br />
+          Sistema de Responsabilidad Penal para Adolescentes</a></a></div>
+    - delta: 1811
+      description_block: 'Medios - Top'
+      content_block: |
+          <div class="col-md-4"><h2>Medios ICBF</h2></div>
+          <div class="col-md-8" align="right">
+          <a href="/noticias" title="clic para consultar archivo de noticias" class="btn-mm2">Archivo de Noticias</a> <a href="/audiovisuales" title="clic para consultar información en video" class="btn-mm1">Audiovisuales</a>
+          </div>
+          <div class="hspace"></div>
+          <div class="m20-separator"></div>
+    - delta: 1812
+      description_block: 'Medios - Button'
+      content_block: |
+         <div class="mm-coms1 wcenter">
+         <a href="/noticias/registro-en-tv-me-conoces" title="consultar registro publicaciones Me Conoces"><span class="mm-iconc1"></span>
+          Registro: Me Conoces </a>
+         </div>
+         <div class="mm-coms2 wcenter">
+         <a href="/noticias/al-dia-con-bienestar" title="consultar boletín: Al Día con Bienestar"><span class="mm-iconc3"></span>
+            Al Día con Bienestar </a>
+         </div>
+         <div class="mm-coms3 wcenter">
+         <a href="/noticias/boletin-vive-icbf-0" title="consultar boletín: Vive ICBF"><span class="mm-iconc3"></span>
+          Boletín Vive ICBF </a>
+         </div>
+         <div class="mm-coms4 wcenter">
+          <a href="/noticias/eventos" title="consultar galeria de eventos ICBF"><span class="mm-iconc4"></span>
+            Galería de Eventos ICBF </a>
+         </div>
+  ids:
+    delta:
+      type: integer
+process:
+  id: delta
+  type:
+    plugin: default_value
+    default_value: basic
+  label: description_block
+  info: description_block
+  body/value: content_block
+  body/format:
+    plugin: default_value
+    default_value: full_html
+destination:
+  plugin: entity:block_content
+migration_dependencies:
+  required: {}

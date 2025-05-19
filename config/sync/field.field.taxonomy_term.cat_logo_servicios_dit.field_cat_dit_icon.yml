@@ -1,0 +1,41 @@
+uuid: 957707a5-f6df-41cb-b009-9b78b6435a97
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cat_dit_icon
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+  module:
+    - image
+id: taxonomy_term.cat_logo_servicios_dit.field_cat_dit_icon
+field_name: field_cat_dit_icon
+entity_type: taxonomy_term
+bundle: cat_logo_servicios_dit
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

@@ -1,0 +1,20 @@
+uuid: 83eb4487-cf37-4c7f-99bb-f030396d3490
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: QIPdub_cE5iNTG5oHtp6rGaOJVS5hp55IlZDELp1qh0
+id: taxonomy_term.forum_container
+field_name: forum_container
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

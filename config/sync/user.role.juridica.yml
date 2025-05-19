@@ -1,0 +1,19 @@
+uuid: fb4fa610-801a-4a2c-b377-e181aae02600
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: juridica
+label: Jurídica
+weight: 10
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

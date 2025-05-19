@@ -1,0 +1,13 @@
+uuid: 9870d7a7-2b61-4608-a07d-b581260cb8d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_atlantico
+label: 'Regional Atlántico'
+weight: 18
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

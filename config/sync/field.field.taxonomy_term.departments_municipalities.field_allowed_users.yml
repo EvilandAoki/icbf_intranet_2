@@ -1,0 +1,21 @@
+uuid: d565cac5-b9db-491b-a813-60a9d225a5c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.departments_municipalities
+id: taxonomy_term.departments_municipalities.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: departments_municipalities
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

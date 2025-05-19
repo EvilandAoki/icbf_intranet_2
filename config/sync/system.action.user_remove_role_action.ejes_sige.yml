@@ -1,0 +1,14 @@
+uuid: f3038212-5932-42e0-8e36-8d8dd880b823
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ejes_sige
+  module:
+    - user
+id: user_remove_role_action.ejes_sige
+label: 'Elimina el rol Ejes SIGE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ejes_sige

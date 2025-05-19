@@ -1,0 +1,21 @@
+uuid: 96439b92-dfb2-43c3-b8cc-47641f054977
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.sige_process_type
+id: taxonomy_term.sige_process_type.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: sige_process_type
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

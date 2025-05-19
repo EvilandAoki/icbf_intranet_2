@@ -1,0 +1,13 @@
+uuid: f4047069-d279-4e05-81e8-c28bcc411f46
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_guainia
+label: 'Regional Guainía'
+weight: 31
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

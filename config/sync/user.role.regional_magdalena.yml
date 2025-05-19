@@ -1,0 +1,13 @@
+uuid: 2d3f0d26-bcab-49c5-bc22-84535e218c62
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_magdalena
+label: 'Regional Magdalena'
+weight: 34
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

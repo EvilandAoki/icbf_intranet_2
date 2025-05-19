@@ -1,0 +1,14 @@
+uuid: fc29138c-2410-4732-9eeb-579e0e47e7a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_bogota
+  module:
+    - user
+id: user_add_role_action.regional_bogota
+label: 'Añade el rol Regional Bogotá al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_bogota

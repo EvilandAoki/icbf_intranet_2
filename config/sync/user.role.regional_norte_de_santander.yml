@@ -1,0 +1,12 @@
+uuid: 141a79a1-80c3-4360-9a2b-dba003bf36a3
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_norte_de_santander
+label: 'Regional Norte de Santander'
+weight: 37
+is_admin: null
+permissions:
+  - 'view the administration theme'

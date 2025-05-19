@@ -1,0 +1,34 @@
+uuid: 4cd87943-aa72-4bf3-bb14-72f1f82512a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_categoria
+    - node.type.convocatorias_talento_humano
+    - taxonomy.vocabulary.file_category
+id: node.convocatorias_talento_humano.field_file_categoria
+field_name: field_file_categoria
+entity_type: node
+bundle: convocatorias_talento_humano
+label: 'Categoría del archivo'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '6109'
+  -
+    tid: '7026'
+  -
+    tid: '7027'
+  -
+    tid: '7328'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      file_category: file_category
+    sort:
+      field: _none
+field_type: entity_reference

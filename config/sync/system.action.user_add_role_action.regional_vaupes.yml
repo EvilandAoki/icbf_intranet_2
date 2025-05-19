@@ -1,0 +1,14 @@
+uuid: 6afcc46a-5867-4cc9-b2d6-cb7d1d748e26
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_vaupes
+  module:
+    - user
+id: user_add_role_action.regional_vaupes
+label: 'Añade el rol Regional Vaupés al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_vaupes

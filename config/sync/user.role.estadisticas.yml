@@ -1,0 +1,19 @@
+uuid: e43234f2-1333-4c9d-a439-8cc8b351d958
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: estadisticas
+label: Estadísticas
+weight: 11
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

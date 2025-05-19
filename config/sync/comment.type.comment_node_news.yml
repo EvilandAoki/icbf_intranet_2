@@ -1,0 +1,8 @@
+uuid: 6dc3073a-1eae-4146-8861-cbcb77425b27
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_news
+label: 'Noticia comment'
+target_entity_type_id: node
+description: null

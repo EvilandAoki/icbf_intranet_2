@@ -1,0 +1,21 @@
+uuid: 58a2c7e3-ea37-40d5-8a13-88753dd43947
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.periodo
+id: taxonomy_term.periodo.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: periodo
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

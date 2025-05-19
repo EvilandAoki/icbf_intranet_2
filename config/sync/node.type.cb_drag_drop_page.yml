@@ -1,0 +1,11 @@
+uuid: c5ac7838-a3aa-4718-90b9-89ad15ca2936
+langcode: es
+status: true
+dependencies: {  }
+name: 'CB Drag Drop Page'
+type: cb_drag_drop_page
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

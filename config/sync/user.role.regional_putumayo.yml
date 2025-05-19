@@ -1,0 +1,12 @@
+uuid: f96d0277-5076-4061-89f1-9656c0b2d0cb
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_putumayo
+label: 'Regional Putumayo'
+weight: 38
+is_admin: null
+permissions:
+  - 'view the administration theme'

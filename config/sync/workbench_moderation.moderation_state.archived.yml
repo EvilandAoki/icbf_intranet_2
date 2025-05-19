@@ -1,0 +1,10 @@
+uuid: ccc9a229-dcba-4281-8110-9a75e68bddb1
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SYdH_wUmEFpmbC9SIbPGgSBjhDCmVdZhiK7xaW4i1hk
+id: archived
+label: Archivados
+published: false
+default_revision: true

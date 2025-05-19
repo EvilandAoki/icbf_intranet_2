@@ -1,0 +1,21 @@
+uuid: 038a8968-1ce3-439e-8d23-d63f1bf04d0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.sige_process_type
+id: taxonomy_term.sige_process_type.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: sige_process_type
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

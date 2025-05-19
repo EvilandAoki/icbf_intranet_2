@@ -1,0 +1,14 @@
+uuid: 1467ed97-b6f9-4593-8611-f13243045d68
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_narino
+  module:
+    - user
+id: user_remove_role_action.regional_narino
+label: 'Elimina el rol Regional Nariño al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_narino

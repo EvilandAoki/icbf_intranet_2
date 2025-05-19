@@ -1,0 +1,15 @@
+uuid: e84d90dc-7e1b-4af7-a446-f0efeccf3840
+langcode: es
+status: true
+dependencies:
+  module:
+    - scheduler
+third_party_settings:
+  scheduler: {  }
+name: Panel
+type: panel
+description: 'Un diseño de paneles dividido en filas y columnas.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,25 @@
+uuid: de7231b9-8050-4120-a30b-171283a323fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_area
+    - node.type.helpcenter_info
+  module:
+    - text
+id: node.helpcenter_info.field_header_area
+field_name: field_header_area
+entity_type: node
+bundle: helpcenter_info
+label: TOP
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div class=\"az-element az-section\" data-az-id=\"lchpyzec\" data-azb=\"az_section\" id=\"lchpyzec\" style=\"\">\r\n<div class=\"az-ctnr container\" data-azcnt=\"true\">\r\n<div class=\"az-element az-row row  az-row--sm az-row--equal-height\" data-az-id=\"vyx2xsh8\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"padding-bottom:2em;background-color:#666666;background-image: url(-base-url-/-files-directory-/bg-blue-canales_1.jpg?fid=64292);background-position:center bottom;\" data-azb=\"az_row\" data-azcnt=\"true\" style=\"padding-bottom:2em;background-color:#666666;background-image: url(-base-url-/-files-directory-/bg-blue-canales_1.jpg?fid=64292);background-position:center bottom;\">\r\n<div class=\"az-element az-ctnr az-column  col-sm-12\" data-az-id=\"lc46bnzb\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text text-center\" data-az-id=\"4bzg1qjb\" data-azat-el_class=\"text-center\" data-azat-style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\">\r\n<h1 class=\"id-ca-w\"><strong>Centro de Ayuda</strong> y Aprendizaje</h1>\r\n\r\n<h3 class=\"subt-ca-w\">Dirección de Servicios y Atención</h3>\r\n</div>\r\n\r\n<div class=\"az-element az-row row center-block text-center container az-row--sm\" data-az-id=\"ehsrhhxf\" data-azat-device=\"sm\" data-azat-el_class=\"center-block text-center container\" data-azb=\"az_row\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-ctnr az-column  col-sm-12\" data-az-id=\"zkhyquyq\" data-azat-width=\"1/1\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-cms-element\" data-az-id=\"utt7sxaj\" data-azb=\"az_block-bean-centro-de-ayuda---top-level1\" style=\"\">&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-row row  az-row--sm az-row--equal-height\" data-az-id=\"0v7momd6\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"padding-top:2em;padding-bottom:6em;background-color:#f8f8f8;background-position:center bottom;\" data-azb=\"az_row\" data-azcnt=\"true\" style=\"padding-top:2em;padding-bottom:6em;background-color:#f8f8f8;background-position:center bottom;\">\r\n<div class=\"az-element az-ctnr az-column  col-sm-2\" data-az-id=\"88htc9tm\" data-azat-width=\"1/6\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-image text-center\" data-az-id=\"2coo41fx\" data-azat-an_in=\"fadeIn\" data-azat-an_start=\"appear\" data-azat-el_class=\"text-center\" data-azat-height=\"\" data-azat-image=\"-base-url-/-files-directory-/sim-verde_30.png?fid=57507\" data-azat-width=\"90%\" data-azb=\"az_image\" style=\"\"><img alt=\"\" src=\"-base-url-/-files-directory-/sim-verde_30.png?fid=57507\" style=\"width: 90%;\" title=\"\" /></div>\r\n</div>\r\n\r\n<div class=\"az-element az-ctnr az-column  col-sm-10\" data-az-id=\"2uf6csmb\" data-azat-width=\" 5/6\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text\" data-az-id=\"pbuuevmw\" data-azat-style=\"margin-top:1em;margin-bottom:1em;color:#ffffff;\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"margin-top:1em;margin-bottom:1em;color:#ffffff;\">\r\n<h2 class=\"id-ca-level1\">¿Cómo ingresar al SIM?</h2>\r\n\r\n<h3 class=\"subt-ca-level1\">Aprende el correcto uso del SIM - Sistema de Información Misional</h3>\r\n</div>\r\n\r\n<div class=\"az-element az-button\" data-az-id=\"ds6x0nr0\" data-azat-an_in=\"fadeIn\" data-azat-an_start=\"appear\" data-azat-link=\"https://sim.icbf.gov.co/sim\" data-azat-link_target=\"_blank\" data-azat-size=\"btn-lg\" data-azat-style=\"margin-top:1em;\" data-azat-title=\"Ingresar a SIM\" data-azat-type=\"btn-default\" data-azb=\"az_button\" style=\"\"><a class=\"btn btn-default btn-lg \" href=\"https://sim.icbf.gov.co/sim\" style=\"margin-top:1em;\" target=\"_blank\" type=\"button\">Ingresar a SIM</a></div>\r\n</div>\r\n</div>\r\n<link href=\"-base-url-/-module-directory-/glazed_builder/vendor/animate.css/animate.min.css\" rel=\"stylesheet\" type=\"text/css\" /><script src=\"-base-url-/-module-directory-/glazed_builder/vendor/jquery.waypoints/lib/jquery.waypoints.min.js\"></script><script src=\"-base-url-/-module-directory-/glazed_builder/glazed_frontend.min.js\"></script>"
+    format: full_html
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

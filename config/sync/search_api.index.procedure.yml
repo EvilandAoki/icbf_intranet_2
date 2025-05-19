@@ -1,0 +1,158 @@
+uuid: 5d327d7d-94ad-49b5-8815-cfecc956ea91
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: procedure
+name: 'Trámites SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - procedure
+  fields:
+    'field_list_image:file':
+      type: integer
+      entity_type: file
+    field_location:
+      type: integer
+      entity_type: taxonomy_term
+    field_procedure_type:
+      type: integer
+      entity_type: taxonomy_term
+    name:
+      type: text
+    parent:
+      type: list<integer>
+      entity_type: taxonomy_term
+    search_api_language:
+      type: string
+    tid:
+      type: integer
+    url:
+      type: uri
+  data_alter_callbacks:
+    search_api_ranges_alter:
+      status: 0
+      weight: '-50'
+      settings:
+        fields: {  }
+    search_api_alter_bundle_filter:
+      status: 0
+      weight: '-10'
+      settings:
+        default: '1'
+        bundles: {  }
+    search_api_alter_add_url:
+      status: 0
+      weight: '0'
+      settings: {  }
+    search_api_alter_add_aggregation:
+      status: 0
+      weight: '0'
+      settings: {  }
+    search_api_alter_add_viewed_entity:
+      status: 0
+      weight: '0'
+      settings:
+        mode: full
+    search_api_alter_add_hierarchy:
+      status: 0
+      weight: '0'
+      settings:
+        fields: {  }
+    search_api_alter_language_control:
+      status: 0
+      weight: '0'
+      settings:
+        lang_field: ''
+        languages: {  }
+    panelizer:
+      status: 0
+      weight: '0'
+      settings: {  }
+  processors:
+    search_api_case_ignore:
+      status: 0
+      weight: '0'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+    search_api_html_filter:
+      status: 1
+      weight: '10'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+        title: 0
+        alt: 1
+        tags: "h1 = 5\r\nh2 = 3\r\nh3 = 2\r\nstrong = 2\r\nb = 2\r\nem = 1.5\r\nu = 1.5"
+    search_api_transliteration:
+      status: 0
+      weight: '15'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+    search_api_tokenizer:
+      status: 0
+      weight: '20'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+        spaces: '[^[:alnum:]]'
+        ignorable: "[']"
+    search_api_stopwords:
+      status: 0
+      weight: '30'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+        file: ''
+        stopwords: "but\r\ndid\r\nthe this that those\r\netc"
+    search_api_porter_stemmer:
+      status: 0
+      weight: '35'
+      settings:
+        fields:
+          name: true
+          'field_content:value': true
+        exceptions: texan=texa
+    search_api_highlighting:
+      status: 0
+      weight: '40'
+      settings:
+        prefix: '<strong>'
+        suffix: '</strong>'
+        excerpt: 1
+        excerpt_length: '256'
+        exclude_fields: {  }
+        highlight: always
+        highlight_partial: 0
+server: local_solr

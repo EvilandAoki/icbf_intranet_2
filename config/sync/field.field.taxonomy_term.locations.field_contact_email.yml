@@ -1,0 +1,19 @@
+uuid: 2695b4f3-83ea-4574-b3b6-65e85125cbee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact_email
+    - taxonomy.vocabulary.locations
+id: taxonomy_term.locations.field_contact_email
+field_name: field_contact_email
+entity_type: taxonomy_term
+bundle: locations
+label: 'Correo electrónico de contacto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

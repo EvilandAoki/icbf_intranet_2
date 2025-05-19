@@ -1,0 +1,13 @@
+uuid: 97eefdfb-7781-4cbc-b814-57d1f55b6324
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_guaviare
+label: 'Regional Guaviare'
+weight: 32
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

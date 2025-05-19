@@ -1,0 +1,13 @@
+uuid: 162c28d0-aaf6-4257-b10e-990c73fe6397
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_boyaca
+label: 'Regional Boyacá'
+weight: 20
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

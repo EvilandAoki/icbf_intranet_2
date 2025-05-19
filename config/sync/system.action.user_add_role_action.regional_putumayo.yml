@@ -1,0 +1,14 @@
+uuid: a4181d45-d8af-4d64-a4d3-3ab914e49bb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_putumayo
+  module:
+    - user
+id: user_add_role_action.regional_putumayo
+label: 'Añade el rol Regional Putumayo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_putumayo

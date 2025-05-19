@@ -1,0 +1,10 @@
+uuid: 73c53c39-603f-4062-ac99-7004dc899124
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HtZgSbbcrtHAeiKKJGFMFmMcUKZLPumzYJce2-GFqQ8
+id: needs_review
+label: 'Necesita revisión'
+published: false
+default_revision: false

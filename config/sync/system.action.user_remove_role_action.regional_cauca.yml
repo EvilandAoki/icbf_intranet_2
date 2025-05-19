@@ -1,0 +1,14 @@
+uuid: 6d1cde25-a0e6-42db-88b2-daa1ce38d2cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_cauca
+  module:
+    - user
+id: user_remove_role_action.regional_cauca
+label: 'Elimina el rol Regional Cauca al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_cauca

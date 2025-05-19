@@ -1,0 +1,15 @@
+uuid: a6a1a0d7-1342-40ad-9b9a-4ff6eb913e6c
+langcode: es
+status: true
+dependencies: {  }
+name: icon_ditcatalog
+label: 'icon ditcatalog'
+effects:
+  8d9b3ef5-b779-401c-afbf-8ecac94d84df:
+    uuid: 8d9b3ef5-b779-401c-afbf-8ecac94d84df
+    id: image_scale
+    weight: 2
+    data:
+      width: 145
+      height: 85
+      upscale: false

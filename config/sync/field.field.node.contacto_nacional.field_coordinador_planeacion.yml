@@ -1,0 +1,19 @@
+uuid: 1543006e-0f83-4139-92cf-5a78276ec026
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coordinador_planeacion
+    - node.type.contacto_nacional
+id: node.contacto_nacional.field_coordinador_planeacion
+field_name: field_coordinador_planeacion
+entity_type: node
+bundle: contacto_nacional
+label: 'Coordinador de Planeación'
+description: 'Datos de contacto'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

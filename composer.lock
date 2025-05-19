@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc9a1cd8ad66c4e9a8c03b1281a7f67e",
+    "content-hash": "821d49ac433a0655ecdf3c10bed50637",
     "packages": [
         {
             "name": "algolia/places",
@@ -3193,6 +3193,56 @@
             }
         },
         {
+            "name": "drupal/bootstrap5",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap5.git",
+                "reference": "4.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap5-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "4424a72b11cc7a571275b8f5590ffa3be807e4af"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.0",
+                    "datestamp": "1716472361",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Master theme using Bootstrap 5: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap5",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap5",
+                "issues": "https://www.drupal.org/project/issues/bootstrap5"
+            }
+        },
+        {
             "name": "drupal/bootstrap_layout_builder",
             "version": "2.2.1",
             "source": {
@@ -6033,6 +6083,54 @@
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
+            }
+        },
+        {
+            "name": "drupal/file_resup",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_resup.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_resup-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "1d09d0a7178ad4d2ce0dbe0e7b0ce936f77f65c2"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1710772352",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "anrikun",
+                    "homepage": "https://www.drupal.org/user/410199"
+                },
+                {
+                    "name": "tim bozeman",
+                    "homepage": "https://www.drupal.org/user/2241356"
+                }
+            ],
+            "description": "Allows users to add large files, multiple files, and resume uploads.",
+            "homepage": "https://www.drupal.org/project/file_resup",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_resup"
             }
         },
         {
@@ -9447,6 +9545,74 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/pdf",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pdf.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pdf-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "2f2d7570a454ea01f2e5987bec23f67c3f079d37"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1689358560",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alextataurov",
+                    "homepage": "https://www.drupal.org/user/957718"
+                },
+                {
+                    "name": "axelm",
+                    "homepage": "https://www.drupal.org/user/1065700"
+                },
+                {
+                    "name": "DanielFbrg",
+                    "homepage": "https://www.drupal.org/user/884704"
+                },
+                {
+                    "name": "jmomandown",
+                    "homepage": "https://www.drupal.org/user/1844552"
+                },
+                {
+                    "name": "m.abdulqader",
+                    "homepage": "https://www.drupal.org/user/1281252"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
+                },
+                {
+                    "name": "shenzhuxi",
+                    "homepage": "https://www.drupal.org/user/193802"
+                }
+            ],
+            "description": "Display PDF file in Drupal without external readers and plugins.",
+            "homepage": "https://www.drupal.org/project/pdf",
+            "support": {
+                "source": "https://git.drupalcode.org/project/pdf"
             }
         },
         {

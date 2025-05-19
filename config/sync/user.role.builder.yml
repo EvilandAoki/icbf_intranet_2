@@ -1,0 +1,17 @@
+uuid: 5ee22b0d-7e5d-4c4d-baef-a994214c29b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - system
+id: builder
+label: Builder
+weight: 14
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format full_html'
+  - 'view the administration theme'

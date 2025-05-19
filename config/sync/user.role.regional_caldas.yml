@@ -1,0 +1,13 @@
+uuid: c2e7187c-dde4-4840-a211-90914bef8dfb
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_caldas
+label: 'Regional Caldas'
+weight: 22
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

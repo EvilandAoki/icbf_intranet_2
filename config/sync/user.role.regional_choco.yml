@@ -1,0 +1,13 @@
+uuid: 8ebdeee9-e694-42a2-9363-7099017cfb3c
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_choco
+label: 'Regional Chocó'
+weight: 27
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

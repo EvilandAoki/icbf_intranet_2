@@ -1,0 +1,12 @@
+uuid: 14e860a1-311e-4247-a2bf-e4d993d3af86
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_vichada
+label: 'Regional Vichada'
+weight: 46
+is_admin: null
+permissions:
+  - 'view the administration theme'

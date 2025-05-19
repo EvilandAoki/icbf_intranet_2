@@ -1,0 +1,22 @@
+uuid: 74fa0391-efea-4621-ba96-a063b424e8d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_helpcenter_tooltip
+    - node.type.helpcenter_info
+  module:
+    - text
+id: node.helpcenter_info.field_helpcenter_tooltip
+field_name: field_helpcenter_tooltip
+entity_type: node
+bundle: helpcenter_info
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

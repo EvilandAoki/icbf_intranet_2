@@ -1,0 +1,21 @@
+uuid: ffc1a32a-2aea-4524-9ba2-c03e2e3fd726
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.multimedia
+  module:
+    - datetime
+id: node.multimedia.field_date
+field_name: field_date
+entity_type: node
+bundle: multimedia
+label: 'Fecha de Publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

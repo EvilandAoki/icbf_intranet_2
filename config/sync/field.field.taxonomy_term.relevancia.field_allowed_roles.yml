@@ -1,0 +1,21 @@
+uuid: 14786bdc-dab1-4888-9aeb-36c23730c530
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.relevancia
+id: taxonomy_term.relevancia.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: relevancia
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

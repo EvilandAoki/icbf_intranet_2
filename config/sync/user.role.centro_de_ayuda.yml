@@ -1,0 +1,22 @@
+uuid: e25385bd-2fb1-4e45-9208-a1c066653f33
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - fivestar
+    - node
+    - system
+id: centro_de_ayuda
+label: 'Centro de Ayuda'
+weight: 51
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'rate content'

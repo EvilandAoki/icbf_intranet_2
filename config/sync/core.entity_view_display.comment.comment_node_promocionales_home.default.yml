@@ -1,0 +1,29 @@
+uuid: c3516f5e-7584-48be-9e82-dc8577920c5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_promocionales_home
+    - field.field.comment.comment_node_promocionales_home.comment_body
+  module:
+    - text
+id: comment.comment_node_promocionales_home.default
+targetEntityType: comment
+bundle: comment_node_promocionales_home
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

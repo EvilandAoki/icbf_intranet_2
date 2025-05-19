@@ -1,0 +1,30 @@
+uuid: 4ea63694-6257-4b9c-96f5-e28e3cb9f64e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Encuesta Interna'
+type: encuesta_interna
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,14 @@
+uuid: 04ab93e4-1a57-4f35-b193-ba2d68ee1a73
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.estadisticas
+  module:
+    - user
+id: user_add_role_action.estadisticas
+label: 'Añade el rol Estadísticas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: estadisticas

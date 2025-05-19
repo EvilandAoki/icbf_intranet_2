@@ -1,0 +1,14 @@
+uuid: 73608785-3594-412c-a59c-6f4651c739f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.juridica
+  module:
+    - user
+id: user_add_role_action.juridica
+label: 'Añade el rol Jurídica al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: juridica

@@ -1,0 +1,9 @@
+uuid: efb34b8f-b6ff-432e-be16-2a6e30e22c0e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de proceso contratación'
+vid: hiring_process_type
+description: null
+weight: 0
+new_revision: false

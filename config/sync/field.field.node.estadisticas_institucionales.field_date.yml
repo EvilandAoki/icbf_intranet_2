@@ -1,0 +1,21 @@
+uuid: 93885404-4d7c-425d-ae4e-9589556defd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.estadisticas_institucionales
+  module:
+    - datetime
+id: node.estadisticas_institucionales.field_date
+field_name: field_date
+entity_type: node
+bundle: estadisticas_institucionales
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

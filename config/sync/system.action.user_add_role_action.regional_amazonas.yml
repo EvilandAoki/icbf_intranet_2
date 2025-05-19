@@ -1,0 +1,14 @@
+uuid: 4bdd913a-b4e8-4e62-a1b4-9f3aade9fca3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_amazonas
+  module:
+    - user
+id: user_add_role_action.regional_amazonas
+label: 'Añade el rol Regional Amazonas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_amazonas

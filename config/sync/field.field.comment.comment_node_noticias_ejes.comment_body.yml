@@ -1,0 +1,22 @@
+uuid: 402b4ff4-6394-419b-8324-6c282b0869b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_noticias_ejes
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_noticias_ejes.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_noticias_ejes
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,13 @@
+uuid: aa9d3b4f-7bed-41f3-9887-207ac2f1744b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_bogota
+label: 'Regional Bogotá'
+weight: 19
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

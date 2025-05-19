@@ -1,0 +1,32 @@
+uuid: fee09a36-304b-43cb-bf13-6015404d58ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent
+    - node.type.helpcenter_info
+    - node.type.page
+id: node.page.field_parent
+field_name: field_parent
+entity_type: node
+bundle: page
+label: 'Contenido padre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      helpcenter_info: helpcenter_info
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 1
+      entityqueue:
+        status: 0
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: b72ae7fc-5daf-418b-9c52-5152e2e6ae75
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_la_guajira
+  module:
+    - user
+id: user_remove_role_action.regional_la_guajira
+label: 'Elimina el rol Regional La Guajira al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_la_guajira

@@ -1,0 +1,16 @@
+{#
+  themes/custom/icbf/layout/page--node--news.html.twig
+#}
+<section class="notice-section_news">
+	<div class=" notice-region-content">
+		<div class="clearfix">
+			<div class="notice-news-detail  row">
+				<div class="notice-news_main col-12 col-md-9">
+					{% if page.content %}
+						{{ page.content }}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

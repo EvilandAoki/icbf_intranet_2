@@ -1,0 +1,27 @@
+uuid: a2c9b3f9-a2e2-46e0-9b07-fa79b9e3b191
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - icbf
+_core:
+  default_config_hash: InBpEtwjlcfi4KXVg0KR1ZqVGZ0QdVWAr-QsLxqAHeM
+id: icbf_account_menu
+theme: icbf
+region: navigation
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: 0ab79750-9cb6-4829-8f4c-93b02f2172fb
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_arauca
+label: 'Regional Arauca'
+weight: 17
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

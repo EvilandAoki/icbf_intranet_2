@@ -1,0 +1,10 @@
+uuid: 1f21880a-2e17-473c-a4ba-918ff3d9984d
+langcode: es
+status: true
+dependencies: {  }
+id: custom_migrations
+label: custom_migrations
+description: ''
+source_type: null
+module: null
+shared_configuration: null

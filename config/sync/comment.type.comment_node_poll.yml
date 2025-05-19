@@ -1,0 +1,8 @@
+uuid: ff01a278-4680-42cf-ad6c-c3d85c492c38
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_poll
+label: 'Encuesta comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,30 @@
+uuid: 4e6b9ba5-b02b-4889-b632-2eed79da2188
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: fieldset
+    publish_enable: true
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: true
+    unpublish_enable: true
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Piezas Ejes SIGE'
+type: pieza_sgsi
+description: "Piezas ejes SIGE:\r\nLunes de Calidad, Martes de Transparencia, Miércoles de Seguridad, Jueves de Autocuidado, Viernes Ambiental "
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

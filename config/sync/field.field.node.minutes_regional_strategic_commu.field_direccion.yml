@@ -1,0 +1,25 @@
+uuid: e471a483-8888-429b-b0ff-e875e8748b64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direccion
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - address
+id: node.minutes_regional_strategic_commu.field_direccion
+field_name: field_direccion
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: 'Dirrecion text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: null
+  field_overrides: {  }
+  fields: {  }
+field_type: address

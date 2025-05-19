@@ -1,0 +1,24 @@
+uuid: 8fb3b021-baa7-4b5a-b08f-4223d8e69ef1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog
+  module:
+    - text
+id: node.blog.body
+field_name: body
+entity_type: node
+bundle: blog
+label: Cuerpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

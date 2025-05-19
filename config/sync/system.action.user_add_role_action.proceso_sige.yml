@@ -1,0 +1,14 @@
+uuid: b4605949-82bc-4c3c-84f7-18a8393b9cd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.proceso_sige
+  module:
+    - user
+id: user_add_role_action.proceso_sige
+label: 'Añade el rol Proceso SIGE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: proceso_sige

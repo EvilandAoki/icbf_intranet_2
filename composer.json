@@ -45,6 +45,7 @@
         "drupal/better_permissions_page": "^1.0",
         "drupal/block_class": "^4.0",
         "drupal/bootstrap": "^5.0",
+        "drupal/bootstrap5": "4.0",
         "drupal/bootstrap_layout_builder": "^2.2",
         "drupal/bootstrap_layouts": "^5.5",
         "drupal/cacheexclude": "^2.0",
@@ -77,6 +78,7 @@
         "drupal/field_group": "^3.6",
         "drupal/field_permissions": "^1.4",
         "drupal/field_validation": "^1.1",
+        "drupal/file_resup": "2.0",
         "drupal/fivestar": "^1.0@alpha",
         "drupal/flood_control": "^3.0",
         "drupal/fontawesome": "^3.0",
@@ -119,6 +121,7 @@
         "drupal/panels": "^4.8",
         "drupal/paragraphs": "^1.18",
         "drupal/pathauto": "^1.13",
+        "drupal/pdf": "1.2",
         "drupal/pdf_api": "^2.4",
         "drupal/php": "^1.2",
         "drupal/plupload": "^2.2",
@@ -277,6 +280,12 @@
             },
             "drupal/core": {
                 "Fix error in FieldInstanceSettings (handler_settings sort)": "https://www.drupal.org/files/issues/2020-06-09/d7_field_instance-sort-3080034-6.patch"
+            },
+            "drupal/simple_page_manager": {
+                "Arregla fallo de traducción (issue 3438993)": "https://www.drupal.org/files/issues/2024-08-14/page-manager-3438993-MR34-24.patch"
+            },
+            "drupal/search_api": {
+                "Fix plugin_id empty bug #3280858": "https://www.drupal.org/files/issues/2022-05-17/plugin-issue-3280858-1.patch"
             }
         }
     }

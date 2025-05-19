@@ -1,0 +1,21 @@
+uuid: d0ec639c-dc82-43ff-a604-58b716912cd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.event_calendar_date
+    - node.type.convocatorias_talento_humano
+  module:
+    - datetime_range
+id: node.convocatorias_talento_humano.event_calendar_date
+field_name: event_calendar_date
+entity_type: node
+bundle: convocatorias_talento_humano
+label: 'Fecha del Curso o Taller'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

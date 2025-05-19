@@ -1,0 +1,22 @@
+{#
+ * Template para el bloque TB Mega Menu
+ * Archivo: block--tb-megamenu.html.twig
+#}
+
+{%
+  set classes = [
+    'block',
+    'block-tb-megamenu',
+    'clearfix',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+
+  <div class="block-content tb-megamenu-block">
+    {{ content }}
+  </div>
+</div>

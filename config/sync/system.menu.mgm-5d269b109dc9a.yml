@@ -1,0 +1,8 @@
+uuid: 3499217f-9948-45b5-93b6-8e0b40bbf1b7
+langcode: en
+status: true
+dependencies: {  }
+id: mgm-5d269b109dc9a
+label: 'Menu3 Intranet'
+description: 'Menu principal, white view'
+locked: false

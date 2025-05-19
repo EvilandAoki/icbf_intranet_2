@@ -1,0 +1,84 @@
+uuid: 5b645b28-29b9-49d8-9e4f-b0cffb22d0d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.eventos_galeria.field_date
+    - field.field.node.eventos_galeria.field_description_gallery
+    - field.field.node.eventos_galeria.field_event_type
+    - field.field.node.eventos_galeria.field_image_gallery_cover
+    - field.field.node.eventos_galeria.field_image_gallery_list
+    - field.field.node.eventos_galeria.field_location
+    - node.type.eventos_galeria
+  module:
+    - datetime
+    - image
+    - user
+id: node.eventos_galeria.default
+targetEntityType: node
+bundle: eventos_galeria
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_description_gallery:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_gallery_cover:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_gallery_list:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

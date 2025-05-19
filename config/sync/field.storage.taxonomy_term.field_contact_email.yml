@@ -1,0 +1,22 @@
+uuid: c1d75dea-2fa9-438f-87ba-b94bdb2bee9f
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_contact_email
+field_name: field_contact_email
+entity_type: taxonomy_term
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

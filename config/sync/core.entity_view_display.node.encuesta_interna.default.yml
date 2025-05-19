@@ -1,0 +1,30 @@
+uuid: f970cf62-1d67-4f01-8472-8a7a6e82f6cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.encuesta_interna.body
+    - node.type.encuesta_interna
+  module:
+    - text
+    - user
+id: node.encuesta_interna.default
+targetEntityType: node
+bundle: encuesta_interna
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

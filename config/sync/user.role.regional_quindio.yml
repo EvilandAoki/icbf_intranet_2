@@ -1,0 +1,12 @@
+uuid: b54286a0-a02c-448b-8f10-3d91de5ed638
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_quindio
+label: 'Regional Quindio'
+weight: 39
+is_admin: null
+permissions:
+  - 'view the administration theme'

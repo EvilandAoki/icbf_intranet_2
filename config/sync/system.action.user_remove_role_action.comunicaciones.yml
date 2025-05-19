@@ -1,0 +1,14 @@
+uuid: 3deb01e6-96a4-4dd3-b610-24f13440bba5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.comunicaciones
+  module:
+    - user
+id: user_remove_role_action.comunicaciones
+label: 'Elimina el rol Comunicaciones al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: comunicaciones

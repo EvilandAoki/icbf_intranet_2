@@ -1,0 +1,33 @@
+uuid: 9dd92843-8609-4709-9247-0c32ad682691
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.dependencies.field_allowed_roles
+    - field.field.taxonomy_term.dependencies.field_allowed_users
+    - field.field.taxonomy_term.dependencies.field_content
+    - field.field.taxonomy_term.dependencies.field_header_area
+    - field.field.taxonomy_term.dependencies.group_group
+    - taxonomy.vocabulary.dependencies
+  module:
+    - text
+id: taxonomy_term.dependencies.default
+targetEntityType: taxonomy_term
+bundle: dependencies
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  field_content: true
+  field_header_area: true
+  group_group: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,12 @@
+uuid: fb336c89-4f99-41c9-83d2-0202427ec961
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_san_andres
+label: 'Regional San Andres'
+weight: 41
+is_admin: null
+permissions:
+  - 'view the administration theme'

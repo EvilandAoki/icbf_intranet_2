@@ -1,0 +1,86 @@
+uuid: 4934f7de-e7ba-4135-983e-82a39c3c4657
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: cifras_protecci_n
+name: 'Cifras Protección SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - cifras_proteccion
+  fields:
+    field_date:
+      type: date
+    'field_document:file':
+      type: integer
+      entity_type: file
+    'field_document:file:fid':
+      type: integer
+    'field_document:file:field_file_image_alt_text':
+      type: text
+    'field_document:file:field_file_image_title_text':
+      type: text
+    'field_document:file:field_folder':
+      type: integer
+      entity_type: taxonomy_term
+    'field_document:file:mime':
+      type: text
+    'field_document:file:name':
+      type: text
+    'field_document:file:owner':
+      type: integer
+      entity_type: user
+    'field_document:file:size':
+      type: integer
+    'field_document:file:timestamp':
+      type: date
+    'field_document:file:type':
+      type: string
+    'field_document:file:url':
+      type: text
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_file_priority:
+      type: integer
+    field_location:
+      type: integer
+      entity_type: taxonomy_term
+    field_priority:
+      type: integer
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    title:
+      type: string
+    title_az_glossary:
+      type: string
+server: local_solr

@@ -1,0 +1,13 @@
+uuid: 0cf5aaaa-d414-4d10-a43b-b7c8a3fca956
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_cesar
+label: 'Regional Cesar'
+weight: 26
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

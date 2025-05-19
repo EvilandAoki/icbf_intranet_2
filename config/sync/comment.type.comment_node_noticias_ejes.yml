@@ -1,0 +1,8 @@
+uuid: 8a1699a0-8c62-4044-8efe-396d9c82ef9b
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_noticias_ejes
+label: 'Noticias Ejes comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,8 @@
+uuid: 890e5e69-88ae-44b4-8464-dbda346948a1
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_documentos_juridica
+label: 'Documentos Jurídica comment'
+target_entity_type_id: node
+description: null

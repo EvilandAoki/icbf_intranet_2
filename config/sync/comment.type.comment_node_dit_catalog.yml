@@ -1,0 +1,8 @@
+uuid: 5f5a1693-29c5-476c-bd9e-a1f27699c5cc
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_dit_catalog
+label: 'Catalogo DIT comment'
+target_entity_type_id: node
+description: null

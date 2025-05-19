@@ -1,0 +1,21 @@
+uuid: 0b73e03c-c7b7-46e9-9672-d10fe79a105f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_priority
+    - node.type.articulo_de_seccion
+  module:
+    - options
+id: node.articulo_de_seccion.field_file_priority
+field_name: field_file_priority
+entity_type: node
+bundle: articulo_de_seccion
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

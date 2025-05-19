@@ -1,0 +1,11 @@
+uuid: 8b5cde40-a58e-44c9-ab45-29cdf0391e98
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.mdp_full_popup
+label: mdp_full_popup
+description: ''
+targetEntityType: node
+cache: true

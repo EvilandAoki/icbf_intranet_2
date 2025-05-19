@@ -1,0 +1,22 @@
+uuid: 04df6ba4-5fb1-466b-91a6-e9c62b0de78c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_region_scope
+    - taxonomy.vocabulary.locations
+  module:
+    - text
+id: taxonomy_term.locations.field_region_scope
+field_name: field_region_scope
+entity_type: taxonomy_term
+bundle: locations
+label: Cobertura
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

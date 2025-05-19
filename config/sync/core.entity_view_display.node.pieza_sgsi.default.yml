@@ -1,0 +1,52 @@
+uuid: 76549093-8e30-42cd-83d3-559c8afb85a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pieza_sgsi.field_date
+    - field.field.node.pieza_sgsi.field_file_categoria
+    - field.field.node.pieza_sgsi.field_link_url
+    - field.field.node.pieza_sgsi.field_list_image
+    - field.field.node.pieza_sgsi.field_priority
+    - field.field.node.pieza_sgsi.field_section
+    - node.type.pieza_sgsi
+  module:
+    - image
+    - user
+id: node.pieza_sgsi.default
+targetEntityType: node
+bundle: pieza_sgsi
+mode: default
+content:
+  field_list_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_priority:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_file_categoria: true
+  field_link_url: true
+  field_section: true
+  langcode: true
+  search_api_excerpt: true

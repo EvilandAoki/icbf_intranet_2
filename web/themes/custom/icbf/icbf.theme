@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * icbf theme file.
+ */
+
+ /**
+ * Implements hook_preprocess_page().
+ */
+function icbf_preprocess_page(array &$variables) {
+  // Fixed vs fluid.
+  $fluid = \Drupal::config('icbf.settings')->get('fluid_breakpoint');
+  $variables['container_class'] = $fluid ? 'container-fluid' : 'container';
+
+  // Columna de contenido según sidebars.
+  $has_first  = !empty($variables['page']['sidebar_first']);
+  $has_second = !empty($variables['page']['sidebar_second']);
+
+  if ($has_first && $has_second) {
+    $variables['content_column_class'] = 'col-lg-6';
+  }
+  elseif ($has_first || $has_second) {
+    $variables['content_column_class'] = 'col-lg-9';
+  }
+  else {
+    $variables['content_column_class'] = 'col-lg-12';
+  }
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function icbf_theme_registry_alter(array &$theme_registry) {
+  $theme_path = \Drupal::service('extension.list.theme')->getPath('icbf');
+
+  foreach ($theme_registry as $key => &$info) {
+    if (str_starts_with($key, 'page__node__')) {
+      // Redirige estos templates a la carpeta 'layout'
+      $template_file = $theme_path . '/layout/' . str_replace('__', '--', $key) . '.html.twig';
+      if (file_exists($template_file)) {
+        $info['path'] = $theme_path . '/layout';
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Implementa hook_theme_suggestions_page_alter().
+ */
+function icbf_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $route_match = \Drupal::routeMatch();
+
+  if ($node = $route_match->getParameter('node')) {
+    if ($node instanceof NodeInterface) {
+      $bundle = $node->bundle();
+      \Drupal::logger('theme_suggestions')->debug('Bundle: ' . $bundle);
+      $suggestions[] = 'page__node__' . $bundle;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+uuid: d8fd7054-e032-41ca-b64d-c73356e31afe
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persona.field_cargo
+    - field.field.node.persona.field_content_profile
+    - field.field.node.persona.field_email
+    - field.field.node.persona.field_list_image
+    - field.field.node.persona.field_lugar
+    - field.field.node.persona.field_person_area
+    - field.field.node.persona.field_phone
+    - field.field.node.persona.field_photo
+    - field.field.node.persona.field_priority
+    - node.type.persona
+  module:
+    - text
+    - user
+id: node.persona.teaser
+targetEntityType: node
+bundle: persona
+mode: teaser
+content:
+  field_content_profile:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cargo: true
+  field_email: true
+  field_list_image: true
+  field_lugar: true
+  field_person_area: true
+  field_phone: true
+  field_photo: true
+  field_priority: true
+  langcode: true
+  search_api_excerpt: true

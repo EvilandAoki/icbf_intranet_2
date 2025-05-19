@@ -1,0 +1,20 @@
+uuid: 788ea315-f555-49f8-bb1f-efec62dfe19f
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - search
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'

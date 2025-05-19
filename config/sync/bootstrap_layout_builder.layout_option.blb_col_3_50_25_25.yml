@@ -1,0 +1,16 @@
+uuid: b27bf807-29d6-49cb-86e7-41c31c9338fc
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gomEHPSzgCxRNAXrM3tDFFE4eebaqwMM_I2lIUscgtk
+id: blb_col_3_50_25_25
+layout_id: blb_col_3
+label: '50% 25% 25%'
+structure: '6 3 3'
+breakpoints:
+  desktop: desktop
+  tablet: tablet
+  mobile: mobile
+default_breakpoints: null
+weight: -9

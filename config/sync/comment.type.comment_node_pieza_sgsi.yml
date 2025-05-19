@@ -1,0 +1,8 @@
+uuid: 523290e4-589d-4d58-9a01-b81b340866fc
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_pieza_sgsi
+label: 'Piezas Ejes SIGE comment'
+target_entity_type_id: node
+description: null

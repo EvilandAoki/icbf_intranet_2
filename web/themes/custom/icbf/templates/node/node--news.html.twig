@@ -1,0 +1,97 @@
+
+<div
+	class="notice-news-content">
+
+	<!-- Título -->
+	<div class="notice-news_title">
+		<h1>{{ label }}</h1>
+	</div>
+
+	<!-- Lugar y Fecha / Sociales-->
+	<div class="notice-news_city clearfix">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="notice-news-place">
+					<div class="notice-news-field-city">
+						<span>{{ content.field_location }},
+						</span>
+					</div>
+					<span class="notice-news-fiel-separator">|</span>
+					<div class="notice-field-day">
+						<span>{{ content.field_date }}</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-12">
+				<div class="notice-news-social">
+					<ul class="notice-share-buttons list-unstyled d-flex">
+						<li class="notice-social-icons">
+							<a href="#" title="Compartir en Facebook"><img alt="Compartir en Facebook" src="Images/socialnews1.png"></a>
+						</li>
+						<li class="notice-social-icons">
+							<a href="#" title="Tweet"><img alt="Tweet" src="Images/socialnews2.png"></a>
+						</li>
+						<li class="notice-social-icons">
+							<a href="#" title="Enviar email"><img alt="Enviar email" src="Images/socialnews3.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Imagen principal -->
+	<div class="notice-news_mainImage">
+		<div class="notice-views-field">
+			<span class="notice-field-content">
+				{# <img class="notice-news-imgp img-fluid" src="Images/portadanews.jpeg" alt=""> #}
+        {{ content.field_list_image }}
+			</span>
+		</div>
+	</div>
+
+	<div class="notice-news-separator-content">
+		<hr></hr>
+</div>
+
+<!-- Contenido principal -->
+<div class="notice-panels-flexible-row notice-panels-flexible-row-last clearfix">
+	<div
+		class="notice-panels-flexible-region-inside">
+
+		<!-- Resumen -->
+		<div class="notice-panel-pane">
+			<div class="notice-news-field-abstract">
+				<p>{{ content.field_resume }}</p>
+			</div>
+		</div>
+
+		<!-- Cuerpo de la noticia -->
+		<div class="notice-panel-separator"></div>
+		<div class="notice-panel-pane">
+			<div class="notice-news-field-paragraph">
+				{{ content.field_content }}
+        {{ content.field_attached_files }}
+			</div>
+		</div>
+
+		<div class="notice-news-separator-content">
+			<hr></hr>
+	</div>
+
+	<!-- Pie de noticia -->
+	<div class="notice-news-intranet">
+		<div>
+			<p class="notice-news-intranet_name">Nombre del Portal - Departamento de Comunicaciones</p>
+			<p class="notice-news-intranet_city">Sede Principal</p>
+			<div class="notice-news-intranet_link">
+				<a href="tel:+5700000000" title="clic para llamar">PBX: (57) 000-0000</a>
+				<a href="mailto:prensa@dominio.com" title="clic para enviar email">prensa@dominio.com</a>
+			</div>
+			<div class="notice-news-intranet_btn">
+				<a href="/noticias" class="btn-1519-1" title="clic para consultar más noticias">Más Noticias</a>
+				<a href="/" class="btn-1519-2" title="clic para regresar a página principal">Volver a Inicio</a>
+			</div>
+		</div>
+	</div>
+</div></div></div>

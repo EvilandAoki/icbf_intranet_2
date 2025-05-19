@@ -1,0 +1,93 @@
+uuid: c39d8d20-b2e6-405d-887c-627373ba7f6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: persons
+name: 'Personas SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - persona
+  fields:
+    field_cargo:
+      type: integer
+      entity_type: taxonomy_term
+    field_email:
+      type: text
+    field_file_priority:
+      type: integer
+    field_location:
+      type: integer
+      entity_type: taxonomy_term
+    field_lugar:
+      type: integer
+      entity_type: taxonomy_term
+    field_person_area:
+      type: integer
+      entity_type: taxonomy_term
+    'field_photo:file':
+      type: integer
+      entity_type: file
+    'field_photo:file:fid':
+      type: integer
+    'field_photo:file:field_file_image_alt_text':
+      type: text
+    'field_photo:file:field_file_image_title_text':
+      type: text
+    'field_photo:file:field_folder':
+      type: integer
+      entity_type: taxonomy_term
+    'field_photo:file:mime':
+      type: text
+    'field_photo:file:name':
+      type: text
+    'field_photo:file:owner':
+      type: integer
+      entity_type: user
+    'field_photo:file:size':
+      type: integer
+    'field_photo:file:timestamp':
+      type: date
+    'field_photo:file:type':
+      type: string
+    'field_photo:file:url':
+      type: text
+    field_priority:
+      type: integer
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    status:
+      type: integer
+    title:
+      type: text
+    title_az_glossary:
+      type: string
+    url:
+      type: uri
+server: local_solr

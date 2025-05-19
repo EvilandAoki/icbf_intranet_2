@@ -1,0 +1,12 @@
+uuid: 8a8bf6f9-eec9-42c7-b206-6f9a5874d306
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_vaupes
+label: 'Regional Vaupés'
+weight: 48
+is_admin: null
+permissions:
+  - 'access site in maintenance mode'

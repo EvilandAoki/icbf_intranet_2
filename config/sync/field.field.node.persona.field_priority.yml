@@ -1,0 +1,23 @@
+uuid: a91765be-9c67-4f30-9a38-fc3be33be122
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.persona
+id: node.persona.field_priority
+field_name: field_priority
+entity_type: node
+bundle: persona
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

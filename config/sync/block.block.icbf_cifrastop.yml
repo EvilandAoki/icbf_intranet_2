@@ -1,0 +1,25 @@
+uuid: c6dba564-609c-46d4-aa6e-0d1b3b896956
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7ae357b-f09d-4065-8793-037aabbf8e31'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_cifrastop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:c7ae357b-f09d-4065-8793-037aabbf8e31'
+settings:
+  id: 'block_content:c7ae357b-f09d-4065-8793-037aabbf8e31'
+  label: 'Cifras - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

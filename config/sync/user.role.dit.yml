@@ -1,0 +1,19 @@
+uuid: 51f8deaa-d53f-4271-bfab-85169179af7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: dit
+label: DIT
+weight: 7
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access site reports'
+  - 'use text format full_html'
+  - 'view own unpublished content'

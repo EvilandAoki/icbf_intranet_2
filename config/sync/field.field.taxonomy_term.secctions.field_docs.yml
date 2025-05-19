@@ -1,0 +1,27 @@
+uuid: e9ebfe64-9f9f-4878-8d55-cdb370086c21
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_docs
+    - taxonomy.vocabulary.secctions
+  module:
+    - file
+id: taxonomy_term.secctions.field_docs
+field_name: field_docs
+entity_type: taxonomy_term
+bundle: secctions
+label: Documentos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf doc xls xlsx docx ppt pptx tiff xlsm zip jpg png'
+  max_filesize: 40MB
+  description_field: true
+field_type: file

@@ -1,0 +1,14 @@
+uuid: 11a35b52-43b7-4e8d-b5fa-fd1e6fa93f7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_caqueta
+  module:
+    - user
+id: user_remove_role_action.regional_caqueta
+label: 'Elimina el rol Regional Caquetá al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_caqueta

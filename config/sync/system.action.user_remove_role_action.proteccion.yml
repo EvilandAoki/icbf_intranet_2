@@ -1,0 +1,14 @@
+uuid: c5a887ce-052e-4d8e-85bd-db6ce1670038
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.proteccion
+  module:
+    - user
+id: user_remove_role_action.proteccion
+label: 'Elimina el rol Protección al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: proteccion

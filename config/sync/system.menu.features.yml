@@ -1,0 +1,8 @@
+uuid: 86c725fc-4f3f-4c90-b533-ac950851ae80
+langcode: en
+status: true
+dependencies: {  }
+id: features
+label: Características
+description: 'Ítems de menú para features habilitados.'
+locked: false

@@ -1,0 +1,28 @@
+uuid: 38747fd3-218e-49fe-b776-0cca6f72f047
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.institutional_stationery
+    - taxonomy.vocabulary.secctions
+id: node.institutional_stationery.field_section
+field_name: field_section
+entity_type: node
+bundle: institutional_stationery
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '6987'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 3033722e-4f86-4856-8b96-a98c3ef7b70e
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_infografia_dit
+field_name: field_infografia_dit
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

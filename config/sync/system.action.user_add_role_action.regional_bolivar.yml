@@ -1,0 +1,14 @@
+uuid: 019d42e8-9301-46ca-aea3-dae8aab380eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_bolivar
+  module:
+    - user
+id: user_add_role_action.regional_bolivar
+label: 'Añade el rol Regional Bolívar al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_bolivar

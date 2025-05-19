@@ -1,0 +1,21 @@
+uuid: 6b0af923-b16a-4b20-9dab-1f073a444f99
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.convocatorias_talento_humano
+  module:
+    - datetime
+id: node.convocatorias_talento_humano.field_date
+field_name: field_date
+entity_type: node
+bundle: convocatorias_talento_humano
+label: 'Cierre de la convocatoria'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

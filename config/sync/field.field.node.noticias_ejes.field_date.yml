@@ -1,0 +1,21 @@
+uuid: 16d15541-a2ff-483e-a4cc-7fc3834ccc1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.noticias_ejes
+  module:
+    - datetime
+id: node.noticias_ejes.field_date
+field_name: field_date
+entity_type: node
+bundle: noticias_ejes
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

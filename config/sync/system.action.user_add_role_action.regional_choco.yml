@@ -1,0 +1,14 @@
+uuid: 7ae892de-5fea-4d45-a7c1-f56f97adb350
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_choco
+  module:
+    - user
+id: user_add_role_action.regional_choco
+label: 'Añade el rol Regional Chocó al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_choco

@@ -1,0 +1,23 @@
+// Default
+@use 'abstracts/variables';
+@use 'abstracts/base';
+@use 'abstracts/fonts';
+@use 'abstracts/general';
+
+
+@use 'layout/header/header-bottom';
+@use 'layout/header/header-top';
+@use 'layout/footer/footer';
+@use 'layout/taxonomias/taxonomia';
+
+
+
+@use 'components/notice';
+@use 'components/regional-acts';
+@use 'components/institutional-stationery';
+@use 'components/syndicate-publications';
+
+@use 'components/elements/breadcrumb';
+@use 'components/elements/slide';
+@use 'components/elements/custom-table';
+@use 'components/elements/internal-page';

@@ -1,0 +1,30 @@
+uuid: e87862e2-45bb-4290-b903-e6272a0aae7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.og_user_node
+  module:
+    - user
+id: user.user.og_user_node
+field_name: og_user_node
+entity_type: user
+bundle: user
+label: Suscripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      og_behavior:
+        status: true
+    membership_type: og_membership_type_default
+field_type: entity_reference

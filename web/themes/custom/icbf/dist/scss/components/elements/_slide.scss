@@ -1,0 +1,72 @@
+@use "../../abstracts/variables" as var;
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var.$color-text-gray;  
+    margin: 0 6px;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: var.$color-primary-green; 
+  border-color:  var.$color-primary-green;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 37px;
+  height: 37px;
+  background: linear-gradient(to bottom, #e0e0e0, rgba(22, 20, 20, 0.5607843137));
+  border-radius: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  opacity: 1;
+  display: inline-block;
+  margin: 0 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  &:hover{
+      background:linear-gradient(to bottom, #e0e0e0, rgb(22 20 20));
+  }
+}
+
+.carousel-control-prev::before {
+  content: '\203a';
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 37px;
+  height: 37px;
+  align-items: center;
+  margin-top: 2px;
+}
+.carousel-control-next::before {
+  content: '\203a';
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 37px;
+  height: 37px;
+  align-items: center;
+  margin-top: -2px;
+}
+
+.carousel-control-prev::before {
+  transform: rotate(175deg);
+}
+
+.carousel-control-next::before {
+  transform: rotate(358deg);
+  
+}

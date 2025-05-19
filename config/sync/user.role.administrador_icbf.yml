@@ -1,0 +1,55 @@
+uuid: 866475bf-8021-4ae8-ae75-ab4a399287e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.forum
+    - node.type.page
+    - node.type.webform
+  module:
+    - block
+    - filter
+    - node
+    - poll
+    - search
+    - search_api
+    - system
+    - taxonomy
+    - views_ui
+id: administrador_icbf
+label: 'Administrador ICBF'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'administer search'
+  - 'administer search_api'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'cancel own vote'
+  - 'create article content'
+  - 'create forum content'
+  - 'create page content'
+  - 'create webform content'
+  - 'delete own article content'
+  - 'delete own forum content'
+  - 'delete own page content'
+  - 'delete own webform content'
+  - 'edit own article content'
+  - 'edit own forum content'
+  - 'edit own page content'
+  - 'edit own webform content'
+  - 'search content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

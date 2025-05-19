@@ -1,0 +1,9 @@
+uuid: 346da413-1d64-434f-9fe5-b37c0d40ccb8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de trámite'
+vid: procedure_type
+description: null
+weight: 0
+new_revision: false

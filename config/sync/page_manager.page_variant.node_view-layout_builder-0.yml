@@ -1,0 +1,68 @@
+uuid: 40c59946-7a80-4566-ad59-cf77198c9aa5
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.contenido_relacionado_noticias
+  module:
+    - ctools
+    - layout_builder
+    - node
+    - views
+id: node_view-layout_builder-0
+label: Noticias
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 01e0593c-dfc8-475f-b239-74cb9c2ba3fd
+  sections:
+    -
+      layout_id: layout_threecol_section
+      layout_settings:
+        label: noticia
+        context_mapping: {  }
+        column_widths: 25-50-25
+      components:
+        7bc8f069-4097-42f9-8a18-75726032cc55:
+          uuid: 7bc8f069-4097-42f9-8a18-75726032cc55
+          region: second
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+        e44a25a4-2647-4fa4-a7bf-ecd2c2d9dca5:
+          uuid: e44a25a4-2647-4fa4-a7bf-ecd2c2d9dca5
+          region: third
+          configuration:
+            id: 'views_block:contenido_relacionado_noticias-relacionado_noticias'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+static_context: {  }
+

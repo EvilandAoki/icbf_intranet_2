@@ -1,0 +1,53 @@
+uuid: fc19c960-be91-4f3c-b8c7-486cec3b5f17
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: convocatorias
+name: 'Convocatorias SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles: {  }
+  fields:
+    edit_url:
+      type: uri
+    field_date:
+      type: date
+    field_location:
+      type: integer
+      entity_type: taxonomy_term
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    title:
+      type: text
+    url:
+      type: uri
+server: local_solr

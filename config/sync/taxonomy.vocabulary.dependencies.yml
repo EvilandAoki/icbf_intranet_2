@@ -1,0 +1,9 @@
+uuid: 19cfda8f-9c01-4f07-bfd3-10ee5f6dbb81
+langcode: es
+status: true
+dependencies: {  }
+name: Áreas
+vid: dependencies
+description: null
+weight: -9
+new_revision: false

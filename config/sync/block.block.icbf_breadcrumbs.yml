@@ -1,0 +1,22 @@
+uuid: 316e7ce8-d58b-4323-a1ab-049b50cafa0f
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - icbf
+_core:
+  default_config_hash: gJ_fEe-AFT-q5U59HD5kPXwau8zXL8k8Tu_fTuCofys
+id: icbf_breadcrumbs
+theme: icbf
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

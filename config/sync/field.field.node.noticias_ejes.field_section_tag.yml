@@ -1,0 +1,26 @@
+uuid: 7124e3a7-3663-4430-a97b-5a7d59b9412e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_tag
+    - node.type.noticias_ejes
+    - taxonomy.vocabulary.section_labels
+id: node.noticias_ejes.field_section_tag
+field_name: field_section_tag
+entity_type: node
+bundle: noticias_ejes
+label: Tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      section_labels: section_labels
+    sort:
+      field: _none
+field_type: entity_reference

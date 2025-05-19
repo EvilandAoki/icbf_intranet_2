@@ -1,0 +1,7 @@
+icbf_migrations.execute:
+  path: '/admin/config/development/icbf-migration'
+  defaults:
+    _controller: '\Drupal\icbf_migrations\Controller\MigrationController::runD7File'
+    _title: 'Ejecutar migración D7 File'
+  requirements:
+    _permission: 'administer site configuration'

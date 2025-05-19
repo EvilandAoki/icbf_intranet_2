@@ -1,0 +1,8 @@
+uuid: b62b8002-1805-4ed1-839a-2cb309d7b174
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_convocatorias_talen
+label: 'Convocatorias Talento Humano comment'
+target_entity_type_id: node
+description: null

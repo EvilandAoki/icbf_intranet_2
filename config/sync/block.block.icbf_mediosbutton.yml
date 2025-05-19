@@ -1,0 +1,25 @@
+uuid: 86400384-e382-424b-b1e9-2e974a99e7b4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_mediosbutton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+settings:
+  id: 'block_content:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+  label: 'Medios - Button'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

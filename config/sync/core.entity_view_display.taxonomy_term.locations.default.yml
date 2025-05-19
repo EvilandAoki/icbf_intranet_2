@@ -1,0 +1,51 @@
+uuid: c7daf119-e263-4c1e-9767-ae651590ddf1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.locations.field_address
+    - field.field.taxonomy_term.locations.field_allowed_roles
+    - field.field.taxonomy_term.locations.field_allowed_users
+    - field.field.taxonomy_term.locations.field_board
+    - field.field.taxonomy_term.locations.field_contact_email
+    - field.field.taxonomy_term.locations.field_field_region_scope
+    - field.field.taxonomy_term.locations.field_list_image
+    - field.field.taxonomy_term.locations.field_localization
+    - field.field.taxonomy_term.locations.field_phone
+    - field.field.taxonomy_term.locations.field_picture_credits
+    - field.field.taxonomy_term.locations.field_place_type
+    - field.field.taxonomy_term.locations.field_region_scope
+    - field.field.taxonomy_term.locations.field_web_site
+    - field.field.taxonomy_term.locations.field_working_hours
+    - taxonomy.vocabulary.locations
+  module:
+    - text
+id: taxonomy_term.locations.default
+targetEntityType: taxonomy_term
+bundle: locations
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_address: true
+  field_allowed_roles: true
+  field_allowed_users: true
+  field_board: true
+  field_contact_email: true
+  field_field_region_scope: true
+  field_list_image: true
+  field_localization: true
+  field_phone: true
+  field_picture_credits: true
+  field_place_type: true
+  field_region_scope: true
+  field_web_site: true
+  field_working_hours: true
+  langcode: true
+  search_api_excerpt: true

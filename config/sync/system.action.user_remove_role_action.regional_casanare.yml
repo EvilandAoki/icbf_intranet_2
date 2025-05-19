@@ -1,0 +1,14 @@
+uuid: 187c5ade-63ab-4e3c-9f6b-c4f1264c3bf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_casanare
+  module:
+    - user
+id: user_remove_role_action.regional_casanare
+label: 'Elimina el rol Regional Casanare al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_casanare

@@ -1,0 +1,13 @@
+uuid: 991591f2-2ebb-4bf9-84ca-50cc57b4a599
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: regional_amazonas
+label: 'Regional Amazonas'
+weight: 15
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'

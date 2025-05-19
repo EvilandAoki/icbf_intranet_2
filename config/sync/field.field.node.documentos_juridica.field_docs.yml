@@ -1,0 +1,27 @@
+uuid: 485d1594-5887-4212-8c4b-7be09404562d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docs
+    - node.type.documentos_juridica
+  module:
+    - file
+id: node.documentos_juridica.field_docs
+field_name: field_docs
+entity_type: node
+bundle: documentos_juridica
+label: Concepto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

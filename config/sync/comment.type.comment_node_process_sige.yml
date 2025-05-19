@@ -1,0 +1,8 @@
+uuid: 34b8032a-33b0-4ee9-a108-2312ef7374b1
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_process_sige
+label: 'Proceso SIGE comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,18 @@
+uuid: 7b2f9543-4222-497e-8b1e-d479b163d18d
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: documentos
+label: Documentos
+weight: 13
+is_admin: null
+permissions:
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

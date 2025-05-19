@@ -1,0 +1,81 @@
+uuid: a946a2b7-4fd8-49ef-9cc0-7eac178d0c4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.procedure.field_allowed_roles
+    - field.field.taxonomy_term.procedure.field_allowed_users
+    - field.field.taxonomy_term.procedure.field_content
+    - field.field.taxonomy_term.procedure.field_icon
+    - field.field.taxonomy_term.procedure.field_list_image
+    - field.field.taxonomy_term.procedure.field_location
+    - field.field.taxonomy_term.procedure.field_procedure_type
+    - field.field.taxonomy_term.procedure.field_related_procedures
+    - taxonomy.vocabulary.procedure
+  module:
+    - image
+    - text
+id: taxonomy_term.procedure.default
+targetEntityType: taxonomy_term
+bundle: procedure
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_procedure_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_related_procedures:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  field_content: true
+  langcode: true
+  search_api_excerpt: true

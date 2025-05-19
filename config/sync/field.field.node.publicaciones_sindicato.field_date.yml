@@ -1,0 +1,21 @@
+uuid: 2ac28aa5-8b4e-4f77-81e3-e42dfea1a942
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.publicaciones_sindicato
+  module:
+    - datetime
+id: node.publicaciones_sindicato.field_date
+field_name: field_date
+entity_type: node
+bundle: publicaciones_sindicato
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
