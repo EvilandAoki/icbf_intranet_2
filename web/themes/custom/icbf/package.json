@@ -1,7 +1,7 @@
 {
-  "name": "hn_michelob_ultra",
+  "name": "icbf_re_desing",
   "version": "1.0.0",
-  "description": "Michelob Re Design",
+  "description": "Icbf Re Design",
   "main": "index.js",
   "scripts": {
     "sass": "sass --style=compressed dist/scss:dist/css",
