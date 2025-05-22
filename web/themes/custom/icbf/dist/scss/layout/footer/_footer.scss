@@ -4,9 +4,19 @@ footer {
   margin: 0;
   padding: 0 !important;
   max-width: 100% !important;
+  &.border-top{
+    border-top: 0 solid #FFFCCC !important;
+  }
   .he_back-cleargrey{
     background: #f8f8f8;
   }
+  .m20-link {
+    clear: both;
+    margin-bottom: .26em;
+    margin-left: .1em;
+    font-family: var.$font-montserrat-regular;
+    line-height: 1.56em;
+   }
   .col-sm-4.col-xs-12.wcenter {
     float: left;
     position: relative;
