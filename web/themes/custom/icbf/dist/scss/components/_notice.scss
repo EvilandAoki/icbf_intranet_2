@@ -1,15 +1,8 @@
 @use "../abstracts/variables" as var;
 
 .notice{
-    &-section_news{
-        margin: auto;
-    }
     &-news{
-        &_main{
-            padding-right: 4rem;
-            @media (max-width: 767px){
-                padding-right: 0;
-            }
+        &_title{
             h1{
                 font-size: 2em;
                 font-family: var.$font-montserrat;
@@ -31,30 +24,6 @@
             width: 100%;
             height: 476px;
             vertical-align: middle;
-        }
-        &-social{
-            padding: 17px 0px;
-            .notice-social-icons{
-                a{
-                    border-radius: 50%;
-                    box-shadow: 0 .1rem .5rem #ccc;
-                    display: inline-block;
-                    filter: grayscale(100%);
-                    height: auto;
-                    margin-right: 3px;
-                    transition: all ease .2s;
-                    width: auto;
-                    &:hover{
-                        box-shadow: 0 .1rem .5rem #999;
-                        filter: grayscale(0%);
-                    }
-                }
-                img{ 
-                    height: 22px;
-                    padding: 3px;
-                    width: auto;
-                }
-            }
         }
         &-field-city{
             span{
@@ -168,3 +137,4 @@
         }
     }
 }
+
