@@ -42,8 +42,7 @@
 
   {# Contenido del nodo #}
   <div{{ content_attributes }}>
-   <iframe src="{{ file_url(content.field_document_proceedings['#items'].entity.fileuri) }}#toolbar=0" width="100%" height="600px"></iframe>
-    <p>{{ content.field_resume.value }}</p>
+    {{ content }}
   </div>
 
   {{ title_suffix }}
