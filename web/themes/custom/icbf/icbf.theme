@@ -1,5 +1,8 @@
 <?php
 
+use Drupal\Core\Pager\PagerManagerInterface;
+use Drupal\Core\Pager\PagerParameters;
+
 /**
  * @file
  * icbf theme file.
@@ -60,4 +63,34 @@ function icbf_theme_suggestions_page_alter(array &$suggestions, array $variables
       $suggestions[] = 'page__node__' . $bundle;
     }
   }
+}
+
+
+
+/**
+ * Implements hook_preprocess_HOOK() para webform-submission-list.html.twig.
+ */
+function mi_tema_preprocess_webform_submission_list(array &$variables) {
+  if ($variables['element']['#webform_id'] !== 'webform_53894') {
+    return;
+  }
+
+  $all_items = $variables['items'];
+  $total = count($all_items);
+  $per_page = 10;
+
+  // Creamos el pager con el total y el per-page.
+  /** @var PagerManagerInterface $pager_manager */
+  $pager_manager = \Drupal::service('pager.manager');
+  $pager_manager->createPager($total, $per_page);
+
+  $current_page = \Drupal::service('pager.parameters')->findPage();
+  $offset = $current_page * $per_page;
+
+  $variables['items'] = array_slice($all_items, $offset, $per_page);
+
+  // Añadimos la render array del pager para Twig.
+  $variables['pager'] = [
+    '#type' => 'pager',
+  ];
 }

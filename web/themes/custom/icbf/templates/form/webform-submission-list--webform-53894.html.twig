@@ -1,0 +1,39 @@
+
+
+{% if items %}
+  <table{{ attributes.addClass('webform-submissions') }}>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Usuario</th>
+        <th>Campo clave</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for submission in items %}
+        {% set data = submission.getData() %}
+        <tr>
+          <td>{{ submission.getCreatedTime()|date("d/m/Y H:i") }}</td>
+          {# Si el envío es anónimo, getOwner() devolverá el usuario 0 #}
+          <td>
+            {% if submission.getOwner().id() %}
+              {{ submission.getOwner().label() }}
+            {% else %}
+              Anónimo
+            {% endif %}
+          </td>
+          {# Sustituye 'some_field_key' por la clave de tu campo #}
+          <td>{{ data.some_field_key }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {# Renderizamos el paginador #}
+  <div class="webform-submissions-pager">
+    {{ pager }}
+  </div>
+
+{% else %}
+  <p>No hay envíos para este formulario.</p>
+{% endif %}
