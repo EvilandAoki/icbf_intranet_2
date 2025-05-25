@@ -1,0 +1,58 @@
+@use "../../abstracts/variables" as var;
+
+
+/*------------ MEGA MENU -----------*/
+
+#navbar-collapse {
+    background: #FCFCFC !important;
+    border-bottom: 2px solid #6db544;
+    border-radius: 0;
+    min-height: auto;
+}
+
+.tb-megamenu .mega > .mega-dropdown-menu {
+    min-width: 1117px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar .container-fluid {
+    justify-content: center;
+}
+
+#block-icbf-menu3intranet-2 {
+    margin: auto;
+    max-width: 1117px;
+    position: relative;
+    width: 100%;
+}
+
+.tb-megamenu .nav {
+    border-radius: 0px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: .4em 0;
+}
+
+.tb-megamenu .nav>li>a,
+.tb-megamenu .nav>li>span.tb-megamenu-no-link {
+    border: none;
+    font-family: var.$font-montserrat;
+    color: #004686;
+    font-size: 0.89em;
+    font-weight: 500;
+    padding: 0;
+}
+
+.tb-megamenu {
+    background-color: #fff;
+}
+
+.tb-megamenu .nav>li {
+    line-height: normal;
+    padding: .8em 1.6em .3em 0;
+}
+
+/*------------ SUBMENU LISTS -----------*/
