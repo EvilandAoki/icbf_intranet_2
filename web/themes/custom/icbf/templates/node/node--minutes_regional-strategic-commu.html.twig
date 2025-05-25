@@ -52,7 +52,7 @@
 				<a href="{{ pdf_url }}" download>Descargar PDF</a>
 			</p>
 		</object>
-    {{content.field_resume}}
+    {{content.field_resume.value|raw}}
 	</div>
 
 	{{ title_suffix }}
