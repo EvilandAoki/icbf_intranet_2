@@ -15,35 +15,45 @@
  * @see template_preprocess_node()
  */
 #}
-<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class) }}>
-  {{ title_prefix }}
+<article{{attributes.addClass('node','node--type-'~node.bundle()|clean_class)}}>
+	{{ title_prefix }}
 
-  {# Si no es vista “page” imprimimos título enlazado #}
-  {% if not page %}
-    <header>
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    </header>
-  {% endif %}
+	{# Si no es vista “page” imprimimos título enlazado #}
+	{% if not page %}
+		<header>
+			<h2{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h2>
+		</header>
+	{% endif %}
 
-  {# Meta de autor y fecha #}
-  {% if display_submitted %}
-    <footer>
-      {% if author_picture %}
-        {{ author_picture }}
-      {% endif %}
-      <span>
-        {{ 'Submitted by'|t }} {{ author_name }} {{ date }}
-      </span>
-      {{ metadata }}
-    </footer>
-  {% endif %}
+	{# Meta de autor y fecha #}
+	{% if display_submitted %}
+		<footer>
+			{% if author_picture %}
+				{{ author_picture }}
+			{% endif %}
+			<span>
+				{{ 'Submitted by'|t }}
+				{{ author_name }}
+				{{ date }}
+			</span>
+			{{ metadata }}
+		</footer>
+	{% endif %}
 
-  {# Contenido del nodo #}
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
+	{# Contenido del nodo #}
+	<div{{content_attributes}}>
+		{# Twig: coloca esto donde quieras el PDF #}
+		{% set pdf_url = file_url(content.field_document_proceedings['#items'].entity.fileuri) %}
 
-  {{ title_suffix }}
+		<object data="{{ pdf_url }}#toolbar=1" type="application/pdf" width="100%" height="700" style="border: none;">
+			<p>Tu navegador no soporta PDF.
+				<a href="{{ pdf_url }}" download>Descargar PDF</a>
+			</p>
+		</object>
+    {{content.field_resume}}
+	</div>
+
+	{{ title_suffix }}
 </article>
