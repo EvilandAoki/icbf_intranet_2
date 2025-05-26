@@ -46,13 +46,13 @@
 	<div{{content_attributes}}>
     {% set img_url = file_url(content.field_list_image['#items'].entity.fileuri) %}
     {% set pdf_url = file_url(content.field_document['#items'].entity.fileuri) %}
-		{% if img_url %}
+		{# {% if img_url %}
 		<object data="{{ img_url }}#toolbar=1" type="application/pdf" width="100%" height="700" style="border: none;">
 			<p>Tu navegador no soporta IMG.
 				<a href="{{ img_url }}" download>Descargar IMG</a>
 			</p>
 		</object>
-        {% endif %}
+        {% endif %} #}
         {% if pdf_url %}
 		<object data="{{ pdf_url }}#toolbar=1" type="application/pdf" width="100%" height="700" style="border: none;">
 			<p>Tu navegador no soporta PDF.
