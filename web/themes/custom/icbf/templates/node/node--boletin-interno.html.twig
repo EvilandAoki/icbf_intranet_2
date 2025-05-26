@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Theme override to display a node, based on core/themes/stable9.
+ *
+ * Available variables:
+ * - node: The node entity with limited access.
+ * - label: (optional) Title of the node.
+ * - content: All node items. Use {{ content }} or subsets {{ content.field_xxx }}.
+ * - author_picture, metadata, date, author_name, url, display_submitted, etc.
+ * - attributes, title_attributes, content_attributes, author_attributes.
+ * - title_prefix, title_suffix.
+ * - view_mode, teaser, page (flags).
+ *
+ * @see template_preprocess_node()
+ */
+#}
+<article{{attributes.addClass('node','node--type-'~node.bundle()|clean_class)}}>
+	{{ title_prefix }}
+
+	{# Si no es vista “page” imprimimos título enlazado #}
+	{% if not page %}
+		<header>
+			<h2{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h2>
+		</header>
+	{% endif %}
+
+	{# Meta de autor y fecha #}
+	{% if display_submitted %}
+		<footer>
+			{% if author_picture %}
+				{{ author_picture }}
+			{% endif %}
+			<span>
+				{{ 'Submitted by'|t }}
+				{{ author_name }}
+				{{ date }}
+			</span>
+			{{ metadata }}
+		</footer>
+	{% endif %}
+
+	{# Contenido del nodo #}
+	<div{{content_attributes}}>
+    {% set img_url = file_url(content.field_list_image['#items'].entity.fileuri) %}
+    {% set pdf_url = file_url(content.field_document['#items'].entity.fileuri) %}
+		{% if img_url %}
+		<object data="{{ img_url }}#toolbar=1" type="application/pdf" width="100%" height="700" style="border: none;">
+			<p>Tu navegador no soporta IMG.
+				<a href="{{ img_url }}" download>Descargar IMG</a>
+			</p>
+		</object>
+        {% endif %}
+        {% if pdf_url %}
+		<object data="{{ pdf_url }}#toolbar=1" type="application/pdf" width="100%" height="700" style="border: none;">
+			<p>Tu navegador no soporta PDF.
+				<a href="{{ pdf_url }}" download>Descargar PDF</a>
+			</p>
+		</object>
+        {% endif %}
+	</div>
+
+	{{ title_suffix }}
+</article>
