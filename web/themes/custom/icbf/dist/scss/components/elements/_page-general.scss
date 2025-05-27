@@ -1,0 +1,13 @@
+@use "../../abstracts/variables" as var;
+.page-general{
+    h2{
+        strong{
+            text-align: center;
+            font-size: 1.4em;
+            font-family: var.$font-asap-bold;
+            br{
+                display: none;
+            }
+        }
+    }
+}

@@ -12,8 +12,7 @@
 			<div class="col-sm-6">
 				<div class="notice-news-place">
 					<div class="notice-news-field-city">
-						<span>{{ content.field_location }},
-						</span>
+						<span>{{ content.field_location }}</span>
 					</div>
 					<div class="notice-field-day">
 						<span>{{ content.field_date }}</span>
@@ -62,7 +61,6 @@
 	<!-- Banner Carrusel -->
 
 	{% if not node.field_images.isEmpty %}
-		<div class="notice-cards-separator"></div>
 		<div class="notice-cards-pane">
 			<div class="notice-cards-content">
 				<div class="notice-view notice-banners">
@@ -110,20 +108,18 @@
 			<iframe class="notice-video" src={{node.field_youtube.input}} title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
-{% endif %}
+	{% endif %}
 	<!-- Pie de noticia -->
 	<div class="notice-news-intranet">
 		<div>
-			<p class="notice-news-intranet_name">{{ content.field_location }}</p>
-			<p class="notice-news-intranet_city">{{ content.field_lugar }}</p>
+			<a href="/" class="notice-news-intranet_name">{{ content.field_location }}</a>
 			<div class="notice-news-intranet_link">
-				<a href="tel:+5714377630" title="clic para llamar">PBX: (571)4377630</a>
-				<a href="mailto:ICBFPrensa@icbf.gov.co" title="clic para enviar email">ICBFPrensa@icbf.gov.co</a>
-			</div>
-			<div class="notice-news-intranet_btn">
-				<a href="/noticias" class="btn-1519-1" title="clic para consultar más noticias">Más Noticias</a>
-				<a href="/" class="btn-1519-2" title="clic para regresar a página principal">Volver a Inicio</a>
+				<p>PBX: (571)4377630</p>
+				<p>ICBFPrensa@icbf.gov.co</p>
+				<p>Instituto Colombiano de Bienestar Familiar - ICBF Comunicaciones</p>
 			</div>
 		</div>
 	</div>
-</div></div></div>
+</div>
+</div>
+</div>
