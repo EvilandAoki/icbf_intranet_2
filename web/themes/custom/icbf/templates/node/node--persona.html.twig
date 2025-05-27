@@ -40,10 +40,66 @@
     </footer>
   {% endif %}
 
-  {# Contenido del nodo #}
-  <div{{ content_attributes }}>
-    {{ content }}
+    {# Contenido del nodo #}
+    {# fue comentareado por que se hara de forma particular #}
+    {# <div class="person-content"> 
+      <div{{ content_attributes }}>
+        <div class="person-title"> 
+          <h1> {{ label }}</h1>
+        </div>
+          {{ content }}
+      </div>
+    </div> #}
+  {# fin de contenido del nodo #}
+  {# Inicio de maqueta base de contenido #}
+  <div class="person-content"> 
+    <div class="d-flex row"> 
+      {# seccion 1: se trae la img del campo: fotografia #}
+      {# Recomendacion: Validar si la imagen existe, renderizar esta parte. De lo contrario #}
+      <div class="person-photo col-sm-2">
+        <div class="field field--name-field-photo field--type-image field--label-hidden field__item">  
+          <img loading="lazy" src="/sites/default/files/loso-sistesma_0_0.png" width="220" height="124" alt="" typeof="foaf:Image" class="img-fluid">
+        </div>
+      </div>
+      {# fin seccion 1 #}
+      <div class="person-info col-sm-10">
+        {# Seccion 2: trae el texto de la seccion: titulo  #}
+        <div class="person-title"> 
+          <h1> {{ label }}</h1>
+        </div>
+        {# fin seccion 2 #}
+        {# seccion 3: se trae el texto del campo perfil #}
+        <div class="clearfix text-formatted field field--name-field-content-profile field--type-text-long field--label-hidden field__item"><p>Profesional en Derecho de la Universidad Católica de Colombia, Especialista en Derecho Constitucional y Administrativo de la Universidad Católica de Colombia Sede Bogotá</p>
+          <p><strong>Cargo</strong> Apoyar la Gestión Precontractual, Contractual y Post Contractual y demás actividades jurídicas que requiera la Dirección.</p>
+        </div>
+        {# fin seccion 3 #}
+        {# seccion 4: informacion de campos con permisos: correo electronico, cargo, extension, lugar y dependecia #}
+        <div class="person-more-info d-flex flex-column"> 
+        {# contenido dummy con la seccion 4. validar con antonio permisologia -> habilitar campos: orreo electronico, extension y dependecia   #}
+          <div class="field field--name-field-email field--type-email field--label-above">
+                      <div class="field__label">Correo Electrónico</div>
+                      <div class="field__item"><a href="mailto:Juan.Cruz@icbf.gov.co ">Juan.Cruz@icbf.gov.co </a></div>
+                  </div>
+                <div class="field field--name-field-cargo field--type-entity-reference field--label-above">
+                  <div class="field__label">Cargo</div>
+                            <div class="field__item"><a href="/referente-regional-del-snbf" hreflang="es">Referente Regional del SNBF</a></div>
+                        </div>
+          <div class="field field--name-field-phone field--type-string field--label-above">
+            <div class="field__label">Extensión</div>
+                      <div class="field__item">868151</div>
+                  </div>
+          <div class="field field--name-field-lugar field--type-entity-reference field--label-above">
+            <div class="field__label">Lugar</div>
+                      <div class="field__item"><a href="/tolima" hreflang="es">Tolima</a></div>
+                  </div>
+          <div class="field field--name-field-person-area field--type-entity-reference field--label-above">
+            <div class="field__label">Dependencia</div>
+                      <div class="field__item"><a href="/direcciones-regionales/regional-tolima" hreflang="es">Regional Tolima</a></div>
+                  </div>
+        </div>
+        {# fin seccion 4 #}
+    </div>
   </div>
-
+  {# Fin de maqueta de contenido #}
   {{ title_suffix }}
 </article>
