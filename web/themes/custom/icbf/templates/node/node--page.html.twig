@@ -15,7 +15,7 @@
  * @see template_preprocess_node()
  */
 #}
-<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class) }}>
+<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class, 'page-general') }}>
   {{ title_prefix }}
 
   {# Si no es vista “page” imprimimos título enlazado #}
