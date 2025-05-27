@@ -1,0 +1,9 @@
+.layout--threecol-section--25-50-25{
+    justify-content: space-between;
+    .layout__region--second{
+        flex: 0 1 70%;
+    }
+    .layout__region--third{
+        flex: 0 1 25%;
+    }
+}

@@ -35,7 +35,7 @@
         }
         &-field-paragraph{
             p{
-                font-size: 15.4px;
+                font-size: 1.2em;
                 font-family: var.$font-montserrat-regular;
                 color: var.$color-text-gray;
             }
@@ -43,7 +43,7 @@
         &-field-abstract{
             p{
                 font-weight: 500;
-                font-size: 1.1em;
+                font-size: 1.2em;
                 font-family: var.$font-montserrat;
                 line-height: 1.56em;
                 color: var.$color-text-gray;
@@ -88,7 +88,7 @@
             padding: .3em .6em;
         }  
         &-title-notice {
-            font-family: var.$font-montserrat-regular;
+            font-family: var.$font-montserrat;
             font-weight: 500;
             line-height: normal;
             padding-top: .5em;

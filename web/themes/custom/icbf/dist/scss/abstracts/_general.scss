@@ -22,8 +22,7 @@ a {
     color: var.$color-primary-white;
     display: inline-block;
     font-family: var.$font-montserrat;
-    font-size: 12.88px;
-    font-weight: 600;
+    font-size: 12px;
     margin: 0.2em 0.3em 0.4em 0;
     padding: 0.2em 0.83em;
     text-decoration: none;
@@ -33,7 +32,7 @@ a {
     -o-transition: all 0.3s linear;
     &:hover {
       background-color: var.$color-primary-white;
-      border: 2px solid var.$color-primary-blue;
+      border: 1px solid var.$color-primary-blue;
       color: var.$color-primary-blue;
       text-decoration: underline;
     }
@@ -46,8 +45,7 @@ a {
     color: var.$color-primary-blue;
     display: inline-block;
     font-family:  var.$font-montserrat;
-    font-size: 12.88px;
-    font-weight: 600;
+    font-size: 12px;
     margin: 0.2em 0.3em 0.4em 0;
     padding: 0.2em 0.83em;
     text-decoration: none;
@@ -57,7 +55,7 @@ a {
     -o-transition: all 0.3s linear;
     &:hover {
       background-color: var.$color-primary-blue;
-      border: 2px solid var.$color-primary-blue;
+      border: 1px solid var.$color-primary-blue;
       color: var.$color-primary-white;
       text-decoration: underline;
     }
