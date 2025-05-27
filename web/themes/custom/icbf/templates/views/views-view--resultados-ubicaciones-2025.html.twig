@@ -62,17 +62,29 @@
 	{% endif %}
 
 	{% if rows %}
-		<!-- Columna Lateral - Noticias relacionadas -->
-		<div class="notice-more">
-			<div class="notice-more-content">
-
-				<!-- Más noticias -->
-				<div class="notice-more-cards">
-					<h3 class="notice-more-title">Más noticias</h3>
-					{{ rows }}
-				</div>
-			</div>
-		</div>
+		<table class="tabla-webform">
+			<thead>
+				<tr>
+					<th>{{ 'Número serial'|t }}</th>
+					<th>{{ 'Nombre Servidoe publico'|t }}</th>
+                    <th>{{ 'Cédula de Ciudadanía'|t }}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in view.result %}
+					{% set submission = row._entity %}
+					<tr>
+						<td>{{ submission.serial.value }}</td>
+						<td>{{ submission.data.nombre_del_servidor_p_blico }}</td>
+                        <td>{{ submission.data.c_dula_de_ciudadan_a }}</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="2">{{ 'No hay envíos.'|t }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 	{% elseif empty %}
 		<div class="view-empty">
 			{{ empty }}

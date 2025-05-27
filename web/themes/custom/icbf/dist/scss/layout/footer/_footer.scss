@@ -1,7 +1,22 @@
 @use "../../abstracts/variables" as var;
 
 footer {
-  padding: 2rem 0 0 0;
+  margin: 0;
+  padding: 0 !important;
+  max-width: 100% !important;
+  &.border-top{
+    border-top: 0 solid #FFFCCC !important;
+  }
+  .he_back-cleargrey{
+    background: #f8f8f8;
+  }
+  .m20-link {
+    clear: both;
+    margin-bottom: .26em;
+    margin-left: .1em;
+    font-family: var.$font-montserrat-regular;
+    line-height: 1.56em;
+   }
   .col-sm-4.col-xs-12.wcenter {
     float: left;
     position: relative;
@@ -31,6 +46,13 @@ footer {
     max-width: 1130px;
     padding: 0.5rem;
     width: auto;
+    .col-sm-6.col-xs-12{
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   .id-1519 {
     font-family: var.$font-montserrat;
@@ -39,9 +61,13 @@ footer {
       font-family: var.$font-montserrat;
       font-size: 1.58em;
       font-weight: 500;
+      padding: 2rem 0 2.3rem;
+      border-bottom: 1px solid #e1f5e8;
+      clear: both;
+      display: block;
+      margin-bottom: 1em;
       @media screen and (max-width: 850px) {
         font-size: large;
-        padding: 0 0.4em;
       }
     }
     p {
@@ -78,7 +104,7 @@ footer {
   .wcenter {
     margin: auto;
     text-align: center;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       float: inherit !important;
     }
 
@@ -147,13 +173,11 @@ footer {
     a {
       color: #fff;
       text-decoration: none;
+      font-weight: 600 !important;
       &:hover {
         font-weight: 700;
+        color: #FFFCCC;
         text-decoration: underline;
-      }
-      &.f2-a {
-        text-decoration: underline !important;
-        font-weight: 600 !important;
       }
     }
     .split {
@@ -205,7 +229,72 @@ footer {
       padding-bottom: 10px;
     }
   }
+  .he_footer_redesg{
+    list-style: none;
+    margin: 0;
+    padding-left: 0.5rem;
+    .he_footer_socialgov{
+      display: inline-block;
+      padding: .5em .3em !important;
+      margin: .3em .2em;
+      text-align: center;
+      &:hover{
+        background-color: #024a9c;
+        text-decoration: none !important;
+      }
+    }
+    .fa_text{
+      font-family: var.$font-montserrat-regular;
+      font-size: 1em;
+      font-weight: 600;
+    }
+    .fa-twitg:before {
+      content: "\f099";
+      border-radius: 50%;
+      background: #ffffff;
+      color: #3366CC;
+      padding: .52em;
+      margin-right: 0.3em;
+      text-align: center;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+    .fa-instagrmg:before {
+      content: "\f16d";
+      border-radius: 50%;
+      background: #ffffff;
+      color: #3366CC;
+      padding: .52em .6em;
+      margin-right: 0.3em;
+      text-align: center;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+    .fa-faceg:before {
+      content: "\f09a";
+      border-radius: 50%;
+      background: #ffffff;
+      color: #3366CC;
+      padding: .5em .7em;
+      margin-right: 0.3em;
+      text-align: center;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+    .fa-youtbg:before {
+      content: "\f167";
+      border-radius: 50%;
+      background: #ffffff;
+      color: #3366CC;
+      padding: .52em .6em;
+      margin-right: 0.3em;
+      text-align: center;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .he_gov_list{
+    list-style: none;
+    padding-left: 1rem;
+  }
   .block-bean-footer3 {
+    text-align: center;
     .container {
       display: flex;
       align-items: center;
@@ -222,4 +311,5 @@ footer {
       }
     }
   }
+
 }

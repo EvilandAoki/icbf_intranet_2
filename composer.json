@@ -161,6 +161,7 @@
         "drupal/taxonomy_path_breadcrumb": "^1.1",
         "drupal/tb_megamenu": "^1.9",
         "drupal/term_reference_tree": "^2.0",
+        "drupal/twig_tweak": "^3.4",
         "drupal/upgrade_status": "^4.3",
         "drupal/varnish": "^2.0@alpha",
         "drupal/video": "^3.0",
