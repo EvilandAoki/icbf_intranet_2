@@ -221,7 +221,6 @@
            }
         }
     }
-    
     .carousel-indicators [data-bs-target] {
         width: 10px;
         height: 10px;
@@ -245,21 +244,21 @@
 
     .carousel-control-prev,
     .carousel-control-next {
-    background: #ff6d2c;
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    align-items: center;
-    opacity: 1;
-    display: inline-block;
-    margin: 0 10px;
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    &:hover{
-        background:linear-gradient(to bottom, #e0e0e0, rgb(22 20 20));
-    }
+        background: #ff6d2c;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        align-items: center;
+        opacity: 1;
+        display: inline-block;
+        margin: 0 10px;
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        &:hover{
+            background:linear-gradient(to bottom, #e0e0e0, rgb(22 20 20));
+        }
     }
 
     .carousel-control-prev::before {
@@ -292,6 +291,5 @@
     .carousel-control-next::before {
         transform: rotate(358deg);
     }
-
 }
 
