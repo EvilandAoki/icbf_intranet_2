@@ -46,7 +46,7 @@
       <h1>{{ label }}</h1>
     </div>
 	<div class="custom-date mb-3 pt-2">
-	 	{{ date }}
+	 	{{ content.field_date }}
 	</div>
     {% set img_url = file_url(content.field_list_image['#items'].entity.fileuri) %}
     {% set pdf_url = file_url(content.field_document['#items'].entity.fileuri) %}
