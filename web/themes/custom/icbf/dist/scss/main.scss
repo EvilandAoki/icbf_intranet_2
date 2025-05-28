@@ -16,9 +16,11 @@
 @use 'components/institutional-stationery';
 @use 'components/syndicate-publications';
 @use 'components/persons';
+@use 'components/document-internal';
 
 @use 'components/elements/breadcrumb';
 @use 'components/elements/slide';
 @use 'components/elements/custom-table';
+@use 'components/elements/page-general';
 @use 'components/elements/internal-page';
 @use 'components/elements/internal-news';

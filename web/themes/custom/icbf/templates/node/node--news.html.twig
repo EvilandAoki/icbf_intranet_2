@@ -1,5 +1,5 @@
-
-<div class="notice">
+<div
+	class="notice">
 
 	<!-- Título -->
 	<div class="notice-news_title">
@@ -12,8 +12,7 @@
 			<div class="col-sm-6">
 				<div class="notice-news-place">
 					<div class="notice-news-field-city">
-						<span>{{ content.field_location }},
-						</span>
+						<span>{{ content.field_location }}</span>
 					</div>
 					<div class="notice-field-day">
 						<span>{{ content.field_date }}</span>
@@ -27,12 +26,10 @@
 	<div class="notice-news_mainImage">
 		<div class="notice-views-field">
 			<span class="notice-field-content">
-				{# <img class="notice-news-imgp img-fluid" src="Images/portadanews.jpeg" alt=""> #}
-        {{ content.field_list_image }}
+				{{ content.field_list_image }}
 			</span>
 		</div>
 	</div>
-
 	<div class="notice-news-separator-content">
 		<hr></hr>
 </div>
@@ -41,7 +38,6 @@
 <div class="notice-panels-flexible-row notice-panels-flexible-row-last clearfix">
 	<div
 		class="notice-panels-flexible-region-inside">
-
 		<!-- Resumen -->
 		<div class="notice-panel-pane">
 			<div class="notice-news-field-abstract">
@@ -54,7 +50,7 @@
 		<div class="notice-panel-pane">
 			<div class="notice-news-field-paragraph">
 				{{ content.field_content }}
-        {{ content.field_attached_files }}
+				{{ content.field_attached_files }}
 			</div>
 		</div>
 
@@ -62,19 +58,68 @@
 			<hr></hr>
 	</div>
 
+	<!-- Banner Carrusel -->
+
+	{% if not node.field_images.isEmpty %}
+		<div class="notice-cards-pane">
+			<div class="notice-cards-content">
+				<div class="notice-view notice-banners">
+					<div
+						id="notice-carousel-1" class="carousel slide" data-bs-ride="carousel">
+						<!-- Carousel indicators -->
+						<div class="carousel-indicators">
+						{% for delta, item in node.field_images %}
+							<button type="button" data-bs-target="#notice-carousel-{{delta}}" data-bs-slide-to="{{delta}}" class="{% if delta == 0 %}active{% endif %}" aria-current="true" aria-label="Slide {{delta}}"></button>
+							{% endfor %}
+						</div>
+
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							{% for delta, item in node.field_images %}
+								<div class="carousel-item {% if delta == 0 %}active{% endif %}">
+									<div class="notice-views-field">
+										<span
+											class="notice-field-content">
+											<img class="img-fluid d-block w-100" src="{{ file_url(item.entity.uri.value) }}" alt="{{ item.alt }}"/>
+										</span>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+
+						<!-- Carousel navigation -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#notice-carousel-1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#notice-carousel-1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{% if node.field_youtube.input %}
+	<div class="notice-container">
+		<div class="notice-video-wrapper">
+			<iframe class="notice-video" src={{node.field_youtube.input}} title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	{% endif %}
 	<!-- Pie de noticia -->
 	<div class="notice-news-intranet">
 		<div>
-			<p class="notice-news-intranet_name">Nombre del Portal - Departamento de Comunicaciones</p>
-			<p class="notice-news-intranet_city">Sede Principal</p>
+			<a href="/" class="notice-news-intranet_name">{{ content.field_location }}</a>
 			<div class="notice-news-intranet_link">
-				<a href="tel:+5700000000" title="clic para llamar">PBX: (57) 000-0000</a>
-				<a href="mailto:prensa@dominio.com" title="clic para enviar email">prensa@dominio.com</a>
-			</div>
-			<div class="notice-news-intranet_btn">
-				<a href="/noticias" class="btn-1519-1" title="clic para consultar más noticias">Más Noticias</a>
-				<a href="/" class="btn-1519-2" title="clic para regresar a página principal">Volver a Inicio</a>
+				<p>PBX: (571)4377630</p>
+				<p>ICBFPrensa@icbf.gov.co</p>
+				<p>Instituto Colombiano de Bienestar Familiar - ICBF Comunicaciones</p>
 			</div>
 		</div>
 	</div>
-</div></div></div>
+</div>
+</div>
+</div>
