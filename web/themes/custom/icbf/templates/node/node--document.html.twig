@@ -15,35 +15,41 @@
  * @see template_preprocess_node()
  */
 #}
-<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class) }}>
-  {{ title_prefix }}
+<article{{attributes.addClass('node','node--type-'~node.bundle()|clean_class)}}>
+	{{ title_prefix }}
 
-  {# Si no es vista “page” imprimimos título enlazado #}
-  {% if not page %}
-    <header>
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    </header>
-  {% endif %}
+	{# Si no es vista “page” imprimimos título enlazado #}
+	{% if not page %}
+		<header>
+			<h2{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h2>
+		</header>
+	{% endif %}
 
-  {# Meta de autor y fecha #}
-  {% if display_submitted %}
-    <footer>
-      {% if author_picture %}
-        {{ author_picture }}
-      {% endif %}
-      <span>
-        {{ 'Submitted by'|t }} {{ author_name }} {{ date }}
-      </span>
-      {{ metadata }}
-    </footer>
-  {% endif %}
+	{# Meta de autor y fecha #}
+	{% if display_submitted %}
+		<footer>
+			{% if author_picture %}
+				{{ author_picture }}
+			{% endif %}
+			<span>
+				{{ 'Submitted by'|t }}
+				{{ author_name }}
+				{{ date }}
+			</span>
+			{{ metadata }}
+		</footer>
+	{% endif %}
 
-  {# Contenido del nodo #}
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
-
-  {{ title_suffix }}
+	{# Contenido del nodo #}
+	<div class="document-internal-content">
+		<div class="document-title">
+			<h1>{{ label }}</h1>
+		</div>
+		<div{{content_attributes}}>
+			{{ content }}
+		</div>
+	</div>
+	{{ title_suffix }}
 </article>
