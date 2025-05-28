@@ -77,7 +77,7 @@
         }
         &-intranet_link {
             margin-top: 0.5rem;
-            font-family: var.$font-montserrat;
+            font-family: var.$font-montserrat-regular;
             margin-bottom: .5rem;
             line-height: 16px;
             font-size: .9em;
@@ -101,11 +101,11 @@
             padding: .3em .6em;
         }  
         &-title-notice {
-            font-family: var.$font-montserrat;
+            font-family: var.$font-montserrat-regular;
             font-weight: 500;
             line-height: normal;
             padding-top: .5em;
-            font-size: 1.1em;
+            font-size: 14px;
             margin: 0 1px 4px;
         }
         &-latest{
@@ -120,12 +120,12 @@
             font-family: var.$font-montserrat-regular;
             margin-right: 5px;
             padding-right: 5px;
-            font-size: .82em;
+            font-size: 9.98px;
         }
         &-single{
             color: #333;
             font-family: var.$font-montserrat-regular;
-            font-size: .82em;
+            font-size: 9.98px;
         }
         &-img{
             margin-top: 0.5rem;
@@ -151,6 +151,11 @@
     }
     &-field-day{
         margin-left: 13px;
+        time.datetime {
+            font-family: var.$font-montserrat-regular;
+            font-style: italic;
+            font-size: 12.6px;
+        }
     }
     .table{
         display: block;
@@ -161,14 +166,22 @@
             th{
                 font-family: var.$font-montserrat;
                 color: #555555;
+                &:nth-child(1){
+                    width: 630px;
+                }
               }
         }
         tbody{
             tr{
                 border-top: 2px solid #ddd;
+                td{
+                    background: #f9f9f9;
+                }
                 a{
                     color: #000000;
                     font-weight: 600;
+                    font-size: 1em;
+                    font-family: var.$font-montserrat;
                 }
             }
         }
@@ -177,6 +190,7 @@
     &-panel-pane{
         .field.field--name-field-attached-files.field--type-file.field--label-above {
             width: 100%;
+            max-width: 760px;
         }
     }
     .carousel {
@@ -198,6 +212,86 @@
             width: 100%;
             height: auto;
         }
+        iframe{
+            width: 400px;
+            height: 300px;
+            text-align: center;
+             @media (max-width: 767px){
+              width: 100%;
+           }
+        }
     }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid var.$color-text-gray;  
+        margin: 0 6px;
+        opacity: 1;
+        display: none;
+    }
+
+    .carousel-indicators .active {
+    background-color: var.$color-primary-green; 
+    border-color:  var.$color-primary-green;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    background-image: none;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+    background: #ff6d2c;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    opacity: 1;
+    display: inline-block;
+    margin: 0 10px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    &:hover{
+        background:linear-gradient(to bottom, #e0e0e0, rgb(22 20 20));
+    }
+    }
+
+    .carousel-control-prev::before {
+        content: '\203a';
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 23px;
+        height: 23px;
+        align-items: center;
+        margin-top: 2px;
+    }
+    .carousel-control-next::before {
+    content: '\203a';
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 23px;
+        height: 23px;
+        align-items: center;
+        margin-top: -2px;
+    }
+
+    .carousel-control-prev::before {
+        transform: rotate(175deg);
+    }
+
+    .carousel-control-next::before {
+        transform: rotate(358deg);
+    }
+
 }
 
