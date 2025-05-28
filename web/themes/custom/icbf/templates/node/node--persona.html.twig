@@ -57,42 +57,12 @@
 							{{content.field_content_profile|raw}}
 						</div>
 						<div class="person-more-info d-flex flex-column">
-							<div>
-								<p>
-									{# <strong class="field__label">Correo Electrónico</strong> #}
-									<a>{{content.field_email}}</a>
-								</p>
-							</div>
-							<div>
-								<p>
-									{# <strong class="field__label">Cargo</strong> #}
-									<a href="/referente-regional-del-snbf" hreflang="es">{{content.field_cargo}}</a>
-								</p>
-							</div>
-							<div>
-								<p>
-									{# <strong class="field__label">Extensión</strong> #}
-									{{content.field_phone}}
-								</p>
-							</div>
-							<div>
-								<p>
-									{# <strong class="field__label">Prioridad</strong> #}
-									{{content.field_priority}}
-								</p>
-							</div>
-							<div>
-								<p>
-									{# <strong class="field__label">Lugar</strong> #}
-									<a href="/{{content.field_lugar}}" hreflang="es">{{content.field_lugar}}</a>
-								</p>
-							</div>
-							<div>
-								<p>
-									{# <strong class="field__label">Dependencia</strong> #}
-									<a href="/direcciones-regionales/regional-{{content.field_lugar}}" hreflang="es">{{content.field_person_area}}</a>
-								</p>
-							</div>
+							{{content.field_email}}
+							{{content.field_cargo}}
+							{{content.field_phone}}
+							{{content.field_priority}}
+							{{content.field_lugar}}
+							{{content.field_person_area}}
 						</div>
 					</div>
 				</div>
