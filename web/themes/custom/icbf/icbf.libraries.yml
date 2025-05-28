@@ -3,6 +3,8 @@ global-styling:
     theme:
       css/style.css: {}
       dist/css/main.css: {}
+      dist/assets/icons/Stroke/css/pe-icon-7-stroke.css: {}
+      dist/assets/icons/et-line/css/et-line-font.css: {}
   js:
     js/script.js: {}
   dependencies:

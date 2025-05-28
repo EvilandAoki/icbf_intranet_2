@@ -16,7 +16,7 @@
  */
 #}
 <article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class, 'page-general') }}>
-  {{ title_prefix }}
+  <div class="page-general_title">{{ title_prefix }}</div>
 
   {# Si no es vista “page” imprimimos título enlazado #}
   {% if not page %}
