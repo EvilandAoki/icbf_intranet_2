@@ -176,6 +176,7 @@
                 border-top: 2px solid #ddd;
                 td{
                     background: #f9f9f9;
+                    font-family: var.$font-montserrat-regular;
                 }
                 a{
                     color: #000000;
@@ -191,6 +192,9 @@
         .field.field--name-field-attached-files.field--type-file.field--label-above {
             width: 100%;
             max-width: 760px;
+            .field__label{
+                display: none;
+            }
         }
     }
     .carousel {
