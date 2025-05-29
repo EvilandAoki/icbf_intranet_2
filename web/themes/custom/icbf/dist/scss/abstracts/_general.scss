@@ -21,7 +21,8 @@ a {
     border: 1px solid var.$color-primary-blue;
     color: var.$color-primary-white;
     display: inline-block;
-    font-family: var.$font-montserrat;
+    font-family: var.$font-montserrat-regular;
+    font-weight: 600;
     font-size: 12px;
     margin: 0.2em 0.3em 0.4em 0;
     padding: 0.2em 0.83em;
@@ -44,7 +45,8 @@ a {
     border: 1px solid var.$color-primary-blue;
     color: var.$color-primary-blue;
     display: inline-block;
-    font-family:  var.$font-montserrat;
+    font-family:  var.$font-montserrat-regular;
+    font-weight: 600;
     font-size: 12px;
     margin: 0.2em 0.3em 0.4em 0;
     padding: 0.2em 0.83em;
