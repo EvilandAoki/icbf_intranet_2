@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Plantilla base para mostrar un término de taxonomía (todos los vocabularios).
+ *
+ * Available variables:
+ * - term: Objeto del término (entity) (taxonomía/term).
+ * - label: Etiqueta (nombre) del término.
+ * - content: Arreglo renderizado de todos los campos del término.
+ * - vocabulary_id: ID de la vocabulario (machine name).
+ *   Por ejemplo, 'etiquetas', 'categorias', etc.
+ *
+ * Puedes sobrescribir esta plantilla para vocabularios concretos
+ * usando taxonomy-term--[vocabulario].html.twig.
+ */
+#}
+
+<article{{ attributes }}>
+  <header>
+    <h1{{ title_attributes }}>{{ label }}</h1>
+  </header>
+
+  {# Si existe descripción del término, la mostramos #}
+  {% if content.field_description %}
+    <div class="term-description">
+      {{ content.field_description }}
+    </div>
+  {% endif %}
+
+  {# Renderiza el resto de campos (si tienes otros campos en el término) #}
+  {% for key, field in content %}
+    {% if key != 'field_description' and key != '#attributes' and key != '#attached' %}
+      <div class="term-field term-field-{{ key }}">
+        {{ field }}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {# Ejemplo: listar nodos que usan este término #}
+  {% if nodes %}
+    <section class="related-content">
+      <h2>Contenido relacionado</h2>
+      <ul>
+        {% for node in nodes %}
+          <li>
+            <a href="{{ node.url }}">{{ node.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+</article>
