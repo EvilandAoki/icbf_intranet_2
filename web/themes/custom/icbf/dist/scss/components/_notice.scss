@@ -26,6 +26,13 @@
             vertical-align: middle;
         }
         &-field-city{
+            a{
+                font-family: "montserrat-regular";
+                font-size: 12.6px;
+                &::after{
+                    content: ",";
+                }
+            }
             span{
                 color: var.$color-primary-green;
             }
@@ -87,6 +94,11 @@
                 margin-bottom: 0;
             }
         }
+        &_mainImage{
+            img{
+                width: 100%;
+            }
+        }
     } 
     &-more{
         &-title{
@@ -114,9 +126,12 @@
             padding: 1em 0;
             display: inline-block;
         }
+        &-date{
+            line-height: 0.9em;
+        }
         &-place {
             border-right: 1px solid #999;
-            color: var.$color-primary-green;
+            color: #258749;
             font-family: var.$font-montserrat-regular;
             margin-right: 5px;
             padding-right: 5px;
@@ -170,13 +185,19 @@
                     width: 630px;
                 }
               }
+              tr{
+                border-bottom: 0px solid #808080;
+              }
         }
         tbody{
             tr{
                 border-top: 2px solid #ddd;
+                border-bottom: 0px solid #808080;
                 td{
                     background: #f9f9f9;
                     font-family: var.$font-montserrat-regular;
+                    border-right: 0px solid gray;
+                    border-bottom: 0px solid #808080;
                 }
                 a{
                     color: #000000;
@@ -208,8 +229,9 @@
         }
     }
     &-video-wrapper{
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        max-width: 805px;
+        height: 435px;
         text-align: center;
         margin: 2rem auto;
         @media (max-width: 767px){
@@ -217,8 +239,9 @@
             height: auto;
         }
         iframe{
-            width: 400px;
-            height: 300px;
+            width: 100%;
+            max-width: 805px;
+            height: 435px;
             text-align: center;
              @media (max-width: 767px){
               width: 100%;
@@ -294,6 +317,14 @@
 
     .carousel-control-next::before {
         transform: rotate(358deg);
+    }
+    table{
+        tr{
+            border-bottom: 1px solid #808080;
+        }
+        td{
+            border-right: 1px solid #808080;
+        }
     }
 }
 
