@@ -22,30 +22,43 @@
     }
 }
 
-.national-contact {
-    font-family: var.$font-montserrat;
+.block-field-blocknodecontacto-nacionaltitle {
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
 
-    .contact-title {
-        margin-top: 0;
-        font-family: var.$font-asap-regular;
+.block-field-blocknodecontacto-nacionaltitle span {
+    /* background-color: white; */
+    font-family: "Asap-Regular";
+    font-size: 1.7em;
+    /* padding-bottom: 9px; */
+}
 
-        h1 {
-            font-size: 1.7em;
-            padding-bottom: 9px;
-            margin: 40px 0 20px;
-            border-bottom: 1px solid #eee;
-        }
+
+.bs-2col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.bs-2col .bs-region--left {
+    padding: 0 15px;
+}
+
+#national-contact-l {
+    .img-fluid {
+        max-width: 85%;
+        height: auto;
     }
+}
+
+#national-contact-R {
 
     .field {
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
-    }
-
-    .img-fluid {
-        max-width: 85%;
-        height: auto;
     }
 
     .field .field__item,
@@ -61,5 +74,24 @@
             content: ":";
         }
     }
+
+}
+
+.national-contact {
+    font-family: var.$font-montserrat;
+
+    .contact-title {
+        margin-top: 0;
+        font-family: var.$font-asap-regular;
+
+        h1 {
+            font-size: 1.7em;
+            padding-bottom: 9px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+
 
 }
