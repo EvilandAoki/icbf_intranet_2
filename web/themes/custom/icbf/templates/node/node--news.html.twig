@@ -68,8 +68,8 @@
 						id="notice-carousel-1" class="carousel slide" data-bs-ride="carousel">
 						<!-- Carousel indicators -->
 						<div class="carousel-indicators">
-						{% for delta, item in node.field_images %}
-							<button type="button" data-bs-target="#notice-carousel-{{delta}}" data-bs-slide-to="{{delta}}" class="{% if delta == 0 %}active{% endif %}" aria-current="true" aria-label="Slide {{delta}}"></button>
+							{% for delta, item in node.field_images %}
+								<button type="button" data-bs-target="#notice-carousel-{{delta}}" data-bs-slide-to="{{delta}}" class="{% if delta == 0 %}active{% endif %}" aria-current="true" aria-label="Slide {{delta}}"></button>
 							{% endfor %}
 						</div>
 
@@ -78,8 +78,7 @@
 							{% for delta, item in node.field_images %}
 								<div class="carousel-item {% if delta == 0 %}active{% endif %}">
 									<div class="notice-views-field">
-										<span
-											class="notice-field-content">
+										<span class="notice-field-content">
 											<img class="img-fluid d-block w-100" src="{{ file_url(item.entity.uri.value) }}" alt="{{ item.alt }}"/>
 										</span>
 									</div>
@@ -102,12 +101,21 @@
 		</div>
 	{% endif %}
 
-	{% if node.field_youtube.input %}
-	<div class="notice-container">
-		<div class="notice-video-wrapper">
-			<iframe class="notice-video" src={{node.field_youtube.input}} title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!-- Cuerpo de la noticia -->
+	{% if node.field_attached_files.isEmpty %}
+		<div class="notice-panel-separator"></div>
+		<div class="notice-panel-pane">
+			<div class="notice-news-field-paragraph">
+				{{ content.field_attached_files }}
+			</div>
 		</div>
-	</div>
+	{% endif %}
+	{% if node.field_youtube.input %}
+		<div class="notice-container">
+			<div class="notice-video-wrapper">
+				<iframe class="notice-video" src={{node.field_youtube.input}} title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	{% endif %}
 	<!-- Pie de noticia -->
 	<div class="notice-news-intranet">
@@ -120,6 +128,4 @@
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-</div>
+</div></div></div>

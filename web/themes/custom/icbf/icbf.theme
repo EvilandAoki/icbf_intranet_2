@@ -94,3 +94,23 @@ function mi_tema_preprocess_webform_submission_list(array &$variables) {
     '#type' => 'pager',
   ];
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function icbf_preprocess_field(&$variables) {
+  $field_to_check = [
+    'field_content',
+    'field_video_02',
+    'field_builder',
+    'field_header_area'
+  ];
+  if (in_array($variables['field_name'], $field_to_check)) {
+    $items = &$variables['items'];
+    foreach ($items as &$item) {
+      if (is_null($item['content']['#format'])) {
+        $item['content']['#format'] = 'full_html';
+      }
+    }
+  }
+}

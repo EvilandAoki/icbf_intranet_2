@@ -15,15 +15,13 @@
  * @see template_preprocess_node()
  */
 #}
-<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle()|clean_class, 'page-general') }}>
-  <div class="page-general_title">{{ title_prefix }}</div>
+<article {{ attributes.addClass('node', 'node--type-' ~ (node.bundle()|clean_class)) }}>
+  {{ title_prefix }}
 
   {# Si no es vista “page” imprimimos título enlazado #}
   {% if not page %}
     <header>
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
+      <h2 {{ title_attributes }}><a href="{{ url }}" rel="bookmark">{{ label }}</a></h2>
     </header>
   {% endif %}
 
@@ -33,18 +31,17 @@
       {% if author_picture %}
         {{ author_picture }}
       {% endif %}
-      <span>
-        {{ 'Submitted by'|t }} {{ author_name }} {{ date }}
-      </span>
+      <span>{{ 'Submitted by'|t }} {{ author_name }} {{ date }}</span>
       {{ metadata }}
     </footer>
   {% endif %}
 
   {# Contenido del nodo #}
-  <div{{ content_attributes }}>
-  <h1>{{ label }}</h1>
-    {{ content }}
+  <div class="document-internal-content">
+    <div class="document-title">
+      <h1>{{ label }}</h1>
+    </div>
+    <div {{ content_attributes }}>{{ content }}</div>
   </div>
-
   {{ title_suffix }}
 </article>
