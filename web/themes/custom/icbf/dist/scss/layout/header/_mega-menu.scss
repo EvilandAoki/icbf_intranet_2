@@ -79,7 +79,7 @@
 }
 
 .navbar .container-fluid {
-    // margin-left: 6rem;
+    margin-left: 6rem;
     justify-content: center;
 }
 
@@ -619,14 +619,20 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
 
     .mm-ejes a {
         display: inline;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.12em;
+        font-family: var.$font-montserrat;
+        font-size: 0.89em;
         font-weight: 500;
         padding-left: .3em;
         text-align: left;
         text-decoration: none;
         transition: .2s all ease-out;
         word-break: break-word;
+        white-space: unset;
+    }
+
+    .mm-ejes span {
+        top: 1em;
+        position: relative;
     }
 }
 
