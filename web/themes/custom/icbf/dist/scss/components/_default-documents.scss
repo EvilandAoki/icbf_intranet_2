@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as var;
+
+
+.field .field__label,
+.field .field__item {
+    font-size: 14px;
+    margin-top: 0;
+    font-family: var.$font-asap-regular
+}
+
+
+
+.node--view-mode-full [class*=field--name-field-link-] {
+    margin: 0;
+    padding: 0;
+}
+
+.node__submitted {
+    margin-bottom: 1em;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+}
+
+// .az-ctnr.container {
+//     padding-left: 0;
+//     padding-right: 0;
+//     width: auto !important;
+// }
+
+// .az-container.glazed {
+//     min-height: 50px;
+// }
+
+// .az-element {
+//     position: relative;
+// }
+
+.id-ctadit {
+    font-size: 1.4em;
+}
+
+.field__label::after {
+    content: ":";
+}
+
+.wcenter {
+    margin: auto;
+    text-align: center;
+}
