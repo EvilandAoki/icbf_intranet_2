@@ -8,7 +8,6 @@
 @use 'layout/header/header-bottom';
 @use 'layout/header/header-top';
 @use 'layout/footer/footer';
-@use 'layout/taxonomias/taxonomia';
 @use 'layout/header/mega-menu';
 
 @use 'components/notice';
@@ -19,7 +18,7 @@
 @use 'components/document-internal';
 @use 'components/general-elements';
 @use 'components/default-documents';
-
+@use 'components/taxonomias/general-taxonomias';
 
 @use 'components/elements/breadcrumb';
 @use 'components/elements/custom-table';
@@ -27,3 +26,7 @@
 @use 'components/elements/internal-page';
 @use 'components/elements/internal-news';
 @use 'components/elements/table-general';
+
+
+@use 'components/taxonomias/taxonomia';
+@use 'components/taxonomias/area';
