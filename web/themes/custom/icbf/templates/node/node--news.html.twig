@@ -37,8 +37,7 @@
 
 <!-- Contenido principal -->
 <div class="notice-panels-flexible-row notice-panels-flexible-row-last clearfix">
-	<div
-		class="notice-panels-flexible-region-inside">
+	<div class="notice-panels-flexible-region-inside">
 		<!-- Resumen -->
 		<div class="notice-panel-pane">
 			<div class="notice-news-field-abstract">
@@ -47,9 +46,11 @@
 		</div>
 
 		<!-- Cuerpo de la noticia -->
-		<div class="notice-panel-separator"></div>
+		<div class="notice-panel-separator">
+		</div>
 		<div class="notice-panel-pane">
 			<div class="notice-news-field-paragraph">
+			    {{ content.field_multimedia }}
 				{{ content.field_content }}
 			</div>
 		</div>
