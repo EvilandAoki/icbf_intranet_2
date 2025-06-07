@@ -51,7 +51,6 @@
 		<div class="notice-panel-pane">
 			<div class="notice-news-field-paragraph">
 				{{ content.field_content }}
-				{{ content.field_attached_files }}
 			</div>
 		</div>
 
@@ -101,15 +100,7 @@
 		</div>
 	{% endif %}
 
-	<!-- Cuerpo de la noticia -->
-	{% if node.field_attached_files.isEmpty %}
-		<div class="notice-panel-separator"></div>
-		<div class="notice-panel-pane">
-			<div class="notice-news-field-paragraph">
-				{{ content.field_attached_files }}
-			</div>
-		</div>
-	{% endif %}
+	{{ content.field_attached_files }}
 	{% if node.field_youtube.input %}
 		<div class="notice-container">
 			<div class="notice-video-wrapper">
