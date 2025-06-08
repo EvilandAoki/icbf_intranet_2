@@ -26,4 +26,10 @@
             border-bottom: 1px solid #eee;
         }
     }
+
+    .field .field--name-field-resume p {
+        font-family: var.$font-asap-regular;
+        padding: 0;
+        font-size: 14px;
+    }
 }
