@@ -16,6 +16,14 @@
         div{
             padding: 1em 0 1.5em 0;
         }
+        a{
+            font-family: "montserrat-regular";
+            font-size: 12.6px;
+            &::after{
+                content: ",";
+                margin-right: 0.5rem;
+            }
+        }
     }
     &-blocknodenewsfield-date{
         width: max-content;
@@ -147,6 +155,8 @@
                 display: block;
                 overflow-x: auto;
                 white-space: nowrap;
+                max-width: 775px;
+                width: 100%;
                 thead{
                     border-top: 2px solid #ddd;
                     th{
