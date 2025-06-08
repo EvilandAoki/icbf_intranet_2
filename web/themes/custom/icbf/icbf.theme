@@ -114,3 +114,9 @@ function icbf_preprocess_field(&$variables) {
     }
   }
 }
+
+function icbf_preprocess_node(array &$variables) {
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $variables['display_submitted'] = FALSE;
+  }
+}
