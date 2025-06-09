@@ -107,7 +107,7 @@
 }
 
 .img-noticia-eje {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 !important;
 }
 
@@ -116,6 +116,10 @@
     border-top: 2px solid #ddd;
 }
 
+
+.custom-datetime {
+    font-family: var.$font-montserrat !important;
+}
 
 #custom-noticia-eje .custom-date {
     display: flex;
@@ -137,4 +141,10 @@
 #custom-content {
     margin-top: 0;
     font-family: var.$font-asap-regular;
+
+    .node--view-mode-full .field__label {
+        color: #555;
+        font-size: 14px;
+        font-family: var.$font-asap-regular;
+    }
 }
