@@ -104,6 +104,7 @@ function icbf_preprocess_field(&$variables) {
     'field_video_02',
     'field_builder',
     'field_constructor_glazedb',
+    'field_infografia_dit',
     'field_header_area'
   ];
   if (in_array($variables['field_name'], $field_to_check)) {
@@ -115,6 +116,10 @@ function icbf_preprocess_field(&$variables) {
     }
   }
   if ($variables['field_name'] == 'field_constructor_glazedb' && isset($item['content']['#text'])) {
+    $html = $item['content']['#text'];
+    $item['content']['#text'] = icbf_files_directory_process($html);
+  }
+  if ($variables['field_name'] == 'field_infografia_dit' && isset($item['content']['#text'])) {
     $html = $item['content']['#text'];
     $item['content']['#text'] = icbf_files_directory_process($html);
   }
