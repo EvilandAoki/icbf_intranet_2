@@ -18,9 +18,10 @@
 }
 
 
+
 .node--view-mode-full [class*=field--name-field-link-] {
     margin: 0 !important;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .node__submitted {
@@ -44,6 +45,16 @@
 //     position: relative;
 // }
 
+.node--view-mode-full .field__label {
+    color: #555;
+    font-size: 14px;
+    font-family: var.$font-asap-regular;
+}
+
+.field--name-field-list-image {
+    width: 80%;
+    margin: auto;
+}
 
 .field--name-field-file-categoria {
     display: flex;
