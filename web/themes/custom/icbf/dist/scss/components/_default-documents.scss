@@ -35,9 +35,7 @@
     font-family: var.$font-montserrat;
 }
 
-.datetime {
-    font-family: var.$font-montserrat;
-}
+
 
 // .az-ctnr.container {
 //     padding-left: 0;
@@ -53,10 +51,11 @@
 //     position: relative;
 // }
 
-.node--view-mode-full .field__label {
+.field__label,
+.field__item {
     color: #555;
     font-size: 14px;
-    font-family: var.$font-asap-regular;
+    font-family: var.$font-asap-regular !important;
 }
 
 
