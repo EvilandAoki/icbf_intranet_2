@@ -103,6 +103,7 @@ function icbf_preprocess_field(&$variables) {
     'field_content',
     'field_video_02',
     'field_builder',
+    'field_constructor_glazedb',
     'field_header_area'
   ];
   if (in_array($variables['field_name'], $field_to_check)) {
