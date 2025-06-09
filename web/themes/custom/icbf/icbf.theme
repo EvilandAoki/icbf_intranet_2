@@ -113,10 +113,33 @@ function icbf_preprocess_field(&$variables) {
       }
     }
   }
+  if ($variables['field_name'] == 'field_builder' && isset($item['content']['#text'])) {
+    $html = $item['content']['#text'];
+    $item['content']['#text'] = icbf_files_directory_process($html);
+  }
 }
 
 function icbf_preprocess_node(array &$variables) {
   if (\Drupal::currentUser()->isAnonymous()) {
     $variables['display_submitted'] = FALSE;
   }
+}
+
+/**
+ * Processes the HTML content to replace placeholders with actual values.
+ *
+ * @param string $html
+ *   The HTML content to process.
+ *
+ * @return string
+ *   The processed HTML content with placeholders replaced.
+ */
+function icbf_files_directory_process($html)
+{
+  $request = \Drupal::service('request_stack')->getCurrentRequest();
+  $base_url = $request->getSchemeAndHttpHost();
+  $public_files_path = \Drupal::config('system.file')->get('path.public') ?? 'sites/default/files';
+  $html = str_replace('-base-url-', $base_url, $html);
+  $html = str_replace('-files-directory-', $public_files_path, $html);
+  return $html;
 }
