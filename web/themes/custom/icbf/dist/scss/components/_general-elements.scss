@@ -106,6 +106,18 @@
     }
 }
 
+.img-noticia-eje {
+    max-width: 100%;
+    margin: 0;
+}
+
+#custom-noticia-eje .custom-date {
+    display: flex;
+    .field__label,
+    .field__item {
+        font-family: var.$font-montserrat !important;
+    }
+}
 
 #custom-title {
     font-family: var.$font-asap-regular;
