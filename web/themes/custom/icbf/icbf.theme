@@ -113,7 +113,7 @@ function icbf_preprocess_field(&$variables) {
       }
     }
   }
-  if ($variables['field_name'] == 'field_builder' && isset($item['content']['#text'])) {
+  if ($variables['field_name'] == 'field_constructor_glazedb' && isset($item['content']['#text'])) {
     $html = $item['content']['#text'];
     $item['content']['#text'] = icbf_files_directory_process($html);
   }
