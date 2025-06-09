@@ -245,6 +245,10 @@
                     border-right: 1px solid #808080;
                 }
             }
+            img, video{
+                width: 100%;
+                max-width: 850px;
+            }
         }
         &-field-abstract{
             p{
