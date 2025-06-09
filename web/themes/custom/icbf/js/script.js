@@ -29,30 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
   // Insertar el nuevo .carousel-inner en el contenedor
   carousel.appendChild(carouselInner);
 
-  // Agregar controles (opcional)
-  const prevControl = document.createElement('button');
-  prevControl.className = 'carousel-control-prev';
-  prevControl.type = 'button';
-  prevControl.setAttribute('data-bs-target', '.carousel.slide');
-  prevControl.setAttribute('data-bs-slide', 'prev');
-  prevControl.innerHTML = `
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  `;
+  // Verificar cuántos carousel-item hay
+  const totalItems = carouselInner.querySelectorAll('.carousel-item').length;
 
-  const nextControl = document.createElement('button');
-  nextControl.className = 'carousel-control-next';
-  nextControl.type = 'button';
-  nextControl.setAttribute('data-bs-target', '.carousel.slide');
-  nextControl.setAttribute('data-bs-slide', 'next');
-  nextControl.innerHTML = `
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  `;
+  // Agregar controles solo si hay más de un item
+  if (totalItems > 1) {
+    const prevControl = document.createElement('button');
+    prevControl.className = 'carousel-control-prev';
+    prevControl.type = 'button';
+    prevControl.setAttribute('data-bs-target', '.carousel.slide');
+    prevControl.setAttribute('data-bs-slide', 'prev');
+    prevControl.innerHTML = `
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    `;
 
-  carousel.appendChild(prevControl);
-  carousel.appendChild(nextControl);
+    const nextControl = document.createElement('button');
+    nextControl.className = 'carousel-control-next';
+    nextControl.type = 'button';
+    nextControl.setAttribute('data-bs-target', '.carousel.slide');
+    nextControl.setAttribute('data-bs-slide', 'next');
+    nextControl.innerHTML = `
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    `;
 
-  // Inicializar el carrusel (necesario si usas Bootstrap JS)
+    carousel.appendChild(prevControl);
+    carousel.appendChild(nextControl);
+  }
+
+  // Inicializar el carrusel
   const bsCarousel = new bootstrap.Carousel(carousel);
 });
