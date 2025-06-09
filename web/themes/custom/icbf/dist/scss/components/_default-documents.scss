@@ -5,13 +5,21 @@
 .field .field__item {
     font-size: 14px;
     margin-top: 0;
-    font-family: var.$font-asap-regular
+    font-family: var.$font-asap-regular;
+}
+
+.field .field__label,
+.field .field__item p {
+    font-size: 14px;
+    margin-top: 0;
+    font-family: var.$font-asap-regular;
+    padding: 0;
+    margin: 0 !important;
 }
 
 
-
 .node--view-mode-full [class*=field--name-field-link-] {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
 }
 
@@ -35,6 +43,12 @@
 // .az-element {
 //     position: relative;
 // }
+
+
+.field--name-field-file-categoria {
+    display: flex;
+    flex-direction: column;
+}
 
 .id-ctadit {
     font-size: 1.4em;
