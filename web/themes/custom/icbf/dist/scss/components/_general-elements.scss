@@ -108,11 +108,18 @@
 
 .img-noticia-eje {
     max-width: 100%;
-    margin: 0;
+    margin: 0 !important;
 }
+
+.news-content {
+    margin-top: 2em;
+    border-top: 2px solid #ddd;
+}
+
 
 #custom-noticia-eje .custom-date {
     display: flex;
+
     .field__label,
     .field__item {
         font-family: var.$font-montserrat !important;
