@@ -148,3 +148,12 @@
         font-family: var.$font-asap-regular;
     }
 }
+
+.custom-date-text {
+    display: inline-flex;
+    font-family: var.$font-montserrat;
+
+    .field__label.field__item {
+        font-family: var.$font-montserrat;
+    }
+}
