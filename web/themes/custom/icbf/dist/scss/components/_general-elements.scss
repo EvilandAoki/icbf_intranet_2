@@ -157,3 +157,11 @@
         font-family: var.$font-montserrat;
     }
 }
+
+.ms-content {
+    font-family: var.$font-montserrat-regular;
+
+    strong {
+        font-family: var.$font-asap-regular;
+    }
+}
