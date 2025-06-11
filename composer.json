@@ -188,6 +188,7 @@
         "drupal/webform": "^6.3@beta",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_migrate": "^2.0@alpha",
+        "drupal/webform_views": "^5.5",
         "drupal/workbench_moderation": "^1.9",
         "drupal/xmlsitemap": "^1.5",
         "drupal/youtube": "^2.0",
