@@ -153,8 +153,8 @@
     display: inline-flex;
     font-family: var.$font-montserrat;
 
-    .field__label.field__item {
-        font-family: var.$font-montserrat;
+    .field__label .field__item {
+        font-family: var.$font-montserrat !important;
     }
 }
 
@@ -164,4 +164,67 @@
     strong {
         font-family: var.$font-asap-regular;
     }
+}
+
+
+.cdit-titleh3v {
+    color: #0b8763;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.56em;
+    font-weight: 500;
+    padding: .5em 0;
+}
+
+.cdit-infob {
+    color: #333;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.07em;
+    font-weight: 400;
+    line-height: 1.65em;
+    padding: .5em;
+}
+
+.cdit-titleh3w {
+    color: #FFF;
+    font-family: var.$font-montserrat-regular;
+    font-weight: 500;
+    font-size: 1.56em;
+    padding: .5em 0;
+}
+
+.cdit-titleh4w {
+    color: #FFF;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.14em;
+    font-weight: 600;
+    padding: .5em 0;
+}
+
+.cdit-infow {
+    color: #FFF;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.07em;
+    font-weight: 400;
+    line-height: 1.65em;
+    padding: .5em;
+}
+
+.cdit-idh1v {
+    color: #5fa639;
+    font-family: var.$font-montserrat-regular;
+    font-size: 2.08em;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+    text-align: center;
+}
+
+.cdit-subth2blu {
+    color: #125e81;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.68em;
+    font-weight: 500;
+    line-height: normal;
+    margin: auto;
+    text-align: center;
 }
