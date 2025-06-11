@@ -228,3 +228,23 @@
     margin: auto;
     text-align: center;
 }
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    font-family: var.$font-montserrat-regular;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e5e5;
+    border-color: #adadad;
+}
