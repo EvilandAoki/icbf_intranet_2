@@ -6,6 +6,7 @@
   }
 
   &.pager__item--next {
+    width: 100px;
     .page-link {
       &::before {
         content: "Siguiente >";
@@ -17,6 +18,7 @@
   }
 
   &.pager__item--last {
+    width: 100px;
     .page-link {
       &::before {
         content: "Última >";
@@ -26,4 +28,7 @@
       }
     }
   }
+  &.disabled span {
+    height: 33px;
+   }
 }
