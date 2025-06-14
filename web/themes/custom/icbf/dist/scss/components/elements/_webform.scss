@@ -1,0 +1,46 @@
+@use "../../abstracts/variables" as var;
+
+.wf-content {
+    font-family: var.$font-asap-regular;
+
+    .form-submit {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        font-size: 14px;
+    }
+
+    .form-submit:hover {
+        color: #333;
+        background-color: #e6e5e5;
+        border-color: #adadad;
+    }
+}
+
+.wf-content-b {
+    font-family: var.$font-asap-regular;
+
+    legend {
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    .js-form-type-textfield label {
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+
+    .form-submit {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        font-size: 14px;
+    }
+
+    .form-submit:hover {
+        color: #fff;
+        background-color: #286090;
+        border-color: #204d74;
+    }
+}

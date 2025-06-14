@@ -53,36 +53,35 @@
 #}
 {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
 
-
 {% block top_menu %}
   {% if page.top_menu %}
     {{ page.top_menu }}
-  {% endif %}        
+  {% endif %}
 {% endblock %}
-<header id="navbar" role="banner" class="navbar  navbar-default">
-<div class="container-fluid">
+<header id="navbar" role="banner" class="navbar navbar-default">
+  <div class="container-fluid">
     <div class="navbar-header">
       {% block header %}
         {% if page.header %}
           {{ page.header }}
-        {% endif %}        
+        {% endif %}
       {% endblock %}
-     </div>
+    </div>
   </div>
   <div class="navbar" id="navbar-collapse">
-        <div class="container-fluid">
-          <nav role="navigation">
-             {% block navigation %}
-                {% if page.navigation %}
-                  {{ page.navigation }}
-                {% endif %}        
-              {% endblock %}
-          </nav>
-        </div>
-      </div>
+    <div class="container-fluid">
+      <nav role="navigation">
+        {% block navigation %}
+          {% if page.navigation %}
+            {{ page.navigation }}
+          {% endif %}
+        {% endblock %}
+      </nav>
+    </div>
+  </div>
 </header>
 
-<div{{ attributes.addClass('main-container', container_class) }}>
+<div {{ attributes.addClass('main-container', container_class) }}>
   <dev id="page-header" class="py-3 border-bottom mb-4">
     {% if site_slogan %}
       <p class="h5 text-muted mb-0">{{ site_slogan }}</p>
@@ -92,9 +91,7 @@
 
   <div class="row gx-4 gy-3">
     {% if page.sidebar_first %}
-      <aside class="col-lg-3">
-        {{ page.sidebar_first }}
-      </aside>
+      <aside class="col-lg-3">{{ page.sidebar_first }}</aside>
     {% endif %}
 
     <main class="{{ content_column_class }}">
@@ -121,9 +118,7 @@
       {{ messages }}
 
       {% if tabs %}
-        <div class="mb-3">
-          {{ tabs }}
-        </div>
+        <div class="mb-3">{{ tabs }}</div>
       {% endif %}
 
       {% if page.help %}
@@ -133,27 +128,21 @@
       {% if action_links %}
         <ul class="list-inline mb-3">{{ action_links }}</ul>
       {% endif %}
-
-      {{ page.content }}
+      {# Probamos si este contenedor me funciona para el ampliar esa clase #}
+      <div class="prueba_x">{{ page.content }}</div>
     </main>
 
     {% if page.sidebar_second %}
-      <aside class="col-lg-3">
-        {{ page.sidebar_second }}
-      </aside>
+      <aside class="col-lg-3">{{ page.sidebar_second }}</aside>
     {% endif %}
   </div>
 </div>
 
 {% if page.footer_top %}
-  <div class="{{ container_class }} py-4">
-    {{ page.footer_top }}
-  </div>
+  <div class="{{ container_class }} py-4">{{ page.footer_top }}</div>
 {% endif %}
 
 {% if page.footer %}
-  <footer class="{{ container_class }} py-3 border-top">
-    {{ page.footer }}
-  </footer>
+  <footer class="{{ container_class }} py-3 border-top">{{ page.footer }}</footer>
 {% endif %}
 {# {{ page.hidden_megamenu }} #}
