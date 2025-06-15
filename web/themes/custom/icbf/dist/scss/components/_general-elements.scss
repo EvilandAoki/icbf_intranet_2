@@ -229,6 +229,14 @@
     text-align: center;
 }
 
+.h245-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 176px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .btn-lg {
     padding: 10px 16px;
     font-size: 18px;
@@ -247,4 +255,29 @@
     color: #333;
     background-color: #e6e5e5;
     border-color: #adadad;
+}
+
+.id-1519 {
+    font-family: var.$font-montserrat-regular;
+}
+
+.news-paddeditor {
+    padding: .6em .9em;
+    height: auto;
+}
+
+.id-1519 {
+    font-family: "Montserrat-regular";
+}
+
+.id-1519 h3 {
+    color: #4b4b4b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+.fm-mst {
+    font-family: var.$font-montserrat-regular;
 }
