@@ -9,10 +9,10 @@
     }
     input#edit-submit-documents {
         width: 100%;
-        background-color: #fff;
+        background-color: #0073ff;
+        color: #fff;
         border-radius: 30px;
         border: 1px solid #0073ff;
-        color: #0073ff;
         display: inline-block;
         font-family: "montserrat-regular";
         font-weight: 600;
@@ -22,13 +22,33 @@
         text-decoration: none;
         -webkit-transition: all .3s linear;
         &:hover{
-            background-color: #0073ff;
-            color: #fff;
+            background-color: #fff;
+            color: #0073ff;
         }
     }
-    .table {
-        a{
-            font-weight: 700;
+    .view-filters{
+        label{
+            font-family: 'montserrat';
+            font-size: 13px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+    }
+    #view-field-document-table-column{
+        vertical-align: bottom;
+        border-bottom: 2px solid #ddd;
+        padding: 8px;
+        line-height: 1.428571429;
+        color: #555;
+        font-family: "Asap-Regular";
+    }
+    table{
+        tbody{
+            tr{
+                &:nth-child(odd), &:hover {
+                background-color: #f9f9f9;
+                }
+            }
         }
     }
 }
