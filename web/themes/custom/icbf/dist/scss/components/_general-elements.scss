@@ -29,7 +29,7 @@
 
 .block-field-blocknodecontacto-nacionaltitle span {
     /* background-color: white; */
-    font-family: "Asap-Regular";
+    font-family: var.$font-asap-regular;
     font-size: 1.7em;
     /* padding-bottom: 9px; */
 }
@@ -267,12 +267,12 @@
 }
 
 .id-1519 {
-    font-family: "Montserrat-regular";
+    font-family: var.$font-montserrat-regular;
 }
 
 .id-1519 h3 {
     color: #4b4b4b;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var.$font-montserrat-regular;
     font-size: 1.3em;
     font-weight: 600;
 }
