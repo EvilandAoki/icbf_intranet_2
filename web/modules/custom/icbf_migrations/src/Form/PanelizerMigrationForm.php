@@ -539,6 +539,13 @@ class PanelizerMigrationForm extends FormBase {
               $term->get('layout_builder__layout')->appendItem($row['section']);
             }
 
+
+
+
+
+
+
+
             // Add new sections to the node.
             $layout_field = $term->get(OverridesSectionStorage::FIELD_NAME);
             // dump($layout_field);
@@ -831,5 +838,9 @@ class PanelizerMigrationForm extends FormBase {
         // dump($sections);
         break;
     }
+
   }
+
 }
+
+
