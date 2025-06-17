@@ -50,6 +50,26 @@
             }
         }
     }
+    .table > :not(caption) > * > * {
+        padding: 0;
+        color: inherit;
+        background-color: inherit;
+        border-bottom-width: inherit;
+        box-shadow: inherit;
+    }
+}
+
+.Listado-videos{
+    .field-content {
+        color: white;
+    }
+    .file--video {
+        display: grid;
+        overflow: hidden;
+        margin-top: -1rem;
+    }
+
+
 }
 .pagination {
     li.page-item {
