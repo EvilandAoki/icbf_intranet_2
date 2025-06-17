@@ -307,9 +307,27 @@
         font-family: var.$font-montserrat-regular;
     }
 
+    img {
+        max-width: 100%;
+    }
+
+
     .info-title1g {
         font-family: var.$font-asap-regular;
     }
+
+    .info-describe {
+        font-family: var.$font-asap-regular;
+    }
+
+    .info-text-c {
+        font-family: var.$font-montserrat-regular;
+    }
+
+    .width-95 {
+        width: 95px !important;
+    }
+
 
     .caja2 {
         background-color: #fff;
@@ -327,4 +345,28 @@
         width: 75px;
         display: block;
     }
+}
+
+.custom-cbki {
+    position: relative;
+    width: 100vw;
+    right: 24%;
+
+    @media screen and (max-width: 1440px) {
+        width: 101vw;
+        right: 5.7%;
+    }
+}
+
+.stpe-outlinebutton {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
