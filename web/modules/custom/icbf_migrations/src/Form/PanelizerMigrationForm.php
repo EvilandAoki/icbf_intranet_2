@@ -831,7 +831,5 @@ class PanelizerMigrationForm extends FormBase {
         // dump($sections);
         break;
     }
-
   }
-
 }
