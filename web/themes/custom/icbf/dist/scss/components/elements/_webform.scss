@@ -3,18 +3,6 @@
 .wf-content {
     font-family: var.$font-asap-regular;
 
-    .form-submit {
-        color: #333;
-        background-color: #fff;
-        border-color: #ccc;
-        font-size: 14px;
-    }
-
-    .form-submit:hover {
-        color: #333;
-        background-color: #e6e5e5;
-        border-color: #adadad;
-    }
 
     .form-control {
         border: 1px solid #ddd;
@@ -29,6 +17,7 @@
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     }
 }
+
 
 .wf-content-b {
     font-family: var.$font-asap-regular;
@@ -73,5 +62,18 @@
         color: #fff;
         background-color: #286090;
         border-color: #204d74;
+    }
+
+    .form-53812 {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        font-size: 14px;
+    }
+
+    .form-53812:hover {
+        color: #333;
+        background-color: #e6e5e5;
+        border-color: #adadad;
     }
 }
