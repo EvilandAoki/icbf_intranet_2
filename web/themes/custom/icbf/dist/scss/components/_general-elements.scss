@@ -277,6 +277,13 @@
     font-weight: 600;
 }
 
+.id-1519 h2 {
+    color: #4b4b4b;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.58em;
+    font-weight: 500;
+}
+
 .h1-word {
     color: #FFF;
     font-size: 2.16em;
@@ -284,13 +291,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.fm-mst {
-    font-family: var.$font-montserrat-regular;
+.he_back-cleargrey {
+    background-color: #F8F8F8;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 2em 0;
+    position: relative;
+    width: 100vw;
 }
 
-.fm-asp {
-    font-family: var.$font-asap-regular;
-}
+
 
 .custom-t-tramite {
 
@@ -358,6 +370,15 @@
     }
 }
 
+
+.fm-mst {
+    font-family: var.$font-montserrat-regular;
+}
+
+.fm-asp {
+    font-family: var.$font-asap-regular;
+}
+
 .stpe-outlinebutton {
     display: inline-block;
     background: transparent;
@@ -369,4 +390,31 @@
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 1px;
+}
+
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
+
+    .views-field-title,
+    .views-field-title {
+        padding: 9px
+    }
+
+    .views-field-title span {
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .views-field-field-date time {
+        font-family: var.$font-montserrat-regular;
+    }
 }
