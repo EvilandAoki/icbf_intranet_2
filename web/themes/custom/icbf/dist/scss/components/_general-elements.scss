@@ -277,6 +277,13 @@
     font-weight: 600;
 }
 
+.id-1519 h2 {
+    color: #4b4b4b;
+    font-family: var.$font-montserrat-regular;
+    font-size: 1.58em;
+    font-weight: 500;
+}
+
 .h1-word {
     color: #FFF;
     font-size: 2.16em;
@@ -284,13 +291,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.fm-mst {
-    font-family: var.$font-montserrat-regular;
+.he_back-cleargrey {
+    background-color: #F8F8F8;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 2em 0;
+    position: relative;
+    width: 100vw;
 }
 
-.fm-asp {
-    font-family: var.$font-asap-regular;
-}
+
 
 .custom-t-tramite {
 
@@ -356,6 +368,15 @@
         width: 101vw;
         right: 5.7%;
     }
+}
+
+
+.fm-mst {
+    font-family: var.$font-montserrat-regular;
+}
+
+.fm-asp {
+    font-family: var.$font-asap-regular;
 }
 
 .stpe-outlinebutton {
