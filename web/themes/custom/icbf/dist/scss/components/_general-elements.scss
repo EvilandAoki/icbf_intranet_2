@@ -284,6 +284,19 @@
     font-weight: 500;
 }
 
+.id-1519 h5 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.qa-word h4 {
+    font-size: 1.32em;
+    font-weight: 500;
+    font-family: var.$font-montserrat-regular;
+    margin: .5em auto;
+}
+
 .h1-word {
     color: #FFF;
     font-size: 2.16em;
@@ -406,8 +419,8 @@
     transition: border .2s ease-in-out;
 
     .views-field-title,
-    .views-field-title {
-        padding: 9px
+    .views-field-date {
+        padding: 9px;
     }
 
     .views-field-title span {
@@ -419,4 +432,91 @@
     .views-field-field-date time {
         font-family: var.$font-montserrat-regular;
     }
+}
+
+.box-bgcont {
+    background-color: #FFF;
+    padding: .4em;
+    border-radius: .6em;
+    min-height: 142px;
+}
+
+.box-ejecont {
+    border-radius: .7em;
+    -webkit-border-radius: .7em;
+    -moz-border-radius: .7em;
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%);
+    clear: both;
+    display: inline-block;
+    height: auto;
+    margin: .5em 1em;
+    padding: .4em;
+    position: relative;
+    transform: translateY(0);
+    transition: .3s box-shadow ease, .3s transform ease;
+    width: 99%;
+}
+
+.box-bnaranja {
+    padding: .2rem;
+    position: relative;
+    background: rgb(204, 109, 26);
+    background: linear-gradient(328deg, rgba(204, 109, 26, 1) 12%, rgba(251, 164, 36, 1) 100%);
+}
+
+.box-bgreen {
+    padding: .2rem;
+    position: relative;
+    background: rgb(89, 158, 64);
+    background: linear-gradient(328deg, rgba(89, 158, 64, 1) 12%, rgba(113, 218, 75, 1) 100%);
+}
+
+.box-bzul {
+    padding: .2rem;
+    position: relative;
+    background: rgb(42, 89, 170);
+    background: linear-gradient(328deg, rgba(42, 89, 170, 1) 12%, rgba(65, 133, 251, 1) 100%);
+}
+
+.box-byello {
+    padding: .2rem;
+    position: relative;
+    background: rgb(232, 184, 30);
+    background: linear-gradient(328deg, rgba(232, 184, 30, 1) 12%, rgba(255, 238, 91, 1) 100%);
+}
+
+
+.az-element>.controls {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3500;
+    text-align: center;
+    word-wrap: normal;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+}
+
+.ejes-icon img {
+    margin: -7.4em .5em 0 auto;
+    padding-top: .5em;
+    height: 150px;
+    width: auto;
+    display: flex
+}
+
+.id-boxejes {
+    display: inline-block;
+    margin: 1em 3.2em .2em .5em;
+    font-family: var.$font-montserrat-regular;
+    font-weight: 600;
+    z-index: 99;
+    position: inherit;
+}
+
+.box-bgcont {
+    background-color: #FFF;
+    padding: .4em;
+    border-radius: .6em;
+    min-height: 145px;
 }
