@@ -1,7 +1,4 @@
 .filter-table{
-    display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
     margin: 2rem auto;
     #edit-field-date-value {
         font-family: 'montserrat-regular';
@@ -27,22 +24,40 @@
         }
     }
     .view-filters{
-        label{
+        width: 25%;
+        float: left;
+        label, .fieldset-legend{
             font-family: 'montserrat';
             font-size: 13px;
             margin-bottom: 1rem;
             text-transform: uppercase;
+            font-weight: 500;
+        }
+      ul {
+            list-style: none;
+            padding: 0 0 0 1rem;
+            #edit-field-location-target-id-all {
+                display: none;
+            }
+        }
+        .form-radios {
+            padding: 0 0 0 1rem;
         }
     }
-    #view-field-document-table-column{
-        vertical-align: bottom;
-        border-bottom: 2px solid #ddd;
-        padding: 8px;
-        line-height: 1.428571429;
-        color: #555;
-        font-family: "Asap-Regular";
+    thead{
+        tr{
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+            padding: 8px;
+            line-height: 1.428571429;
+            color: #555;
+            font-family: "Asap-Regular";
+        }
     }
     table{
+        --bs-table-bg: inherit;
+        width: 75%;
+        float: left;
         tbody{
             tr{
                 &:nth-child(odd), &:hover {
@@ -50,5 +65,9 @@
                 }
             }
         }
+    }
+    nav.pager {
+        width: 75%;
+        float: left;
     }
 }
