@@ -391,3 +391,30 @@
     font-weight: normal;
     letter-spacing: 1px;
 }
+
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
+
+    .views-field-title,
+    .views-field-title {
+        padding: 9px
+    }
+
+    .views-field-title span {
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .views-field-field-date time {
+        font-family: var.$font-montserrat-regular;
+    }
+}
