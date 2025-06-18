@@ -362,17 +362,19 @@
 .custom-cbki {
     position: relative;
     width: 100vw;
-    right: 24%;
-
-    @media screen and (max-width: 1440px) {
-        width: 101vw;
-        right: 5.7%;
-    }
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
 
 
 .fm-mst {
     font-family: var.$font-montserrat-regular;
+}
+
+.id-white {
+    color: #fff;
+    font-family: var.$font-montserrat-regular;
+    font-weight: 600;
 }
 
 .fm-asp {
