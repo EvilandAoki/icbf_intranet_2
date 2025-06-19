@@ -7,5 +7,6 @@ global-styling:
       dist/assets/icons/et-line/css/et-line-font.css: {}
   js:
     js/script.js: {}
+    bootstrap/javascript/bootstrap/carousel.js: {}
   dependencies:
     - bootstrap5/bootstrap
