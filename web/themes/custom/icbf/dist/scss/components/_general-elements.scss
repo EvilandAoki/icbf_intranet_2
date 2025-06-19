@@ -384,15 +384,87 @@
     font-family: var.$font-montserrat-regular;
 }
 
+.fm-asp {
+    font-family: var.$font-asap-regular;
+}
+
+.box-h275 {
+    height: auto;
+    min-height: 275px;
+}
+
+.bar-line {
+    border-bottom: 1px solid #e1f5e8;
+    clear: both;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.box-contain {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .1);
+    clear: both;
+    display: inline-block;
+    height: auto;
+    margin: .5em 1em;
+    padding: 0;
+    position: relative;
+    transform: translateY(0);
+    transition: .3s box-shadow ease, .3s transform ease;
+    width: auto;
+}
+
+.custom-ejs h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.custom-ejs h4 {
+    font-size: 1.1em;
+    margin: 0 1px 4px 1px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+a .btn-1519-d {
+    background-color: #0073FF;
+    border-radius: 30px;
+    border: 1px solid #0073FF;
+    color: #FFF;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .89em;
+    font-weight: 600;
+    margin: .2em .3em .4em 0;
+    padding: .2em .67em;
+    text-decoration: none;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.hspace {
+    clear: both;
+    display: block;
+    height: 8px;
+}
+
+
 .id-white {
     color: #fff;
     font-family: var.$font-montserrat-regular;
     font-weight: 600;
 }
 
-.fm-asp {
-    font-family: var.$font-asap-regular;
-}
+
 
 .stpe-outlinebutton {
     display: inline-block;
