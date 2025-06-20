@@ -433,13 +433,13 @@
     color: inherit;
 }
 
-a .btn-1519-d {
+.btn-1519-d {
     background-color: #0073FF;
     border-radius: 30px;
     border: 1px solid #0073FF;
-    color: #FFF;
+    color: #FFF !important;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var.$font-montserrat-regular;
     font-size: .89em;
     font-weight: 600;
     margin: .2em .3em .4em 0;
