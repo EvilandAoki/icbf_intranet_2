@@ -842,5 +842,3 @@ class PanelizerMigrationForm extends FormBase {
   }
 
 }
-
-
