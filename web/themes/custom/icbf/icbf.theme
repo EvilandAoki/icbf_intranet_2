@@ -139,58 +139,106 @@ function icbf_preprocess_field(&$variables) {
 
   // $fields_with_views = ['field_faqs_related'];
   // if (in_array($variables['field_name'], $fields_with_views)) {
-    $items = &$variables['items'];
-    foreach ($items as &$item) {
-      if (isset($item['content']['#text'])) {
-        $html = $item['content']['#text'];
-        if (strpos($html, 'data-azb="az_view')) {
-          $explode_html = explode('</div>', $html);
-          foreach ($explode_html as $original_element) {
-            if (strpos($original_element, 'data-azb="az_view')) {
-              $original_element .= '</div>';
-              $element = trim($original_element);
+    // $items = &$variables['items'];
+    // foreach ($items as &$item) {
+    //   if (isset($item['content']['#text'])) {
+    //     $html = $item['content']['#text'];
+    //     if (strpos($html, 'data-azb="az_view')) {
+    //       $explode_html = explode('</div>', $html);
+    //       foreach ($explode_html as $original_element) {
+    //         if (strpos($original_element, 'data-azb="az_view')) {
+    //           $original_element .= '</div>';
+    //           $element = trim($original_element);
 
-              // Check if there are contextual filters.
-              $filter = [];
-              $pos_contextual_filter = strpos($element, 'data-azat-contextual_filter');
-              if ($pos_contextual_filter) {
-                $string = substr($element, $pos_contextual_filter);
-                $string_array = explode('"', $string);
-                $filter = isset($string_array[1]) ? explode('/', $string_array[1]) : [];
+    //           // Check if there are contextual filters.
+    //           $filter = [];
+    //           $pos_contextual_filter = strpos($element, 'data-azat-contextual_filter');
+    //           if ($pos_contextual_filter) {
+    //             $string = substr($element, $pos_contextual_filter);
+    //             $string_array = explode('"', $string);
+    //             $filter = isset($string_array[1]) ? explode('/', $string_array[1]) : [];
+    //           }
+
+    //           // Check if view data.
+    //           $view_data = [];
+    //           $pos_view_info = strpos($element, 'data-azb="az_view');
+    //           if ($pos_contextual_filter) {
+    //             $string = substr($element, $pos_view_info);
+    //             $string_array = explode('"', $string);
+    //             $view_data = isset($string_array[1]) ? explode('-', $string_array[1]) : [];
+
+    //             if (isset($view_data[1]) && isset($view_data[2])) {
+    //               $view = Views::getView($view_data[1]);
+    //               if ($view) {
+    //                 $view->setDisplay($view_data[2]);
+    //                 $view->preExecute();
+    //                 $view->execute();
+
+    //                 if (!empty($filter)) {
+    //                   $view->setArguments($filter);
+    //                 }
+
+    //                 // Render it
+    //                 $render_array = $view->render();
+    //                 $html_view = \Drupal::service('renderer')->renderRoot($render_array);
+    //                 $item['content']['#text'] = str_replace($original_element, $html_view, $html);
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  // }
+  $items = &$variables['items'];
+
+foreach ($items as &$item) {
+  if (isset($item['content']['#text'])) {
+    $html = $item['content']['#text'];
+
+    // Buscamos todos los bloques que contienen data-azb="az_view..."
+    preg_match_all('/(<div[^>]*data-azb="az_view[^"]*"[^>]*>.*?<\/div>)/s', $html, $matches);
+
+    if (!empty($matches[1])) {
+      foreach ($matches[1] as $original_element) {
+        // Extraemos la parte data-azb="az_viewVIEWNAME-DISPLAY"
+        if (preg_match('/data-azb="az_view([^"]+)"/', $original_element, $vd)) {
+          list(, $view_info) = $vd;
+          $parts = explode('-', $view_info, 2);
+          if (count($parts) === 2) {
+            list($view_name, $display_id) = $parts;
+
+            // Construimos el array de argumentos si hay filtro contextual
+            $args = [];
+            if (preg_match('/data-azat-contextual_filter="([^"]+)"/', $original_element, $cf)) {
+              $args = explode('/', $cf[1]);
+            }
+
+            // Cargamos y ejecutamos la vista
+            if ($view = \Drupal\views\Views::getView($view_name)) {
+              $view->setDisplay($display_id);
+              $view->preExecute();
+              if (!empty($args)) {
+                $view->setArguments($args);
               }
+              $view->execute();
+              $render_array = $view->render();
+              $rendered = \Drupal::service('renderer')->renderRoot($render_array);
 
-              // Check if view data.
-              $view_data = [];
-              $pos_view_info = strpos($element, 'data-azb="az_view');
-              if ($pos_contextual_filter) {
-                $string = substr($element, $pos_view_info);
-                $string_array = explode('"', $string);
-                $view_data = isset($string_array[1]) ? explode('-', $string_array[1]) : [];
-
-                if (isset($view_data[1]) && isset($view_data[2])) {
-                  $view = Views::getView($view_data[1]);
-                  if ($view) {
-                    $view->setDisplay($view_data[2]);
-                    $view->preExecute();
-                    $view->execute();
-
-                    if (!empty($filter)) {
-                      $view->setArguments($filter);
-                    }
-
-                    // Render it
-                    $render_array = $view->render();
-                    $html_view = \Drupal::service('renderer')->renderRoot($render_array);
-                    $item['content']['#text'] = str_replace($original_element, $html_view, $html);
-                  }
-                }
-              }
+              // Reemplazamos **solo** este bloque por el render de la vista
+              $html = str_replace($original_element, $rendered, $html);
             }
           }
         }
       }
+
+      // Guardamos el HTML modificado de vuelta
+      $item['content']['#text'] = $html;
     }
-  // }
+  }
+}
+
 }
 
 function icbf_preprocess_node(array &$variables) {
