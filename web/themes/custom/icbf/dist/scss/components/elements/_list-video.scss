@@ -1,0 +1,23 @@
+.Listado-videos{
+    .grid .clearfix {
+        display: none;
+    }
+
+    .row{
+        display: flex;
+        gap: 0rem;
+        @media(max-width: 767px){
+            display: inherit;
+        }
+    }
+    .col{
+        @media (max-width: 767px){
+            width: 100%
+        }
+    }
+
+    .grid video {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
