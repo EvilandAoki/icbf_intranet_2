@@ -8,14 +8,14 @@
         padding: 8px;
         line-height: 1.428571429;
         color: #555;
-        font-family: var.$font-asap-regular;
+        font-family: var.$font-montserrat;
     }
     td {
         padding: 8px;
         line-height: 1.428571429;
         vertical-align: top;
         border-top: 1px solid #ddd;
-         font-family: var.$font-asap-regular;
+         font-family: var.$font-montserrat-regular;
     }
     tbody{
         tr{
@@ -47,6 +47,9 @@
                 &:nth-child(odd), &:hover {
                 background-color: #f9f9f9;
                 }
+            }
+            td {
+                font-family: 'montserrat';
             }
         }
     }
