@@ -171,25 +171,27 @@ function icbf_preprocess_field(&$variables) {
                   $view = Views::getView($view_data[1]);
                   if ($view) {
                     $view->setDisplay($view_data[2]);
-                    $view->preExecute();
-                    $view->execute();
 
                     if (!empty($filter)) {
                       $view->setArguments($filter);
                     }
+                    $view->preExecute();
+                    $view->execute();
 
                     // Render it
                     $render_array = $view->render();
-                    $html_view = \Drupal::service('renderer')->renderRoot($render_array);
-                    $item['content']['#text'] = str_replace($original_element, $html_view, $html);
+                    $html_view = \Drupal::service('renderer')->render($render_array);
+                    $html = str_replace($original_element, $html_view, $html);
                   }
                 }
               }
             }
           }
-        }
+
+          $item['content']['#text'] = $html;
       }
-    }
+      }
+    }
   // }
 }
 
