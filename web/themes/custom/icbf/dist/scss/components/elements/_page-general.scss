@@ -78,8 +78,10 @@
         line-height: 1.428571429;
         border-radius: 4px;
         margin: 0.8rem;
+         --bs-btn-color: inherit;
+        color: #1996d0;
         &:hover, &:active{
-            color: #333;
+            color: #333 !important;
             background-color: #d4d4d4;
             border: 1px solid #8c8c8c;
         }
