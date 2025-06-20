@@ -433,13 +433,13 @@
     color: inherit;
 }
 
-a .btn-1519-d {
+.btn-1519-d {
     background-color: #0073FF;
     border-radius: 30px;
     border: 1px solid #0073FF;
-    color: #FFF;
+    color: #FFF !important;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var.$font-montserrat-regular;
     font-size: .89em;
     font-weight: 600;
     margin: .2em .3em .4em 0;
@@ -591,4 +591,33 @@ a .btn-1519-d {
     padding: .4em;
     border-radius: .6em;
     min-height: 145px;
+}
+
+.btn-1519-3:hover {
+    background-color: #3cb371;
+    border: 1px solid #3cb371;
+    color: #FFF !important;
+    text-decoration: underline;
+}
+
+.btn-1519-3 {
+    background-color: #FFF;
+    border-radius: 30px;
+    border: 1px solid #3cb371;
+    color: #3cb371 !important;
+    display: inline-block;
+    font-family: var.$font-montserrat-regular;
+    font-size: .89em;
+    font-weight: 600;
+    margin: .2em .3em .4em 0;
+    padding: .2em .67em;
+    text-decoration: none;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.btncolor-culto img {
+    max-width: 100%
 }
