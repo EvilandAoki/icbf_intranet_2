@@ -1,49 +1,56 @@
 @use "../../abstracts/variables" as var;
 
-.Taxonomia-area{
-   ul{
-     li{
-        font-size: 14px;
-        font-family: var.$font-montserrat-regular;
-     }
-   }
-   .stpe-outlinebutton{
-    text-transform: uppercase;
-    padding: 6px 28px;
-   }
-   .h1-word {
+.Taxonomia-area {
+    ul {
+        li {
+            font-size: 14px;
+            font-family: var.$font-montserrat-regular;
+        }
+    }
+
+    .stpe-outlinebutton {
+        text-transform: uppercase;
+        padding: 6px 28px;
+    }
+
+    .h1-word {
         color: #FFF;
         font-size: 2.16em;
         font-weight: 600;
         font-family: var.$font-montserrat;
     }
-   .id-1519 {
-    font-family: var.$font-montserrat;
-    font-size: 1.2em;
-    h3{
-        color: #4b4b4b;
+
+    .id-1519 {
         font-family: var.$font-montserrat;
-        font-size: 1.3em;
-        font-weight: 600;
+        font-size: 1.2em;
+
+        h3 {
+            color: #4b4b4b;
+            font-family: var.$font-montserrat;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
     }
-   }
-   .id-1519-h3{
-        display:block;
+
+    .id-1519-h3 {
+        display: block;
         font-family: var.$font-montserrat;
         font-size: 1.32em;
         font-weight: 500;
         line-height: normal;
         word-break: break-word;
     }
-    .id-1519-h4{
-        display:block;
+
+    .id-1519-h4 {
+        display: block;
         font-family: var.$font-montserrat;
         font-size: 1.12em;
         font-weight: 500;
         line-height: normal;
         word-break: break-word;
     }
-   .box-gral1519-2 {
+
+    .box-gral1519-2 {
         background-color: #fefefe;
         border: 1px solid #dddddd;
         height: auto;
@@ -56,26 +63,57 @@
         -ms-transition: all .4s ease 0s;
         -o-transition: all .4s ease 0s;
         transition: all .4s ease 0s;
-        &:hover{
+
+        &:hover {
             border: 1px solid #eee;
-            box-shadow: 0 0.4rem 1.3rem rgba(0,0,0,.3);
+            box-shadow: 0 0.4rem 1.3rem rgba(0, 0, 0, .3);
             transform: translateY(-.2rem);
         }
     }
+
     .contain-gral1519-2 {
         display: inline-block;
         padding: .5em;
         width: auto;
-        .col-sm-3, .col-sm-9{
+
+        .col-sm-3,
+        .col-sm-9 {
             float: left;
         }
     }
+
     .icon-gral1519-2 {
         height: auto;
         margin: .87em .1em;
         width: 100%;
     }
-    .btn-default{
+
+    .btn-1519-1 {
+        background-color: #FFF !important;
+        border-radius: 30px;
+        border: 1px solid #3cb371 !important;
+        color: #3cb371 !important;
+        display: inline-block;
+        font-family: var.$font-montserrat-regular;
+        font-size: .89em;
+        font-weight: 600;
+        margin: .2em .3em .4em 0;
+        padding: .2em .67em;
+        text-decoration: none;
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+    }
+
+    .btn-1519-1:hover {
+        background-color: #3cb371 !important;
+        border: 1px solid #3cb371 !important;
+        color: #FFF !important;
+        text-decoration: underline;
+    }
+
+    .btn-default {
         background-color: white;
         border-color: #8c8c8c;
         width: 100%;
@@ -84,10 +122,13 @@
         line-height: 1.3333333;
         border-radius: 6px;
         font-family: var.$font-montserrat-regular;
-        &:hover{
+
+        &:hover {
             color: #333;
             background-color: #d4d4d4;
             border-color: #8c8c8c;
         }
     }
+
+
 }
