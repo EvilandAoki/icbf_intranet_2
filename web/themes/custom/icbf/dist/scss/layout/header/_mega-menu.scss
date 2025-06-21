@@ -11,54 +11,82 @@
 
 .tb-megamenu {
 
-    // primer Li -> inicio
-    li[data-id="menu_link_content:64418c95-02bc-42ab-9d6b-f92192eb5e4e"] {
-        .tb-megamenu-submenu {
-            left: -100%;
-        }
+    ul li:nth-child(2) .tb-megamenu-submenu {
+        left: -100%;
     }
 
-    // segundo Li -> iformacion y tecnologia
-    li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] {
-        .tb-megamenu-submenu {
-            left: -120%;
-        }
+    ul li:nth-child(3) .tb-megamenu-submenu {
+        left: -120%;
     }
 
-    // tercer Li -> sistema integrado de gestion
-    li[data-id="menu_link_content:74a9543d-6424-4e26-9304-2f562d57e3ff"] {
-        .tb-megamenu-submenu {
-            left: -180%;
-        }
+    ul li:nth-child(4) .tb-megamenu-submenu {
+        left: -180%
     }
 
-    //  cuarto li -> estructura organica
-    li[data-id="menu_link_content:697b44f1-b407-4ab0-8251-f3a8cecd278f"] {
-        .tb-megamenu-submenu {
-            left: -345%;
-        }
+    ul li:nth-child(5) .tb-megamenu-submenu {
+        left: -345%;
     }
 
-    //  quinto li -> estadisticas institucionales
-    li[data-id="menu_link_content:0969c89a-d964-4e40-9dd2-5af9d9b82c2d"] {
-        .tb-megamenu-submenu {
-            left: -355%;
-        }
+    ul li:nth-child(6) .tb-megamenu-submenu {
+        left: -355%;
     }
 
-    // sexto li -> cifras de proteccion 
-    li[data-id="menu_link_content:fd201e48-d33f-4dbd-9741-55bfe9946cc0"] {
-        .tb-megamenu-submenu {
-            left: -565%;
-        }
+    ul li:nth-child(7) .tb-megamenu-submenu {
+        left: -565%;
     }
 
-    // septimo li -> medios ICBF
-    li[data-id="menu_link_content:1d0d9ef7-564b-4c40-8409-cca2fdd8bc82"] {
-        .tb-megamenu-submenu {
-            left: -675%;
-        }
+    ul li:nth-child(8) .tb-megamenu-submenu {
+        left: -675%;
     }
+
+    // // primer Li -> inicio
+    // li[data-id="menu_link_content:cdd43411-125d-4507-a1ef-251bbb62d412"] {
+    //     .tb-megamenu-submenu {
+    //         left: -100%;
+    //     }
+    // }
+
+    // // segundo Li -> iformacion y tecnologia
+    // li[data-id="menu_link_content:06a42eae-fc72-4f72-b501-d1b9796ddf49"] {
+    //     .tb-megamenu-submenu {
+    //         left: -120%;
+    //     }
+    // }
+
+    // // tercer Li -> sistema integrado de gestion
+    // li[data-id="menu_link_content:74a9543d-6424-4e26-9304-2f562d57e3ff"] {
+    //     .tb-megamenu-submenu {
+    //         left: -180%;
+    //     }
+    // }
+
+    // //  cuarto li -> estructura organica
+    // li[data-id="menu_link_content:697b44f1-b407-4ab0-8251-f3a8cecd278f"] {
+    //     .tb-megamenu-submenu {
+    //         left: -345%;
+    //     }
+    // }
+
+    // //  quinto li -> estadisticas institucionales
+    // li[data-id="menu_link_content:0969c89a-d964-4e40-9dd2-5af9d9b82c2d"] {
+    //     .tb-megamenu-submenu {
+    //         left: -355%;
+    //     }
+    // }
+
+    // // sexto li -> cifras de proteccion 
+    // li[data-id="menu_link_content:fd201e48-d33f-4dbd-9741-55bfe9946cc0"] {
+    //     .tb-megamenu-submenu {
+    //         left: -565%;
+    //     }
+    // }
+
+    // // septimo li -> medios ICBF
+    // li[data-id="menu_link_content:1d0d9ef7-564b-4c40-8409-cca2fdd8bc82"] {
+    //     .tb-megamenu-submenu {
+    //         left: -675%;
+    //     }
+    // }
 }
 
 
@@ -79,8 +107,8 @@
 }
 
 .navbar .container-fluid {
-    margin-left: 6rem;
-    justify-content: center;
+    justify-content: start;
+    max-width: 1117px;
 }
 
 #block-icbf-menu3intranet-2 {
@@ -220,7 +248,26 @@
     }
 }
 
+#submenu-row-icbf_estructuracenter {
+    .m20-icon-l {
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: 1px solid #c3e5d0;
+        float: left;
+        font-size: x-small;
+        line-height: normal;
+        margin-right: .4em;
+        padding: .1em .25em;
 
+        &:before {
+            color: #3cb371;
+            content: "\f054";
+            font-family: 'Fontawesome';
+            padding: .1em;
+        }
+    }
+}
 
 #submenu-row-icbf_menuiniciobotton {
     .m20-separator {
