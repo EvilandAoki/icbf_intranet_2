@@ -5,6 +5,7 @@
 
     .row{
         display: flex;
+        margin-bottom: 2rem;
         gap: 0rem;
         @media(max-width: 767px){
             display: inherit;
@@ -20,7 +21,7 @@
         width: 100% !important;
         height: auto !important;
     }
-    .field-content span {
+    .views-field.views-field-title span{
         color: #555555;
         text-decoration: none !important;
         cursor: text;
