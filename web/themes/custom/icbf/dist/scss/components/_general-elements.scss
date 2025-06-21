@@ -608,7 +608,6 @@
     display: inline-block;
     font-family: var.$font-montserrat-regular;
     font-size: .89em;
-    font-weight: 600;
     margin: .2em .3em .4em 0;
     padding: .2em .67em;
     text-decoration: none;
@@ -627,14 +626,16 @@
 }
 
 .m2 li {
-    background: url('../../img/blue-list-arrow.png') no-repeat;
+    background: url('../themes/custom/icbf/dist/img/orange-list-arrow.png');
+    background-repeat: no-repeat;
     list-style: none;
     margin-bottom: .5em;
     padding-left: 1.5em;
 }
 
 .m3 li {
-    background: url('../../img/orange-list-arrow.png') no-repeat;
+    background: url('../themes/custom/icbf/dist/img/orange-list-arrow.png');
+    background-repeat: no-repeat;
     list-style: none;
     margin-bottom: .5em;
     padding-left: 1.5em;
