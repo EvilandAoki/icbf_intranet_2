@@ -1,0 +1,53 @@
+.Home-SlideGestionHumana {
+  .int-ghumbox {
+    background: linear-gradient(
+      146deg,
+      rgba(249, 249, 249, 1) 12%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    display: block;
+    padding: 0 1em 1em 0;
+    text-align: center;
+    border-radius: 7px;
+    min-height: 160px;
+    margin: 0.6em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .ghum-icons {
+    img {
+      display: block;
+      height: 114px;
+      margin: 0 auto auto 0;
+      width: auto;
+    }
+  }
+
+  .link-ghum {
+    color: #4b4b4b;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.12em;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -0.6em;
+    padding: 0 0 0 1.34em;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .wcenter {
+    text-align: center;
+    margin: auto;
+    position: relative;
+  }
+
+  h2 {
+    color: #4b4b4b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.58em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+}
