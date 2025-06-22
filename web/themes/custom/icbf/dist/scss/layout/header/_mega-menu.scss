@@ -41,10 +41,22 @@
 
     h2 {
         color: #4b4b4b;
-        font-family: 'Montserrat', sans-serif;
+        font-family: var.$font-montserrat-regular;
         font-weight: 600;
         font-size: 1.2em;
         text-transform: none;
+    }
+
+    h3 {
+        color: #4b4b4b;
+        font-family: var.$font-montserrat-regular;
+        font-weight: 500;
+        font-size: 1.1em;
+        text-transform: none;
+    }
+
+    a {
+        font-size: 0.89em;
     }
 }
 
@@ -673,6 +685,30 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         content: "\f234";
         font-family: 'Fontawesome';
         font-size: .9em;
+    }
+
+
+    .btn-mm1 {
+        background-color: #FFF;
+        border-radius: 30px;
+        border: 2px solid #0073FF;
+        color: #0073FF !important;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0.9em !important;
+        font-weight: 500;
+        margin: 1em .5em 0 0;
+        padding: .3rem 1.3rem;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+    }
+
+    .btn-mm1:hover {
+        color: #fff !important;
+        background-color: #0073FF;
+        text-decoration: underline;
+        box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .1);
     }
 }
 
