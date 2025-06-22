@@ -184,6 +184,13 @@
                 color: #3366cc;
                 text-decoration: underline;
             }
+
+            &:before {
+                color: #3cb371;
+                content: "\f054";
+                font-family: 'Fontawesome';
+                padding: .1em;
+            }
         }
     }
 
@@ -734,6 +741,14 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     }
 
     .mm-dit3:before {
+        // -webkit-border-radius: .4em;
+        // -moz-border-radius: .4em;
+        border: 1px solid #c3e5d0;
+        float: left;
+        font-size: x-small;
+        line-height: normal !important;
+        margin-right: .4em;
+        padding: .1em .25em;
         color: #FFF;
         content: "\f234";
         font-family: 'Fontawesome';
@@ -792,7 +807,19 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         clear: both;
         margin-bottom: .26em;
         margin-left: .1em;
-        font-family: var.$font-montserrat-regular;
+        font-family: var.$font-montserrat;
+
+        a {
+            color: #4b4b4b;
+            font-family: var.$font-montserrat;
+            font-size: 12.08px;
+            padding: 0;
+
+            &:hover {
+                color: #3366cc;
+                text-decoration: underline;
+            }
+        }
     }
 
     .btn-mm2 {
@@ -871,7 +898,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         line-height: normal;
         margin-right: .4em;
         padding: .1em .25em;
-
+        
         &:before {
             color: #3cb371;
             content: "\f054";
