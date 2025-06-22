@@ -1320,7 +1320,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         width: 100%;
     }
 
-    .mm-iconc1:before {
+    .mm-coms1 a:before {
         color: #FFF !important;
         content: "\f26c";
         font-family: 'Fontawesome';
@@ -1347,7 +1347,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         width: 100%;
     }
 
-    .mm-iconc3:before {
+    .mm-coms2 a:before {
         color: #FFF !important;
         content: "\f03e";
         font-family: 'Fontawesome';
@@ -1372,10 +1372,15 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         min-height: 40px;
         padding: .6em 0 .6em .6em;
         width: 100%;
+
+        a {
+            color: var.$color-primary-white;
+        }
     }
 
-    .mm-iconc3:before {
+    .mm-coms3 a:before {
         color: #FFF !important;
+        padding-right: .2em;
         content: "\f03e";
         font-family: 'Fontawesome';
         font-size: .9em;
@@ -1402,7 +1407,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         width: 100%;
     }
 
-    .mm-iconc4:before {
+    .mm-coms4 a:before {
         color: #FFF !important;
         content: "\f1c5";
         font-family: 'Fontawesome';
