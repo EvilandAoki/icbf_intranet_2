@@ -1,21 +1,19 @@
 @use "../../abstracts/variables" as var;
 
-.breadcrumb {
-  background-color: transparent;
-  &-container {
-    display: flex;
-    gap: 1rem;
-    margin: auto;
-    width: 70%;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  &-title{
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-family: var.$Asap;
-  }
+#block-icbf-breadcrumbs{
+     h2 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: 'Asap-Regular';
+    }
+    
+    .breadcrumb-item {
+        font-family: 'Asap-Regular';
+        color: #125e81;
+        margin-left: 1rem;
+    }
+    .breadcrumb-item + .breadcrumb-item {
+        padding-left: 0px !important;
+    }
 }
