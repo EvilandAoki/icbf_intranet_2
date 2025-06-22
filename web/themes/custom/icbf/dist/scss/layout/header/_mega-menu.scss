@@ -898,7 +898,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         line-height: normal;
         margin-right: .4em;
         padding: .1em .25em;
-        
+
         &:before {
             color: #3cb371;
             content: "\f054";
@@ -1019,6 +1019,32 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
             content: "\f054";
             font-family: 'Fontawesome';
             padding: .1em;
+        }
+    }
+
+    .btn-mm2 {
+
+        background-color: var.$color-primary-blue;
+        border-radius: 30px;
+        border: 1px solid var.$color-primary-blue;
+        color: var.$color-primary-white;
+        display: inline-block;
+        font-family: var.$font-montserrat;
+        font-size: 12.88px;
+        font-weight: 600;
+        margin: 0.2em 0.3em 0.4em 0;
+        padding: 0.2em 0.83em;
+        text-decoration: none;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+
+        &:hover {
+            background-color: var.$color-primary-white;
+            border: 1px solid var.$color-primary-blue;
+            color: var.$color-primary-blue;
+            text-decoration: underline;
         }
     }
 }
@@ -1201,6 +1227,152 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     }
 }
 
+#submenu-row-icbf_mediostop {
+    h2 {
+        color: #4b4b4b;
+        font-family: var.$font-montserrat-regular;
+        font-weight: 600;
+        font-size: 1.2em;
+        text-transform: none;
+    }
+
+    .btn-mm2 {
+
+        background-color: var.$color-primary-blue;
+        border-radius: 30px;
+        border: 1px solid var.$color-primary-blue;
+        color: var.$color-primary-white;
+        display: inline-block;
+        font-family: var.$font-montserrat;
+        font-size: 12.88px;
+        font-weight: 600;
+        margin: 0.2em 0.3em 0.4em 0;
+        padding: 0.2em 0.83em;
+        text-decoration: none;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+
+        &:hover {
+            background-color: var.$color-primary-white;
+            border: 1px solid var.$color-primary-blue;
+            color: var.$color-primary-blue;
+            text-decoration: underline;
+        }
+    }
+}
+
+#submenu-row-icbf_mediosbutton {
+    .mm-coms1 {
+        background: linear-gradient(118deg, rgba(0, 179, 102, 1) 25%, rgba(11, 132, 77, 1) 100%);
+        background: rgb(0, 179, 102);
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: none;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        -webkit-box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        display: inline-block;
+        line-height: normal;
+        margin: .6em 0 .4em 0;
+        min-height: 40px;
+        padding: .6em 0 .6em .6em;
+        width: 100%;
+    }
+
+    .mm-iconc1:before {
+        color: #FFF !important;
+        content: "\f26c";
+        font-family: 'Fontawesome';
+        font-size: .9em;
+    }
+
+    .mm-coms2 {
+        background: linear-gradient(118deg, rgba(92, 67, 137, 1) 25%, rgba(66, 46, 109, 1) 100%);
+        background: rgb(92, 67, 137);
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: none;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        -webkit-box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        display: inline-block;
+        line-height: normal;
+        margin: .6em 0 .4em 0;
+        min-height: 40px;
+        padding: .6em 0 .6em .6em;
+        width: 100%;
+    }
+
+    .mm-iconc3:before {
+        color: #FFF !important;
+        content: "\f03e";
+        font-family: 'Fontawesome';
+        font-size: .9em;
+    }
+
+    .mm-coms3 {
+        background: linear-gradient(118deg, rgba(255, 142, 80, 1) 25%, rgba(234, 98, 8, 1) 100%);
+        background: rgb(255, 142, 80);
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: none;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        -webkit-box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        display: inline-block;
+        line-height: normal;
+        margin: .6em 0 .4em 0;
+        min-height: 40px;
+        padding: .6em 0 .6em .6em;
+        width: 100%;
+    }
+
+    .mm-iconc3:before {
+        color: #FFF !important;
+        content: "\f03e";
+        font-family: 'Fontawesome';
+        font-size: .9em;
+    }
+
+
+    .mm-coms4 {
+        background: linear-gradient(118deg, rgba(0, 97, 170, 1) 25%, rgba(0, 70, 134, 1) 100%);
+        background: rgb(0, 97, 170);
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: none;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        -webkit-box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        display: inline-block;
+        line-height: normal;
+        margin: .6em 0 .4em 0;
+        min-height: 40px;
+        padding: .6em 0 .6em .6em;
+        width: 100%;
+    }
+
+    .mm-iconc4:before {
+        color: #FFF !important;
+        content: "\f1c5";
+        font-family: 'Fontawesome';
+        font-size: .9em;
+    }
+}
 
 .mm-dit3 {
     background: linear-gradient(118deg, rgba(28, 128, 211, 1) 9%, rgba(9, 99, 173, 1) 87%);
