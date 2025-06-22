@@ -5,12 +5,12 @@ global-styling:
       dist/css/main.css: {}
       dist/assets/icons/Stroke/css/pe-icon-7-stroke.css: {}
       https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.css: { type: external, attributes: { defer: true }}
-      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css: { type: external, attributes: { defer: true }}
-      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css: { type: external, attributes: { defer: true }}
+      # https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css: { type: external, attributes: { defer: true }}
+      # https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css: { type: external, attributes: { defer: true }}
   js:
     js/script.js: {}
     bootstrap/javascripts/bootstrap/carousel.js: {}
-    https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js: { type: external, attributes: { defer: true }}
+    # https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js: { type: external, attributes: { defer: true }}
   dependencies:
     - bootstrap5/bootstrap
     - core/jquery
