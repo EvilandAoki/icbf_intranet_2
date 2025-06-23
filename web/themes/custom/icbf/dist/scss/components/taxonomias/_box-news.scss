@@ -93,3 +93,80 @@
     }
 }
 
+#views-bootstrap-boletines-internos-block-1{
+    .views-field.views-field-title {
+    margin-top: 20px;
+    font-size: 1.2em;
+    }
+    .views-field.views-field-field-date time {
+        font-family: 'montserrat';
+        font-size: 14px;
+        margin-left: 0.8rem;
+    }
+}
+
+#views-bootstrap-boletines-internos-block-3{
+     .views-field.views-field-title a {
+        font-size: 16.8px;
+        color: #333333;
+        font-family: 'Asap-Regular';
+    }
+    .views-field.views-field-field-date {
+        font-size: 14px;
+        font-family: 'montserrat';
+        margin-left: 0.5rem;
+    }
+    .views-field.views-field-edit-node {
+        margin-left: 0.5rem;
+    }
+}
+
+ .Block_news_ultimo{
+     .col-sm-3.col-xs-3 {
+        float: left;
+    }
+    
+    .col-sm-9.col-xs-9 {
+        float: left;
+        padding: 0 9px;
+    }
+    .box-gral1519-2 {
+        background-color: #fefefe;
+        border: 1px solid #dddddd;
+        height: auto;
+        margin: 1em auto;
+        width: 100%;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+        -ms-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+        -o-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-transition: all .4s ease 0s;
+        -moz-transition: all .4s ease 0s;
+        -ms-transition: all .4s ease 0s;
+        -o-transition: all .4s ease 0s;
+        transition: all .4s ease 0s;
+        .contain-gral1519-2 {
+            display: inline-block;
+            padding: .5em;
+            width: auto;
+        }
+        .icon-gral1519-2 {
+            height: auto;
+            margin: .87em .1em;
+            width: 100%;
+        }
+        .id-1519-h3 {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.32em;
+            font-weight: 500;
+            line-height: normal;
+            word-break: break-word;
+            margin-top: 2rem;
+        }
+    }
+ }
