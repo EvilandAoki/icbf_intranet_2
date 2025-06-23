@@ -3,6 +3,7 @@
 use Drupal\Core\Pager\PagerManagerInterface;
 use Drupal\Core\Pager\PagerParameters;
 use Drupal\views\Views;
+use Drupal\taxonomy\Entity\Term;
 
 /**
  * @file
@@ -209,6 +210,10 @@ function icbf_preprocess_node(array &$variables) {
  */
 function icbf_files_directory_process($html)
 {
+  if (strpos($html, '-base-url-') === FALSE && strpos($html, '-files-directory-') === FALSE) {
+    return $html;
+  }
+
   $request = \Drupal::service('request_stack')->getCurrentRequest();
   $base_url = $request->getSchemeAndHttpHost();
   $public_files_path = \Drupal::config('system.file')->get('path.public') ?? 'sites/default/files';
