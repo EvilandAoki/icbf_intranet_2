@@ -1553,3 +1553,19 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
 .mega .logo a {
     font-size: 0px !important;
 }
+
+.tb-megamenu-item.active-trail a {
+    background-color: white !important;
+    color: #004686 !important;
+}
+
+.tb-megamenu-item.active-trail a:hover {
+    color: #0073ff !important;
+}
+
+.tb-megamenu .nav>li>a:focus,
+.tb-megamenu .nav>li>a:hover,
+.tb-megamenu .nav>li>span.tb-megamenu-no-link:focus,
+.tb-megamenu .nav>li>span.tb-megamenu-no-link:hover {
+    color: #0073ff;
+}
