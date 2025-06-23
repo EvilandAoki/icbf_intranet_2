@@ -345,6 +345,46 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     }
 }
 
+#submenu-row-icbf_estructuracenter {
+
+    .m20-link {
+        clear: both;
+        margin-bottom: .26em;
+        margin-left: .1em;
+        font-family: var.$font-montserrat-regular;
+        max-height: 20px;
+
+        p {
+            padding: 0;
+            font-size: 0.9em;
+        }
+
+        a {
+            padding: 0 !important;
+            font-size: 0.75em;
+        }
+    }
+
+    .m20-icon-l {
+        border-radius: .4em;
+        -webkit-border-radius: .4em;
+        -moz-border-radius: .4em;
+        border: 1px solid #c3e5d0;
+        float: left;
+        font-size: x-small;
+        line-height: normal;
+        margin-right: .4em;
+        padding: .1em .25em;
+
+        &:before {
+            color: #3cb371;
+            content: "\f054";
+            font-family: 'Fontawesome';
+            padding: .1em;
+        }
+    }
+}
+
 #submenu-row-icbf_estructurabotton {
 
     .m20-link {
@@ -356,6 +396,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
 
         p {
             padding: 0;
+            font-size: 0.9em;
         }
 
         a {
@@ -363,8 +404,6 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
             font-size: 0.75em;
         }
     }
-
-
 
     .m20-icon-l {
         border-radius: .4em;
@@ -1501,4 +1540,32 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     border-bottom: 2px solid #e2eefd;
     clear: both;
     margin: 8px 0 15px 0;
+}
+
+.mega .logo {
+    width: 50px;
+    background: url('../themes/custom/icbf/dist/img/logo_icbf_1.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    background-size: contain;
+}
+
+.mega .logo a {
+    font-size: 0px !important;
+}
+
+.tb-megamenu-item.active-trail a {
+    background-color: white !important;
+    color: #004686 !important;
+}
+
+.tb-megamenu-item.active-trail a:hover {
+    color: #0073ff !important;
+}
+
+.tb-megamenu .nav>li>a:focus,
+.tb-megamenu .nav>li>a:hover,
+.tb-megamenu .nav>li>span.tb-megamenu-no-link:focus,
+.tb-megamenu .nav>li>span.tb-megamenu-no-link:hover {
+    color: #0073ff;
 }
