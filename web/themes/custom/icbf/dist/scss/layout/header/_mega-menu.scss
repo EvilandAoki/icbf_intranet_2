@@ -352,11 +352,19 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         margin-bottom: .26em;
         margin-left: .1em;
         font-family: var.$font-montserrat-regular;
+        max-height: 20px;
+
+        p {
+            padding: 0;
+        }
 
         a {
-            font-size: 0.89em;
+            padding: 0 !important;
+            font-size: 0.75em;
         }
     }
+
+
 
     .m20-icon-l {
         border-radius: .4em;
