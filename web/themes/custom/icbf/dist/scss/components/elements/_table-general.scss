@@ -79,6 +79,9 @@
         font-family: var.$font-montserrat;
         a{
             font-size: 13px;
+            br{
+                display: none;
+            }
         }
     }
 }
