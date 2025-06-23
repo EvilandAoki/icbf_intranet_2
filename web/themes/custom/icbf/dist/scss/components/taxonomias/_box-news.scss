@@ -1,0 +1,95 @@
+.box-photo {
+    border: 1px solid #ececec;
+    height: auto;
+    margin: 3em;
+    min-height: 225px;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    -ms-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    -o-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    .gallery-1 {
+        background-color: rgba(0, 0, 0, .2);
+        background-image: url('/sites/default/files/baner2.jpg');
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        min-height: 280px;
+        padding: 16px;
+    }
+    .gallery-2 {
+        background-color: rgba(0, 0, 0, .2);
+        background-image: url('/sites/default/files/baner1.jpg');
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        min-height: 280px;
+        padding: 16px;
+    }
+    .gallery-3
+     {
+        background-color: rgba(0, 0, 0, .2);
+        background-image: url('/sites/default/files/baner3.jpg');
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        min-height: 280px;
+        padding: 16px;
+    }
+    .body-gallery {
+        background: #95a54f;
+        color: #fff;
+        display: block;
+        margin: 0;
+        padding: .8em;
+        width: auto;
+    }
+    .title-slideg {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6em;
+        font-weight: 600;
+        line-height: normal;
+        text-shadow: 0 0 4px #565656;
+        word-break: break-word;
+    }
+    .txt-slideg {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.5em;
+        text-shadow: 0 0 4px #565656;
+        word-break: break-word;
+        word-break: break-word;
+    }
+    a.btn-gallery {
+        background-color: rgba(252, 252, 252, .1);
+        border-radius: 20px;
+        border: 1px solid #fff;
+        clear: both;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: .87em;
+        font-weight: 500;
+        margin-left: 1em;
+        margin-top: 30px;
+        padding: .3em .8em;
+        text-decoration: none;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -o-transition: all .2s linear;
+    }
+}
+
