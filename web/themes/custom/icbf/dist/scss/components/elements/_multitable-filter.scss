@@ -51,7 +51,6 @@
                 font-family: "montserrat-regular";
                 word-break: break-word;
                 max-width: 100%;
-                display: inline-block;
             }
         }
         .form-radios {
@@ -83,6 +82,9 @@
             }
             td {
                 font-family: 'montserrat-regular';
+                time {
+                    color: #555555;
+                }
             }
         }
     }
