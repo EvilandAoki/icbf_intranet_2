@@ -116,6 +116,10 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                display: none;
+                &:first-of-type {
+                    display: block;
+                }
             }
         }
     }

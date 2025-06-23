@@ -671,3 +671,42 @@
         margin-bottom: 10px;
     }
 }
+
+.taxonomia-btns_green {
+     table{
+        --bs-table-bg: inherit;
+        --bs-table-color: inherit;
+        width: 100%;
+        margin: 2rem auto;
+        th{
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+            padding: 8px !important;
+            line-height: 1.428571429;
+            color: #555;
+            font-family: "montserrat";
+        }
+        td {
+            padding: 8px !important;
+            line-height: 1.428571429;
+            vertical-align: top;
+            border-top: 1px solid #ddd;
+            font-family: "montserrat";
+        }
+        tbody{
+            tr{
+                &:nth-child(odd), &:hover {
+                background-color: #f9f9f9;
+                }
+            }
+            td {
+                font-family: 'montserrat-regular';
+                color: #555555;
+                font-size: 14px;
+            }
+        }
+        th#view-edit-node-table-column {
+            display: none;
+        }
+    }
+}
