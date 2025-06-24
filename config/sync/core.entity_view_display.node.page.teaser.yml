@@ -1,4 +1,4 @@
-uuid: b41ccd89-aa73-4ea9-a137-84be21121304
+uuid: 3715009b-fc27-4275-897c-2d8e12912d36
 langcode: en
 status: true
 dependencies:
@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.page.field_parent
     - field.field.node.page.field_resume
     - field.field.node.page.field_section
+    - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
     - text
@@ -43,4 +44,5 @@ hidden:
   field_resume: true
   field_section: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

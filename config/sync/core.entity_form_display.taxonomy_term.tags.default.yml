@@ -1,4 +1,4 @@
-uuid: 0d102f53-1f66-4a20-a462-2b0428299284
+uuid: 3bd779b9-5f9e-469c-b771-eb753f056f5d
 langcode: es
 status: true
 dependencies:
@@ -7,9 +7,16 @@ dependencies:
     - field.field.taxonomy_term.tags.field_allowed_users
     - taxonomy.vocabulary.tags
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term
 bundle: tags

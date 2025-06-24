@@ -1,4 +1,4 @@
-uuid: b6231a52-d8b6-41f3-a9bf-ebe3920852c3
+uuid: 2d0b7457-d92b-417c-9446-06944b6d48a5
 langcode: es
 status: true
 dependencies:
@@ -13,14 +13,19 @@ dependencies:
     - field.field.taxonomy_term.centro_de_ayuda.field_link_url
     - field.field.taxonomy_term.centro_de_ayuda.field_multimedia
     - field.field.taxonomy_term.centro_de_ayuda.field_priority
-    - image.style.thumbnail
+    - field.field.taxonomy_term.centro_de_ayuda.layout_builder__layout
     - taxonomy.vocabulary.centro_de_ayuda
   module:
-    - file
-    - image
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.centro_de_ayuda.default
 targetEntityType: taxonomy_term
 bundle: centro_de_ayuda
@@ -48,65 +53,6 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_category_helpcenter:
-    type: options_select
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_dit_service_related:
-    type: string_textfield
-    weight: 15
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_header_area:
-    type: text_textarea
-    weight: 2
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_icono_ca:
-    type: image_image
-    weight: 8
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_imagen_principal_ca:
-    type: file_generic
-    weight: 9
-    region: content
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-  field_link_url:
-    type: string_textfield
-    weight: 14
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_multimedia:
-    type: file_generic
-    weight: 16
-    region: content
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-  field_priority:
-    type: number
-    weight: 7
-    region: content
-    settings:
       placeholder: ''
     third_party_settings: {  }
   langcode:
@@ -143,5 +89,14 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  field_category_helpcenter: true
+  field_dit_service_related: true
+  field_header_area: true
+  field_icono_ca: true
+  field_imagen_principal_ca: true
+  field_link_url: true
+  field_multimedia: true
+  field_priority: true
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

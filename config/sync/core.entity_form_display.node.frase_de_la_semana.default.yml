@@ -1,4 +1,4 @@
-uuid: 94a24980-5b84-414f-9da8-138939bc70d4
+uuid: a838e6b0-8f80-4d97-a5b0-6d966e31edea
 langcode: es
 status: true
 dependencies:
@@ -9,10 +9,17 @@ dependencies:
     - field.field.node.frase_de_la_semana.field_section
     - node.type.frase_de_la_semana
   module:
-    - datetime
+    - datetime_range
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.frase_de_la_semana.default
 targetEntityType: node
 bundle: frase_de_la_semana
@@ -25,14 +32,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_fecha_publicacion:
-    type: datetime_default
-    weight: 2
+    type: daterange_default
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS
@@ -42,15 +49,15 @@ content:
     third_party_settings: {  }
   field_frase:
     type: text_textarea
-    weight: 1
+    weight: 123
     region: content
     settings:
-      rows: 3
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS

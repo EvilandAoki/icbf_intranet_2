@@ -1,4 +1,4 @@
-uuid: 20493cd0-f816-4741-9f28-c24d69b6f93d
+uuid: 2dab79ab-8733-4c70-89c3-0573bdc77210
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_cartelera
     - field.field.comment.comment_node_cartelera.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_cartelera.default
 targetEntityType: comment
 bundle: comment_node_cartelera

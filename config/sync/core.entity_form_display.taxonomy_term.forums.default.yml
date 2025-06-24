@@ -1,4 +1,4 @@
-uuid: 2cbb35c7-35d2-471a-b906-2c73cc389544
+uuid: 883390e6-2045-45bb-8622-9cad993bcd6c
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,19 @@ dependencies:
     - field.field.taxonomy_term.forums.field_allowed_roles
     - field.field.taxonomy_term.forums.field_allowed_users
     - field.field.taxonomy_term.forums.forum_container
+    - field.field.taxonomy_term.forums.layout_builder__layout
     - taxonomy.vocabulary.forums
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: Pz0jtV2VqHKzGIFCCdSe_OhjD1JVpfzVwtkKl_-vTcE
 id: taxonomy_term.forums.default
@@ -19,26 +27,35 @@ bundle: forums
 mode: default
 content:
   description:
-    type: text_textfield
-    weight: 0
+    type: text_textarea
+    weight: 1
     region: content
-    settings: {  }
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_allowed_roles:
     type: options_buttons
-    weight: 102
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_allowed_users:
     type: entity_reference_autocomplete
-    weight: 101
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  forum_container:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -48,13 +65,13 @@ content:
       include_locked: true
     third_party_settings: {  }
   menu:
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -62,18 +79,28 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 100
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  forum_container: true
-  publish_on: true
-  unpublish_on: true
+  layout_builder__layout: true

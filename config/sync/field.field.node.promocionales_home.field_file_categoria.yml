@@ -1,4 +1,4 @@
-uuid: 49abffe5-d705-49ee-bb4a-40f8b0b0a656
+uuid: df51f3da-eb96-4bd1-a869-129cb9c4883c
 langcode: es
 status: true
 dependencies:
@@ -14,11 +14,7 @@ label: 'Categoría del archivo'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    tid: '7422'
-  -
-    tid: '7647'
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:filter_existing_terms'
@@ -27,4 +23,7 @@ settings:
       file_category: file_category
     sort:
       field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

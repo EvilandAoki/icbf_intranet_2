@@ -1,8 +1,11 @@
-uuid: 0cf5aaaa-d414-4d10-a43b-b7c8a3fca956
+uuid: 7c0e8e3d-dfc6-428b-a6f0-f861dcd1b486
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_cesar
 label: 'Regional Cesar'
@@ -10,4 +13,6 @@ weight: 26
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

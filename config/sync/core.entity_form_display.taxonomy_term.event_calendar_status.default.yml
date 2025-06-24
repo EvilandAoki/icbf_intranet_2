@@ -1,15 +1,23 @@
-uuid: 8f51ed70-5ea2-459a-9054-e4910fcf2800
+uuid: 4538fd25-9064-40a7-9877-0963f06c38ad
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event_calendar_status.field_allowed_roles
     - field.field.taxonomy_term.event_calendar_status.field_allowed_users
+    - field.field.taxonomy_term.event_calendar_status.layout_builder__layout
     - taxonomy.vocabulary.event_calendar_status
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.event_calendar_status.default
 targetEntityType: taxonomy_term
 bundle: event_calendar_status
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

@@ -1,0 +1,33 @@
+uuid: 3bdb4982-705c-48b6-8e20-8d6d11da15de
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.mgm-5d269b109dc9a.field_logo
+    - system.menu.mgm-5d269b109dc9a
+  module:
+    - image
+id: menu_link_content.mgm-5d269b109dc9a.default
+targetEntityType: menu_link_content
+bundle: mgm-5d269b109dc9a
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

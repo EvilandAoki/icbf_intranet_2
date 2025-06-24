@@ -1,4 +1,4 @@
-uuid: 9b5eda71-71c6-4c7f-8b70-fec2323ca1ab
+uuid: a4a6b403-a328-42c3-82da-330bacb0f2d9
 langcode: es
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: 6eiNWATGTd3lUEKuxNPNyDRDVMsUlM0HS90_R6JJLUI
 id: pathauto_update_alias_user
-label: 'Update URL alias'
+label: 'Actualizar alias de URL'
 type: user
 plugin: pathauto_update_alias
 configuration: {  }

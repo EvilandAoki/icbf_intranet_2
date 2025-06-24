@@ -1,4 +1,4 @@
-uuid: a946a2b7-4fd8-49ef-9cc0-7eac178d0c4d
+uuid: dfbe522f-a863-4230-9a8e-bd0d5e2c509e
 langcode: es
 status: true
 dependencies:
@@ -13,8 +13,96 @@ dependencies:
     - field.field.taxonomy_term.procedure.field_related_procedures
     - taxonomy.vocabulary.procedure
   module:
+    - bootstrap_layouts
     - image
+    - layout_builder
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          8413b660-c48b-4c2a-9414-c19afe7a08ee:
+            uuid: 8413b660-c48b-4c2a-9414-c19afe7a08ee
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:procedure:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: class|custom-t-tramite
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          a04dcae6-22c5-43c7-8d69-e965dfa509b2:
+            uuid: a04dcae6-22c5-43c7-8d69-e965dfa509b2
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:procedure:field_content'
+              label: Contenido
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.procedure.default
 targetEntityType: taxonomy_term
 bundle: procedure
@@ -27,6 +115,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_icon:
     type: image
     label: above
@@ -36,7 +131,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 6
+    weight: 4
     region: content
   field_list_image:
     type: image
@@ -47,7 +142,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
+    weight: 3
     region: content
   field_location:
     type: entity_reference_label
@@ -55,7 +150,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_procedure_type:
     type: entity_reference_label
@@ -63,7 +158,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 5
     region: content
   field_related_procedures:
     type: entity_reference_label
@@ -71,11 +166,10 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
 hidden:
   field_allowed_roles: true
   field_allowed_users: true
-  field_content: true
   langcode: true
   search_api_excerpt: true

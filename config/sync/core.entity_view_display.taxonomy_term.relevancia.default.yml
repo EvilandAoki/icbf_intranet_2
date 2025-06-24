@@ -1,0 +1,63 @@
+uuid: 17d4581a-1496-404f-b915-3f76ec8110c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.relevancia.field_allowed_roles
+    - field.field.taxonomy_term.relevancia.field_allowed_users
+    - field.field.taxonomy_term.relevancia.layout_builder__layout
+    - taxonomy.vocabulary.relevancia
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dc6bcf77-7b7a-483e-b3f7-8c21bd247275:
+            uuid: dc6bcf77-7b7a-483e-b3f7-8c21bd247275
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:relevancia:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: generic-title
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.relevancia.default
+targetEntityType: taxonomy_term
+bundle: relevancia
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

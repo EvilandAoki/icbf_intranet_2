@@ -1,4 +1,4 @@
-uuid: c33de43e-7775-4ee8-a728-9db57c79beeb
+uuid: 9e088889-3ee2-465b-87be-2774923f9a3a
 langcode: es
 status: true
 dependencies:
@@ -13,11 +13,216 @@ dependencies:
     - field.field.taxonomy_term.centro_de_ayuda.field_link_url
     - field.field.taxonomy_term.centro_de_ayuda.field_multimedia
     - field.field.taxonomy_term.centro_de_ayuda.field_priority
+    - field.field.taxonomy_term.centro_de_ayuda.layout_builder__layout
     - taxonomy.vocabulary.centro_de_ayuda
   module:
+    - bootstrap_layouts
     - file
     - image
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          8328dc53-ddbf-4e0f-ae27-78d65d9f9795:
+            uuid: 8328dc53-ddbf-4e0f-ae27-78d65d9f9795
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          54280af5-65ac-4610-b81f-2976ffbd90b1:
+            uuid: 54280af5-65ac-4610-b81f-2976ffbd90b1
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          645afbb4-9e18-4f93-b3e2-f744a6d5fd2a:
+            uuid: 645afbb4-9e18-4f93-b3e2-f744a6d5fd2a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_icono_ca'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: inline
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a21e1f83-818c-4569-b1dc-eca4f408d802:
+            uuid: a21e1f83-818c-4569-b1dc-eca4f408d802
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_imagen_principal_ca'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: inline
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f9bb350d-00b2-4720-9397-b907195a8ee9:
+            uuid: f9bb350d-00b2-4720-9397-b907195a8ee9
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_header_area'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6c0250de-9c77-4e77-a314-a57f88e918f7:
+            uuid: 6c0250de-9c77-4e77-a314-a57f88e918f7
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_category_helpcenter'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          3d3c085f-891a-45a7-b788-b81e60805cf3:
+            uuid: 3d3c085f-891a-45a7-b788-b81e60805cf3
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_priority'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          abc9751a-f2e2-42ff-b09d-6de75d5e3483:
+            uuid: abc9751a-f2e2-42ff-b09d-6de75d5e3483
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_link_url'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          6612aedb-69ab-474f-95b2-2b7dd1f0b87f:
+            uuid: 6612aedb-69ab-474f-95b2-2b7dd1f0b87f
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_multimedia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          8b43f447-45fa-4de1-ba61-b6589711ae50:
+            uuid: 8b43f447-45fa-4de1-ba61-b6589711ae50
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:centro_de_ayuda:field_dit_service_related'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.centro_de_ayuda.default
 targetEntityType: taxonomy_term
 bundle: centro_de_ayuda
@@ -104,4 +309,5 @@ hidden:
   field_allowed_roles: true
   field_allowed_users: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

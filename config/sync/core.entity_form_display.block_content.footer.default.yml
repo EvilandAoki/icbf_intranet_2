@@ -1,4 +1,4 @@
-uuid: 063bbf74-e737-481f-904b-fad9c383eb8c
+uuid: 8a1645f7-d820-47f8-af88-5df9006381a2
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,15 @@ dependencies:
     - block_content.type.footer
     - field.field.block_content.footer.field_builder
   module:
+    - field_layout
+    - layout_discovery
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.footer.default
 targetEntityType: block_content
 bundle: footer
@@ -15,7 +22,7 @@ mode: default
 content:
   field_builder:
     type: text_textarea
-    weight: 5
+    weight: 26
     region: content
     settings:
       rows: 5

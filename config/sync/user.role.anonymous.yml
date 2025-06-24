@@ -1,11 +1,43 @@
-uuid: f78ccfb7-0593-4d52-b8af-184d8dddff20
+uuid: ede53190-21ae-4b76-94b0-654eda353ab8
 langcode: es
 status: true
 dependencies:
+  config:
+    - core.entity_view_display.node.area.default
+    - core.entity_view_display.node.cifras_proteccion.default
+    - core.entity_view_display.node.contacto_nacional.default
+    - core.entity_view_display.node.news.default
+    - core.entity_view_display.node.noticias_ejes.default
+    - core.entity_view_display.node.page.default
+    - core.entity_view_display.node.pieza_sgsi.default
+    - core.entity_view_display.node.promocionales_home.default
+    - core.entity_view_display.node.publicaciones_sindicato.default
+    - core.entity_view_display.taxonomy_term.file_category.default
+    - core.entity_view_display.taxonomy_term.secctions.default
+    - feeds.feed_type.documentos_cifras_pard
+    - node.type.cartelera
+    - node.type.cifras_proteccion
+    - node.type.documentos_juridica
+    - node.type.enlace
+    - node.type.promocionales_home
+    - node.type.publicaciones_sindicato
+    - taxonomy.vocabulary.departments_municipalities
+    - taxonomy.vocabulary.file_category
+    - taxonomy.vocabulary.locations
+    - taxonomy.vocabulary.secctions
   module:
+    - access_by_taxonomy
+    - captcha
     - comment
+    - feeds
+    - layout_builder
+    - node
     - search
     - system
+    - taxonomy
+    - taxonomy_access_fix
+    - view_unpublished
+    - views_ui
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -13,7 +45,142 @@ label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access by taxonomy administer access for terms in file_category'
+  - 'access by taxonomy administer access for terms in secctions'
+  - 'access by taxonomy view any cartelera content'
+  - 'access by taxonomy view any cifras_proteccion content'
+  - 'access by taxonomy view any documentos_juridica content'
+  - 'access by taxonomy view any enlace content'
+  - 'access by taxonomy view any promocionales_home content'
+  - 'access by taxonomy view any publicaciones_sindicato content'
   - 'access comments'
   - 'access content'
+  - 'administer CAPTCHA settings'
+  - 'administer views'
+  - 'clear documentos_cifras_pard feeds'
+  - 'clear own documentos_cifras_pard feeds'
+  - 'configure all area node layout overrides'
+  - 'configure all cifras_proteccion node layout overrides'
+  - 'configure all contacto_nacional node layout overrides'
+  - 'configure all file_category taxonomy_term layout overrides'
+  - 'configure all news node layout overrides'
+  - 'configure all noticias_ejes node layout overrides'
+  - 'configure all page node layout overrides'
+  - 'configure all pieza_sgsi node layout overrides'
+  - 'configure all promocionales_home node layout overrides'
+  - 'configure all publicaciones_sindicato node layout overrides'
+  - 'configure all secctions taxonomy_term layout overrides'
+  - 'configure editable area node layout overrides'
+  - 'configure editable cifras_proteccion node layout overrides'
+  - 'configure editable contacto_nacional node layout overrides'
+  - 'configure editable file_category taxonomy_term layout overrides'
+  - 'configure editable news node layout overrides'
+  - 'configure editable noticias_ejes node layout overrides'
+  - 'configure editable page node layout overrides'
+  - 'configure editable pieza_sgsi node layout overrides'
+  - 'configure editable promocionales_home node layout overrides'
+  - 'configure editable publicaciones_sindicato node layout overrides'
+  - 'configure editable secctions taxonomy_term layout overrides'
+  - 'create cartelera content'
+  - 'create cifras_proteccion content'
+  - 'create documentos_cifras_pard feeds'
+  - 'create documentos_juridica content'
+  - 'create enlace content'
+  - 'create promocionales_home content'
+  - 'create publicaciones_sindicato content'
+  - 'create terms in file_category'
+  - 'create terms in secctions'
+  - 'delete any cartelera content'
+  - 'delete any cifras_proteccion content'
+  - 'delete any documentos_juridica content'
+  - 'delete any enlace content'
+  - 'delete any promocionales_home content'
+  - 'delete any publicaciones_sindicato content'
+  - 'delete cartelera revisions'
+  - 'delete cifras_proteccion revisions'
+  - 'delete documentos_cifras_pard feeds'
+  - 'delete documentos_juridica revisions'
+  - 'delete enlace revisions'
+  - 'delete own cartelera content'
+  - 'delete own cifras_proteccion content'
+  - 'delete own documentos_cifras_pard feeds'
+  - 'delete own documentos_juridica content'
+  - 'delete own enlace content'
+  - 'delete own promocionales_home content'
+  - 'delete own publicaciones_sindicato content'
+  - 'delete promocionales_home revisions'
+  - 'delete publicaciones_sindicato revisions'
+  - 'delete term revisions in file_category'
+  - 'delete term revisions in secctions'
+  - 'delete terms in file_category'
+  - 'delete terms in secctions'
+  - 'edit any cartelera content'
+  - 'edit any cifras_proteccion content'
+  - 'edit any documentos_juridica content'
+  - 'edit any enlace content'
+  - 'edit any promocionales_home content'
+  - 'edit any publicaciones_sindicato content'
+  - 'edit own cartelera content'
+  - 'edit own cifras_proteccion content'
+  - 'edit own documentos_juridica content'
+  - 'edit own enlace content'
+  - 'edit own promocionales_home content'
+  - 'edit own publicaciones_sindicato content'
+  - 'edit terms in file_category'
+  - 'edit terms in secctions'
+  - 'import documentos_cifras_pard feeds'
+  - 'import own documentos_cifras_pard feeds'
+  - 'reorder terms in file_category'
+  - 'reorder terms in secctions'
+  - 'reset file_category'
+  - 'reset secctions'
+  - 'revert cartelera revisions'
+  - 'revert cifras_proteccion revisions'
+  - 'revert documentos_juridica revisions'
+  - 'revert enlace revisions'
+  - 'revert promocionales_home revisions'
+  - 'revert publicaciones_sindicato revisions'
+  - 'revert term revisions in file_category'
+  - 'revert term revisions in secctions'
+  - 'schedule_import documentos_cifras_pard feeds'
+  - 'schedule_import own documentos_cifras_pard feeds'
   - 'search content'
+  - 'select terms in file_category'
+  - 'select terms in secctions'
+  - 'select unpublished terms in file_category'
+  - 'select unpublished terms in secctions'
+  - 'unlock documentos_cifras_pard feeds'
+  - 'unlock own documentos_cifras_pard feeds'
+  - 'update documentos_cifras_pard feeds'
+  - 'update own documentos_cifras_pard feeds'
   - 'use advanced search'
+  - 'view any unpublished cartelera content'
+  - 'view any unpublished cifras_proteccion content'
+  - 'view any unpublished documentos_juridica content'
+  - 'view any unpublished enlace content'
+  - 'view any unpublished promocionales_home content'
+  - 'view any unpublished publicaciones_sindicato content'
+  - 'view cartelera revisions'
+  - 'view cifras_proteccion revisions'
+  - 'view documentos_cifras_pard feeds'
+  - 'view documentos_juridica revisions'
+  - 'view enlace revisions'
+  - 'view own documentos_cifras_pard feeds'
+  - 'view promocionales_home revisions'
+  - 'view publicaciones_sindicato revisions'
+  - 'view term names in departments_municipalities'
+  - 'view term names in file_category'
+  - 'view term names in locations'
+  - 'view term names in secctions'
+  - 'view term revisions in file_category'
+  - 'view term revisions in secctions'
+  - 'view terms in departments_municipalities'
+  - 'view terms in file_category'
+  - 'view terms in locations'
+  - 'view terms in secctions'
+  - 'view unpublished term names in file_category'
+  - 'view unpublished term names in secctions'
+  - 'view unpublished terms in file_category'
+  - 'view unpublished terms in secctions'
+  - 'view vocabulary name of file_category'
+  - 'view vocabulary name of secctions'

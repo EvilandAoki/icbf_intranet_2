@@ -1,4 +1,4 @@
-uuid: 92ffdc75-0741-4a6e-a5d9-0f28267a1283
+uuid: 0871106b-36f7-428c-8165-a225bda8a852
 langcode: es
 status: true
 dependencies:
@@ -17,16 +17,26 @@ dependencies:
     - field.field.node.news.field_section
     - field.field.node.news.field_section_tag
     - field.field.node.news.field_youtube
+    - field.field.node.news.layout_builder__layout
     - field.field.node.news.og_group_ref_area
+    - image.style.thumbnail
     - node.type.news
   module:
     - datetime
+    - field_layout
     - file
     - geofield
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
     - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -40,49 +50,51 @@ content:
     third_party_settings: {  }
   field_attached_files:
     type: file_generic
-    weight: 8
+    weight: 121
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_content:
     type: text_textarea
-    weight: 7
+    weight: 122
     region: content
     settings:
-      rows: 10
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 4
+    weight: 123
     region: content
     settings: {  }
     third_party_settings: {  }
   field_event_location:
     type: geofield_latlon
-    weight: 7
+    weight: 124
     region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
   field_images:
-    type: file_generic
-    weight: 9
+    type: image_image
+    weight: 125
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 8
+    type: image_image
+    weight: 126
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -92,7 +104,7 @@ content:
     third_party_settings: {  }
   field_lugar:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 128
     region: content
     settings:
       match_operator: CONTAINS
@@ -102,21 +114,21 @@ content:
     third_party_settings: {  }
   field_multimedia:
     type: file_generic
-    weight: 10
+    weight: 129
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_priority:
     type: number
-    weight: 6
+    weight: 130
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_resume:
     type: text_textarea
-    weight: 6
+    weight: 131
     region: content
     settings:
       rows: 5
@@ -124,7 +136,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 132
     region: content
     settings:
       match_operator: CONTAINS
@@ -134,7 +146,7 @@ content:
     third_party_settings: {  }
   field_section_tag:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 133
     region: content
     settings:
       match_operator: CONTAINS
@@ -144,7 +156,7 @@ content:
     third_party_settings: {  }
   field_youtube:
     type: youtube
-    weight: 9
+    weight: 134
     region: content
     settings:
       placeholder_url: ''
@@ -155,6 +167,16 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  og_group_ref_area:
+    type: entity_reference_autocomplete
+    weight: 135
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
@@ -207,6 +229,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  og_group_ref_area: true
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

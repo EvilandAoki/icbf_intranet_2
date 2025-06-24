@@ -1,4 +1,4 @@
-uuid: 859c9ec4-d3ca-423b-be00-469f993df638
+uuid: 856b71f0-0b28-442e-9903-12775e232816
 langcode: es
 status: true
 dependencies:
@@ -13,7 +13,7 @@ id: media.video.field_media_video_file
 field_name: field_media_video_file
 entity_type: media
 bundle: video
-label: 'Video file'
+label: 'Archivo de vídeo'
 description: ''
 required: true
 translatable: true

@@ -1,0 +1,21 @@
+uuid: 45207d7d-a57c-47e9-abe5-bd29fa5b3d26
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.centro_de_ayuda
+  module:
+    - layout_builder
+id: taxonomy_term.centro_de_ayuda.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

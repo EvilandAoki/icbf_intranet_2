@@ -1,10 +1,9 @@
-uuid: f9f45b28-ac89-44a3-b8ca-ec841fcd4ac4
+uuid: f711690e-ea1a-4e38-9535-4e66f08cba30
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
   enforced:
     module:
       - webform_node
@@ -13,17 +12,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: false
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: false
-    unpublish_enable: false
-    unpublish_required: false
-    unpublish_revision: false
 _core:
   default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
 name: Webform

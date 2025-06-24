@@ -3,4 +3,4 @@ _core:
 library: slick
 module_css: true
 slick_css: true
-sitewide: 0
+sitewide: 1

@@ -1,20 +1,29 @@
-uuid: b65824b0-ae54-4004-a1c8-5181ee36a2c8
+uuid: 45498ca2-53f0-402f-87ff-0716ebcf0edb
 langcode: es
 status: true
 dependencies:
   config:
+    - field.field.node.cifras_proteccion.feeds_item
     - field.field.node.cifras_proteccion.field_date
     - field.field.node.cifras_proteccion.field_document
     - field.field.node.cifras_proteccion.field_file_categoria
     - field.field.node.cifras_proteccion.field_location
     - field.field.node.cifras_proteccion.field_priority
     - field.field.node.cifras_proteccion.field_section
+    - field.field.node.cifras_proteccion.layout_builder__layout
     - node.type.cifras_proteccion
   module:
     - datetime
+    - field_layout
     - file
+    - layout_discovery
     - path
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.cifras_proteccion.default
 targetEntityType: node
 bundle: cifras_proteccion
@@ -28,20 +37,20 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 5
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   field_document:
     type: file_generic
-    weight: 7
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -51,7 +60,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -61,14 +70,14 @@ content:
     third_party_settings: {  }
   field_priority:
     type: number
-    weight: 14
+    weight: 125
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 126
     region: content
     settings:
       match_operator: CONTAINS
@@ -134,5 +143,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  feeds_item: true
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

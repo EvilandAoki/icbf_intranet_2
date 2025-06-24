@@ -1,9 +1,9 @@
-uuid: 035682bc-3572-4d7b-bff5-33fe9f055aac
+uuid: 7b856b89-cc65-40ad-8e34-9b0950cb1051
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9ff1d8fd-37a1-462f-b32d-5cfc936b0ef7'
+    - 'block_content:basic:d97e01b5-3521-43ca-b54f-8f500e2d210d'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: icbf
 region: footer
 weight: -15
 provider: null
-plugin: 'block_content:9ff1d8fd-37a1-462f-b32d-5cfc936b0ef7'
+plugin: 'block_content:d97e01b5-3521-43ca-b54f-8f500e2d210d'
 settings:
-  id: 'block_content:9ff1d8fd-37a1-462f-b32d-5cfc936b0ef7'
+  id: 'block_content:d97e01b5-3521-43ca-b54f-8f500e2d210d'
   label: 'Footer GOVCO 21'
   label_display: '0'
   provider: block_content

@@ -1,0 +1,21 @@
+uuid: d3c94a07-ba02-4c3c-9952-32730f8a5a54
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.publicaciones_sindicato
+  module:
+    - layout_builder
+id: node.publicaciones_sindicato.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: publicaciones_sindicato
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

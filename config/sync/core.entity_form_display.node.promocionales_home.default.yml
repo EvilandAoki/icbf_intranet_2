@@ -1,4 +1,4 @@
-uuid: 8fca6776-8d3e-4216-956f-ac85d7997e93
+uuid: f2679c66-72ce-4fdb-bc01-4ccc7e5a9799
 langcode: es
 status: true
 dependencies:
@@ -9,12 +9,21 @@ dependencies:
     - field.field.node.promocionales_home.field_link_url
     - field.field.node.promocionales_home.field_list_image
     - field.field.node.promocionales_home.field_zona_home
+    - field.field.node.promocionales_home.layout_builder__layout
+    - image.style.thumbnail
     - node.type.promocionales_home
   module:
     - datetime
-    - file
+    - field_layout
+    - image
+    - layout_discovery
     - path
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.promocionales_home.default
 targetEntityType: node
 bundle: promocionales_home
@@ -28,13 +37,13 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 3
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS
@@ -44,28 +53,29 @@ content:
     third_party_settings: {  }
   field_file_priority:
     type: options_select
-    weight: 4
+    weight: 123
     region: content
     settings: {  }
     third_party_settings: {  }
   field_link_url:
     type: string_textfield
-    weight: 1
+    weight: 124
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 2
+    type: image_image
+    weight: 125
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_zona_home:
-    type: options_buttons
-    weight: 6
+    type: options_select
+    weight: 126
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -127,5 +137,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

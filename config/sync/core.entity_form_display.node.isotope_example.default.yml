@@ -1,4 +1,4 @@
-uuid: 89e1db0a-b924-404e-8ce4-c67f66451b00
+uuid: ef8734be-27a4-421a-b35d-015b1cf88dd5
 langcode: es
 status: true
 dependencies:
@@ -8,8 +8,15 @@ dependencies:
     - field.field.node.isotope_example.isotope_example_size
     - node.type.isotope_example
   module:
+    - field_layout
+    - layout_discovery
     - path
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.isotope_example.default
 targetEntityType: node
 bundle: isotope_example
@@ -23,7 +30,7 @@ content:
     third_party_settings: {  }
   isotope_example_color:
     type: string_textfield
-    weight: 0
+    weight: 121
     region: content
     settings:
       size: 60
@@ -31,7 +38,7 @@ content:
     third_party_settings: {  }
   isotope_example_shape:
     type: string_textfield
-    weight: 1
+    weight: 122
     region: content
     settings:
       size: 60
@@ -39,7 +46,7 @@ content:
     third_party_settings: {  }
   isotope_example_size:
     type: string_textfield
-    weight: 2
+    weight: 123
     region: content
     settings:
       size: 60

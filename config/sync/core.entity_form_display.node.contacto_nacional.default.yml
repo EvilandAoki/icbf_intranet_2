@@ -1,4 +1,4 @@
-uuid: c9a49b72-92f8-40b2-b444-9ec303cd1050
+uuid: bb79408c-25ad-4d03-a754-267dbdf706d9
 langcode: es
 status: true
 dependencies:
@@ -13,12 +13,21 @@ dependencies:
     - field.field.node.contacto_nacional.field_imagen_region
     - field.field.node.contacto_nacional.field_referent_calidad_regional
     - field.field.node.contacto_nacional.field_regional
+    - field.field.node.contacto_nacional.layout_builder__layout
+    - image.style.thumbnail
     - node.type.contacto_nacional
   module:
-    - file
+    - field_layout
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.contacto_nacional.default
 targetEntityType: node
 bundle: contacto_nacional
@@ -42,7 +51,7 @@ content:
     third_party_settings: {  }
   field_coordinador_planeacion:
     type: string_textfield
-    weight: 6
+    weight: 121
     region: content
     settings:
       size: 60
@@ -50,7 +59,7 @@ content:
     third_party_settings: {  }
   field_enlace_seys:
     type: string_textfield
-    weight: 9
+    weight: 122
     region: content
     settings:
       size: 60
@@ -58,7 +67,7 @@ content:
     third_party_settings: {  }
   field_enlace_smo:
     type: string_textfield
-    weight: 8
+    weight: 123
     region: content
     settings:
       size: 60
@@ -66,7 +75,7 @@ content:
     third_party_settings: {  }
   field_enlace_sp:
     type: string_textfield
-    weight: 10
+    weight: 124
     region: content
     settings:
       size: 60
@@ -74,7 +83,7 @@ content:
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -84,20 +93,21 @@ content:
     third_party_settings: {  }
   field_file_priority:
     type: options_select
-    weight: 4
+    weight: 126
     region: content
     settings: {  }
     third_party_settings: {  }
   field_imagen_region:
-    type: file_generic
-    weight: 6
+    type: image_image
+    weight: 127
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_referent_calidad_regional:
     type: string_textfield
-    weight: 7
+    weight: 128
     region: content
     settings:
       size: 60
@@ -105,7 +115,7 @@ content:
     third_party_settings: {  }
   field_regional:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 129
     region: content
     settings:
       match_operator: CONTAINS
@@ -171,5 +181,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

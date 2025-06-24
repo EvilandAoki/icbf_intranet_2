@@ -1,8 +1,11 @@
-uuid: 8ebdeee9-e694-42a2-9363-7099017cfb3c
+uuid: 689f4afa-89e3-4da3-abeb-43c5aac93d73
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_choco
 label: 'Regional Chocó'
@@ -10,4 +13,6 @@ weight: 27
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

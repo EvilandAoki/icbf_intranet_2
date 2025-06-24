@@ -1,0 +1,145 @@
+uuid: 1d8bed8d-0c60-4855-a761-7b37e27501e0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.departments_municipalities.field_allowed_roles
+    - field.field.taxonomy_term.departments_municipalities.field_allowed_users
+    - field.field.taxonomy_term.departments_municipalities.layout_builder__layout
+    - taxonomy.vocabulary.departments_municipalities
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          7269a9db-27c7-424d-bc62-24079c1791e4:
+            uuid: 7269a9db-27c7-424d-bc62-24079c1791e4
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:departments_municipalities:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: 'generic-title '
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3e74048e-57d6-4967-b19c-f006ab945be7:
+            uuid: 3e74048e-57d6-4967-b19c-f006ab945be7
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:departments_municipalities:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1cbbb7ae-f06a-4acc-ab66-c3208d67b48a:
+            uuid: 1cbbb7ae-f06a-4acc-ab66-c3208d67b48a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:departments_municipalities:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          1a15122e-37d0-4cbc-8fa0-1b0a2b1e5c14:
+            uuid: 1a15122e-37d0-4cbc-8fa0-1b0a2b1e5c14
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:departments_municipalities:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.departments_municipalities.default
+targetEntityType: taxonomy_term
+bundle: departments_municipalities
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

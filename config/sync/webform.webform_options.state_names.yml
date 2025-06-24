@@ -1,4 +1,4 @@
-uuid: 058c63ec-25f7-482f-ab2f-c1f3f2fe06b7
+uuid: 4cacace3-db67-48cc-9dfa-2233df1ea5bf
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: KfYqMSrFJ5iGtDzvy_rGUeRUJ4KyM7Xt-tWtYx9WjiM
 id: state_names
 label: 'State names'
-category: Geographic
+category: Geográfico
 likert: false
 options: |
   Alabama: Alabama

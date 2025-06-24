@@ -1,0 +1,64 @@
+uuid: d3f4036c-823d-4402-9d1b-9f4bc32e8e30
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - bootstrap_layouts
+    - ctools
+    - node
+id: node_view-layout_builder-2
+label: Página
+weight: -7
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 180ff999-d703-4085-bbd3-e7aa2ec0f46e
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: class|page-general
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        46e09229-8168-4ea8-ac17-d1b817bef37f:
+          uuid: 46e09229-8168-4ea8-ac17-d1b817bef37f
+          region: main
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+static_context: {  }

@@ -1,6 +1,6 @@
-uuid: ef250158-8173-4937-b6b5-424cb1726da4
+uuid: 45957a76-ca22-43bd-9fb3-86d4dc6b65b4
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.live_results_search

@@ -1,12 +1,12 @@
-uuid: 00fd14a1-f444-46fa-8cbc-08238f3142f0
+uuid: 14328bf3-f1f1-4232-a75d-2c82abe26d8e
 langcode: es
 status: true
 dependencies: {  }
 name: carousel_noticias_home
 label: 'Carousel Noticias Home'
 effects:
-  3148a5d0-6151-4ee0-a5b5-3cb1b5d852f0:
-    uuid: 3148a5d0-6151-4ee0-a5b5-3cb1b5d852f0
+  c6329279-ccac-4022-8ba2-4e74b9f7d2a2:
+    uuid: c6329279-ccac-4022-8ba2-4e74b9f7d2a2
     id: image_scale_and_crop
     weight: 1
     data:

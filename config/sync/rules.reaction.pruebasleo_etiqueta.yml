@@ -1,0 +1,26 @@
+uuid: 06a88ac5-a769-4965-929a-270bd3f62d7a
+langcode: es
+status: true
+dependencies: {  }
+id: pruebasleo_etiqueta
+label: 'PruebasLeo etiqueta'
+events:
+  -
+    event_name: 'rules_entity_delete:file'
+description: 'pruebas regla leo'
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 425c49e3-1189-4409-bc09-6e02d674e268
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 589ccb7b-92f5-4081-92ce-cd76b6a1cf78
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: b3f48909-65ca-4c89-a8b0-760423dbdd69
+    weight: 0
+    actions: {  }

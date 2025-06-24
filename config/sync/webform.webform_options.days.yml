@@ -1,4 +1,4 @@
-uuid: 1916371f-02f1-451c-91b3-97c2421ce1d7
+uuid: b4fbc360-6a77-44df-a76d-a4fe1cf22527
 langcode: es
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YNrKbYrWWjeubUUM8AsQ19KnX7cU1elACR14CZJHmdg
 id: days
-label: Days
+label: Días
 category: 'Fecha y hora'
 likert: false
 options: |

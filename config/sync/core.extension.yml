@@ -18,6 +18,7 @@ module:
   better_permissions_page: 0
   big_pipe: 0
   blazy: 0
+  blazy_layout: 0
   block: 0
   block_class: 0
   block_content: 0
@@ -29,6 +30,7 @@ module:
   charts: 0
   charts_google: 0
   charts_highcharts: 0
+  ck5_block_embed: 0
   ckeditor5: 0
   colorbox: 0
   comment: 0
@@ -41,6 +43,8 @@ module:
   context_ui: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   dashboard: 0
   date_popup: 0
   date_range_formatter: 0
@@ -59,12 +63,15 @@ module:
   entity_reference_tree: 0
   entityqueue: 0
   facets: 0
+  facets_exposed_filters: 0
+  facets_searchbox_widget: 0
   feeds: 0
   feeds_log: 0
   field: 0
   field_formatter_class: 0
   field_group: 0
   field_group_migrate: 0
+  field_layout: 0
   field_permissions: 0
   field_ui: 0
   file: 0
@@ -89,6 +96,7 @@ module:
   history: 0
   icbf_migrations: 0
   image: 0
+  image_captcha: 0
   image_effects: 0
   image_field_caption: 0
   imce: 0
@@ -117,6 +125,7 @@ module:
   menu_link_attributes: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   migrate: 0
   migrate_devel: 0
   migrate_drupal: 0
@@ -216,11 +225,13 @@ module:
   webform_node: 0
   webform_schema: 0
   webform_ui: 0
+  webform_views: 0
   workbench_moderation: 0
   youtube: 0
   forum: 1
   pathauto: 1
   xmlsitemap: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   tac_lite: 100

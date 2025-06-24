@@ -1,4 +1,4 @@
-uuid: 51afea98-a904-42d9-989e-be6501d549dd
+uuid: 51a0a547-9532-4ea2-8244-03740d327626
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_frase_de_la_semana
     - field.field.comment.comment_node_frase_de_la_semana.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_frase_de_la_semana.default
 targetEntityType: comment
 bundle: comment_node_frase_de_la_semana

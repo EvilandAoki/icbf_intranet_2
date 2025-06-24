@@ -1,4 +1,4 @@
-uuid: 178fa8e4-802c-4739-a1e7-53d6830c7d9e
+uuid: edcacc2a-3a1a-49fd-b8d3-35e02f0f5edd
 langcode: es
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: icbf_help
 theme: icbf
 region: content
-weight: -3
+weight: -15
 provider: null
 plugin: help_block
 settings:

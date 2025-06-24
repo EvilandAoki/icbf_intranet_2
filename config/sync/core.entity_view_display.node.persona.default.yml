@@ -1,4 +1,4 @@
-uuid: 059dfac8-f086-4b9d-bd7e-4ce396a3a3cd
+uuid: 201977c9-43ea-471a-b9b1-2e0d857fa2d6
 langcode: es
 status: true
 dependencies:
@@ -22,14 +22,6 @@ targetEntityType: node
 bundle: persona
 mode: default
 content:
-  field_cargo:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 14
-    region: content
   field_content_profile:
     type: text_default
     label: hidden
@@ -42,7 +34,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_list_image:
     type: image
@@ -53,15 +45,15 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 20
+    weight: 5
     region: content
-  field_lugar:
+  field_person_area:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 18
+    weight: 7
     region: content
   field_phone:
     type: string
@@ -69,7 +61,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 16
+    weight: 3
     region: content
   field_photo:
     type: image
@@ -89,14 +81,15 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 19
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 6
     region: content
 hidden:
-  field_person_area: true
+  field_cargo: true
+  field_lugar: true
   langcode: true
   search_api_excerpt: true

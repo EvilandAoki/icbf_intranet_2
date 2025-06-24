@@ -1,0 +1,159 @@
+uuid: 3eef242b-c018-4e66-86c4-fed0a7490122
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_calendar_status.field_allowed_roles
+    - field.field.taxonomy_term.event_calendar_status.field_allowed_users
+    - field.field.taxonomy_term.event_calendar_status.layout_builder__layout
+    - taxonomy.vocabulary.event_calendar_status
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          3fed5e9f-6c2a-4332-a1d9-7fceb617a4fb:
+            uuid: 3fed5e9f-6c2a-4332-a1d9-7fceb617a4fb
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:event_calendar_status:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e9ec28fb-d75d-4092-bbf1-bb0b4bc6e6e1:
+            uuid: e9ec28fb-d75d-4092-bbf1-bb0b4bc6e6e1
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:event_calendar_status:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4f2a6ae1-07e7-4e9d-9764-337942eab0cc:
+            uuid: 4f2a6ae1-07e7-4e9d-9764-337942eab0cc
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:event_calendar_status:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          238ef671-473e-4672-9792-c9f608f3ce4c:
+            uuid: 238ef671-473e-4672-9792-c9f608f3ce4c
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:event_calendar_status:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1f485cf2-4226-476d-a1a7-6140fa175efa:
+            uuid: 1f485cf2-4226-476d-a1a7-6140fa175efa
+            region: content
+            configuration:
+              id: 'extra_field_block:taxonomy_term:event_calendar_status:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.event_calendar_status.default
+targetEntityType: taxonomy_term
+bundle: event_calendar_status
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

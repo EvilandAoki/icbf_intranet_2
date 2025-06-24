@@ -1,26 +1,14 @@
-uuid: 9acf11b4-d6ff-4728-9c86-9efa80397ff8
+uuid: eca2cf32-eb86-4189-8ec0-c89c6c51be8d
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: true
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: true
-    unpublish_enable: true
-    unpublish_required: false
-    unpublish_revision: false
 name: 'Noticias Ejes'
 type: noticias_ejes
 description: null

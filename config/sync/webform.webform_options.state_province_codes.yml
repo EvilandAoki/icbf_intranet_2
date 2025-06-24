@@ -1,4 +1,4 @@
-uuid: 91c1ebf3-b403-44bb-85b1-31369b703a57
+uuid: 8c71db3f-48fc-4220-aa46-376fc05c470b
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: ziWv9xVss1UBnP_R38EqduZOprwOAifpxjXhyOPzmys
 id: state_province_codes
 label: 'State/Province codes'
-category: Geographic
+category: Geográfico
 likert: false
 options: |
   AL: Alabama

@@ -1,4 +1,4 @@
-uuid: 03dcd92d-aab5-46d8-8acf-02723d4c3027
+uuid: 63fa599e-32f0-40ac-9723-fe478087ecef
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,15 @@ dependencies:
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
+    - field_layout
+    - layout_discovery
     - media
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: pM8mGlwfpvfG_y5tZn0lGAXFLXz2_yKkL7MvWZsRqdA
 id: media.remote_video.default

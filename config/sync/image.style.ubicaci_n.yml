@@ -1,12 +1,12 @@
-uuid: c260c1f6-81ba-446f-9af0-d22f9abc642b
+uuid: 2c238936-b45b-450a-9283-2e2b04aa2091
 langcode: es
 status: true
 dependencies: {  }
 name: ubicaci_n
 label: ubicación
 effects:
-  de96c2d8-88e2-4312-87df-dabc306c81d8:
-    uuid: de96c2d8-88e2-4312-87df-dabc306c81d8
+  c817b8e3-7b50-425e-a178-3d5b0a90f283:
+    uuid: c817b8e3-7b50-425e-a178-3d5b0a90f283
     id: image_crop
     weight: 1
     data:

@@ -1,12 +1,17 @@
-uuid: 14e860a1-311e-4247-a2bf-e4d993d3af86
+uuid: 8ba676e9-0fcd-4b67-8b4d-a71ba73a28dc
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_vichada
 label: 'Regional Vichada'
 weight: 46
 is_admin: null
 permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

@@ -1,4 +1,4 @@
-uuid: b8f19fb8-79b7-482a-9bef-dffffa138cb3
+uuid: 7e51befb-e0ff-4863-8f3d-cb2df4cacfa4
 langcode: es
 status: true
 dependencies:
@@ -12,12 +12,21 @@ dependencies:
     - field.field.node.articulo_de_seccion.field_post_resume
     - field.field.node.articulo_de_seccion.field_section
     - field.field.node.articulo_de_seccion.field_tabs_dit1
+    - image.style.thumbnail
     - node.type.articulo_de_seccion
   module:
+    - field_layout
     - file
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.articulo_de_seccion.default
 targetEntityType: node
 bundle: articulo_de_seccion
@@ -41,7 +50,7 @@ content:
     third_party_settings: {  }
   field_constructor_glazedb:
     type: text_textarea
-    weight: 5
+    weight: 121
     region: content
     settings:
       rows: 5
@@ -49,7 +58,7 @@ content:
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS
@@ -59,27 +68,28 @@ content:
     third_party_settings: {  }
   field_file_priority:
     type: options_select
-    weight: 10
+    weight: 123
     region: content
     settings: {  }
     third_party_settings: {  }
   field_post_documents:
     type: file_generic
-    weight: 4
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_post_image:
-    type: file_generic
-    weight: 3
+    type: image_image
+    weight: 125
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_post_resume:
     type: text_textarea
-    weight: 2
+    weight: 126
     region: content
     settings:
       rows: 5
@@ -87,7 +97,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -96,8 +106,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_tabs_dit1:
-    type: options_buttons
-    weight: 6
+    type: options_select
+    weight: 128
     region: content
     settings: {  }
     third_party_settings: {  }

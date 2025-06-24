@@ -1,8 +1,11 @@
-uuid: 864753eb-7b3d-4988-97a9-d9196e2bc413
+uuid: d7e5e753-8559-4019-adc5-4f80b5baa117
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_caqueta
 label: 'Regional Caquetá'
@@ -10,4 +13,6 @@ weight: 23
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

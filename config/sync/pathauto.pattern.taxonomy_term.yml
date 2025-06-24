@@ -1,4 +1,4 @@
-uuid: de5b4cb6-2208-47f4-8cff-12f407f7d592
+uuid: 78344ccd-073c-4c72-a613-06cca9ae318e
 langcode: es
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 id: taxonomy_term
 label: 'Término de taxonomía - default'
 type: 'canonical_entities:taxonomy_term'
-pattern: '[term:parents:join-path]/[term:name]'
+pattern: '[term:parents]/[term:name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0

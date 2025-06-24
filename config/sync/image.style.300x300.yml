@@ -1,12 +1,12 @@
-uuid: 4c8f3a23-688e-46b4-8ef3-d66cc6bc1816
+uuid: 6422e7b4-cef0-4523-b15e-b571034fd665
 langcode: es
 status: true
 dependencies: {  }
 name: 300x300
 label: 300x400
 effects:
-  30265549-9477-4956-9d78-5ebb6ea355a7:
-    uuid: 30265549-9477-4956-9d78-5ebb6ea355a7
+  ba0d1255-ec25-4821-a731-b2f87cc67e34:
+    uuid: ba0d1255-ec25-4821-a731-b2f87cc67e34
     id: image_scale_and_crop
     weight: 1
     data:

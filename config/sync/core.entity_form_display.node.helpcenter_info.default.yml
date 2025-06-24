@@ -1,4 +1,4 @@
-uuid: f62d8e09-7961-4d14-8c3a-c896b8869d50
+uuid: 3b78250f-ae53-4389-91d4-222a555b7d91
 langcode: es
 status: true
 dependencies:
@@ -12,12 +12,22 @@ dependencies:
     - field.field.node.helpcenter_info.field_helpcenter_tooltip
     - field.field.node.helpcenter_info.field_list_image
     - field.field.node.helpcenter_info.field_multimedia
+    - field.field.node.helpcenter_info.layout_builder__layout
+    - image.style.thumbnail
     - node.type.helpcenter_info
   module:
+    - field_layout
     - file
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.helpcenter_info.default
 targetEntityType: node
 bundle: helpcenter_info
@@ -31,7 +41,7 @@ content:
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 121
     region: content
     settings:
       match_operator: CONTAINS
@@ -41,13 +51,13 @@ content:
     third_party_settings: {  }
   field_file_priority:
     type: options_select
-    weight: 14
+    weight: 122
     region: content
     settings: {  }
     third_party_settings: {  }
   field_header_area:
     type: text_textarea
-    weight: 2
+    weight: 123
     region: content
     settings:
       rows: 5
@@ -55,7 +65,7 @@ content:
     third_party_settings: {  }
   field_helpcenter_category:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -65,37 +75,38 @@ content:
     third_party_settings: {  }
   field_helpcenter_content_body:
     type: text_textarea
-    weight: 13
+    weight: 125
     region: content
     settings:
-      rows: 15
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_helpcenter_document:
     type: file_generic
-    weight: 15
+    weight: 126
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_helpcenter_tooltip:
     type: text_textarea
-    weight: 12
+    weight: 127
     region: content
     settings:
-      rows: 3
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 14
+    type: image_image
+    weight: 128
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_multimedia:
     type: file_generic
-    weight: 16
+    weight: 129
     region: content
     settings:
       progress_indicator: throbber
@@ -158,5 +169,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

@@ -1,8 +1,11 @@
-uuid: 8a8bf6f9-eec9-42c7-b206-6f9a5874d306
+uuid: 757e8cb9-73bb-4bb8-8fe8-6cba21786f19
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_vaupes
 label: 'Regional Vaupés'
@@ -10,3 +13,5 @@ weight: 48
 is_admin: null
 permissions:
   - 'access site in maintenance mode'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'

@@ -1,8 +1,13 @@
-uuid: 514c227e-2b02-49b5-a2fd-12c89ca699e6
+uuid: a0edb3ef-9c44-4959-bbdb-dd2e287e8cb3
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.multimedia
+    - node.type.news
+    - node.type.pieza_sgsi
   module:
+    - node
     - system
 id: ejes_sige
 label: 'Ejes SIGE'
@@ -10,3 +15,13 @@ weight: 50
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create multimedia content'
+  - 'create news content'
+  - 'create pieza_sgsi content'
+  - 'delete own multimedia content'
+  - 'delete own news content'
+  - 'delete own pieza_sgsi content'
+  - 'edit any multimedia content'
+  - 'edit own multimedia content'
+  - 'edit own news content'
+  - 'edit own pieza_sgsi content'

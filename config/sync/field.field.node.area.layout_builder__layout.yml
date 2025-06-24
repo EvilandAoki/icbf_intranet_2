@@ -1,0 +1,21 @@
+uuid: de8dcb6a-5091-42c0-ac5b-dddd61f8b1d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.area
+  module:
+    - layout_builder
+id: node.area.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: area
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section
