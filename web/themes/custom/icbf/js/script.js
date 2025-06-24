@@ -72,17 +72,20 @@ document.addEventListener("DOMContentLoaded", function () {
         0: {
           items: 2,
           nav: false,
-          dots: false
+          dots: false,
+          center: true
         },
         600: {
           items: 3,
           nav: false,
-          dots: false
+          dots: false,
+          center: true
         },
         1000: {
           items: 6,
           nav: false,
           dots: false,
+          center: true,
           loop: false
         }
       }
