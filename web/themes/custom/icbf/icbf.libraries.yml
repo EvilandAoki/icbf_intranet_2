@@ -4,13 +4,14 @@ global-styling:
       css/style.css: {}
       dist/css/main.css: {}
       dist/assets/icons/Stroke/css/pe-icon-7-stroke.css: {}
+      dist/assets/owlcarousel/css/owl.carousel.min.css: {}
+      dist/assets/owlcarousel/css/owl.theme.default.min.css: {}
       https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.css: { type: external}
-      https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.css: { type: external}
-      https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.css: { type: external}
   js:
     js/script.js: {}
+    dist/assets/owlcarousel/js/jquery.min.js: {}
+    dist/assets/owlcarousel/js/owl.carousel.min.js: {}
     bootstrap/javascripts/bootstrap/carousel.js: {}
-    https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js: { type: external, attributes: { defer: true }}
   dependencies:
     - bootstrap5/bootstrap
     - core/jquery
