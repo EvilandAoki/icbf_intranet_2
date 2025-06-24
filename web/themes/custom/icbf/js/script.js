@@ -64,10 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 (function ($) {
   $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('#owl-sixitems').owlCarousel({
       loop: true,
       margin: 10,
-      center: true,
       responsiveClass: true,
       responsive: {
         0: {
@@ -83,7 +82,36 @@ document.addEventListener("DOMContentLoaded", function () {
         1000: {
           items: 6,
           nav: false,
+          dots: false,
+          loop: false,
+        }
+      }
+    });
+  });
+})(jQuery);
+
+(function ($) {
+  $(document).ready(function () {
+    $('#owl-fiveitems').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
           dots: false
+        },
+        600: {
+          items: 3,
+          nav: false,
+          dots: false
+        },
+        1000: {
+          items: 5,
+          nav: false,
+          dots: false,
+          loop: false,
         }
       }
     });
