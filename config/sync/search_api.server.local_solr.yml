@@ -6,8 +6,13 @@ dependencies:
     - search_api_db
 id: local_solr
 name: 'Local Solr'
-description: ''
+description: 'edición prueba leo'
 backend: search_api_db
 backend_config:
   database: 'default:default'
   min_chars: 3
+  matching: words
+  phrase: bigram
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

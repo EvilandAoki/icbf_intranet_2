@@ -335,7 +335,7 @@ display:
               reset_button_always_show: false
             filter:
               field_file_categoria_target_id:
-                plugin_id: bef
+                plugin_id: bef_links
                 advanced:
                   sort_options: false
                   rewrite:
@@ -346,8 +346,6 @@ display:
                   is_secondary: false
                   hide_label: false
                 select_all_none: false
-                select_all_none_nested: false
-                display_inline: false
               field_date_value:
                 plugin_id: bef
                 advanced:
@@ -752,7 +750,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: entity_link_edit
-          label: 'Enlace para editar Contenido'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -785,7 +783,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true

@@ -2,6 +2,9 @@ uuid: 55f4545d-676f-40bd-90b8-f4c78c471f46
 langcode: es
 status: true
 dependencies:
+  module:
+    - block_class
+    - user
   theme:
     - icbf
 _core:
@@ -19,4 +22,16 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrador_funcional: administrador_funcional
+      administrator: administrator
+      migracion: migracion
+      administrador_icbf: administrador_icbf
+      comunicaciones: comunicaciones
+      administrador_infraestructura: administrador_infraestructura

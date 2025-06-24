@@ -226,7 +226,7 @@ display:
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
-          delta_first_last: false
+          delta_first_last: true
           multi_type: separator
           separator: ', '
           field_api_classes: false
@@ -378,7 +378,7 @@ display:
               reset_button_always_show: false
             filter:
               field_date_value:
-                plugin_id: bef_links
+                plugin_id: default
                 advanced:
                   rewrite:
                     filter_rewrite_values: ''
@@ -387,7 +387,6 @@ display:
                   collapsible_disable_automatic_open: false
                   is_secondary: false
                   hide_label: false
-                select_all_none: false
               field_file_categoria_target_id_1:
                 plugin_id: bef_links
                 advanced:
@@ -766,7 +765,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: filter-table
+      css_class: filter-multitable
       header: {  }
       footer: {  }
       display_extenders: {  }

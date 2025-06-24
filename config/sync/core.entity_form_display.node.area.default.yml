@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.node.area.feeds_item
     - field.field.node.area.field_content
     - field.field.node.area.field_document
     - field.field.node.area.field_function
@@ -179,6 +180,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   layout_builder__layout: true
   publish_on: true
   unpublish_on: true

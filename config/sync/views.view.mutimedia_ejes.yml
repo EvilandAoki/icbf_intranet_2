@@ -2126,9 +2126,11 @@ display:
           1: AND
       defaults:
         title: false
+        css_class: false
         fields: false
         filters: false
         filter_groups: false
+      css_class: ''
       display_description: 'News VideoHome'
       display_extenders: {  }
     cache_metadata:

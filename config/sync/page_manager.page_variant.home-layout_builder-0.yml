@@ -181,29 +181,47 @@ variant_settings:
           additional: {  }
       third_party_settings: {  }
     -
-      layout_id: layout_twocol_section
+      layout_id: bs_2col
       layout_settings:
         label: ''
         context_mapping: {  }
-        column_widths: 67-33
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: id|Home-Videos
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: id|iframe
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: id|texto
       components:
-        2332eda0-9a29-4fbe-afd5-a12919e223ef:
-          uuid: 2332eda0-9a29-4fbe-afd5-a12919e223ef
-          region: second
+        3bf4590d-3de2-45e4-b4cc-74d7a3e208ec:
+          uuid: 3bf4590d-3de2-45e4-b4cc-74d7a3e208ec
+          region: left
           configuration:
-            id: 'block_content:5506e376-1ef8-4ab0-a32f-8741ca92bbed'
-            label: 'Home Personalizado 21'
+            id: 'views_block:mutimedia_ejes-block_videoh'
+            label: ''
             label_display: '0'
-            provider: block_content
-            status: true
-            info: ''
-            view_mode: full
+            provider: views
             context_mapping: {  }
-          weight: 1
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
           additional: {  }
         6865f133-6ca1-46ef-90c0-3537966ee991:
           uuid: 6865f133-6ca1-46ef-90c0-3537966ee991
-          region: second
+          region: right
           configuration:
             id: 'inline_block:basic'
             label: 'id week test'
@@ -216,19 +234,19 @@ variant_settings:
             block_serialized: null
           weight: 0
           additional: {  }
-        3bf4590d-3de2-45e4-b4cc-74d7a3e208ec:
-          uuid: 3bf4590d-3de2-45e4-b4cc-74d7a3e208ec
-          region: first
+        2332eda0-9a29-4fbe-afd5-a12919e223ef:
+          uuid: 2332eda0-9a29-4fbe-afd5-a12919e223ef
+          region: right
           configuration:
-            id: 'views_block:mutimedia_ejes-block_videoh'
-            label: ''
+            id: 'block_content:5506e376-1ef8-4ab0-a32f-8741ca92bbed'
+            label: 'Home Personalizado 21'
             label_display: '0'
-            provider: views
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
             context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-            exposed: {  }
-          weight: 0
+          weight: 1
           additional: {  }
       third_party_settings: {  }
     -
@@ -277,7 +295,7 @@ variant_settings:
             views_label: ''
             items_per_page: none
             exposed: {  }
-          weight: 1
+          weight: 2
           additional: {  }
         ebc4cc0a-086a-4b09-8726-9a330c27862c:
           uuid: ebc4cc0a-086a-4b09-8726-9a330c27862c
@@ -291,7 +309,7 @@ variant_settings:
             info: ''
             view_mode: full
             context_mapping: {  }
-          weight: 2
+          weight: 3
           additional: {  }
         4a8406a4-d7dd-44c6-bbc6-5c3ffbb670e9:
           uuid: 4a8406a4-d7dd-44c6-bbc6-5c3ffbb670e9
@@ -305,7 +323,7 @@ variant_settings:
             info: ''
             view_mode: full
             context_mapping: {  }
-          weight: 3
+          weight: 4
           additional: {  }
         5418404e-bb57-4fc7-ab9b-25cc22a378e3:
           uuid: 5418404e-bb57-4fc7-ab9b-25cc22a378e3
@@ -319,7 +337,7 @@ variant_settings:
             info: ''
             view_mode: full
             context_mapping: {  }
-          weight: 4
+          weight: 5
           additional: {  }
       third_party_settings: {  }
 page: home

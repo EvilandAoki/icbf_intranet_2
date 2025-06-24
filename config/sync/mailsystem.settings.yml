@@ -13,3 +13,4 @@ modules:
     none:
       sender: symfony_mailer_lite
       formatter: symfony_mailer_lite
+  system: {  }
