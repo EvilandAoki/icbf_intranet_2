@@ -1,0 +1,19 @@
+uuid: 156ddc7e-123d-4865-8363-f26e9f1f640b
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - layout_builder
+id: comment.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: comment
+type: layout_section
+settings: {  }
+module: layout_builder
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

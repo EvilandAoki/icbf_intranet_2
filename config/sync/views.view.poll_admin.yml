@@ -1,4 +1,4 @@
-uuid: 9144d292-2067-4fb6-b695-7e31574fa4d2
+uuid: 53372c17-ed3c-458f-98c8-807891f08b3a
 langcode: es
 status: true
 dependencies:
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Poll
+      title: Encuesta
       fields:
         question:
           id: question
@@ -33,7 +33,7 @@ display:
           entity_type: null
           entity_field: question
           plugin_id: field
-          label: Question
+          label: Pregunta
           exclude: false
           alter:
             alter_text: false
@@ -430,7 +430,7 @@ display:
           exposed: true
           expose:
             operator_id: question_op
-            label: Question
+            label: Pregunta
             description: ''
             use_operator: false
             operator: question_op

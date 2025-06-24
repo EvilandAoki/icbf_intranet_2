@@ -1,4 +1,4 @@
-uuid: b5cf1dee-a183-4f9d-a87a-ebbd3990da62
+uuid: 923c9c6e-e7cd-4143-92ce-c62ef3ae8893
 langcode: es
 status: true
 dependencies:
@@ -13,12 +13,22 @@ dependencies:
     - field.field.node.area.field_section
     - field.field.node.area.field_taxonomy_image
     - field.field.node.area.group_group
+    - field.field.node.area.layout_builder__layout
+    - image.style.thumbnail
     - node.type.area
   module:
+    - field_layout
     - file
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.area.default
 targetEntityType: node
 bundle: area
@@ -32,7 +42,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: text_textarea
-    weight: 3
+    weight: 121
     region: content
     settings:
       rows: 5
@@ -40,14 +50,14 @@ content:
     third_party_settings: {  }
   field_document:
     type: file_generic
-    weight: 8
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_function:
     type: text_textarea
-    weight: 4
+    weight: 123
     region: content
     settings:
       rows: 5
@@ -55,29 +65,30 @@ content:
     third_party_settings: {  }
   field_header_area:
     type: text_textarea
-    weight: 2
+    weight: 124
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 10
+    type: image_image
+    weight: 125
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_multimedia:
     type: file_generic
-    weight: 11
+    weight: 126
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_person_area:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -87,7 +98,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 128
     region: content
     settings:
       match_operator: CONTAINS
@@ -96,15 +107,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_taxonomy_image:
-    type: file_generic
-    weight: 9
+    type: image_image
+    weight: 129
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   group_group:
     type: boolean_checkbox
-    weight: 0
+    weight: 130
     region: content
     settings:
       display_label: true
@@ -167,5 +179,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

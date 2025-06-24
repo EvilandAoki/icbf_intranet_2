@@ -1,4 +1,4 @@
-uuid: ee9bb02f-95de-4f2d-a0aa-61ae6ddf561a
+uuid: aa533dcb-731a-401e-b3af-a10ca06eb256
 langcode: es
 status: open
 dependencies: {  }
@@ -34,6 +34,10 @@ elements: |-
   rol_de_empleo_que_desempe_a:
     '#type': textfield
     '#title': 'Rol de empleo que desempeña'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Enviar
 css: ''
 javascript: ''
 settings:

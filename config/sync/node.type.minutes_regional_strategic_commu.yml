@@ -1,26 +1,14 @@
-uuid: a340be46-f52e-4f0b-8345-ed27026af807
+uuid: c0013ac7-b658-4125-b9e4-c1adf3c2fb5f
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: true
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: true
-    unpublish_enable: false
-    unpublish_required: false
-    unpublish_revision: false
 name: 'Actas Comité Estratégico Regional'
 type: minutes_regional_strategic_commu
 description: null

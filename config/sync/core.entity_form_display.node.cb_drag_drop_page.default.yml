@@ -1,4 +1,4 @@
-uuid: 0ae336cd-5427-4435-9642-f86328cb95f6
+uuid: 94107751-76e3-4201-9297-56a3bbad2ebf
 langcode: es
 status: true
 dependencies:
@@ -6,9 +6,16 @@ dependencies:
     - field.field.node.cb_drag_drop_page.field_glazed_content_design
     - node.type.cb_drag_drop_page
   module:
-    - paragraphs
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - path
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.cb_drag_drop_page.default
 targetEntityType: node
 bundle: cb_drag_drop_page
@@ -21,16 +28,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_glazed_content_design:
-    type: entity_reference_paragraphs
-    weight: 5
+    type: entity_reference_revisions_autocomplete
+    weight: 121
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

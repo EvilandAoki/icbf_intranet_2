@@ -1,0 +1,64 @@
+uuid: 6f78ef61-569b-4f3e-bd8f-313aaec2e251
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - bootstrap_layouts
+    - ctools
+    - node
+id: node_view-layout_builder-4
+label: 'Funcionarios Directivos'
+weight: -5
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: a9ad9c5e-35c1-4853-bb69-e00698c4db12
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        bc169677-1a91-4dc8-8446-b2c84441dfc6:
+          uuid: bc169677-1a91-4dc8-8446-b2c84441dfc6
+          region: main
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      persona: persona
+selection_logic: and
+static_context: {  }

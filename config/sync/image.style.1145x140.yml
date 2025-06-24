@@ -1,12 +1,12 @@
-uuid: 573c2947-e73a-40ed-a9df-b5eaf87035b0
+uuid: 29849ccc-9949-4634-9619-4a50bf4b1fe0
 langcode: es
 status: true
 dependencies: {  }
 name: 1145x140
 label: 1140x140
 effects:
-  dbd3aa75-63ca-4ccf-b3ef-176b65b54c38:
-    uuid: dbd3aa75-63ca-4ccf-b3ef-176b65b54c38
+  aa574b8f-bb62-41bc-9de7-32895d476128:
+    uuid: aa574b8f-bb62-41bc-9de7-32895d476128
     id: image_scale_and_crop
     weight: 1
     data:

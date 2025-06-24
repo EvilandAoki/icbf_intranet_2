@@ -1,12 +1,12 @@
-uuid: 360adb2d-949c-490c-881d-eb0dfa05fc20
+uuid: 3f76949d-b393-45b0-b50c-2a6db713b780
 langcode: es
 status: true
 dependencies: {  }
 name: circle_radius_150px
 label: 'Circle Radius 150px'
 effects:
-  e43d86ab-1d10-4797-b815-d3d484147c8a:
-    uuid: e43d86ab-1d10-4797-b815-d3d484147c8a
+  f6cef6ea-f049-4467-a3e6-213126ab8f36:
+    uuid: f6cef6ea-f049-4467-a3e6-213126ab8f36
     id: image_scale
     weight: 1
     data:

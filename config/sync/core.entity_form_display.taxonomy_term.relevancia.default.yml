@@ -1,15 +1,23 @@
-uuid: 9e731b01-f501-4ac9-a5b0-9f8cc16d8a79
+uuid: a32c3f9c-6e1d-47c5-8f16-de0ffc01384f
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.relevancia.field_allowed_roles
     - field.field.taxonomy_term.relevancia.field_allowed_users
+    - field.field.taxonomy_term.relevancia.layout_builder__layout
     - taxonomy.vocabulary.relevancia
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.relevancia.default
 targetEntityType: taxonomy_term
 bundle: relevancia
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

@@ -1,0 +1,21 @@
+uuid: 4f710b53-9da5-463d-8814-f32f8802c184
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.tipos_de_ubicaci_n
+  module:
+    - layout_builder
+id: taxonomy_term.tipos_de_ubicaci_n.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: tipos_de_ubicaci_n
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

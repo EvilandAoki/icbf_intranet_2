@@ -1,22 +1,22 @@
-uuid: 832e46fe-e6d3-4f9f-94a6-57bde6381e7b
+uuid: 8e7a12c4-5e86-4315-9860-4ebc65edccb7
 langcode: es
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:basic:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+    - 'block_content:basic:9cc330ae-5b49-4dd0-ba38-45ec27785490'
   module:
     - block_content
     - system
   theme:
-    - icbf
+    - olivero
 id: intranet_block_12
-theme: icbf
+theme: olivero
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+plugin: 'block_content:9cc330ae-5b49-4dd0-ba38-45ec27785490'
 settings:
-  id: 'block_content:bb57dcea-aff5-47fd-bec7-b07c832a58ae'
+  id: 'block_content:9cc330ae-5b49-4dd0-ba38-45ec27785490'
   label: ''
   label_display: '0'
   provider: block_content

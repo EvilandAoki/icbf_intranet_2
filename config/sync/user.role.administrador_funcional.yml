@@ -1,12 +1,36 @@
-uuid: 3a97b70b-c473-47d4-a46b-1babbd297b6a
+uuid: a6505a61-eaca-41d7-80d3-974a01cf74b5
 langcode: es
 status: true
 dependencies:
   config:
+    - filter.format.clean
+    - filter.format.filtered_html
     - filter.format.full_html
+    - node.type.area
     - node.type.article
+    - node.type.blog
+    - node.type.boletin_interno
+    - node.type.cartelera
+    - node.type.cifras_proteccion
+    - node.type.commission_reports
+    - node.type.convocatorias_talento_humano
+    - node.type.dit_catalog
+    - node.type.document
+    - node.type.documentos_juridica
+    - node.type.enlace
+    - node.type.estadisticas_institucionales
+    - node.type.event_calendar
     - node.type.forum
+    - node.type.institutional_stationery
+    - node.type.minutes_regional_strategic_commu
+    - node.type.multimedia
+    - node.type.news
     - node.type.page
+    - node.type.persona
+    - node.type.pieza_sgsi
+    - node.type.poll
+    - node.type.process_sige
+    - node.type.publicaciones_sindicato
     - node.type.webform
   module:
     - advagg
@@ -17,7 +41,6 @@ dependencies:
     - comment
     - context_ui
     - contextual
-    - devel
     - entityqueue
     - facets
     - field_permissions
@@ -29,6 +52,7 @@ dependencies:
     - language
     - locale
     - node
+    - panels
     - path
     - pathauto
     - poll
@@ -40,9 +64,11 @@ dependencies:
     - search_api
     - security_review
     - shortcut
+    - slick_ui
     - smtp
     - statistics
     - system
+    - tac_lite
     - taxonomy
     - toolbar
     - view_unpublished
@@ -60,7 +86,6 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
-  - 'access devel information'
   - 'access private fields'
   - 'access rules debug'
   - 'access security review list'
@@ -71,6 +96,7 @@ permissions:
   - 'add JS snippets for google analytics'
   - 'administer CAPTCHA settings'
   - 'administer actions'
+  - 'administer advanced pane settings'
   - 'administer autologout'
   - 'administer block classes'
   - 'administer blocks'
@@ -88,6 +114,9 @@ permissions:
   - 'administer menu'
   - 'administer modules'
   - 'administer nodes'
+  - 'administer pane access'
+  - 'administer panels layouts'
+  - 'administer panels styles'
   - 'administer pathauto'
   - 'administer permissions'
   - 'administer quicktabs'
@@ -97,9 +126,11 @@ permissions:
   - 'administer search_api'
   - 'administer shortcuts'
   - 'administer site configuration'
+  - 'administer slick'
   - 'administer smtp module'
   - 'administer software updates'
   - 'administer statistics'
+  - 'administer tac_lite'
   - 'administer taxonomy'
   - 'administer themes'
   - 'administer url aliases'
@@ -116,28 +147,138 @@ permissions:
   - 'cancel own vote'
   - 'change own logout threshold'
   - 'change own username'
+  - 'create area content'
   - 'create article content'
+  - 'create blog content'
+  - 'create boletin_interno content'
+  - 'create cartelera content'
+  - 'create cifras_proteccion content'
+  - 'create commission_reports content'
+  - 'create convocatorias_talento_humano content'
+  - 'create dit_catalog content'
+  - 'create document content'
+  - 'create documentos_juridica content'
+  - 'create enlace content'
+  - 'create estadisticas_institucionales content'
+  - 'create event_calendar content'
   - 'create forum content'
+  - 'create institutional_stationery content'
+  - 'create minutes_regional_strategic_commu content'
+  - 'create multimedia content'
+  - 'create news content'
   - 'create page content'
+  - 'create persona content'
+  - 'create pieza_sgsi content'
+  - 'create poll content'
+  - 'create process_sige content'
+  - 'create publicaciones_sindicato content'
   - 'create url aliases'
   - 'create webform content'
   - 'customize shortcut links'
+  - 'delete any area content'
   - 'delete any article content'
+  - 'delete any blog content'
+  - 'delete any boletin_interno content'
+  - 'delete any cartelera content'
+  - 'delete any cifras_proteccion content'
+  - 'delete any commission_reports content'
+  - 'delete any convocatorias_talento_humano content'
+  - 'delete any dit_catalog content'
+  - 'delete any document content'
+  - 'delete any documentos_juridica content'
+  - 'delete any enlace content'
+  - 'delete any estadisticas_institucionales content'
+  - 'delete any event_calendar content'
   - 'delete any forum content'
+  - 'delete any institutional_stationery content'
+  - 'delete any minutes_regional_strategic_commu content'
+  - 'delete any multimedia content'
+  - 'delete any news content'
   - 'delete any page content'
+  - 'delete any persona content'
+  - 'delete any pieza_sgsi content'
+  - 'delete any poll content'
+  - 'delete any process_sige content'
+  - 'delete any publicaciones_sindicato content'
   - 'delete any webform content'
+  - 'delete own area content'
   - 'delete own article content'
+  - 'delete own blog content'
+  - 'delete own boletin_interno content'
+  - 'delete own cartelera content'
+  - 'delete own cifras_proteccion content'
+  - 'delete own commission_reports content'
+  - 'delete own convocatorias_talento_humano content'
+  - 'delete own dit_catalog content'
+  - 'delete own document content'
+  - 'delete own documentos_juridica content'
+  - 'delete own enlace content'
+  - 'delete own estadisticas_institucionales content'
+  - 'delete own event_calendar content'
   - 'delete own forum content'
+  - 'delete own institutional_stationery content'
+  - 'delete own minutes_regional_strategic_commu content'
+  - 'delete own multimedia content'
+  - 'delete own news content'
   - 'delete own page content'
+  - 'delete own persona content'
+  - 'delete own pieza_sgsi content'
+  - 'delete own poll content'
+  - 'delete own process_sige content'
+  - 'delete own publicaciones_sindicato content'
   - 'delete own webform content'
+  - 'edit any area content'
   - 'edit any article content'
+  - 'edit any blog content'
+  - 'edit any boletin_interno content'
+  - 'edit any cartelera content'
+  - 'edit any cifras_proteccion content'
+  - 'edit any commission_reports content'
+  - 'edit any convocatorias_talento_humano content'
+  - 'edit any dit_catalog content'
+  - 'edit any document content'
+  - 'edit any documentos_juridica content'
+  - 'edit any enlace content'
+  - 'edit any estadisticas_institucionales content'
+  - 'edit any event_calendar content'
   - 'edit any forum content'
+  - 'edit any institutional_stationery content'
+  - 'edit any minutes_regional_strategic_commu content'
+  - 'edit any multimedia content'
+  - 'edit any news content'
   - 'edit any page content'
+  - 'edit any persona content'
+  - 'edit any pieza_sgsi content'
+  - 'edit any poll content'
+  - 'edit any process_sige content'
+  - 'edit any publicaciones_sindicato content'
   - 'edit any webform content'
+  - 'edit own area content'
   - 'edit own article content'
+  - 'edit own blog content'
+  - 'edit own boletin_interno content'
+  - 'edit own cartelera content'
+  - 'edit own cifras_proteccion content'
   - 'edit own comments'
+  - 'edit own commission_reports content'
+  - 'edit own convocatorias_talento_humano content'
+  - 'edit own dit_catalog content'
+  - 'edit own document content'
+  - 'edit own documentos_juridica content'
+  - 'edit own enlace content'
+  - 'edit own estadisticas_institucionales content'
+  - 'edit own event_calendar content'
   - 'edit own forum content'
+  - 'edit own institutional_stationery content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'edit own multimedia content'
+  - 'edit own news content'
   - 'edit own page content'
+  - 'edit own persona content'
+  - 'edit own pieza_sgsi content'
+  - 'edit own poll content'
+  - 'edit own process_sige content'
+  - 'edit own publicaciones_sindicato content'
   - 'edit own webform content'
   - 'manipulate all entityqueues'
   - 'manipulate entityqueues'
@@ -150,15 +291,28 @@ permissions:
   - 'skip CAPTCHA'
   - 'skip comment approval'
   - 'switch shortcut sets'
-  - 'switch users'
   - 'translate interface'
   - 'use advanced search'
+  - 'use ipe with page manager'
+  - 'use panels caching features'
+  - 'use panels dashboard'
+  - 'use panels locks'
+  - 'use text format clean'
+  - 'use text format filtered_html'
   - 'use text format full_html'
   - 'view any unpublished article content'
+  - 'view any unpublished blog content'
   - 'view any unpublished content'
+  - 'view any unpublished document content'
+  - 'view any unpublished event_calendar content'
   - 'view any unpublished forum content'
+  - 'view any unpublished multimedia content'
+  - 'view any unpublished news content'
   - 'view any unpublished page content'
+  - 'view any unpublished persona content'
+  - 'view any unpublished poll content'
   - 'view any unpublished webform content'
   - 'view own unpublished content'
+  - 'view pane admin links'
   - 'view post access counter'
   - 'view the administration theme'

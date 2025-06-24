@@ -1,4 +1,4 @@
-uuid: 3450bee7-6b57-49b7-a9af-cbf5aa47b37a
+uuid: c888a777-c215-4681-b732-96e4772336fc
 langcode: es
 status: true
 dependencies:
@@ -6,9 +6,15 @@ dependencies:
     - field.field.node.encuesta_interna.body
     - node.type.encuesta_interna
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
-    - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.encuesta_interna.default
 targetEntityType: node
 bundle: encuesta_interna
@@ -82,11 +88,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden:
-  publish_on: true
-  unpublish_on: true
+hidden: {  }

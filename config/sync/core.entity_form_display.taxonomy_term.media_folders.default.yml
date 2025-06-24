@@ -1,15 +1,23 @@
-uuid: 1d042d76-3e16-4af7-b755-4fdaf4ba352e
+uuid: c0bd67a0-cd1e-4b30-90df-13444c943995
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.media_folders.field_allowed_roles
     - field.field.taxonomy_term.media_folders.field_allowed_users
+    - field.field.taxonomy_term.media_folders.layout_builder__layout
     - taxonomy.vocabulary.media_folders
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.media_folders.default
 targetEntityType: taxonomy_term
 bundle: media_folders
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

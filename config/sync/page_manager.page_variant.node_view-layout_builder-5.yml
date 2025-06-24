@@ -1,0 +1,64 @@
+uuid: 2f0bbc85-d170-47f2-896e-11f8160eec47
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - bootstrap_layouts
+    - ctools
+    - node
+id: node_view-layout_builder-5
+label: 'Catalogo DIT'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 25bb936c-5bd2-40cb-98cb-c11d62302315
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        ae8e3894-a5b9-4d84-ac52-bc4ad91e0fd8:
+          uuid: ae8e3894-a5b9-4d84-ac52-bc4ad91e0fd8
+          region: main
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      dit_catalog: dit_catalog
+selection_logic: and
+static_context: {  }

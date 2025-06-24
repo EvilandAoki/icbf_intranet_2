@@ -1,4 +1,4 @@
-uuid: c4b24ff6-d903-49fa-9439-e2896eb5b4e5
+uuid: 4a33d8fc-d683-4e46-a3a0-fa6341417180
 langcode: es
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Comentarios sobre el sitio web'
 recipients:
-  - migracion@gmail.com
+  - intranetICBF@mail.com
 reply: ''
 weight: 0
 message: 'Su mensaje ha sido enviado.'

@@ -1,0 +1,13 @@
+uuid: 0517926a-6823-43ed-a939-082353733a5f
+langcode: es
+status: true
+dependencies: {  }
+label: 'Prueba de Mentor'
+name: prueba_de_mentor
+group: Mentor
+description: 'Contexto de prueba'
+requireAllConditions: false
+disabled: false
+conditions: {  }
+reactions: {  }
+weight: 0

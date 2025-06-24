@@ -1,14 +1,10 @@
-uuid: ca959aeb-637c-4237-89db-c6429ebd3f5d
+uuid: 7768a475-ace2-4b91-8f1d-4fa3c0caa2a9
 langcode: es
 status: true
 dependencies:
   module:
-    - field_permissions
     - node
     - taxonomy
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: node.field_section
 field_name: field_section
 entity_type: node

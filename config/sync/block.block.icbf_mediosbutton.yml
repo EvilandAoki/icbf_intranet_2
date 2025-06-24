@@ -1,9 +1,9 @@
-uuid: 86400384-e382-424b-b1e9-2e974a99e7b4
+uuid: 4623ce33-88b9-4b79-94e8-4afcdf3184cb
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+    - 'block_content:basic:92d66476-6eae-476d-a96b-86d17df4bc73'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: icbf
 region: hidden_megamenu
 weight: 0
 provider: null
-plugin: 'block_content:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+plugin: 'block_content:92d66476-6eae-476d-a96b-86d17df4bc73'
 settings:
-  id: 'block_content:923e1695-caa5-4b4e-b2f8-4578cd048ec8'
+  id: 'block_content:92d66476-6eae-476d-a96b-86d17df4bc73'
   label: 'Medios - Button'
   label_display: '0'
   provider: block_content

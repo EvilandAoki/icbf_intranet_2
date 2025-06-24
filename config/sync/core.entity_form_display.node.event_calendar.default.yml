@@ -1,4 +1,4 @@
-uuid: 7051d096-a475-40da-8394-b3847f596cfd
+uuid: c695b2be-b402-41bf-9959-a69377983c7c
 langcode: es
 status: true
 dependencies:
@@ -12,11 +12,18 @@ dependencies:
     - node.type.event_calendar
   module:
     - address
-    - datetime
+    - datetime_range
+    - field_layout
     - geofield
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.event_calendar.default
 targetEntityType: node
 bundle: event_calendar
@@ -39,27 +46,31 @@ content:
     settings: {  }
     third_party_settings: {  }
   event_calendar_date:
-    type: datetime_default
-    weight: -3
+    type: daterange_default
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   event_calendar_status:
-    type: options_select
-    weight: 10
+    type: entity_reference_autocomplete
+    weight: 122
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_address:
     type: address_default
-    weight: 42
+    weight: 123
     region: content
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
   field_body:
     type: text_textarea_with_summary
-    weight: 32
+    weight: 124
     region: content
     settings:
       rows: 9
@@ -69,7 +80,7 @@ content:
     third_party_settings: {  }
   field_event_location:
     type: geofield_latlon
-    weight: 33
+    weight: 125
     region: content
     settings:
       html5_geolocation: false

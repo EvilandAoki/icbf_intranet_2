@@ -1,9 +1,9 @@
-uuid: 4026f6d3-6a24-458d-9c86-e35fc5263fe9
+uuid: a047c496-9351-4964-9df6-db8ed4ba5632
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e9f3a9a4-ccf6-47a1-8b92-3194e69ffd5c'
+    - 'block_content:basic:ee2a535c-9ac3-462d-917f-d629a1b337c5'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: icbf
 region: hidden_megamenu
 weight: 0
 provider: null
-plugin: 'block_content:e9f3a9a4-ccf6-47a1-8b92-3194e69ffd5c'
+plugin: 'block_content:ee2a535c-9ac3-462d-917f-d629a1b337c5'
 settings:
-  id: 'block_content:e9f3a9a4-ccf6-47a1-8b92-3194e69ffd5c'
+  id: 'block_content:ee2a535c-9ac3-462d-917f-d629a1b337c5'
   label: 'Estructura - center'
   label_display: '0'
   provider: block_content

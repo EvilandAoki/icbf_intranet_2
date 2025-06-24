@@ -1,0 +1,19 @@
+uuid: 2ca4b5f7-57df-45ff-8cc5-3b3f60a81fc1
+langcode: es
+status: true
+dependencies:
+  module:
+    - layout_builder
+    - taxonomy
+id: taxonomy_term.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+type: layout_section
+settings: {  }
+module: layout_builder
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

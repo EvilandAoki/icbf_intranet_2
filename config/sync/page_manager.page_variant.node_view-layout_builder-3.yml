@@ -1,0 +1,64 @@
+uuid: b6f578c5-91ee-46da-9127-0cb82d869af5
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - bootstrap_layouts
+    - ctools
+    - node
+id: node_view-layout_builder-3
+label: 'Boletines Internos'
+weight: -6
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 28fad910-ffc9-482f-9bc5-97cca06dfa69
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        1b7dadc8-0f82-42d4-bc5f-933103f83111:
+          uuid: 1b7dadc8-0f82-42d4-bc5f-933103f83111
+          region: main
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      boletin_interno: boletin_interno
+selection_logic: and
+static_context: {  }

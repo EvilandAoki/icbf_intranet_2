@@ -1,4 +1,4 @@
-uuid: 51bb8794-3d01-48fc-9070-2f036c58ed7b
+uuid: a5322f48-4fb7-4409-9a75-98483b254d0b
 langcode: es
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: icbf_branding
 theme: icbf
 region: navigation
-weight: -6
+weight: -15
 provider: null
 plugin: system_branding_block
 settings:

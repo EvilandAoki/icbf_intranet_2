@@ -1,0 +1,21 @@
+uuid: c5c15efe-f6e6-4876-b7d5-159d64081f49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.promocionales_home
+  module:
+    - layout_builder
+id: node.promocionales_home.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: promocionales_home
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

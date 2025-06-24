@@ -1,4 +1,4 @@
-uuid: dfc01498-d8de-4621-9775-30936ce9f140
+uuid: 498038fd-a184-4179-a2f9-3d3e5365fdf9
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_promocionales_home
     - field.field.comment.comment_node_promocionales_home.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_promocionales_home.default
 targetEntityType: comment
 bundle: comment_node_promocionales_home

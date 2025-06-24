@@ -1,4 +1,4 @@
-uuid: a4630160-316e-48e0-a414-415e8320e26a
+uuid: f3415fda-f9ea-406e-9115-04fb69ca42db
 langcode: es
 status: true
 dependencies:
@@ -16,12 +16,43 @@ dependencies:
   module:
     - file
     - image
+    - options
+    - text
     - user
 id: node.articulo_de_seccion.default
 targetEntityType: node
 bundle: articulo_de_seccion
 mode: default
 content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_constructor_glazedb:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_file_priority:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_post_documents:
     type: file_default
     label: above
@@ -41,6 +72,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_post_resume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_section:
     type: entity_reference_label
     label: above
@@ -52,14 +90,9 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 5
     region: content
 hidden:
-  body: true
-  field_constructor_glazedb: true
-  field_file_categoria: true
-  field_file_priority: true
-  field_post_resume: true
   field_tabs_dit1: true
   langcode: true
   search_api_excerpt: true

@@ -1,4 +1,4 @@
-uuid: 017806b0-13b6-4a04-8375-cbc89d3052fb
+uuid: a0279cb2-398b-4d07-a722-fa1da95f6c23
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: 4J2RPG4JmsD4Fm1NlIQY0JHkrJ08UUl0qTF0_EjUxvw
 id: relationship
 label: Relación
-category: Demographic
+category: Demográfico
 likert: false
 options: |
   Parent: Parent

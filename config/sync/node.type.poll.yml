@@ -1,11 +1,7 @@
-uuid: ddcd607f-e946-4485-92e0-fc4872a1fca4
+uuid: 1f84ed9b-9b7a-4385-aef7-7d55bf82529d
 langcode: es
 status: true
-dependencies:
-  module:
-    - scheduler
-third_party_settings:
-  scheduler: {  }
+dependencies: {  }
 name: Encuesta
 type: poll
 description: 'Una <em>encuesta</em> es una pregunta con un grupo de respuestas posibles. Una <em>encuesta</em>, una vez creada, proporciona automáticamente un sencillo contador del número de votos que ha recibido cada respuesta.'

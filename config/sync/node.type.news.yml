@@ -1,24 +1,12 @@
-uuid: 81dbb58b-d6ef-40fc-bf2b-e05c3fee8376
+uuid: 6900d362-ef72-48ac-a1ee-7bf95c29a8b2
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
 third_party_settings:
   menu_ui:
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: true
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: true
-    unpublish_enable: true
-    unpublish_required: false
-    unpublish_revision: false
 name: Noticia
 type: news
 description: 'Comunicados de Prensa - Comunicaciones'

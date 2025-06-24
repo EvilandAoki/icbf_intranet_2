@@ -1,26 +1,14 @@
-uuid: d3c4509f-2361-431e-a82f-6cb0e21dbea7
+uuid: 822ef039-dbff-49c0-a651-ff5463f101e2
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: false
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: false
-    unpublish_enable: false
-    unpublish_required: false
-    unpublish_revision: false
 name: 'Contacto Nacional'
 type: contacto_nacional
 description: 'Información de contactos por región - Ejes SIGE'

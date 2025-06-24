@@ -1,8 +1,11 @@
-uuid: 2d3f0d26-bcab-49c5-bc22-84535e218c62
+uuid: d9662184-9fc6-4fd6-b006-7fbf80468a02
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_magdalena
 label: 'Regional Magdalena'
@@ -10,4 +13,6 @@ weight: 34
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

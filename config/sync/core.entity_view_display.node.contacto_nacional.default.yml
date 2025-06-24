@@ -1,8 +1,9 @@
-uuid: 0bbf129f-219f-48c4-8658-4dba39ae6b28
+uuid: 5c421a98-3b21-46ba-beb7-0bb5663cb891
 langcode: es
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - field.field.node.contacto_nacional.body
     - field.field.node.contacto_nacional.field_coordinador_planeacion
     - field.field.node.contacto_nacional.field_enlace_seys
@@ -13,16 +14,236 @@ dependencies:
     - field.field.node.contacto_nacional.field_imagen_region
     - field.field.node.contacto_nacional.field_referent_calidad_regional
     - field.field.node.contacto_nacional.field_regional
+    - field.field.node.contacto_nacional.layout_builder__layout
     - node.type.contacto_nacional
   module:
+    - bootstrap_layouts
     - image
+    - layout_builder
+    - layout_discovery
     - options
+    - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: national-contact
+          context_mapping: {  }
+        components:
+          5be60c94-5fe9-4fce-b717-1a8e80f8e338:
+            uuid: 5be60c94-5fe9-4fce-b717-1a8e80f8e338
+            region: content
+            configuration:
+              id: 'field_block:node:contacto_nacional:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: 'national-contact contact-title'
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_2col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|national-contact
+          regions:
+            left:
+              wrapper: div
+              classes:
+                col-xs-3: col-xs-3
+              add_region_classes: 1
+              attributes: id|national-contact-l
+            right:
+              wrapper: div
+              classes:
+                col-xs-7: col-xs-7
+              add_region_classes: 1
+              attributes: id|national-contact-R
+        components:
+          e0bce412-2b16-47be-b203-3dcf61ddffc7:
+            uuid: e0bce412-2b16-47be-b203-3dcf61ddffc7
+            region: left
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_imagen_region'
+              label: 'Imagen Región'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          ce2d3c15-1067-402f-bd2f-5af226b6619b:
+            uuid: ce2d3c15-1067-402f-bd2f-5af226b6619b
+            region: right
+            configuration:
+              id: 'extra_field_block:node:contacto_nacional:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 8
+            additional: {  }
+          27628a8d-7342-4838-9412-3731ba1b1e4c:
+            uuid: 27628a8d-7342-4838-9412-3731ba1b1e4c
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 9
+            additional: {  }
+          de90b871-3874-4879-9254-664e44747827:
+            uuid: de90b871-3874-4879-9254-664e44747827
+            region: right
+            configuration:
+              id: 'inline_block:basic'
+              label: 'Eje de calidad'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_id: 1814
+              block_revision_id: 79
+              block_serialized: null
+            weight: 10
+            additional: {  }
+          bbc703c6-04f9-470b-beeb-159f4c0fd409:
+            uuid: bbc703c6-04f9-470b-beeb-159f4c0fd409
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_coordinador_planeacion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5af73181-3716-432c-b5ce-f4357b9c5cde:
+            uuid: 5af73181-3716-432c-b5ce-f4357b9c5cde
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_referent_calidad_regional'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          642a6ab0-48ac-43a6-a9de-ab2a1b6c357c:
+            uuid: 642a6ab0-48ac-43a6-a9de-ab2a1b6c357c
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_enlace_smo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          7dc499de-0114-4e94-87ca-138f7418bd3c:
+            uuid: 7dc499de-0114-4e94-87ca-138f7418bd3c
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_enlace_seys'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          f83965ea-7816-4d5a-848a-3357d729b158:
+            uuid: f83965ea-7816-4d5a-848a-3357d729b158
+            region: right
+            configuration:
+              id: 'field_block:node:contacto_nacional:field_enlace_sp'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
 id: node.contacto_nacional.default
 targetEntityType: node
 bundle: contacto_nacional
 mode: default
 content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
   field_coordinador_planeacion:
     type: string
     label: inline
@@ -79,7 +300,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 8
+    weight: 10
     region: content
   field_referent_calidad_regional:
     type: string
@@ -100,9 +321,9 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 8
     region: content
 hidden:
-  body: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

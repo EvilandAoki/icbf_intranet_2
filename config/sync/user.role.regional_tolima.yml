@@ -1,12 +1,17 @@
-uuid: c2c2d294-980d-4991-a8d4-0e63fa22ec63
+uuid: 1f422204-c2b7-4fd3-a02a-a0b2139e8147
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_tolima
 label: 'Regional Tolima'
 weight: 44
 is_admin: null
 permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

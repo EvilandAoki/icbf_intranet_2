@@ -1,8 +1,9 @@
-uuid: fb4fa610-801a-4a2c-b377-e181aae02600
+uuid: 979e2555-2a3a-449f-94f9-b278ab1d31e5
 langcode: es
 status: true
 dependencies:
   config:
+    - filter.format.clean
     - filter.format.full_html
   module:
     - filter
@@ -14,6 +15,7 @@ weight: 10
 is_admin: null
 permissions:
   - 'access content'
+  - 'use text format clean'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

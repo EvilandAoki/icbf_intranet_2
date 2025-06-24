@@ -1,8 +1,9 @@
-uuid: 45d579d1-cacd-4342-991b-020856e7250d
+uuid: de657a97-b579-4f51-a34a-7e9ba4b5c5f6
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.feeds_item
     - field.field.user.user.ldap_user_current_dn
     - field.field.user.user.ldap_user_last_checked
     - field.field.user.user.ldap_user_ldap_exclude
@@ -15,9 +16,16 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - path
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
 id: user.user.default
@@ -57,6 +65,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   langcode: true
   ldap_user_current_dn: true
   ldap_user_last_checked: true

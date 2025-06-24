@@ -1,0 +1,11 @@
+uuid: 7dcd4ce6-a454-470a-a679-97a321ca0181
+langcode: es
+status: true
+dependencies:
+  module:
+    - audit_log
+id: audit_log.token
+label: Token
+description: ''
+targetEntityType: audit_log
+cache: true

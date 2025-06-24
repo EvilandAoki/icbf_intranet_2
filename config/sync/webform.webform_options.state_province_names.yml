@@ -1,4 +1,4 @@
-uuid: 37183986-14ac-46c6-a307-fb43b4547fb4
+uuid: 97eb44bf-341e-4b5f-8add-75930dda34e6
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: d4mxS_CxdzHZK4WaGQf1H3m-Uubm5HPbu9U4ydzscuo
 id: state_province_names
 label: 'State/Province names'
-category: Geographic
+category: Geográfico
 likert: false
 options: |
   Alabama: Alabama

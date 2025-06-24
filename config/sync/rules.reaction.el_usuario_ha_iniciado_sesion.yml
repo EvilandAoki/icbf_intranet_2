@@ -1,0 +1,14 @@
+uuid: e296fb98-37b2-482c-aa18-a1dc85c1eef4
+langcode: es
+status: true
+dependencies: {  }
+id: el_usuario_ha_iniciado_sesion
+label: 'El usuario ha iniciado sesión'
+events:
+  -
+    event_name: rules_user_login
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule

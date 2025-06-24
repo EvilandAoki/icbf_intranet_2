@@ -1,4 +1,4 @@
-uuid: 32d8fe4c-395c-4b01-a2d6-974656af3aad
+uuid: 807ea469-1891-473f-b944-0afbe368bf82
 langcode: es
 status: true
 dependencies:
@@ -12,12 +12,20 @@ dependencies:
     - field.field.node.persona.field_phone
     - field.field.node.persona.field_photo
     - field.field.node.persona.field_priority
+    - image.style.thumbnail
     - node.type.persona
   module:
-    - file
+    - field_layout
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.persona.default
 targetEntityType: node
 bundle: persona
@@ -30,14 +38,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_cargo:
-    type: options_buttons
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 121
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_content_profile:
     type: text_textarea
-    weight: 2
+    weight: 122
     region: content
     settings:
       rows: 5
@@ -45,22 +57,23 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 5
+    weight: 123
     region: content
     settings:
       placeholder: ''
       size: 60
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 3
+    type: image_image
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_lugar:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -70,7 +83,7 @@ content:
     third_party_settings: {  }
   field_person_area:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 126
     region: content
     settings:
       match_operator: CONTAINS
@@ -80,22 +93,23 @@ content:
     third_party_settings: {  }
   field_phone:
     type: string_textfield
-    weight: 6
+    weight: 127
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_photo:
-    type: file_generic
-    weight: 2
+    type: image_image
+    weight: 128
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_priority:
     type: number
-    weight: 14
+    weight: 129
     region: content
     settings:
       placeholder: ''

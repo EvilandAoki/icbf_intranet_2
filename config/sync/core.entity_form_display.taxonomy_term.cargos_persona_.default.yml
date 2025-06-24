@@ -1,15 +1,23 @@
-uuid: 9c23bfce-b3de-42dc-baf8-f3f420036e42
+uuid: d98e05f7-a601-47c0-b9b6-ba78fa1c1781
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.cargos_persona_.field_allowed_roles
     - field.field.taxonomy_term.cargos_persona_.field_allowed_users
+    - field.field.taxonomy_term.cargos_persona_.layout_builder__layout
     - taxonomy.vocabulary.cargos_persona_
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.cargos_persona_.default
 targetEntityType: taxonomy_term
 bundle: cargos_persona_
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

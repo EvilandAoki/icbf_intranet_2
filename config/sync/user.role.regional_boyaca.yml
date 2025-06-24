@@ -1,8 +1,11 @@
-uuid: 162c28d0-aaf6-4257-b10e-990c73fe6397
+uuid: 7ba6299a-d60c-4718-852a-0b4ba2e53744
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_boyaca
 label: 'Regional Boyacá'
@@ -10,4 +13,6 @@ weight: 20
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

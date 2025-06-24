@@ -1,0 +1,26 @@
+uuid: 858e659d-9c19-4875-9577-b86412a6da0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.webform_53894
+  module:
+    - webform
+  theme:
+    - icbf
+id: icbf_webform
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Ubicaciones (GH).'
+  label_display: '0'
+  provider: webform
+  webform_id: webform_53894
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

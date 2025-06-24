@@ -1,0 +1,20 @@
+uuid: 60797952-35bc-481e-be6b-7ae2186fa003
+langcode: es
+status: true
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - icbf
+id: icbf_menu3intranet
+theme: icbf
+region: navigation
+weight: -17
+provider: null
+plugin: 'tb_megamenu_menu_block:mgm-5d269b109dc9a'
+settings:
+  id: 'tb_megamenu_menu_block:mgm-5d269b109dc9a'
+  label: 'Menu3 Intranet'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

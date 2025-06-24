@@ -1,4 +1,4 @@
-uuid: 11e65f09-2700-423b-b9f4-6d32268e9b96
+uuid: 3a22612b-5311-419a-ad71-3f6d529f82fb
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_encuesta_interna
     - field.field.comment.comment_node_encuesta_interna.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_encuesta_interna.default
 targetEntityType: comment
 bundle: comment_node_encuesta_interna

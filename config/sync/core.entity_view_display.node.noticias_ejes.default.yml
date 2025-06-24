@@ -1,4 +1,4 @@
-uuid: a9ef6f26-62ed-4cd0-9748-07812e64f217
+uuid: 9903abfe-1254-4b72-877c-fc41cf6ca3c2
 langcode: es
 status: true
 dependencies:
@@ -10,13 +10,164 @@ dependencies:
     - field.field.node.noticias_ejes.field_resume
     - field.field.node.noticias_ejes.field_section
     - field.field.node.noticias_ejes.field_section_tag
+    - field.field.node.noticias_ejes.layout_builder__layout
     - node.type.noticias_ejes
   module:
+    - bootstrap_layouts
     - datetime
     - file
     - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          712aa51b-048b-46b5-b4b1-7307ebecb2d9:
+            uuid: 712aa51b-048b-46b5-b4b1-7307ebecb2d9
+            region: main
+            configuration:
+              id: 'field_block:node:noticias_ejes:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|custom-noticia-eje
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          3edb6c26-49f0-44b6-9700-6817bb1aefbf:
+            uuid: 3edb6c26-49f0-44b6-9700-6817bb1aefbf
+            region: main
+            configuration:
+              id: 'field_block:node:noticias_ejes:field_document'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: inline
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          80e43368-4582-452b-b63b-bd0a27ccbf9c:
+            uuid: 80e43368-4582-452b-b63b-bd0a27ccbf9c
+            region: main
+            configuration:
+              id: 'field_block:node:noticias_ejes:field_list_image'
+              label: 'Imagen Listado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  field_formatter_class:
+                    class: img-noticia-eje
+            weight: 1
+            additional: {  }
+          4dc1b281-f05f-4005-91a8-b780f2247c2e:
+            uuid: 4dc1b281-f05f-4005-91a8-b780f2247c2e
+            region: main
+            configuration:
+              id: 'field_block:node:noticias_ejes:field_resume'
+              label: Resumen
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: news-content
+            weight: 2
+            additional: {  }
+          91069c16-2579-4707-a84d-b15eabc7a9dc:
+            uuid: 91069c16-2579-4707-a84d-b15eabc7a9dc
+            region: main
+            configuration:
+              id: 'field_block:node:noticias_ejes:field_date'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: olivero_medium
+                third_party_settings:
+                  field_formatter_class:
+                    class: custom-date
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
 id: node.noticias_ejes.default
 targetEntityType: node
 bundle: noticias_ejes
@@ -29,7 +180,7 @@ content:
       timezone_override: ''
       format_type: long
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_document:
     type: file_default
@@ -48,7 +199,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_location:
     type: entity_reference_label
@@ -60,10 +211,10 @@ content:
     region: content
   field_resume:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_section:
     type: entity_reference_label
@@ -71,7 +222,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_section_tag:
     type: entity_reference_label
@@ -84,8 +235,9 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 7
     region: content
 hidden:
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

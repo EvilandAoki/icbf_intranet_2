@@ -1,12 +1,12 @@
-uuid: 45c731d6-a365-4ef5-9aff-f6fbff89b01c
+uuid: db7eda90-36a4-4634-a35b-5a36c32b318e
 langcode: es
 status: true
 dependencies: {  }
 name: cartelera_600x600
 label: 'Cartelera 600x600'
 effects:
-  513e6d7b-d13c-491b-aa71-0f6b261ab975:
-    uuid: 513e6d7b-d13c-491b-aa71-0f6b261ab975
+  6a5e05a9-3556-40e4-aa34-3de766022fb0:
+    uuid: 6a5e05a9-3556-40e4-aa34-3de766022fb0
     id: image_scale
     weight: 1
     data:

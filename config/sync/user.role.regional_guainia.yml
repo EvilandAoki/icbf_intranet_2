@@ -1,8 +1,11 @@
-uuid: f4047069-d279-4e05-81e8-c28bcc411f46
+uuid: e619e2e5-b456-4cbf-8a7e-14e061e01bc4
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_guainia
 label: 'Regional Guainía'
@@ -10,4 +13,6 @@ weight: 31
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

@@ -1,0 +1,21 @@
+uuid: ccf0c200-e6aa-483d-8b46-2483044cc77b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.pieza_sgsi
+  module:
+    - layout_builder
+id: node.pieza_sgsi.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: pieza_sgsi
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

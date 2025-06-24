@@ -1,8 +1,9 @@
-uuid: 316e7ce8-d58b-4323-a1ab-049b50cafa0f
+uuid: 8c009998-4865-4c2a-871c-5fd90eceb05a
 langcode: es
-status: false
+status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - icbf
@@ -10,13 +11,13 @@ _core:
   default_config_hash: gJ_fEe-AFT-q5U59HD5kPXwau8zXL8k8Tu_fTuCofys
 id: icbf_breadcrumbs
 theme: icbf
-region: navigation
-weight: 0
+region: help
+weight: -18
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: 'Enlaces de ayuda a la navegación'
-  label_display: '0'
+  label: 'Usted está en:'
+  label_display: visible
   provider: system
 visibility: {  }

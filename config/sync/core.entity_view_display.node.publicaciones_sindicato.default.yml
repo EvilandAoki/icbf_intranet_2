@@ -1,4 +1,4 @@
-uuid: f4e3346c-1eaf-4cb6-be9c-266456a58435
+uuid: e70438fe-4be1-4a14-9189-7895d138a214
 langcode: es
 status: true
 dependencies:
@@ -8,12 +8,176 @@ dependencies:
     - field.field.node.publicaciones_sindicato.field_documento
     - field.field.node.publicaciones_sindicato.field_regional
     - field.field.node.publicaciones_sindicato.field_section
+    - field.field.node.publicaciones_sindicato.layout_builder__layout
     - node.type.publicaciones_sindicato
   module:
+    - bootstrap_layouts
     - datetime
     - file
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          354d5800-48b1-41f9-af0d-2083b8911d0f:
+            uuid: 354d5800-48b1-41f9-af0d-2083b8911d0f
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|custom-content
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          2bbc08cc-18e6-4bce-9bb7-9ff50f19f88a:
+            uuid: 2bbc08cc-18e6-4bce-9bb7-9ff50f19f88a
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8b12325a-b884-4965-a5a7-9a2dde1ffd32:
+            uuid: 8b12325a-b884-4965-a5a7-9a2dde1ffd32
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:field_documento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          01f0b261-21b8-4fc5-a11c-8d4e7e8f92af:
+            uuid: 01f0b261-21b8-4fc5-a11c-8d4e7e8f92af
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:field_regional'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          fb7a868d-724f-47e3-bd30-632cf4e115e3:
+            uuid: fb7a868d-724f-47e3-bd30-632cf4e115e3
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:field_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          442cef1c-5d84-4e50-bfa7-cbb75ebc7c3b:
+            uuid: 442cef1c-5d84-4e50-bfa7-cbb75ebc7c3b
+            region: main
+            configuration:
+              id: 'extra_field_block:node:publicaciones_sindicato:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
+          194ccd6f-0c04-4697-9b4d-4a165d78c517:
+            uuid: 194ccd6f-0c04-4697-9b4d-4a165d78c517
+            region: main
+            configuration:
+              id: 'field_block:node:publicaciones_sindicato:field_section'
+              label: Sección
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
 id: node.publicaciones_sindicato.default
 targetEntityType: node
 bundle: publicaciones_sindicato
@@ -66,4 +230,5 @@ content:
     region: content
 hidden:
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

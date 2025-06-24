@@ -1,4 +1,4 @@
-uuid: 3ab90e1a-d862-45a1-8130-f3c9d76504ba
+uuid: 185743e3-7fce-49ca-89cf-16dc2c92283e
 langcode: es
 status: true
 dependencies:
@@ -7,9 +7,16 @@ dependencies:
     - field.field.taxonomy_term.hiring_process_type.field_allowed_users
     - taxonomy.vocabulary.hiring_process_type
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.hiring_process_type.default
 targetEntityType: taxonomy_term
 bundle: hiring_process_type

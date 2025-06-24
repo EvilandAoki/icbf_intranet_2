@@ -1,0 +1,29 @@
+uuid: 62b1af38-503b-4a40-b61e-9866fdd58c25
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:73a32943-d4af-409d-b28f-477b6a7b7b4a'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - icbf
+third_party_settings:
+  block_class:
+    classes: Accesibility-icbf
+id: icbf_menufloat21
+theme: icbf
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:73a32943-d4af-409d-b28f-477b6a7b7b4a'
+settings:
+  id: 'block_content:73a32943-d4af-409d-b28f-477b6a7b7b4a'
+  label: MenuFloat21
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

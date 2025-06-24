@@ -1,14 +1,64 @@
-uuid: 5635ba84-0371-480f-a194-d708a2ef5612
-langcode: en
+uuid: 6ecc844f-acf7-4e04-862a-889cf865097a
+langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.forums.field_allowed_roles
     - field.field.taxonomy_term.forums.field_allowed_users
     - field.field.taxonomy_term.forums.forum_container
+    - field.field.taxonomy_term.forums.layout_builder__layout
     - taxonomy.vocabulary.forums
   module:
+    - blazy
+    - bootstrap_layouts
+    - layout_builder
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          8ec7935f-e9f0-4dda-8139-6970b88fd070:
+            uuid: 8ec7935f-e9f0-4dda-8139-6970b88fd070
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:forums:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: stc3UW9mGWKOU4zTosSDXyRkid8AYh_ME73FJeY4QNE
 id: taxonomy_term.forums.default
@@ -23,9 +73,45 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_allowed_roles:
+    type: blazy_entity
+    label: above
+    settings:
+      view_mode: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  forum_container:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  langcode:
+    type: language
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
-  field_allowed_roles: true
-  field_allowed_users: true
-  forum_container: true
-  langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

@@ -1,4 +1,4 @@
-uuid: 3a6121f3-9ba4-43a1-b49c-b281bf9b8525
+uuid: 97cb5b2c-8002-4806-9bbd-7762639ed05a
 langcode: es
 status: true
 dependencies:
@@ -10,11 +10,79 @@ dependencies:
     - field.field.taxonomy_term.secctions.field_header_area
     - field.field.taxonomy_term.secctions.field_multimedia_complement
     - field.field.taxonomy_term.secctions.field_taxonomy_image
+    - field.field.taxonomy_term.secctions.layout_builder__layout
     - taxonomy.vocabulary.secctions
   module:
+    - bootstrap_layouts
     - file
     - image
+    - layout_builder
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          f8dfed92-0689-46be-842a-248156764ffe:
+            uuid: f8dfed92-0689-46be-842a-248156764ffe
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:secctions:field_header_area'
+              label: 'Header Area'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          aac9c932-97c0-44b2-a299-2a67287d2021:
+            uuid: aac9c932-97c0-44b2-a299-2a67287d2021
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:secctions:field_content'
+              label: Contenido
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.secctions.default
 targetEntityType: taxonomy_term
 bundle: secctions
@@ -27,6 +95,29 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_docs:
     type: file_default
     label: above
@@ -34,6 +125,21 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_multimedia_complement:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_taxonomy_image:
     type: image
@@ -44,13 +150,9 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
+    weight: 2
     region: content
 hidden:
-  field_allowed_roles: true
-  field_allowed_users: true
-  field_content: true
-  field_header_area: true
-  field_multimedia_complement: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

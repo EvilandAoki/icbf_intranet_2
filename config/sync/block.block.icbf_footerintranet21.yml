@@ -1,9 +1,9 @@
-uuid: 956ef272-50a9-474c-b244-81b91cd0ce76
+uuid: 33b29e6c-2f4e-470b-a504-b3e739a31044
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:3cdf035b-729d-414a-9eba-81f372809ee2'
+    - 'block_content:basic:b6daf38f-6a79-4430-9993-4162a250945d'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: icbf
 region: footer
 weight: -16
 provider: null
-plugin: 'block_content:3cdf035b-729d-414a-9eba-81f372809ee2'
+plugin: 'block_content:b6daf38f-6a79-4430-9993-4162a250945d'
 settings:
-  id: 'block_content:3cdf035b-729d-414a-9eba-81f372809ee2'
+  id: 'block_content:b6daf38f-6a79-4430-9993-4162a250945d'
   label: 'Footer Intranet 21'
   label_display: '0'
   provider: block_content

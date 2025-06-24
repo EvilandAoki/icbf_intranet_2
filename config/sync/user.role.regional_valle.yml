@@ -1,12 +1,17 @@
-uuid: 71d40db0-3f77-45fc-abdc-8629c0305e1f
+uuid: 4ee6e8c7-f3cf-4497-b4dc-c633e65c6f31
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_valle
 label: 'Regional Valle'
 weight: 45
 is_admin: null
 permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

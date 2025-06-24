@@ -1,4 +1,4 @@
-uuid: d28c6255-7d41-4337-a408-38de0fb01dd1
+uuid: ba8382a1-bee7-4fc6-8877-1c2956ba024a
 langcode: es
 status: true
 dependencies:
@@ -11,9 +11,16 @@ dependencies:
     - node.type.estadisticas_institucionales
   module:
     - datetime
+    - field_layout
     - file
+    - layout_discovery
     - path
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.estadisticas_institucionales.default
 targetEntityType: node
 bundle: estadisticas_institucionales
@@ -27,20 +34,20 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 7
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   field_document:
     type: file_generic
-    weight: 4
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -50,7 +57,7 @@ content:
     third_party_settings: {  }
   field_parent:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -60,7 +67,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS

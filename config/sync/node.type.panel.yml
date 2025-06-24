@@ -1,11 +1,7 @@
-uuid: e84d90dc-7e1b-4af7-a446-f0efeccf3840
+uuid: 123b1dee-5842-48d2-8cb7-1c20f643f5d5
 langcode: es
 status: true
-dependencies:
-  module:
-    - scheduler
-third_party_settings:
-  scheduler: {  }
+dependencies: {  }
 name: Panel
 type: panel
 description: 'Un diseño de paneles dividido en filas y columnas.'

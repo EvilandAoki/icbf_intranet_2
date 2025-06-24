@@ -1,4 +1,4 @@
-uuid: 34ccaa15-5756-46f3-85a1-520ce464a57b
+uuid: 47644618-e183-444d-8d68-a924e1ac44c8
 langcode: es
 status: true
 dependencies:
@@ -10,12 +10,22 @@ dependencies:
     - field.field.node.dit_catalog.field_infografia_dit
     - field.field.node.dit_catalog.field_list_image
     - field.field.node.dit_catalog.field_section
+    - field.field.node.dit_catalog.layout_builder__layout
+    - image.style.thumbnail
     - node.type.dit_catalog
   module:
+    - field_layout
     - file
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.dit_catalog.default
 targetEntityType: node
 bundle: dit_catalog
@@ -28,21 +38,25 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_categoria_dit:
-    type: options_select
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 121
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_documento:
     type: file_generic
-    weight: 9
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -52,7 +66,7 @@ content:
     third_party_settings: {  }
   field_header_area:
     type: text_textarea
-    weight: 1
+    weight: 124
     region: content
     settings:
       rows: 5
@@ -60,22 +74,23 @@ content:
     third_party_settings: {  }
   field_infografia_dit:
     type: text_textarea
-    weight: 2
+    weight: 125
     region: content
     settings:
-      rows: 15
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 12
+    type: image_image
+    weight: 126
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -141,5 +156,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

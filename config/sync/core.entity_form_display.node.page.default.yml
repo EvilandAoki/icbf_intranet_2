@@ -1,4 +1,4 @@
-uuid: 39219ac9-48b9-4499-a103-d0c09252623d
+uuid: aefc5917-b3a0-4b72-8ccd-66d930b2880e
 langcode: en
 status: true
 dependencies:
@@ -11,12 +11,22 @@ dependencies:
     - field.field.node.page.field_parent
     - field.field.node.page.field_resume
     - field.field.node.page.field_section
+    - field.field.node.page.layout_builder__layout
+    - image.style.thumbnail
     - node.type.page
   module:
+    - field_layout
     - file
+    - image
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
 id: node.page.default
@@ -42,36 +52,38 @@ content:
     third_party_settings: {  }
   field_attachments:
     type: file_generic
-    weight: 3
+    weight: 121
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_content:
     type: text_textarea
-    weight: 3
+    weight: 122
     region: content
     settings:
-      rows: 10
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_images:
-    type: file_generic
-    weight: 2
+    type: image_image
+    weight: 123
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_list_image:
-    type: file_generic
-    weight: 4
+    type: image_image
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_parent:
-    type: entity_reference_autocomplete_tags
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -81,7 +93,7 @@ content:
     third_party_settings: {  }
   field_resume:
     type: text_textarea
-    weight: 2
+    weight: 126
     region: content
     settings:
       rows: 5
@@ -89,7 +101,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -155,5 +167,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

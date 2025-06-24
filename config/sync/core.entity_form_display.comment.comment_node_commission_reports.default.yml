@@ -1,4 +1,4 @@
-uuid: 5e8eaab6-1044-4457-95c2-e592b8521baf
+uuid: 145c0362-b88d-4ccd-bb24-8eaf53a4c845
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_commission_reports
     - field.field.comment.comment_node_commission_reports.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_commission_reports.default
 targetEntityType: comment
 bundle: comment_node_commission_reports

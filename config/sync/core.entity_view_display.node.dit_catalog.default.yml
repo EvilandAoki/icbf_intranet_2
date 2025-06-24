@@ -1,4 +1,4 @@
-uuid: 1c95f2ea-76f3-407b-ad29-617bb87cb0fd
+uuid: b6190174-41c1-4776-809f-e937a1e91226
 langcode: es
 status: true
 dependencies:
@@ -10,15 +10,93 @@ dependencies:
     - field.field.node.dit_catalog.field_infografia_dit
     - field.field.node.dit_catalog.field_list_image
     - field.field.node.dit_catalog.field_section
+    - field.field.node.dit_catalog.layout_builder__layout
     - node.type.dit_catalog
   module:
+    - bootstrap_layouts
     - file
+    - image
+    - layout_builder
+    - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          e21e0a8b-be71-4e6a-b5a5-6a4c618a589b:
+            uuid: e21e0a8b-be71-4e6a-b5a5-6a4c618a589b
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_header_area'
+              label: Cabecera
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          6781f61b-d63d-4a10-bacd-dcf2f09d4e3e:
+            uuid: 6781f61b-d63d-4a10-bacd-dcf2f09d4e3e
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_infografia_dit'
+              label: 'infografia dit'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.dit_catalog.default
 targetEntityType: node
 bundle: dit_catalog
 mode: default
 content:
+  field_categoria_dit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
   field_documento:
     type: file_default
     label: above
@@ -27,17 +105,53 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_infografia_dit:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
-  field_categoria_dit: true
-  field_file_categoria: true
-  field_header_area: true
-  field_infografia_dit: true
-  field_list_image: true
-  field_section: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

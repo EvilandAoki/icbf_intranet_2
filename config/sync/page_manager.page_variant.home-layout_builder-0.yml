@@ -1,0 +1,328 @@
+uuid: 3be9cb77-fcb4-46ae-9ae9-f223886b3c97
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - page_manager.page.home
+    - views.view.banners_promocionales
+    - views.view.mutimedia_ejes
+    - views.view.news
+  content:
+    - 'block_content:basic:944d4444-c8df-4bee-bd64-3678864acbf8'
+    - 'block_content:footer:5506e376-1ef8-4ab0-a32f-8741ca92bbed'
+    - 'block_content:footer:5ab6235c-10e2-4946-a705-427330a9c430'
+    - 'block_content:footer:8120f6bc-e283-4c38-805c-a78b6d6b9cbc'
+    - 'block_content:footer:8bdf2de6-c2ad-4e80-8ee5-435ec01093a0'
+  module:
+    - block_content
+    - bootstrap_layouts
+    - layout_builder
+    - views
+id: home-layout_builder-0
+label: 'Página de entrada'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: e62c3e77-aa6f-494f-86ff-387fd6301fb0
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        9c9cbe7a-e3fd-4809-9453-538a0867193a:
+          uuid: 9c9cbe7a-e3fd-4809-9453-538a0867193a
+          region: main
+          configuration:
+            id: 'views_block:banners_promocionales-block_bann1'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: bs_2col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: section
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: id|NewHomeSlide
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-8: col-sm-8
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+      components:
+        0abd09a5-9e63-48fe-9c2e-41a515f63611:
+          uuid: 0abd09a5-9e63-48fe-9c2e-41a515f63611
+          region: left
+          configuration:
+            id: 'views_block:news-block_2'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+        4f1db1f4-47c6-4b7f-bc6c-6dea581bf049:
+          uuid: 4f1db1f4-47c6-4b7f-bc6c-6dea581bf049
+          region: right
+          configuration:
+            id: 'views_block:news-block_14'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+        bbf38b41-20cd-4b30-b99c-d62371ac0948:
+          uuid: bbf38b41-20cd-4b30-b99c-d62371ac0948
+          region: right
+          configuration:
+            id: 'inline_block:basic'
+            label: 'btn more news'
+            label_display: '0'
+            provider: layout_builder
+            view_mode: full
+            context_mapping: {  }
+            block_id: 1818
+            block_revision_id: 84
+            block_serialized: null
+          weight: 1
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        f8442855-02fc-4705-ab61-ba358ab1fe69:
+          uuid: f8442855-02fc-4705-ab61-ba358ab1fe69
+          region: main
+          configuration:
+            id: 'views_block:banners_promocionales-block_bann2'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+        a51edcb1-5f15-46c6-9cdd-48e8c1c481f3:
+          uuid: a51edcb1-5f15-46c6-9cdd-48e8c1c481f3
+          region: main
+          configuration:
+            id: 'block_content:5ab6235c-10e2-4946-a705-427330a9c430'
+            label: 'enlaces rápidos home 21'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 1
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: layout_twocol_section
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        column_widths: 67-33
+      components:
+        2332eda0-9a29-4fbe-afd5-a12919e223ef:
+          uuid: 2332eda0-9a29-4fbe-afd5-a12919e223ef
+          region: second
+          configuration:
+            id: 'block_content:5506e376-1ef8-4ab0-a32f-8741ca92bbed'
+            label: 'Home Personalizado 21'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 1
+          additional: {  }
+        6865f133-6ca1-46ef-90c0-3537966ee991:
+          uuid: 6865f133-6ca1-46ef-90c0-3537966ee991
+          region: second
+          configuration:
+            id: 'inline_block:basic'
+            label: 'id week test'
+            label_display: '0'
+            provider: layout_builder
+            view_mode: full
+            context_mapping: {  }
+            block_id: 1819
+            block_revision_id: 85
+            block_serialized: null
+          weight: 0
+          additional: {  }
+        3bf4590d-3de2-45e4-b4cc-74d7a3e208ec:
+          uuid: 3bf4590d-3de2-45e4-b4cc-74d7a3e208ec
+          region: first
+          configuration:
+            id: 'views_block:mutimedia_ejes-block_videoh'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        18e0a1fc-80df-4bcb-894f-b8621de996a5:
+          uuid: 18e0a1fc-80df-4bcb-894f-b8621de996a5
+          region: main
+          configuration:
+            id: 'inline_block:basic'
+            label: 'Temas Destacados'
+            label_display: '0'
+            provider: layout_builder
+            view_mode: full
+            context_mapping: {  }
+            block_id: 1820
+            block_revision_id: 86
+            block_serialized: null
+          weight: 0
+          additional: {  }
+        bb1bba5e-3eaa-495a-9469-6941adfb10af:
+          uuid: bb1bba5e-3eaa-495a-9469-6941adfb10af
+          region: main
+          configuration:
+            id: 'views_block:banners_promocionales-block'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 1
+          additional: {  }
+        ebc4cc0a-086a-4b09-8726-9a330c27862c:
+          uuid: ebc4cc0a-086a-4b09-8726-9a330c27862c
+          region: main
+          configuration:
+            id: 'block_content:944d4444-c8df-4bee-bd64-3678864acbf8'
+            label: 'Bann Catalog DIT'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 2
+          additional: {  }
+        4a8406a4-d7dd-44c6-bbc6-5c3ffbb670e9:
+          uuid: 4a8406a4-d7dd-44c6-bbc6-5c3ffbb670e9
+          region: main
+          configuration:
+            id: 'block_content:8120f6bc-e283-4c38-805c-a78b6d6b9cbc'
+            label: 'Gestion Humana Info Home21'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 3
+          additional: {  }
+        5418404e-bb57-4fc7-ab9b-25cc22a378e3:
+          uuid: 5418404e-bb57-4fc7-ab9b-25cc22a378e3
+          region: main
+          configuration:
+            id: 'block_content:8bdf2de6-c2ad-4e80-8ee5-435ec01093a0'
+            label: 'documentos interes general'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 4
+          additional: {  }
+      third_party_settings: {  }
+page: home
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,52 @@
+uuid: 75b94693-ca98-4db0-af2b-c081f1242c96
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - ctools
+    - layout_builder
+    - node
+id: node_view-layout_builder-1
+label: 'Documento - Observatorio - Infografía'
+weight: -9
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: e809c4a6-c6f6-424f-a381-5d6adbb16cc9
+  sections:
+    -
+      layout_id: layout_threecol_section
+      layout_settings:
+        label: Documento
+        context_mapping: {  }
+        column_widths: 25-50-25
+      components:
+        726d7284-2c91-4e76-a2b7-eebae2b39128:
+          uuid: 726d7284-2c91-4e76-a2b7-eebae2b39128
+          region: second
+          configuration:
+            id: 'entity_view:node'
+            label: 'Entity view (Contenido)'
+            label_display: '0'
+            provider: ctools
+            view_mode: full
+            context_mapping:
+              entity: node
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      document: document
+selection_logic: and
+static_context: {  }

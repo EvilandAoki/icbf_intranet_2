@@ -1,24 +1,12 @@
-uuid: 6b694108-bcff-4149-96a6-d7e2aa8d9b28
+uuid: 24f4d53b-75cb-440f-8249-788cb8ad5392
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
 third_party_settings:
   menu_ui:
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: true
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: false
-    unpublish_enable: true
-    unpublish_required: false
-    unpublish_revision: false
 name: Multimedia
 type: multimedia
 description: null

@@ -1,4 +1,4 @@
-uuid: fd58d4cc-db76-40cc-a599-e49f76e29ef4
+uuid: 3a5fe750-c59b-42da-981f-04017ecd4ec5
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: yxhG0JmQs2HT-Ro6ZeDQboDc9ZWR4GglflTtyoqxK4A
 id: gender
 label: Género
-category: Demographic
+category: Demográfico
 likert: false
 options: |
   Man: Man
