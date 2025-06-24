@@ -6,7 +6,7 @@ global-styling:
       dist/assets/icons/Stroke/css/pe-icon-7-stroke.css: {}
       dist/assets/owlcarousel/css/owl.carousel.min.css: {}
       dist/assets/owlcarousel/css/owl.theme.default.min.css: {}
-      https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.css: { type: external}
+      dist/assets/icons/et-line/css/et-line-font.css: {}
   js:
     dist/assets/owlcarousel/js/owl.carousel.min.js: {}
     js/script.js: {}

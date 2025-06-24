@@ -70,16 +70,19 @@ document.addEventListener("DOMContentLoaded", function () {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1,
-          nav: true
+          items: 2,
+          nav: false,
+          dots: false
         },
         600: {
           items: 3,
-          nav: false
+          nav: false,
+          dots: false
         },
         1000: {
-          items: 5,
-          nav: true,
+          items: 6,
+          nav: false,
+          dots: false,
           loop: false
         }
       }
