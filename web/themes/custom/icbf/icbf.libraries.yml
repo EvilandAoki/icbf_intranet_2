@@ -8,9 +8,8 @@ global-styling:
       dist/assets/owlcarousel/css/owl.theme.default.min.css: {}
       https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.css: { type: external}
   js:
-    js/script.js: {}
-    dist/assets/owlcarousel/js/jquery.min.js: {}
     dist/assets/owlcarousel/js/owl.carousel.min.js: {}
+    js/script.js: {}
     bootstrap/javascripts/bootstrap/carousel.js: {}
   dependencies:
     - bootstrap5/bootstrap
