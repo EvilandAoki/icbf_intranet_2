@@ -61,3 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializar el carrusel
   const bsCarousel = new bootstrap.Carousel(carousel);
 });
+
+(function ($, Drupal) {
+  Drupal.behaviors.owlInit = {
+    attach: function (context, settings) {
+      $('.owl-carousel', context).once('owl-init').each(function () {
+        var isMobile = window.innerWidth <= 768; // puedes ajustar este breakpoint
+
+        $(this).owlCarousel({
+          items: 4,
+          loop: isMobile,               // autoplay solo en mobile
+          autoplay: isMobile,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          navigation: true,             // nav en desktop y mobile
+          navigationText: ["‹", "›"],   // opcional: cambiar íconos flechas
+          pagination: isMobile          // dots solo en mobile
+        });
+      });
+    }
+  };
+})(jQuery, Drupal);
