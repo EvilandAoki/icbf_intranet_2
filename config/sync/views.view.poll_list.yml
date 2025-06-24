@@ -1,4 +1,4 @@
-uuid: 59aa8617-390e-4a54-b564-0172d4d9ac34
+uuid: d1b3c956-6352-49d4-bb46-2e17b881036f
 langcode: es
 status: true
 dependencies:
@@ -223,7 +223,7 @@ display:
       cacheable: false
   page_1:
     id: page_1
-    display_title: Polls
+    display_title: Encuestas
     display_plugin: page
     position: 1
     display_options:
@@ -233,7 +233,7 @@ display:
       path: polls
       menu:
         type: normal
-        title: Polls
+        title: Encuestas
         description: ''
         weight: 0
         expanded: false

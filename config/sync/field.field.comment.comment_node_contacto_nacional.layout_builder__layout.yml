@@ -1,0 +1,21 @@
+uuid: a025e66d-44c8-4b53-9ce5-d65b911e7e0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_contacto_nacional
+    - field.storage.comment.layout_builder__layout
+  module:
+    - layout_builder
+id: comment.comment_node_contacto_nacional.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: comment
+bundle: comment_node_contacto_nacional
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

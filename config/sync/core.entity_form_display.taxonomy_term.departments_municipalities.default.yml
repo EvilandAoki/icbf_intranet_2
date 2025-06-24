@@ -1,15 +1,23 @@
-uuid: 90e1df42-0987-4534-bc36-766133dc404d
+uuid: fc9b3017-e889-457a-95d9-1b8787b0b08f
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.departments_municipalities.field_allowed_roles
     - field.field.taxonomy_term.departments_municipalities.field_allowed_users
+    - field.field.taxonomy_term.departments_municipalities.layout_builder__layout
     - taxonomy.vocabulary.departments_municipalities
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.departments_municipalities.default
 targetEntityType: taxonomy_term
 bundle: departments_municipalities
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

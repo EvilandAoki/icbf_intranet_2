@@ -1,0 +1,13 @@
+uuid: 9f7cf604-b79a-4174-a106-76d091411203
+langcode: es
+status: true
+dependencies: {  }
+label: 'PruebasLeo etiqueta'
+name: pruebasleo_etiqueta
+group: null
+description: 'pruebas contexto'
+requireAllConditions: false
+disabled: false
+conditions: {  }
+reactions: {  }
+weight: 0

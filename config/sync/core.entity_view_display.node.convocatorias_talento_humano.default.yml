@@ -1,4 +1,4 @@
-uuid: a76f5afe-a6e8-4448-b8fc-4666aa86c799
+uuid: 293c54a3-d28d-4bfd-b9ce-3f0abbb6a9a1
 langcode: es
 status: true
 dependencies:
@@ -12,11 +12,236 @@ dependencies:
     - field.field.node.convocatorias_talento_humano.field_oferente
     - field.field.node.convocatorias_talento_humano.field_poblacion_objetivo
     - field.field.node.convocatorias_talento_humano.field_priority
+    - field.field.node.convocatorias_talento_humano.layout_builder__layout
     - node.type.convocatorias_talento_humano
   module:
+    - bootstrap_layouts
     - datetime
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          c4adef4f-aba8-4dd4-9671-31d4ca83d30a:
+            uuid: c4adef4f-aba8-4dd4-9671-31d4ca83d30a
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: class|fm-asp
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          d3f68b74-fc1a-412a-963b-8a7d4fec31dd:
+            uuid: d3f68b74-fc1a-412a-963b-8a7d4fec31dd
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_file_categoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8f85f235-efd9-43a5-b31d-a5f38121f930:
+            uuid: 8f85f235-efd9-43a5-b31d-a5f38121f930
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_link_url'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0ce24b1d-01d1-480a-8a7b-1e8702ffc38a:
+            uuid: 0ce24b1d-01d1-480a-8a7b-1e8702ffc38a
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_content'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          6a02aae2-fe6f-4003-b16b-8500ed2f1bff:
+            uuid: 6a02aae2-fe6f-4003-b16b-8500ed2f1bff
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:event_calendar_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: inline
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6b2e2d2d-ed06-4df4-86e3-306b5b512d08:
+            uuid: 6b2e2d2d-ed06-4df4-86e3-306b5b512d08
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          966df704-f954-4cd3-8d0e-24d52d174b26:
+            uuid: 966df704-f954-4cd3-8d0e-24d52d174b26
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_modalidad_e_idioma'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          3fce0e55-bb16-4bad-ac2e-33a1b229a9c8:
+            uuid: 3fce0e55-bb16-4bad-ac2e-33a1b229a9c8
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_oferente'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          b08b309f-6a2a-44e1-acf2-81692e3ec085:
+            uuid: b08b309f-6a2a-44e1-acf2-81692e3ec085
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_poblacion_objetivo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          e92ab827-0958-4cfa-80df-ec4a73800c74:
+            uuid: e92ab827-0958-4cfa-80df-ec4a73800c74
+            region: main
+            configuration:
+              id: 'field_block:node:convocatorias_talento_humano:field_priority'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          addfa726-87ff-4528-b27d-e4d40e602e1b:
+            uuid: addfa726-87ff-4528-b27d-e4d40e602e1b
+            region: main
+            configuration:
+              id: 'extra_field_block:node:convocatorias_talento_humano:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 9
+            additional: {  }
+        third_party_settings: {  }
 id: node.convocatorias_talento_humano.default
 targetEntityType: node
 bundle: convocatorias_talento_humano
@@ -103,4 +328,5 @@ content:
     region: content
 hidden:
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

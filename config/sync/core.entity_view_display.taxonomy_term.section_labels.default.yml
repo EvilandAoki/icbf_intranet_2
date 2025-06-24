@@ -1,0 +1,159 @@
+uuid: 80a36a48-f8bf-4066-8808-619a5e992795
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.section_labels.field_allowed_roles
+    - field.field.taxonomy_term.section_labels.field_allowed_users
+    - field.field.taxonomy_term.section_labels.layout_builder__layout
+    - taxonomy.vocabulary.section_labels
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          a643bf9b-c446-4407-b4c3-d664e8d227ae:
+            uuid: a643bf9b-c446-4407-b4c3-d664e8d227ae
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:section_labels:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: generic-title
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3e1b5198-ff67-4843-903f-96749d1931e3:
+            uuid: 3e1b5198-ff67-4843-903f-96749d1931e3
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:section_labels:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          684ac557-4ed1-4746-a496-12f92a32c79f:
+            uuid: 684ac557-4ed1-4746-a496-12f92a32c79f
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:section_labels:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d90ccb58-7960-41af-844e-81f97fa11708:
+            uuid: d90ccb58-7960-41af-844e-81f97fa11708
+            region: content
+            configuration:
+              id: 'extra_field_block:taxonomy_term:section_labels:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          247451ce-17a8-43c0-90a4-b37ccaa1e8d0:
+            uuid: 247451ce-17a8-43c0-90a4-b37ccaa1e8d0
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:section_labels:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.section_labels.default
+targetEntityType: taxonomy_term
+bundle: section_labels
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

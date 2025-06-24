@@ -1,4 +1,4 @@
-uuid: afa5c8c2-8bb8-473a-900a-c99778594ea0
+uuid: 38a2996a-5f82-47ac-a413-fc7080777033
 langcode: es
 status: true
 dependencies:
@@ -16,11 +16,17 @@ dependencies:
     - field.field.node.process_sige.field_section
     - node.type.process_sige
   module:
-    - entityqueue
+    - field_layout
     - file
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.process_sige.default
 targetEntityType: node
 bundle: process_sige
@@ -34,7 +40,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: text_textarea
-    weight: 5
+    weight: 121
     region: content
     settings:
       rows: 5
@@ -42,14 +48,14 @@ content:
     third_party_settings: {  }
   field_document:
     type: file_generic
-    weight: 2
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -59,7 +65,7 @@ content:
     third_party_settings: {  }
   field_hiring_process_type:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -69,7 +75,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -78,27 +84,25 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_parent:
-    type: entityqueue_dragtable
-    weight: 4
+    type: entity_reference_autocomplete
+    weight: 126
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
-      link_to_entity: false
-      link_to_edit_form: true
     third_party_settings: {  }
   field_priority:
     type: number
-    weight: 44
+    weight: 127
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_process_code:
     type: string_textfield
-    weight: 3
+    weight: 128
     region: content
     settings:
       size: 60
@@ -106,14 +110,14 @@ content:
     third_party_settings: {  }
   field_process_resolution:
     type: file_generic
-    weight: 7
+    weight: 129
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_resume:
     type: text_textarea
-    weight: 2
+    weight: 130
     region: content
     settings:
       rows: 5
@@ -121,7 +125,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 131
     region: content
     settings:
       match_operator: CONTAINS

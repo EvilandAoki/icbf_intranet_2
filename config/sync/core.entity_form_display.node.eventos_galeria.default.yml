@@ -1,4 +1,4 @@
-uuid: e7548619-8d76-445e-8a29-f5c9210611ac
+uuid: 83b63882-9721-4139-816a-0d1065d2889b
 langcode: es
 status: true
 dependencies:
@@ -9,13 +9,21 @@ dependencies:
     - field.field.node.eventos_galeria.field_image_gallery_cover
     - field.field.node.eventos_galeria.field_image_gallery_list
     - field.field.node.eventos_galeria.field_location
+    - field.field.node.eventos_galeria.layout_builder__layout
+    - image.style.thumbnail
     - node.type.eventos_galeria
   module:
     - datetime
-    - file
+    - field_layout
+    - image
+    - layout_discovery
     - path
-    - term_reference_tree
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.eventos_galeria.default
 targetEntityType: node
 bundle: eventos_galeria
@@ -29,21 +37,21 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 1
+    weight: 121
     region: content
     settings: {  }
     third_party_settings: {  }
   field_description_gallery:
     type: string_textfield
-    weight: 3
+    weight: 122
     region: content
     settings:
-      size: 120
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_event_type:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -52,29 +60,30 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_image_gallery_cover:
-    type: file_generic
-    weight: 4
+    type: image_image
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_image_gallery_list:
-    type: file_generic
-    weight: 5
+    type: image_image
+    weight: 125
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_location:
-    type: term_reference_tree
-    weight: 6
+    type: entity_reference_autocomplete
+    weight: 126
     region: content
     settings:
-      start_minimized: true
-      leaves_only: false
-      select_parents: false
-      cascading_selection: 0
-      max_depth: 0
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -134,5 +143,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

@@ -1,0 +1,21 @@
+uuid: 496b3fe4-70b7-46da-8068-83904b313f89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.eventos_icbf
+  module:
+    - layout_builder
+id: taxonomy_term.eventos_icbf.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: eventos_icbf
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

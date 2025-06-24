@@ -1,0 +1,21 @@
+uuid: a5be3231-e7b6-4caf-9673-9807c2acfae0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.secctions
+  module:
+    - layout_builder
+id: taxonomy_term.secctions.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: secctions
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

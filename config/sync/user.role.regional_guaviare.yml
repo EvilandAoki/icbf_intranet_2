@@ -1,8 +1,11 @@
-uuid: 97eefdfb-7781-4cbc-b814-57d1f55b6324
+uuid: fd767202-d2d5-4150-9979-cb21ff6ae6fc
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_guaviare
 label: 'Regional Guaviare'
@@ -10,4 +13,6 @@ weight: 32
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

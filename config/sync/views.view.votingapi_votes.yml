@@ -1,4 +1,4 @@
-uuid: beaa018f-bb05-48f8-8129-85eaa7c904ee
+uuid: 84bd0c0b-50d0-48a8-ab67-96c833c8a3e3
 langcode: es
 status: true
 dependencies:
@@ -1385,7 +1385,7 @@ display:
       path: admin/content/vote
       menu:
         type: tab
-        title: Votes
+        title: Votos
         description: ''
         weight: 0
         expanded: false
@@ -1460,7 +1460,7 @@ display:
       path: node/%node/votes
       menu:
         type: tab
-        title: Votes
+        title: Votos
         description: ''
         weight: 0
         expanded: false

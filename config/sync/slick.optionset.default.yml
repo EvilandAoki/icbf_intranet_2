@@ -1,4 +1,4 @@
-uuid: 1ebe71f3-c203-4f48-a67b-cb36373b6297
+uuid: 7510dfd0-e88e-40b5-8a81-2ca390fdd277
 langcode: es
 status: false
 dependencies:
@@ -9,34 +9,27 @@ _core:
   default_config_hash: jHmfPBU2oNraKWjKwqYODaPOKQQM2sczj5TlDlN8Om8
 id: default
 name: default
-weight: -10
+weight: -9
 label: 'Por defecto'
 group: ''
-skin: default
+skin: classic
 breakpoints: 0
 optimized: false
 options:
-  options__active_tab: ''
+  options__active_tab: edit-options-responsives
   settings:
     mobileFirst: false
     asNavFor: ''
     accessibility: true
-    regionLabel: carousel
-    useGroupRole: true
-    instructionsText: ''
     adaptiveHeight: false
     autoplay: false
-    useAutoplayToggleButton: true
-    pauseIcon: slick-pause-icon
-    playIcon: slick-play-icon
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
     autoplaySpeed: 3000
     arrows: true
-    prevArrow: Anterior
-    nextArrow: Siguiente
-    arrowsPlacement: ''
+    prevArrow: Previous
+    nextArrow: Next
     downArrow: false
     downArrowTarget: ''
     downArrowOffset: 0

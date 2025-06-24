@@ -1,4 +1,4 @@
-uuid: ec15afa8-5861-4041-af55-e8f17aaea69a
+uuid: 1da25096-af95-4306-a20b-b3e6ab0c43dc
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_boletin_interno
     - field.field.comment.comment_node_boletin_interno.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_boletin_interno.default
 targetEntityType: comment
 bundle: comment_node_boletin_interno

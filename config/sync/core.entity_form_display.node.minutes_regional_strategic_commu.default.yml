@@ -1,4 +1,4 @@
-uuid: 86225eda-6ace-4c09-9779-ee2b2ce849a5
+uuid: 914a97b9-abf7-424f-825d-8d9ed308ae3e
 langcode: es
 status: true
 dependencies:
@@ -14,10 +14,17 @@ dependencies:
   module:
     - address
     - datetime
+    - field_layout
     - file
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.minutes_regional_strategic_commu.default
 targetEntityType: node
 bundle: minutes_regional_strategic_commu
@@ -31,27 +38,27 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 1
+    weight: 122
     region: content
     settings: {  }
     third_party_settings: {  }
   field_direccion:
     type: address_default
-    weight: 8
+    weight: 121
     region: content
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
   field_document_proceedings:
     type: file_generic
-    weight: 2
+    weight: 123
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -61,7 +68,7 @@ content:
     third_party_settings: {  }
   field_regional:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -71,7 +78,7 @@ content:
     third_party_settings: {  }
   field_resume:
     type: text_textarea
-    weight: 3
+    weight: 126
     region: content
     settings:
       rows: 5
@@ -79,7 +86,7 @@ content:
     third_party_settings: {  }
   field_section:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS

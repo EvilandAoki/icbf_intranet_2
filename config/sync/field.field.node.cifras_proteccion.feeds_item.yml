@@ -1,0 +1,23 @@
+uuid: 638fe219-72ba-4829-9a8f-4993cc7ab138
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.cifras_proteccion
+  module:
+    - feeds
+id: node.cifras_proteccion.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: cifras_proteccion
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

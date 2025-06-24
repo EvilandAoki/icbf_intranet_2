@@ -1,0 +1,7 @@
+uuid: d0d544f0-72fb-4a13-8de9-d814ab68ea25
+langcode: es
+status: true
+dependencies: {  }
+name: slider
+label: slider
+effects: {  }

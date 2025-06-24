@@ -1,4 +1,4 @@
-uuid: 900ceed6-fc0c-44ee-b1e6-e29423929c4a
+uuid: eb92424d-84a5-4607-9d01-48528fffb777
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
   default_config_hash: 8mYO8ewsZX3LVfNga69jXa0RNO0LNN8-EGkXLhSAMBU
 id: state_codes
 label: 'State codes'
-category: Geographic
+category: Geográfico
 likert: false
 options: |
   AL: Alabama

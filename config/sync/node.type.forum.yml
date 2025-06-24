@@ -1,10 +1,9 @@
-uuid: 239e9e51-2574-4924-a0cf-2c34160308e5
+uuid: 21e7bec3-1e1a-4d62-aed9-92c58f183d0f
 langcode: es
 status: true
 dependencies:
   module:
     - menu_ui
-    - scheduler
   enforced:
     module:
       - forum
@@ -13,17 +12,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-  scheduler:
-    expand_fieldset: when_required
-    fields_display_mode: vertical_tab
-    publish_enable: false
-    publish_past_date: error
-    publish_required: false
-    publish_revision: false
-    publish_touch: false
-    unpublish_enable: false
-    unpublish_required: false
-    unpublish_revision: false
 _core:
   default_config_hash: Jy_D2Nfllzh1aAdW2D4HIK4SgiSDoEU72fpN89lmUro
 name: Foro

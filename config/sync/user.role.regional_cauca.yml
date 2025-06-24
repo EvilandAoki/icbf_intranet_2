@@ -1,8 +1,11 @@
-uuid: 05edb955-b772-43bd-a574-e56198ee9a13
+uuid: 3473f865-f921-4929-a5ca-3b2a6831f165
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_cauca
 label: 'Regional Cauca'
@@ -10,4 +13,6 @@ weight: 25
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

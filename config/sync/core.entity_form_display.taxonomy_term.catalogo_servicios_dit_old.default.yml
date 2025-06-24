@@ -1,4 +1,4 @@
-uuid: 565d3c01-b5a2-47a7-9cca-36bf09ac778a
+uuid: a9000dc5-c05d-417e-b432-5142a77802fb
 langcode: es
 status: true
 dependencies:
@@ -7,9 +7,16 @@ dependencies:
     - field.field.taxonomy_term.catalogo_servicios_dit_old.field_allowed_users
     - taxonomy.vocabulary.catalogo_servicios_dit_old
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.catalogo_servicios_dit_old.default
 targetEntityType: taxonomy_term
 bundle: catalogo_servicios_dit_old

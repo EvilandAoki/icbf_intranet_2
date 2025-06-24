@@ -1,4 +1,4 @@
-uuid: 65cd7080-d110-4989-9df3-8f63a1288638
+uuid: 8733d91d-b6ca-412d-a7df-9528869c0f5e
 langcode: es
 status: false
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: icbf_local_actions
 theme: icbf
 region: content
-weight: -2
+weight: -12
 provider: null
 plugin: local_actions_block
 settings:

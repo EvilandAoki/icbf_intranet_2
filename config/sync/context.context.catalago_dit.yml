@@ -1,0 +1,70 @@
+uuid: 9f6f7243-5fda-4bf9-a7fa-2636cc0e1639
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.catalogo_dit_taxonomias
+  content:
+    - 'block_content:footer:3a4a4bef-81b1-40dc-bf17-69ba6992f885'
+  module:
+    - block_content
+    - system
+    - views
+label: catalago_dit
+name: catalago_dit
+group: searchapi
+description: 'catalogo dit'
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: 3ca230d6-2036-47f0-8c6c-b64e2c72382b
+    context_mapping: {  }
+    pages: /informacion-y-tecnologia/catalogo-de-servicios-dit
+reactions:
+  blocks:
+    id: blocks
+    uuid: 12a3003d-6ba0-4847-b18e-e80720587b2f
+    blocks:
+      d54786ef-b6b5-4311-bff9-cafe262b9568:
+        uuid: d54786ef-b6b5-4311-bff9-cafe262b9568
+        id: 'block_content:3a4a4bef-81b1-40dc-bf17-69ba6992f885'
+        label: header_catalogo
+        provider: block_content
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: block_content_3a4a4bef_81b1_40dc_bf17_69ba6992f885
+        theme: icbf
+        css_class: ''
+        unique: 0
+        context_id: catalago_dit
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: full
+        third_party_settings: {  }
+      2f6569a5-61fe-4501-bf86-3d59db517dcc:
+        uuid: 2f6569a5-61fe-4501-bf86-3d59db517dcc
+        id: 'views_block:catalogo_dit_taxonomias-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content
+        weight: '1'
+        custom_id: views_block_catalogo_dit_taxonomias_block_1
+        theme: icbf
+        css_class: ''
+        unique: 0
+        context_id: catalago_dit
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        exposed: {  }
+        third_party_settings: {  }
+        override: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0

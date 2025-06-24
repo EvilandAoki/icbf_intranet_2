@@ -1,0 +1,7 @@
+uuid: f6d9d1ea-b08a-4659-81cd-e60ed2b23128
+langcode: es
+status: true
+dependencies: {  }
+name: home_newsimg
+label: Home-NewsImg
+effects: {  }

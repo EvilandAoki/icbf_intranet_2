@@ -1,22 +1,23 @@
-uuid: d8edda71-aefb-445d-8414-b0915df2ffa3
+uuid: bff0c6ea-338a-47ad-82f7-a8237c675073
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.file.audio.field_folder
   module:
+    - field_layout
     - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: file.audio.default
 targetEntityType: file
 bundle: audio
 mode: default
 content:
-  field_folder:
-    type: options_select
-    weight: -4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
@@ -24,4 +25,5 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_folder: true

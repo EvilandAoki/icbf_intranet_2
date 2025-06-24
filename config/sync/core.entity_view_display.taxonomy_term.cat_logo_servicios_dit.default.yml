@@ -1,4 +1,4 @@
-uuid: aeb67445-9178-4ba1-bf1b-53021a6ec0a3
+uuid: c535db19-aac9-4daa-bc05-b142c81dc6c0
 langcode: es
 status: true
 dependencies:
@@ -7,10 +7,116 @@ dependencies:
     - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_users
     - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_bg
     - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_icon
+    - field.field.taxonomy_term.cat_logo_servicios_dit.layout_builder__layout
     - taxonomy.vocabulary.cat_logo_servicios_dit
   module:
+    - bootstrap_layouts
     - image
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          b6f47f18-7514-4074-899d-90f139beb7fd:
+            uuid: b6f47f18-7514-4074-899d-90f139beb7fd
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:cat_logo_servicios_dit:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8975297c-c7e9-4a67-ae2c-934415e6d60a:
+            uuid: 8975297c-c7e9-4a67-ae2c-934415e6d60a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cat_logo_servicios_dit:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5e61618b-7cb6-4b73-8ad1-d65c9c4fb6fd:
+            uuid: 5e61618b-7cb6-4b73-8ad1-d65c9c4fb6fd
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cat_logo_servicios_dit:field_cat_dit_icon'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          061ff93a-63ba-457c-9faf-3541bc9e520b:
+            uuid: 061ff93a-63ba-457c-9faf-3541bc9e520b
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cat_logo_servicios_dit:field_cat_dit_bg'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.cat_logo_servicios_dit.default
 targetEntityType: taxonomy_term
 bundle: cat_logo_servicios_dit
@@ -46,4 +152,5 @@ hidden:
   field_allowed_roles: true
   field_allowed_users: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

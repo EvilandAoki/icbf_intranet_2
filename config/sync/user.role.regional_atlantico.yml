@@ -1,8 +1,11 @@
-uuid: 9870d7a7-2b61-4608-a07d-b581260cb8d4
+uuid: 68e8c438-e58f-42e7-9d2a-44e6d756bcd7
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_atlantico
 label: 'Regional Atlántico'
@@ -10,4 +13,6 @@ weight: 18
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

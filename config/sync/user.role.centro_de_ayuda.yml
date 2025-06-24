@@ -1,8 +1,10 @@
-uuid: e25385bd-2fb1-4e45-9208-a1c066653f33
+uuid: b5b93af3-31ed-42ab-a238-83f0dc15076e
 langcode: es
 status: true
 dependencies:
   config:
+    - node.type.helpcenter_info
+    - node.type.multimedia
     - node.type.page
   module:
     - fivestar
@@ -14,9 +16,19 @@ weight: 51
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create helpcenter_info content'
+  - 'create multimedia content'
   - 'create page content'
+  - 'delete any helpcenter_info content'
+  - 'delete any multimedia content'
   - 'delete any page content'
+  - 'delete own helpcenter_info content'
+  - 'delete own multimedia content'
   - 'delete own page content'
+  - 'edit any helpcenter_info content'
+  - 'edit any multimedia content'
   - 'edit any page content'
+  - 'edit own helpcenter_info content'
+  - 'edit own multimedia content'
   - 'edit own page content'
   - 'rate content'

@@ -1,15 +1,23 @@
-uuid: c9f53bdb-17b1-4278-bcb1-3b6335f332c5
+uuid: c4dcef43-6570-4973-8c1e-f1d921ce6291
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.procedure_type.field_allowed_roles
     - field.field.taxonomy_term.procedure_type.field_allowed_users
+    - field.field.taxonomy_term.procedure_type.layout_builder__layout
     - taxonomy.vocabulary.procedure_type
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.procedure_type.default
 targetEntityType: taxonomy_term
 bundle: procedure_type
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

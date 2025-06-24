@@ -1,4 +1,4 @@
-uuid: d2cb0622-e998-42bf-998d-bc6db4f147dd
+uuid: 4c636c76-edba-453d-aa5e-265f19c5d9e6
 langcode: es
 status: true
 dependencies:
@@ -7,6 +7,12 @@ dependencies:
     - node.type.page
   module:
     - file
+    - file_resup
+third_party_settings:
+  file_resup:
+    enabled: 0
+    max_upload_size: ''
+    auto_upload: 0
 id: node.page.field_attachments
 field_name: field_attachments
 entity_type: node
@@ -22,6 +28,6 @@ settings:
   handler_settings: {  }
   file_directory: ''
   file_extensions: 'pdf doc xls xlsx docx ppt pptx xlm xlsm zip'
-  max_filesize: '60'
+  max_filesize: '50 MB'
   description_field: true
 field_type: file

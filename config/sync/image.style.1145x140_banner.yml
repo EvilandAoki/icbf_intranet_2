@@ -1,12 +1,12 @@
-uuid: 622fa2b8-d837-4f74-a7bf-6413b815c10a
+uuid: 16fcdad0-4ebf-4c0f-a0d4-a518d343ac16
 langcode: es
 status: true
 dependencies: {  }
 name: 1145x140_banner
 label: 1145x140_banner
 effects:
-  536c0ce8-4151-4dca-9c96-d497ac8e10de:
-    uuid: 536c0ce8-4151-4dca-9c96-d497ac8e10de
+  14839ac1-f29a-4896-9c9a-5de7bf684789:
+    uuid: 14839ac1-f29a-4896-9c9a-5de7bf684789
     id: image_scale_and_crop
     weight: 1
     data:

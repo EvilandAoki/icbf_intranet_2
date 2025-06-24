@@ -1,4 +1,4 @@
-uuid: f78c7520-32b0-4edd-9057-ba10cd1daf81
+uuid: 9ff2b121-f6ab-4a07-b49d-754e213c268e
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,14 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_media_video_file
     - media.type.video
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
 id: media.video.media_library

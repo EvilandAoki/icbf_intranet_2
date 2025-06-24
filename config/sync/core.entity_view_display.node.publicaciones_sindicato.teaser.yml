@@ -1,4 +1,4 @@
-uuid: d440cc7a-0643-4bfa-ba03-cba6bfee6390
+uuid: c431d5fd-64a3-42fe-a097-f84925b75bd7
 langcode: es
 status: true
 dependencies:
@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.publicaciones_sindicato.field_documento
     - field.field.node.publicaciones_sindicato.field_regional
     - field.field.node.publicaciones_sindicato.field_section
+    - field.field.node.publicaciones_sindicato.layout_builder__layout
     - node.type.publicaciones_sindicato
   module:
     - text
@@ -37,4 +38,5 @@ hidden:
   field_regional: true
   field_section: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

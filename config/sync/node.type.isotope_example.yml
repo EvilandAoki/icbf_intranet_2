@@ -1,11 +1,7 @@
-uuid: 58f962ea-64aa-4337-b8d0-8e5ce0bde4e8
+uuid: 8ce333cb-42d6-489b-ba2d-2400182b4225
 langcode: es
 status: true
-dependencies:
-  module:
-    - scheduler
-third_party_settings:
-  scheduler: {  }
+dependencies: {  }
 name: 'Isotope Example Node Type'
 type: isotope_example
 description: 'This is an example node type with a few fields.'

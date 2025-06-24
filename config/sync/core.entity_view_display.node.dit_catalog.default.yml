@@ -1,4 +1,4 @@
-uuid: 1c95f2ea-76f3-407b-ad29-617bb87cb0fd
+uuid: b6190174-41c1-4776-809f-e937a1e91226
 langcode: es
 status: true
 dependencies:
@@ -10,15 +10,176 @@ dependencies:
     - field.field.node.dit_catalog.field_infografia_dit
     - field.field.node.dit_catalog.field_list_image
     - field.field.node.dit_catalog.field_section
+    - field.field.node.dit_catalog.layout_builder__layout
     - node.type.dit_catalog
   module:
+    - bootstrap_layouts
     - file
+    - image
+    - layout_builder
+    - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          dcc26eac-c5b3-46b6-b934-33404d312732:
+            uuid: dcc26eac-c5b3-46b6-b934-33404d312732
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_documento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ff04489a-dc53-4b20-8648-a6163db95ad0:
+            uuid: ff04489a-dc53-4b20-8648-a6163db95ad0
+            region: main
+            configuration:
+              id: 'extra_field_block:node:dit_catalog:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          4467beb8-4ea9-480f-896b-71d081b38df5:
+            uuid: 4467beb8-4ea9-480f-896b-71d081b38df5
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_categoria_dit'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          bd92e80b-dc2a-4729-92fa-dc3f5353ea69:
+            uuid: bd92e80b-dc2a-4729-92fa-dc3f5353ea69
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_file_categoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7846324a-839d-4f58-88ce-110919f086d7:
+            uuid: 7846324a-839d-4f58-88ce-110919f086d7
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_header_area'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          00b97f7f-b040-4f5b-8fc4-fba94902489e:
+            uuid: 00b97f7f-b040-4f5b-8fc4-fba94902489e
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_infografia_dit'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          3a7bc0f6-dceb-48cc-b6ff-8414219dc417:
+            uuid: 3a7bc0f6-dceb-48cc-b6ff-8414219dc417
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_list_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          f976f62e-b00e-4ff5-acae-f18361166824:
+            uuid: f976f62e-b00e-4ff5-acae-f18361166824
+            region: main
+            configuration:
+              id: 'field_block:node:dit_catalog:field_section'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
 id: node.dit_catalog.default
 targetEntityType: node
 bundle: dit_catalog
 mode: default
 content:
+  field_categoria_dit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
   field_documento:
     type: file_default
     label: above
@@ -27,17 +188,53 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_infografia_dit:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
-  field_categoria_dit: true
-  field_file_categoria: true
-  field_header_area: true
-  field_infografia_dit: true
-  field_list_image: true
-  field_section: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

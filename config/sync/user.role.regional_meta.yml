@@ -1,8 +1,11 @@
-uuid: 7c667aad-0418-4f68-be64-605cb75fc4aa
+uuid: 6f8abb5c-8d47-490e-ae77-0039668e7b1e
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
   module:
+    - node
     - system
 id: regional_meta
 label: 'Regional Meta'
@@ -10,4 +13,6 @@ weight: 35
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
   - 'view the administration theme'

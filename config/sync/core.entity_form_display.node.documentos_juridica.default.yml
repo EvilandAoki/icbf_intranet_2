@@ -1,4 +1,4 @@
-uuid: eb684639-2a95-4a25-b44b-a2539739dc39
+uuid: 2c323449-fe8f-41a6-89b2-a5a14dd2f579
 langcode: es
 status: true
 dependencies:
@@ -13,10 +13,17 @@ dependencies:
     - node.type.documentos_juridica
   module:
     - datetime
+    - field_layout
     - file
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.documentos_juridica.default
 targetEntityType: node
 bundle: documentos_juridica
@@ -30,7 +37,7 @@ content:
     third_party_settings: {  }
   field_content_profile:
     type: text_textarea
-    weight: 5
+    weight: 121
     region: content
     settings:
       rows: 5
@@ -38,27 +45,27 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 8
+    weight: 122
     region: content
     settings: {  }
     third_party_settings: {  }
   field_docs:
     type: file_generic
-    weight: 7
+    weight: 123
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_documento:
     type: file_generic
-    weight: 6
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_categoria:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 125
     region: content
     settings:
       match_operator: CONTAINS
@@ -68,7 +75,7 @@ content:
     third_party_settings: {  }
   field_person_area:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 126
     region: content
     settings:
       match_operator: CONTAINS
@@ -78,7 +85,7 @@ content:
     third_party_settings: {  }
   field_resume:
     type: text_textarea
-    weight: 4
+    weight: 127
     region: content
     settings:
       rows: 5

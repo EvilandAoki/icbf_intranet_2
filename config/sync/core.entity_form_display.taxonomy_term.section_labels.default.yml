@@ -1,15 +1,23 @@
-uuid: 9c894d1f-30bb-4df3-b3dd-5bd79d161c39
+uuid: 30db4ab8-778d-4161-8d8d-d8a65ad6077a
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.section_labels.field_allowed_roles
     - field.field.taxonomy_term.section_labels.field_allowed_users
+    - field.field.taxonomy_term.section_labels.layout_builder__layout
     - taxonomy.vocabulary.section_labels
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.section_labels.default
 targetEntityType: taxonomy_term
 bundle: section_labels
@@ -73,5 +81,6 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   publish_on: true
   unpublish_on: true

@@ -1,4 +1,4 @@
-uuid: ef88c1ad-0e41-4984-b1b2-3b1507090b5c
+uuid: 117d729d-dc4a-4376-b3ad-71cbdf454d17
 langcode: es
 status: true
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.eventos_galeria.field_image_gallery_cover
     - field.field.node.eventos_galeria.field_image_gallery_list
     - field.field.node.eventos_galeria.field_location
+    - field.field.node.eventos_galeria.layout_builder__layout
     - node.type.eventos_galeria
   module:
     - user
@@ -31,4 +32,5 @@ hidden:
   field_image_gallery_list: true
   field_location: true
   langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true

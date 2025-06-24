@@ -1,4 +1,4 @@
-uuid: 3bbed571-f30b-420f-abc7-09fd674e99cc
+uuid: 7b9eb366-e83e-4af6-aadd-5e0b676295a4
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: uIuCYXi8Y6GTe4pKUxK2t9OjQEcrwvFJZFeitfnQ8Ys
 id: webform_submissions
-label: 'Webform submissions'
+label: 'Envíos de formulario web'
 module: views
 description: 'Default webform submissions views.'
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Webform submissions'
+      title: 'Envíos de formulario web'
       fields:
         sid:
           id: sid
@@ -36,7 +36,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -674,7 +674,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -1017,7 +1017,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false
@@ -1614,7 +1614,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -1957,7 +1957,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false
@@ -2466,7 +2466,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -2809,7 +2809,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false

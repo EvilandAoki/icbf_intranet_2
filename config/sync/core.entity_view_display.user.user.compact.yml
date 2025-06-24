@@ -1,9 +1,10 @@
-uuid: 69fed1b4-55cb-44ca-903b-f5a6839e694c
+uuid: 896c1c52-815f-4f95-bd20-60a49df07abf
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.feeds_item
     - field.field.user.user.ldap_user_current_dn
     - field.field.user.user.ldap_user_last_checked
     - field.field.user.user.ldap_user_ldap_exclude
@@ -37,6 +38,7 @@ content:
     weight: 0
     region: content
 hidden:
+  feeds_item: true
   langcode: true
   ldap_user_current_dn: true
   ldap_user_last_checked: true

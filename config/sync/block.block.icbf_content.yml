@@ -1,4 +1,4 @@
-uuid: 834f9c5a-37e3-42e7-b177-0452097dbc28
+uuid: 9ee170d2-31fb-43bf-9dd6-514eea73b86b
 langcode: es
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: icbf_content
 theme: icbf
 region: content
-weight: -1
+weight: -14
 provider: null
 plugin: system_main_block
 settings:

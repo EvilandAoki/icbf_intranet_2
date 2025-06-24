@@ -1,4 +1,4 @@
-uuid: 8b09e550-aa5d-404a-b66c-805ef2a895f1
+uuid: 209e5d85-75ea-4115-a4f1-c45d49ee2e3c
 langcode: en
 status: true
 dependencies:
@@ -39,6 +39,13 @@ content:
     third_party_settings: {  }
     weight: 20
     region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
   field_document:
     type: file_default
     label: above
@@ -67,6 +74,5 @@ content:
     weight: 10
     region: content
 hidden:
-  field_content: true
   langcode: true
   search_api_excerpt: true

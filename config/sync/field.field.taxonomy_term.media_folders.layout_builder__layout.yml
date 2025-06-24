@@ -1,0 +1,21 @@
+uuid: 1b7b957f-cec6-4868-a791-9ee3cf71f1ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.media_folders
+  module:
+    - layout_builder
+id: taxonomy_term.media_folders.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: media_folders
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

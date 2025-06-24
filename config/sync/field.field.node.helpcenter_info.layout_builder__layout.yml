@@ -1,0 +1,21 @@
+uuid: 38b34d32-f4d5-460e-b6fd-2b51f3eed047
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.helpcenter_info
+  module:
+    - layout_builder
+id: node.helpcenter_info.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: helpcenter_info
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

@@ -1,4 +1,4 @@
-uuid: 27e8fbf5-d677-41f0-bdb2-aa5a495f5bf7
+uuid: 0468c9a1-f273-4dd0-a7f5-ed3295d5ac89
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,13 @@ dependencies:
     - search_api_db
 id: local_solr
 name: 'Local Solr'
-description: ''
+description: 'edición prueba leo'
 backend: search_api_db
 backend_config:
   database: 'default:default'
   min_chars: 3
+  matching: words
+  phrase: bigram
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

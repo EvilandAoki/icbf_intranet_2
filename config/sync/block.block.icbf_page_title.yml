@@ -1,4 +1,4 @@
-uuid: ede5abe9-4c6a-4e8b-934e-1423159ec8cf
+uuid: fbe1e0e5-86e0-4108-a252-260fcee64fef
 langcode: es
 status: false
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: icbf_page_title
 theme: icbf
 region: content
-weight: -6
+weight: -13
 provider: null
 plugin: page_title_block
 settings:

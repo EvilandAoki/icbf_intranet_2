@@ -1,0 +1,21 @@
+uuid: c8ddb361-5366-4c22-9cbb-26123eb391c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.contacto_nacional
+  module:
+    - layout_builder
+id: node.contacto_nacional.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: contacto_nacional
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section
