@@ -87,12 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
-  });
-})(jQuery);
-
-(function ($) {
-  $(document).ready(function () {
-    $('#owl-fiveitems').owlCarousel({
+     $('#owl-fiveitems').owlCarousel({
       loop: true,
       margin: 10,
       responsiveClass: true,
@@ -111,6 +106,29 @@ document.addEventListener("DOMContentLoaded", function () {
           items: 5,
           nav: false,
           dots: false,
+          loop: false,
+        }
+      }
+    });
+     $('#owl-oneitems').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          dots: true
+        },
+        600: {
+          items: 1,
+          nav: true,
+          dots: true
+        },
+        1000: {
+          items: 1,
+          nav: true,
+          dots: true,
           loop: false,
         }
       }
