@@ -243,25 +243,22 @@ function icbf_preprocess_field(&$variables) {
         $item['content']['#text'] = $html;
       }
 
-      if (strpos($html, 'data-azat-icon="')) {
+      if (strpos($html, 'data-azat-icon="pe')) {
         $explode_html = explode('</div>', $html);
         foreach ($explode_html as $original_element) {
-          if (strpos($original_element, 'data-azat-icon="')) {
+          if (strpos($original_element, 'data-azat-icon="pe')) {
             $original_element .= '</div>';
             $element = trim($original_element);
 
             // Check if view data.
             $block_data = [];
-            $pos_block_info = strpos($element, 'data-azat-icon="');
+            $pos_block_info = strpos($element, 'data-azat-icon="pe');
             $string = substr($element, $pos_block_info);
             $string_array = explode('"', $string);
             $icon_class = [];
             $icon_style = '';
             foreach ($string_array as $elem_value) {
-              if (strpos($elem_value, 'pe pe-') !== FALSE || strpos($elem_value, 'et et-') !== FALSE || strpos($elem_value, 'fa') !== FALSE) {
-                if (strpos($elem_value, 'et et-') !== FALSE) {
-                  $elem_value = str_replace('et et-icon-', 'fa fa-', $elem_value);
-                }
+              if (strpos($elem_value, 'pe pe-') !== FALSE || strpos($elem_value, 'fa') !== FALSE) {
                 $icon_class[] = $elem_value;
               }
               elseif (strpos($elem_value, 'color:') !== FALSE) {
