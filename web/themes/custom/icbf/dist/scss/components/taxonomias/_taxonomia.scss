@@ -99,3 +99,101 @@
     padding-bottom: 0.5rem;
   }
 }
+
+#taxonomy-term-6997 {
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        line-height: normal !important;
+        font-size: 1.4em;
+        width: 50%;
+    }
+    a {
+        font-family: "Montserrat-regular";
+        line-height: normal !important;
+        font-size: 14px;
+    }
+    .controls.btn-group.btn-group-xs {
+        display: none;
+    }
+}
+
+
+.links_presentations{
+     .title {
+        background-color: #f7f7f7;
+        padding: 5px;
+        font-weight: Bold;
+        font-size: 1em;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    span.file.file--mime-application-pdf.file--application-pdf {
+        font-family: 'Asap-Regular';
+        font-size: 15px;
+    }
+    .class\|links_presentations li {
+        background: url("../assets/icons/general/green-list-arrow.png") no-repeat;
+        list-style: none;
+        margin-bottom: .5em;
+        padding-left: 1.5em;
+    }
+}
+
+
+.taxonomia_ghall {
+      .box-gral1519-2{
+          background-color:#fefefe;
+          border: 1px solid #dddddd;
+          height:auto;
+          margin: 1em auto;
+          width: 80%;
+          -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+          -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+          -ms-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+          -o-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+          box-shadow: 0 1px 5px rgba(0,0,0,.1);
+          border-radius:5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-transition: all .4s ease 0s;
+          -moz-transition: all .4s ease 0s;
+          -ms-transition: all .4s ease 0s;
+          -o-transition: all .4s ease 0s;
+          transition: all .4s ease 0s;
+          padding: 1rem;
+            a {
+                font-family: 'montserrat';
+            }
+      }
+      h3{
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.2em;
+      }
+      .box-gral1519-2:hover{
+          border: 1px solid #eee;
+          box-shadow: 0 0.4rem 1.3rem rgba(0,0,0,.3);
+          transform: translateY(-.2rem);
+      }
+      .contain-gral1519-2 {
+          display:inline-block;
+          padding: .5em;
+          width:auto;
+      }
+      .icon-gral1519-2 {
+          height: auto;
+          margin: .87em 0.1em;
+          width: 100%;
+      }
+      .col-sm-9.col-xs-9{
+          width: 75%;
+          float: left;
+          padding: 0 2rem;
+      }
+      .col-sm-3.col-xs-3 {
+          float: left;
+      }
+}
+
