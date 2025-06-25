@@ -245,14 +245,13 @@
 }
 
 .btn-default {
-    color: #333;
     background-color: #fff;
     border-color: #ccc;
     font-family: var.$font-montserrat-regular;
 }
 
 .btn-default:hover {
-    color: #333;
+    color: #333 !important;
     background-color: #e6e5e5;
     border-color: #adadad;
 }
@@ -950,8 +949,6 @@
     -o-transition: 0.25s ease-in-out all;
     -ms-transition: 0.25s ease-in-out all;
 }
-
-
 
 
 .white-thumbs {
