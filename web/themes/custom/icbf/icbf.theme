@@ -224,8 +224,14 @@ function icbf_preprocess_field(&$variables) {
                 if ($block) {
                   $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
                   $render_array = $view_builder->view($block);
-                  // Agrega clase al render array.
-                  $render_array['#attributes']['class'][] = $block_class;
+                  if (!isset($render_array['field_builder']['#attributes'])) {
+                    $render_array['field_builder']['#attributes'] = [];
+                  }
+                  if (!isset($render_array['field_builder']['#attributes']['class'])) {
+                    $render_array['field_builder']['#attributes']['class'] = [];
+                  }
+
+                  $render_array['field_builder']['#attributes']['class'][] = $block_class;
                   $html_block = \Drupal::service('renderer')->renderRoot($render_array);
                   $html = str_replace($original_element, $html_block, $html);
                 }
