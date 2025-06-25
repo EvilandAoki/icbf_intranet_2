@@ -117,6 +117,7 @@
     }
 
     .btn-default {
+        color: var.$link_color;
         background-color: white;
         border-color: #8c8c8c;
         width: 100%;
@@ -130,6 +131,10 @@
             color: #333;
             background-color: #d4d4d4;
             border-color: #8c8c8c;
+        }
+
+        &:visited {
+            color: var.$link_visited_color;
         }
     }
 
