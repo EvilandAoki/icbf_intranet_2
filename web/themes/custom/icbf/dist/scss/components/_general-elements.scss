@@ -640,6 +640,44 @@
     padding-left: 1.5em;
 }
 
+.box-stats {
+    border: 1px solid #dbdce1;
+    border: 1px solid #ececec;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.body-stat {
+    background: linear-gradient(180deg, rgba(109, 181, 68, 1) 13%, rgba(93, 153, 54, 1) 100%);
+    background: rgb(109, 181, 68);
+    display: block;
+    margin: 0;
+    padding: .5em;
+    width: auto;
+}
+
+.title-stat {
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.43em;
+    font-weight: 600;
+    word-break: break-word;
+}
 
 .taxonomia-btns_green .contain-gral1519-2 img {
     height: auto;
