@@ -197,3 +197,81 @@
       }
 }
 
+.card-person {
+    background: white;
+    width: 100%;
+    padding: 0 15px;
+    .img-responsive {
+        width: auto;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+    .caption {
+        padding: 0;
+    }
+
+    .caption h3 a {
+        font-size: 16px;
+        font-family: 'montserrat';
+        font-weight: normal;
+        color: #1996d0;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .caption h3 a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 14px;
+        position: relative;
+        padding-left: 25px;
+        font-family: 'montserrat';
+    }
+
+    .contact-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .contact-item.email::before {
+        content: "\f0e0";
+        font-family: "FontAwesome";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        font-size: 13px;
+        color: #000;
+    }
+
+    .contact-item.phone::before {
+        content: "\f095";
+        font-family: "FontAwesome";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: #000;
+        font-size: 13px;
+    }
+    .label {
+        font-weight: 600;
+        margin-right: 5px;
+        color: #333333;
+    }
+    .value {
+        color: #1996d0;
+        text-decoration: none;
+    }
+    .value:hover {
+        text-decoration: underline;
+    }
+}
+
+        
