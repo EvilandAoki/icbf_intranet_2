@@ -200,6 +200,14 @@ function icbf_preprocess_field(&$variables) {
             // Check if view data.
             $block_data = [];
             $pos_block_info = strpos($element, 'data-azb="az_block');
+            $block_class = '';
+            if (strpos($element, 'class=') !== FALSE) {
+              $elem_array = explode('"', $element);
+              if (strpos($elem_array[0], 'class=') !== FALSE) {
+                $block_class = $elem_array[1];
+              }
+            }
+
             $string = substr($element, $pos_block_info);
             $string_array = explode('"', $string);
             foreach ($string_array as $elem_value) {
@@ -216,6 +224,14 @@ function icbf_preprocess_field(&$variables) {
                 if ($block) {
                   $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
                   $render_array = $view_builder->view($block);
+                  if (!isset($render_array['field_builder']['#attributes'])) {
+                    $render_array['field_builder']['#attributes'] = [];
+                  }
+                  if (!isset($render_array['field_builder']['#attributes']['class'])) {
+                    $render_array['field_builder']['#attributes']['class'] = [];
+                  }
+
+                  $render_array['field_builder']['#attributes']['class'][] = $block_class;
                   $html_block = \Drupal::service('renderer')->renderRoot($render_array);
                   $html = str_replace($original_element, $html_block, $html);
                 }
