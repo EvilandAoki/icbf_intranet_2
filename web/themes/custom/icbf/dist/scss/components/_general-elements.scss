@@ -659,6 +659,12 @@
     -ms-transition: all .4s ease 0s;
     -o-transition: all .4s ease 0s;
     transition: all .4s ease 0s;
+
+    &:hover {
+        border: 1px solid #ddd;
+        box-shadow: 0 0.4rem 3.3rem rgba(0, 0, 0, .3);
+        transform: translateY(-.2rem);
+    }
 }
 
 .body-stat {
@@ -677,6 +683,26 @@
     font-size: 1.43em;
     font-weight: 600;
     word-break: break-word;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-statinfo {
+    background-color: rgba(252, 252, 252, .1);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff !important;
+    display: inline-block;
+    font-size: .9em;
+    font-family: "Montserrat-regular";
+    font-weight: 500;
+    margin: .6em auto;
+    padding: .3em .8em;
+    text-decoration: none;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
 }
 
 .taxonomia-btns_green .contain-gral1519-2 img {
