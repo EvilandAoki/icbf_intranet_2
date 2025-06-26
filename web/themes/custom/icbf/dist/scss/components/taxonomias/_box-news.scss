@@ -103,6 +103,32 @@
         font-size: 14px;
         margin-left: 0.8rem;
     }
+        .views-field.views-field-field-list-image {
+        max-height: 300px;
+    }
+    
+    img.img-fluid {
+        display: block;
+        max-width: 100%;
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    @media(max-width: 600px){
+        .row.row-1 {
+            display: grid;
+            margin: auto;
+            .col{
+               width: 100%
+            }
+        }
+        .thumbnail{
+            width: 100%;
+            height: 400px
+        }
+    }
 }
 
 #views-bootstrap-boletines-internos-block-3{

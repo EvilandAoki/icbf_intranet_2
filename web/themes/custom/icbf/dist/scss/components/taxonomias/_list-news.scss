@@ -17,9 +17,6 @@
        ul {
             list-style: none;
             padding: 0 0 0 1rem;
-            #edit-field-location-target-id-all {
-                display: none;
-            }
         }
         .form-radios {
             padding: 0 0 0 1rem;
@@ -116,6 +113,10 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                display: none;
+                &:first-of-type {
+                    display: block;
+                }
             }
         }
     }

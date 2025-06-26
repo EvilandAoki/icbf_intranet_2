@@ -370,6 +370,7 @@ function icbf_migrations_form_layout_builder_update_block_alter(&$form, \Drupal\
             $component_id = $component->getPluginId();
             if ($component_id === "views_block:{$view_id}-{$display_id}") {
               $form['settings']['override']['items_per_page']['#title'] = t('Contextual filters');
+              $form['settings']['override']['items_per_page']['#type'] = 'textfield';
               // $default_value = $component ? $component->get('configuration')['contextual_filters'] ?? '' : '';
               // $form['settings']['contextual_filters'] = [
               //   '#type' => 'textfield',
