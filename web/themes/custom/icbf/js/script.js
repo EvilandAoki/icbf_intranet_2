@@ -61,3 +61,77 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializar el carrusel
   const bsCarousel = new bootstrap.Carousel(carousel);
 });
+
+(function ($) {
+  $(document).ready(function () {
+    $('#owl-sixitems').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          dots: false
+        },
+        600: {
+          items: 3,
+          nav: false,
+          dots: false
+        },
+        1000: {
+          items: 6,
+          nav: false,
+          dots: false,
+          loop: false,
+        }
+      }
+    });
+     $('#owl-fiveitems').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          dots: false
+        },
+        600: {
+          items: 3,
+          nav: false,
+          dots: false
+        },
+        1000: {
+          items: 5,
+          nav: false,
+          dots: false,
+          loop: false,
+        }
+      }
+    });
+     $('#owl-oneitems').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          dots: true
+        },
+        600: {
+          items: 1,
+          nav: true,
+          dots: true
+        },
+        1000: {
+          items: 1,
+          nav: true,
+          dots: true,
+          loop: false,
+        }
+      }
+    });
+  });
+})(jQuery);
