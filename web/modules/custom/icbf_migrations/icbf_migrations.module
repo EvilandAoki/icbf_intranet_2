@@ -5,6 +5,7 @@ use Drupal\migrate\Plugin\MigrateSourceInterface;
 use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\field\Entity\FieldConfig;
+use Drupal\views\ViewExecutable;
 
 
 /**
@@ -341,6 +342,93 @@ function icbf_migrations_views_migration_alter(array &$migration) {
         if (strpos($key, 'tid') !== FALSE) {
           unset($migration['process']['display:default']['filters'][$key]);
           \Drupal::logger('icbf_migrations')->notice('Filtro de taxonomía eliminado de la migración: ' . $key);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function icbf_migrations_form_layout_builder_update_block_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (strpos($form_id, 'layout_builder_') !== FALSE) {
+    if (isset($form['settings']['provider']['#type']) && $form['settings']['provider']['#value'] === 'views') {
+      $build_info = $form_state->getBuildInfo();
+
+      if (!empty($build_info['args'][0])) {
+        /** @var \Drupal\layout_builder\SectionComponent $component */
+        $section_storage = $build_info['args'][0];
+
+        $arguments = $form['settings']['views_label']['#description']->getArguments();
+        $url  = explode('/', $arguments[':url']);
+        $view_id = $url[5];
+        $display_id = $url[7];
+
+        foreach ($section_storage->getSections() as $section) {
+          foreach ($section->getComponents() as $component) {
+            $component_id = $component->getPluginId();
+            if ($component_id === "views_block:{$view_id}-{$display_id}") {
+              $form['settings']['override']['items_per_page']['#title'] = t('Contextual filters');
+              // $default_value = $component ? $component->get('configuration')['contextual_filters'] ?? '' : '';
+              // $form['settings']['contextual_filters'] = [
+              //   '#type' => 'textfield',
+              //   '#title' => t('Contextual filters'),
+              //   '#default_value' => $default_value,
+              //   '#description' => t('Contextual filters to pass to the view.'),
+              // ];
+              // $form['settings']['component_id'] = [
+              //   '#type' => 'hidden',
+              //   '#value' => $component_id,
+              // ];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implementa hook_views_pre_view().
+ */
+function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  if (empty($args[0])) {
+    $args = [];
+    $view_id = $view->id();
+
+    $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+    if ($term instanceof \Drupal\taxonomy\Entity\Term ) {
+      $term_id = $term->id();
+      $layout_configs = \Drupal::database()->select('taxonomy_term__layout_builder__layout', 'tl')
+        ->fields('tl', ['layout_builder__layout_section'])
+        ->condition('entity_id', $term_id)
+        ->execute()->fetchAll();
+
+      if (empty($layout_configs)) {
+        $vocabulary = $term->bundle();
+        $config_display = \Drupal::database()->select('config', 'c')
+          ->fields('c', ['data'])
+          ->condition('name', "core.entity_view_display.taxonomy_term.{$vocabulary}.default")
+          ->execute()->fetchAll();
+
+        foreach ($config_display as $config_value) {
+          $layout_config = $config_value->data;
+          $layout_config = unserialize($layout_config);
+          if (isset($layout_config['third_party_settings']['layout_builder']['sections'])) {
+            $sections = $layout_config['third_party_settings']['layout_builder']['sections'];
+            foreach ($sections as $section) {
+              if (isset($section['components'])) {
+                foreach ($section['components'] as $component) {
+                  if ($component['configuration']['id'] == "views_block:{$view_id}-{$display_id}") {
+                    if (!empty($component['configuration']['items_per_page'])) {
+                      $args[] = $component['configuration']['items_per_page'];
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
