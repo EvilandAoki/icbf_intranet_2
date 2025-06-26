@@ -408,6 +408,7 @@ function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array
 
       if (empty($layout_configs)) {
         $vocabulary = $term->bundle();
+        $items_per_page = $view->getItemsPerPage();
         $config_display = \Drupal::database()->select('config', 'c')
           ->fields('c', ['data'])
           ->condition('name', "core.entity_view_display.taxonomy_term.{$vocabulary}.default")
@@ -421,7 +422,7 @@ function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array
             foreach ($sections as $section) {
               if (isset($section['components'])) {
                 foreach ($section['components'] as $component) {
-                  if ($component['configuration']['id'] == "views_block:{$view_id}-{$display_id}") {
+                  if ($component['configuration']['id'] == "views_block:{$view_id}-{$display_id}" && $component['configuration']['items_per_page'] == $items_per_page) {
                     if (!empty($component['configuration']['items_per_page'])) {
                       $filters = explode('/', $component['configuration']['items_per_page']);
                       foreach ($filters as $filter_value) {
@@ -433,6 +434,8 @@ function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array
                         }
                       }
                     }
+
+                    break;
                   }
                 }
               }
