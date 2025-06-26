@@ -289,4 +289,40 @@
         }
     }
 }
-        
+
+.block-field-blocktaxonomy-termdependenciesfield-content{
+    .cdit {
+        background-image: url(/sites/default/files/bg-catalogo-dit_61.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        display: block;
+        height: 315px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .cdit-content {
+        bottom: .7em;
+        display: block;
+        margin-right: 2em;
+        position: absolute;
+        right: 0;
+    }
+    
+    a.cdit-btn {
+        background-image: url(/sites/default/files/dit-images-vector_54.png);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 225px 62px;
+        display: block;
+        height: 65px;
+        transition: .2s all ease-out;
+        width: 230px;
+    }
+    
+    a.cdit-btn span {
+        display: none;
+    }
+}
