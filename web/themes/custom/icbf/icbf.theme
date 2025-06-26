@@ -352,3 +352,53 @@ function icbf_files_directory_process($html)
   $html = str_replace('-files-directory-', $public_files_path, $html);
   return $html;
 }
+
+/**
+ * Implements hook_preprocess_views_view_field().
+ */
+function icbf_preprocess_views_view_field(array &$variables) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = $variables['view'];
+
+  if (
+    $view->id() === 'catalogo_dit_taxonomias' &&
+    $view->current_display === 'block_1' &&
+    $variables['field']->field === 'nothing'
+  ) {
+    /** @var \Drupal\taxonomy\TermInterface $term */
+    $term = $variables['row']->_entity;
+    $tid = $term->id();
+
+    // Consulta los nodos relacionados.
+    $nids = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
+      ->condition('field_categoria_dit.target_id', $tid) // asegúrate del nombre real del campo
+      ->condition('status', 1)
+      ->execute();
+    $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+
+    // Prepara las opciones: key = URL, value = Título.
+    $options = ['' => t('Selecciona un servicio')];
+    foreach ($nodes as $node) {
+      $url = $node->toUrl()->toString();
+      $options[$url] = $node->getTitle();
+    }
+
+    // Render array con atributo onchange para redirección.
+    $render = [
+      '#type' => 'select',
+      '#options' => $options,
+      '#attributes' => [
+        'class' => ['dit-selector'],
+        'onchange' => 'if (this.value) { window.location.href = this.value; }',
+      ],
+    ];
+
+    // Vuelca el HTML en el campo.
+    $variables['output'] = \Drupal::service('renderer')->renderPlain($render);
+  }
+}
+
+
+
+
