@@ -1,0 +1,108 @@
+.taxonomia_tecnologica{
+    .box-dit-corner {
+        background-image: url(/sites/default/files/dit-images-vector_36.png);
+        background-repeat: no-repeat;
+        background-size: 85px;
+        bottom: 0;
+        display: block;
+        height: 80px;
+        left: 85%;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+    .box-ditid {
+        background-image: url(/sites/default/files/dit-images-vector_34.png);
+        background-repeat: no-repeat;
+        background-size: 300px 81px;
+        color: #fff;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.27em;
+        font-weight: 600;
+        left: -1.3em;
+        min-height: 100px;
+        padding: 0.5em .5em .6em 1.5em;
+        position: absolute;
+        top: 0;
+        margin: 1rem 0;
+    }
+    .box-dit1 {
+        position: relative;
+    }
+    
+    .box-ditinfo {
+        text-align: center;
+        padding: 1em .6em;
+        p{
+            font-family: 'Montserrat-regular';
+            font-size: 14px;
+        }
+    }
+    
+    .thumbnail {
+        background: transparent;
+        border: none;
+    }
+    .dit-thumbs {
+        img {
+        text-align: center;
+        width: auto;
+        margin: auto;
+        height: 145px;
+        padding-bottom: .5em;
+    }
+        a{
+            color: white;
+            font-size: 15px;
+            margin: 10px 0;
+            
+        }
+    }
+    .id-1519w {
+        h1{
+            color: white;
+            display: block;
+            font-size: 23px;
+        }
+        p{
+            color: white;
+            display: block;
+            font-size: 14px;
+            font-family: 'Montserrat-regular';
+        }
+    }
+    
+    
+    .az-element.az-html {
+        position: relative;
+    }
+
+    
+    .box-ditid2 {
+        background-image: url(https://intranet.icbf.gov.co/sites/default/files/dit-images-vector_34.png);
+        background-repeat: no-repeat;
+        background-size: 216px 63px;
+        color: #fff;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4em;
+        font-weight: 600;
+        left: -.8em;
+        min-height: 100px;
+        padding: .7em .2em .6em 1.4em;
+        position: absolute;
+        top: 0;
+        width: inherit;
+        margin-top: 1rem;
+    }
+    
+    
+    .box-ditinfo2 {
+        padding: 6em .5em .3em .9em;
+        p{
+            font-family: 'Montserrat-regular';
+            font-size: 15px
+        }
+    }
+}
