@@ -422,7 +422,7 @@ function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array
                 foreach ($section['components'] as $component) {
                   if ($component['configuration']['id'] == "views_block:{$view_id}-{$display_id}") {
                     if (!empty($component['configuration']['items_per_page'])) {
-                      $args[] = $component['configuration']['items_per_page'];
+                      $args[] = explode('/', $component['configuration']['items_per_page']);
                     }
                   }
                 }
