@@ -1,0 +1,53 @@
+.taxonomia_calidad {
+    h2 {
+    font-weight: 600;
+    font-family: 'Montserrat-regular';
+    margin: 2rem 0
+    }
+    p, span {
+        font-size: 14px;
+        font-family: 'montserrat-regular';
+        color: #242424;
+        ;
+    }
+    .qa-word {
+          a {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Montserrat';
+            margin: .5em auto;
+        }
+      }
+
+    .az-element.az-html.text-right a {
+        font-family: "Montserrat";
+        margin: 1rem 0;
+    }
+    
+    a.btn-1519-2 {
+        font-family: "'Montserrat'";
+    }
+}
+.tabs-left {
+     ul.nav.nav-tabs {
+        float: left;
+        margin-right: 19px;
+        border: 1px solid #ddd;
+        border-bottom: none !important;
+        padding-bottom: 20px;
+        width: 220px;
+    }  
+    
+    a {
+        min-width: 74px;
+        margin-bottom: 3px;
+        margin-right: -1px;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+    } 
+    li {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
