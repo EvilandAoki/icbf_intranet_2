@@ -1,0 +1,13 @@
+uuid: 93322929-2a5f-45b6-b4b8-f3d8f13bcab1
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - forum
+_core:
+  default_config_hash: ASMYOUZX4c3xSgNTeKYhnhde-J9Zq899Z-gV2emoyr8
+id: comment_forum
+label: 'Foro comment'
+target_entity_type_id: node
+description: 'Campo de comentario por defecto'

@@ -1,0 +1,29 @@
+uuid: 52cef555-e5ed-4cbc-a084-6bc4a7c7b3be
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.document.field_folder
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: file.document.default
+targetEntityType: file
+bundle: document
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  field_folder: true

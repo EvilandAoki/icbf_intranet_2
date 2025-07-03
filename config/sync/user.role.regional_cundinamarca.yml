@@ -1,0 +1,18 @@
+uuid: e55366ee-641e-4e6d-a535-b4500c77e988
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_cundinamarca
+label: 'Regional Cundinamarca'
+weight: 29
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

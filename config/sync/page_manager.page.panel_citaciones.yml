@@ -1,0 +1,12 @@
+uuid: 14ffe08a-56b7-4a8c-9114-96544438cc52
+langcode: es
+status: true
+dependencies: {  }
+id: panel_citaciones
+label: 'Panel Citaciones'
+description: ''
+use_admin_theme: null
+path: /panel-citaciones
+access_logic: and
+access_conditions: {  }
+parameters: {  }

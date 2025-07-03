@@ -1,0 +1,19 @@
+uuid: 573ff97e-19de-478c-b6d2-0cba17a0c370
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version
+    - node.type.institutional_stationery
+id: node.institutional_stationery.field_version
+field_name: field_version
+entity_type: node
+bundle: institutional_stationery
+label: Versión
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

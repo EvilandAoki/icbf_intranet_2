@@ -1,0 +1,21 @@
+uuid: 78ce9f91-7ac3-4c9a-b13e-9e11bb4f0edb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.tipos_de_ubicaci_n
+id: taxonomy_term.tipos_de_ubicaci_n.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: tipos_de_ubicaci_n
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

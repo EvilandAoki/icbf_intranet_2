@@ -1,0 +1,29 @@
+uuid: 46b6b5d1-cf6a-4f79-8836-3bb3b7f3e526
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_eventos_galeria
+    - field.field.comment.comment_node_eventos_galeria.comment_body
+  module:
+    - text
+id: comment.comment_node_eventos_galeria.default
+targetEntityType: comment
+bundle: comment_node_eventos_galeria
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

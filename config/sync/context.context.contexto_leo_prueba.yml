@@ -1,0 +1,13 @@
+uuid: 10a6d2c4-da33-4a88-a8ee-8855abb7496d
+langcode: es
+status: true
+dependencies: {  }
+label: 'Contexto leo prueba'
+name: contexto_leo_prueba
+group: null
+description: pruebas
+requireAllConditions: false
+disabled: false
+conditions: {  }
+reactions: {  }
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 111e0c43-7932-4afc-b693-64ce6c4eb5e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_referent_calidad_regional
+    - node.type.contacto_nacional
+id: node.contacto_nacional.field_referent_calidad_regional
+field_name: field_referent_calidad_regional
+entity_type: node
+bundle: contacto_nacional
+label: 'Referente de Calidad Regional'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

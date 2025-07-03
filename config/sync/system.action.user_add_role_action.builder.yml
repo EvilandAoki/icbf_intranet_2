@@ -1,0 +1,14 @@
+uuid: 8783f392-d144-4f7d-9a3f-fea9fb5fc99c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.builder
+  module:
+    - user
+id: user_add_role_action.builder
+label: 'Añade el rol Builder al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: builder

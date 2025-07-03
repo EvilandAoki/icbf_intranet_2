@@ -1,0 +1,21 @@
+uuid: 18327a79-9e1f-44e8-899f-3f6ae4edbf71
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.news
+  module:
+    - geofield
+id: node.news.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: news
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

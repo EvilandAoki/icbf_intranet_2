@@ -1,0 +1,48 @@
+uuid: 8b106bc9-0df8-44af-9aa0-b7a4e682ba44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.isotope_example.isotope_example_color
+    - field.field.node.isotope_example.isotope_example_shape
+    - field.field.node.isotope_example.isotope_example_size
+    - node.type.isotope_example
+  module:
+    - user
+id: node.isotope_example.default
+targetEntityType: node
+bundle: isotope_example
+mode: default
+content:
+  isotope_example_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  isotope_example_shape:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  isotope_example_size:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

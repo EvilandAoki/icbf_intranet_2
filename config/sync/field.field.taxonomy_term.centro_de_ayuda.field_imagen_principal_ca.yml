@@ -1,0 +1,41 @@
+uuid: 6cbd03d8-c644-4e61-a2d5-ef1dd326a197
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagen_principal_ca
+    - taxonomy.vocabulary.centro_de_ayuda
+  module:
+    - image
+id: taxonomy_term.centro_de_ayuda.field_imagen_principal_ca
+field_name: field_imagen_principal_ca
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Imagen Principal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 mb'
+  max_resolution: 800x600
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

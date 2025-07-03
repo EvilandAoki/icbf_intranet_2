@@ -1,0 +1,8 @@
+uuid: 3f0bfdab-2006-4baf-b513-96abc8129ccf
+langcode: en
+status: true
+dependencies: {  }
+id: menu-observatory
+label: Observatorio
+description: ''
+locked: false

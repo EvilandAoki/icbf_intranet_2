@@ -1,0 +1,50 @@
+uuid: c98c1d9d-ef6a-4b7d-a0bb-e71502f3a788
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_37209
+title: 'Pregunta de la Semana Junio 2021'
+description: null
+categories: {  }
+elements: |-
+  _con_qu_frecuencia_consulta_el_bolet_n_vive_icbf_:
+    '#type': checkboxes
+    '#options':
+      1: Diariamente
+      2: Semanal
+      3: 'No lo consulto'
+    '#multiple': true
+    '#title': '¿Con qué frecuencia consulta el Boletín Vive ICBF?'
+  _qu_opini_n_tiene_sobre_el_bolet_n_vive_icbf_:
+    '#type': textarea
+    '#title': '¿Qué opinión tiene sobre el Boletín Vive ICBF?'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: "<p>Gracias por sus respuestas.</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

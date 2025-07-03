@@ -1,0 +1,14 @@
+uuid: 898b1a2b-7543-4d15-a5d0-c6bc25338842
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_guainia
+  module:
+    - user
+id: user_add_role_action.regional_guainia
+label: 'Añade el rol Regional Guainía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_guainia

@@ -1,0 +1,18 @@
+uuid: 70bff182-5229-4a81-ae84-2f91195c7262
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_antioquia
+label: 'Regional Antioquia'
+weight: 16
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

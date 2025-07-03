@@ -1,0 +1,59 @@
+uuid: 003fd425-050e-4de9-8d17-fd6c44e49370
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.frase_de_la_semana.field_fecha_publicacion
+    - field.field.node.frase_de_la_semana.field_file_categoria
+    - field.field.node.frase_de_la_semana.field_frase
+    - field.field.node.frase_de_la_semana.field_section
+    - node.type.frase_de_la_semana
+  module:
+    - datetime
+    - text
+    - user
+id: node.frase_de_la_semana.default
+targetEntityType: node
+bundle: frase_de_la_semana
+mode: default
+content:
+  field_fecha_publicacion:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_frase:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 5fc4e2a8-93c8-40b4-a586-d97b0b00da0a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:44cce3f0-15a3-404e-8c3d-c50015e853e5'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_estructurabotton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:44cce3f0-15a3-404e-8c3d-c50015e853e5'
+settings:
+  id: 'block_content:44cce3f0-15a3-404e-8c3d-c50015e853e5'
+  label: 'Estructura - botton'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

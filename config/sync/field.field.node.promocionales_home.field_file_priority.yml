@@ -1,0 +1,21 @@
+uuid: d81da413-701c-439d-875a-e7fe49f8c7d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_priority
+    - node.type.promocionales_home
+  module:
+    - options
+id: node.promocionales_home.field_file_priority
+field_name: field_file_priority
+entity_type: node
+bundle: promocionales_home
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,8 @@
+uuid: a5a9d6e4-2292-4315-989c-22b644a19aa5
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_cartelera
+label: 'Cartelera comment'
+target_entity_type_id: node
+description: null

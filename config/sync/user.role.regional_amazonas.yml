@@ -1,0 +1,18 @@
+uuid: 2018950d-a698-428e-a223-4778f026040d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_amazonas
+label: 'Regional Amazonas'
+weight: 15
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

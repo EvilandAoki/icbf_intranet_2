@@ -1,0 +1,53 @@
+uuid: fd7ee6da-744e-44de-a585-4ce5d4afc3a3
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_38827
+title: 'Pregunta de la Semana Sept 2021'
+description: null
+categories: {  }
+elements: |-
+  _con_qu_frecuencia_consulta_el_bolet_n_vive_icbf_:
+    '#type': checkboxes
+    '#options':
+      1: Respeto
+      2: Compromiso
+      3: Diligencia
+      Justicia: Justicia
+      Integridad: Integridad
+      Honestidad: Honestidad
+    '#multiple': true
+    '#title': '¿Con cuál de los valores del Instituto es con el que más te identificas?'
+  _qu_opini_n_tiene_sobre_el_bolet_n_vive_icbf_:
+    '#type': textarea
+    '#title': '¿Qué opinión tiene sobre el Boletín Vive ICBF?'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: "<p>Gracias por sus respuestas.</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

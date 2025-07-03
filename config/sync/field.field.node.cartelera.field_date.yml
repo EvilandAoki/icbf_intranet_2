@@ -1,0 +1,21 @@
+uuid: 1e640b78-7e9c-4788-b0eb-ffd67a159f17
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.cartelera
+  module:
+    - datetime
+id: node.cartelera.field_date
+field_name: field_date
+entity_type: node
+bundle: cartelera
+label: Fecha
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

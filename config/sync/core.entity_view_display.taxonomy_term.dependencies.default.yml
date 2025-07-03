@@ -1,0 +1,120 @@
+uuid: b593c364-2595-4379-b9b7-13a9336877f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.dependencies.field_allowed_roles
+    - field.field.taxonomy_term.dependencies.field_allowed_users
+    - field.field.taxonomy_term.dependencies.field_content
+    - field.field.taxonomy_term.dependencies.field_header_area
+    - field.field.taxonomy_term.dependencies.group_group
+    - field.field.taxonomy_term.dependencies.layout_builder__layout
+    - taxonomy.vocabulary.dependencies
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          36f3c39e-2596-4950-8201-fd6a9729379a:
+            uuid: 36f3c39e-2596-4950-8201-fd6a9729379a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:dependencies:field_header_area'
+              label: 'Header Area'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          0b69fb05-5e0c-4e2e-be35-333a780ca061:
+            uuid: 0b69fb05-5e0c-4e2e-be35-333a780ca061
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:dependencies:field_content'
+              label: Contenido
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.dependencies.default
+targetEntityType: taxonomy_term
+bundle: dependencies
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  group_group:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_allowed_users: true
+  langcode: true
+  layout_builder__layout: true

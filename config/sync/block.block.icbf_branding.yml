@@ -1,0 +1,25 @@
+uuid: a5322f48-4fb7-4409-9a75-98483b254d0b
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - icbf
+_core:
+  default_config_hash: JSYtkM2_rrC4BQ-AVWDSLkVE9fUuqDyYfQ_3BmtuiuM
+id: icbf_branding
+theme: icbf
+region: navigation
+weight: -15
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

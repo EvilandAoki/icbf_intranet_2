@@ -1,0 +1,14 @@
+uuid: ac4cba24-e668-45a5-8aaa-7f2ef69027e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.personas
+  module:
+    - user
+id: user_remove_role_action.personas
+label: 'Elimina el rol Personas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: personas

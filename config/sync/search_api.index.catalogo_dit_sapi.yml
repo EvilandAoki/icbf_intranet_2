@@ -1,0 +1,51 @@
+uuid: 03b4f6f0-76ba-4ad8-b2c7-f5e14a6e0982
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: catalogo_dit_sapi
+name: 'Catalogo DIT SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - cat_logo_servicios_dit
+  fields:
+    field_cat_dit_bg:
+      type: text
+    'field_cat_dit_icon:file':
+      type: integer
+      entity_type: file
+    name:
+      type: text
+    search_api_language:
+      type: string
+    tid:
+      type: integer
+    url:
+      type: uri
+    weight:
+      type: integer
+server: local_solr

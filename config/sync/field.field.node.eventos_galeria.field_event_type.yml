@@ -1,0 +1,26 @@
+uuid: 49e96d12-5676-4326-b9c1-48a966fe75e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.eventos_galeria
+    - taxonomy.vocabulary.eventos_icbf
+id: node.eventos_galeria.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: eventos_galeria
+label: 'Tipo de Evento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      eventos_icbf: eventos_icbf
+    sort:
+      field: _none
+field_type: entity_reference

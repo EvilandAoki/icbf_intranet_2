@@ -1,0 +1,26 @@
+uuid: 720c1492-852d-45fb-a065-4bdc8b67afde
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.multimedia
+    - taxonomy.vocabulary.locations
+id: node.multimedia.field_location
+field_name: field_location
+entity_type: node
+bundle: multimedia
+label: 'Ubicación Relacionada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

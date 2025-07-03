@@ -1,0 +1,9 @@
+uuid: 18a69d5b-1050-4bb0-b0e3-34d4a5a095ad
+langcode: es
+status: true
+dependencies: {  }
+name: 'Cargos (Persona)'
+vid: cargos_persona_
+description: null
+weight: 0
+new_revision: false

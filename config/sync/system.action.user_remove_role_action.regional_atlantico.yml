@@ -1,0 +1,14 @@
+uuid: 7249b278-be89-42e8-9b54-c8491e0dd1f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_atlantico
+  module:
+    - user
+id: user_remove_role_action.regional_atlantico
+label: 'Elimina el rol Regional Atlántico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_atlantico

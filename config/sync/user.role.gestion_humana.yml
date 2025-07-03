@@ -1,0 +1,26 @@
+uuid: b8b1ba91-6022-4d64-8a31-075ffacd6d9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.clean
+    - filter.format.full_html
+    - node.type.convocatorias_talento_humano
+  module:
+    - filter
+    - node
+    - system
+id: gestion_humana
+label: 'Gestión Humana'
+weight: 12
+is_admin: null
+permissions:
+  - 'access content'
+  - 'create convocatorias_talento_humano content'
+  - 'delete own convocatorias_talento_humano content'
+  - 'edit any convocatorias_talento_humano content'
+  - 'edit own convocatorias_talento_humano content'
+  - 'use text format clean'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

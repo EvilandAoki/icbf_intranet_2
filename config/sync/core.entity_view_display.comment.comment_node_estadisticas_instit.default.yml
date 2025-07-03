@@ -1,0 +1,29 @@
+uuid: c4a5a667-3419-4261-8914-9825befa608d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_estadisticas_instit
+    - field.field.comment.comment_node_estadisticas_instit.comment_body
+  module:
+    - text
+id: comment.comment_node_estadisticas_instit.default
+targetEntityType: comment
+bundle: comment_node_estadisticas_instit
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

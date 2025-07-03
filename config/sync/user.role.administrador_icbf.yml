@@ -1,0 +1,97 @@
+uuid: 9ad44cc4-dc2c-40ec-85c2-6224921ec0ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.blog
+    - node.type.document
+    - node.type.event_calendar
+    - node.type.forum
+    - node.type.multimedia
+    - node.type.news
+    - node.type.page
+    - node.type.persona
+    - node.type.poll
+    - node.type.webform
+  module:
+    - block
+    - filter
+    - node
+    - panels
+    - poll
+    - search
+    - search_api
+    - system
+    - taxonomy
+    - views_ui
+id: administrador_icbf
+label: 'Administrador ICBF'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'administer advanced pane settings'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'administer pane access'
+  - 'administer panels layouts'
+  - 'administer panels styles'
+  - 'administer search'
+  - 'administer search_api'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'cancel own vote'
+  - 'create article content'
+  - 'create blog content'
+  - 'create document content'
+  - 'create event_calendar content'
+  - 'create forum content'
+  - 'create multimedia content'
+  - 'create news content'
+  - 'create page content'
+  - 'create persona content'
+  - 'create poll content'
+  - 'create webform content'
+  - 'delete own article content'
+  - 'delete own blog content'
+  - 'delete own document content'
+  - 'delete own event_calendar content'
+  - 'delete own forum content'
+  - 'delete own multimedia content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own persona content'
+  - 'delete own poll content'
+  - 'delete own webform content'
+  - 'edit any multimedia content'
+  - 'edit any news content'
+  - 'edit own article content'
+  - 'edit own blog content'
+  - 'edit own document content'
+  - 'edit own event_calendar content'
+  - 'edit own forum content'
+  - 'edit own multimedia content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own persona content'
+  - 'edit own poll content'
+  - 'edit own webform content'
+  - 'search content'
+  - 'use ipe with page manager'
+  - 'use panels caching features'
+  - 'use panels dashboard'
+  - 'use panels locks'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view pane admin links'
+  - 'view the administration theme'

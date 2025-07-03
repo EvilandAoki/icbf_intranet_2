@@ -1,0 +1,25 @@
+uuid: f741920e-f56a-4dd6-9da9-c1ad8eec8060
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_helpcenter_content_body
+    - node.type.helpcenter_info
+  module:
+    - text
+id: node.helpcenter_info.field_helpcenter_content_body
+field_name: field_helpcenter_content_body
+entity_type: node
+bundle: helpcenter_info
+label: 'Información Contexto'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div class=\"az-element az-section\" data-az-id=\"eu342673\" data-azat-style=\"margin-top:-3em;margin-bottom:1em;margin-left:1em;margin-right:1em;padding-top:2em;padding-bottom:2em;padding-left:3em;padding-right:2em;background-color:#ffffff;\" data-azb=\"az_section\" id=\"eu342673\" style=\"margin-top:-3em;margin-bottom:1em;margin-left:1em;margin-right:1em;padding-top:2em;padding-bottom:2em;padding-left:3em;padding-right:2em;background-color:#ffffff;\">\r\n<div class=\"az-ctnr container\" data-azcnt=\"true\" data-jsplus-bootstrap-editor-selected=\"1\">\r\n<div class=\"az-element az-row row  az-row--sm az-row--equal-height\" data-az-id=\"hdzqejkv\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"margin-top:1em;margin-bottom:0.5em;border-top-width:1px;border-bottom-width:0px;border-left-width:0px;border-right-width:0px;padding-top:1em;padding-bottom:1em;border-color:#dddddd;border-style:solid;\" data-azb=\"az_row\" data-azcnt=\"true\" style=\"margin-top: 1em; margin-bottom: 0.5em; border-width: 1px 0px 0px; padding-top: 1em; padding-bottom: 1em; border-color: rgb(221, 221, 221); border-style: solid; position: relative; left: 0px; top: 0px;\">\r\n<div class=\"az-element az-ctnr az-column  col-sm-3\" data-az-id=\"2ubb3s5w\" data-azat-width=\"1/4\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text\" data-az-id=\"gktzhpi9\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"\">\r\n<h3 class=\"subt-ca-item1\">1. Item 1</h3>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-ctnr az-column  col-sm-9\" data-az-id=\"s0joz6tp\" data-azat-width=\" 3/4\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text\" data-az-id=\"i7peo9mu\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"ca-content\">\r\n<p>Encontrará los siguientes campos:</p>\r\n\r\n<ul>\r\n\t<li><strong>Usuario: </strong>xx</li>\r\n\t<li><strong>Contraseña:</strong> xx</li>\r\n\t<li><strong>Clic en el botón: </strong>xx</li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-button\" data-az-id=\"ga2eiqsg\" data-azat-size=\"btn-sm\" data-azat-title=\"Ver imagen de pantalla\" data-azat-type=\"btn-default\" data-azb=\"az_button\"><button class=\"btn btn-default btn-sm \" style=\"\" type=\"button\">Ver imagen de pantalla</button></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-row row  az-row--sm az-row--equal-height\" data-az-id=\"wke1j6nl\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"margin-top:1em;margin-bottom:0.5em;border-top-width:1px;border-bottom-width:0px;border-left-width:0px;border-right-width:0px;padding-top:1em;padding-bottom:1em;border-color:#dddddd;border-style:solid;\" data-azb=\"az_row\" data-azcnt=\"true\" style=\"margin-top:1em;margin-bottom:0.5em;border-top-width:1px;border-bottom-width:0px;border-left-width:0px;border-right-width:0px;padding-top:1em;padding-bottom:1em;border-color:#dddddd;border-style:solid;\">\r\n<div class=\"az-element az-ctnr az-column  col-sm-3\" data-az-id=\"bhgqou2b\" data-azat-width=\"1/4\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text\" data-az-id=\"ddotjwqp\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"\">\r\n<h3 class=\"subt-ca-item1\">2. Item 2</h3>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-ctnr az-column  col-sm-9\" data-az-id=\"g930m689\" data-azat-width=\" 3/4\" data-azb=\"az_column\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"az-element az-text\" data-az-id=\"72tcogxe\" data-azb=\"az_text\" data-azcnt=\"true\" style=\"\">\r\n<div class=\"ca-content\">\r\n<p>Por políticas de seguridad de la información, una vez le sea asignada su contraseña, deberá acceder al botón: cambiar clave. Identificará las siguientes opciones</p>\r\n\r\n<ul>\r\n\t<li><strong>Usuario: </strong>xxx</li>\r\n\t<li><strong>Contraseña:</strong> xxx</li>\r\n\t<li><strong>Clic en el botón: </strong>xxx</li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"az-element az-button\" data-az-id=\"a64rkq97\" data-azat-size=\"btn-sm\" data-azat-title=\"Ver imagen de pantalla\" data-azat-type=\"btn-default\" data-azb=\"az_button\"><button class=\"btn btn-default btn-sm \" style=\"\" type=\"button\">Ver imagen de pantalla</button></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<script src=\"-base-url-/-module-directory-/glazed_builder/glazed_frontend.min.js\"></script>"
+    format: full_html
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

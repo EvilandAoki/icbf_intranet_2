@@ -1,0 +1,24 @@
+uuid: e5536647-73f2-4c62-9d9c-1ec2dd09c87c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contacto_nacional
+  module:
+    - text
+id: node.contacto_nacional.body
+field_name: body
+entity_type: node
+bundle: contacto_nacional
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: 35dedda0-3a3b-47de-a36f-aa2a3f0857cf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e1f6a1ab-14b6-41ec-8ddd-6f830b4cebc9'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_estadisticasbutton
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:e1f6a1ab-14b6-41ec-8ddd-6f830b4cebc9'
+settings:
+  id: 'block_content:e1f6a1ab-14b6-41ec-8ddd-6f830b4cebc9'
+  label: 'Estadisticas - Button'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

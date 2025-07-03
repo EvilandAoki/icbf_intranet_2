@@ -1,0 +1,6 @@
+icbf_migrations.admin:
+  title: 'Ejecutar migración D7 File'
+  description: 'Lanza la migración de archivos públicos de Drupal 7.'
+  parent: system.admin_config_development
+  route_name: icbf_migrations.execute
+  weight: 100

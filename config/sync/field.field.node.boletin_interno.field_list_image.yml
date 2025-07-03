@@ -1,0 +1,41 @@
+uuid: a19536db-64d6-4d44-a4e8-c6ed0dc1d471
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_image
+    - node.type.boletin_interno
+  module:
+    - image
+id: node.boletin_interno.field_list_image
+field_name: field_list_image
+entity_type: node
+bundle: boletin_interno
+label: 'Imagen Listado'
+description: 'imagen miniatura del boletin para listados'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

@@ -1,0 +1,27 @@
+uuid: 9e5d36f9-f204-457b-af91-ad45f5a456e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.forum
+  module:
+    - file
+id: node.forum.field_document
+field_name: field_document
+entity_type: node
+bundle: forum
+label: Documento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf doc xls xlsx docx ppt pptx png jpg jpge tiff gif'
+  max_filesize: ''
+  description_field: false
+field_type: file

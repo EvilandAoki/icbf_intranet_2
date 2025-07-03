@@ -1,0 +1,268 @@
+uuid: 50e23e28-8b02-47fc-a9db-6a8e1c655a01
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.promocionales_home.field_date
+    - field.field.node.promocionales_home.field_file_categoria
+    - field.field.node.promocionales_home.field_file_priority
+    - field.field.node.promocionales_home.field_link_url
+    - field.field.node.promocionales_home.field_list_image
+    - field.field.node.promocionales_home.field_zona_home
+    - field.field.node.promocionales_home.layout_builder__layout
+    - node.type.promocionales_home
+  module:
+    - bootstrap_layouts
+    - datetime
+    - image
+    - layout_builder
+    - options
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          a555410e-878b-4696-8a00-a4c2eadf7ccc:
+            uuid: a555410e-878b-4696-8a00-a4c2eadf7ccc
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: generic-title
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-content
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          c44a1bba-42e8-4a5c-a7f4-3eeb7b83db29:
+            uuid: c44a1bba-42e8-4a5c-a7f4-3eeb7b83db29
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_list_image'
+              label: 'Imagen Listado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  field_formatter_class:
+                    class: mt-3
+            weight: 0
+            additional: {  }
+          2dd66ce8-32d7-462b-a152-daf067ac25bb:
+            uuid: 2dd66ce8-32d7-462b-a152-daf067ac25bb
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_link_url'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          70539780-76a4-4a48-b287-6953b827baca:
+            uuid: 70539780-76a4-4a48-b287-6953b827baca
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          94ed40b4-d763-4b37-915d-a802a88e24c4:
+            uuid: 94ed40b4-d763-4b37-915d-a802a88e24c4
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_file_categoria'
+              label: 'Categoría del archivo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 3
+            additional: {  }
+          3a6e594b-1314-4858-a2a5-39191fae08dc:
+            uuid: 3a6e594b-1314-4858-a2a5-39191fae08dc
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_zona_home'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          7e3b03d2-7ac7-44ff-9dc2-7696e2e531ef:
+            uuid: 7e3b03d2-7ac7-44ff-9dc2-7696e2e531ef
+            region: main
+            configuration:
+              id: 'extra_field_block:node:promocionales_home:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 5
+            additional: {  }
+          7b99ba26-5fb1-42ca-b404-f3a7e17a6d92:
+            uuid: 7b99ba26-5fb1-42ca-b404-f3a7e17a6d92
+            region: main
+            configuration:
+              id: 'field_block:node:promocionales_home:field_file_priority'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.promocionales_home.default
+targetEntityType: node
+bundle: promocionales_home
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_file_priority:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_zona_home:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+uuid: e0cb30d0-16d1-4ac2-a442-76af64693a38
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_santander
+  module:
+    - user
+id: user_remove_role_action.regional_santander
+label: 'Elimina el rol Regional Santander al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_santander

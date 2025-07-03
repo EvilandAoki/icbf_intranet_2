@@ -1,0 +1,48 @@
+uuid: ac6a8809-c80c-4e4a-b6ae-6fb8f56ba4e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo_de_seccion.body
+    - field.field.node.articulo_de_seccion.field_constructor_glazedb
+    - field.field.node.articulo_de_seccion.field_file_categoria
+    - field.field.node.articulo_de_seccion.field_file_priority
+    - field.field.node.articulo_de_seccion.field_post_documents
+    - field.field.node.articulo_de_seccion.field_post_image
+    - field.field.node.articulo_de_seccion.field_post_resume
+    - field.field.node.articulo_de_seccion.field_section
+    - field.field.node.articulo_de_seccion.field_tabs_dit1
+    - node.type.articulo_de_seccion
+  module:
+    - text
+    - user
+id: node.articulo_de_seccion.teaser
+targetEntityType: node
+bundle: articulo_de_seccion
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_constructor_glazedb: true
+  field_file_categoria: true
+  field_file_priority: true
+  field_post_documents: true
+  field_post_image: true
+  field_post_resume: true
+  field_section: true
+  field_tabs_dit1: true
+  langcode: true
+  search_api_excerpt: true

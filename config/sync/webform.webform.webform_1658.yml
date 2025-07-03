@@ -1,0 +1,42 @@
+uuid: c2b7c490-f37f-45d5-9702-3bbadf9d6118
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 0
+template: false
+archive: false
+id: webform_1658
+title: 'Acta 22_Reg_Casanare_2015 Comité ejecución presupuestal 04/06/2015'
+description: null
+categories: {  }
+elements: |-
+  new_1508173773795:
+    '#type': textarea
+    '#title': 'New textarea'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

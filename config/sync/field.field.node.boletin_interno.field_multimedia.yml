@@ -1,0 +1,27 @@
+uuid: 5a0f1f65-ef97-4362-a089-f04d7082fc51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - node.type.boletin_interno
+  module:
+    - file
+id: node.boletin_interno.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: boletin_interno
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'mp4 mpeg wmv mp3'
+  max_filesize: 30mb
+  description_field: true
+field_type: file

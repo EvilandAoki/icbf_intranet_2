@@ -1,0 +1,28 @@
+uuid: 39431c47-db4d-4601-aa56-6fa863aa6e43
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.pieza_sgsi
+    - taxonomy.vocabulary.secctions
+id: node.pieza_sgsi.field_section
+field_name: field_section
+entity_type: node
+bundle: pieza_sgsi
+label: Sección
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '7232'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

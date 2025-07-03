@@ -1,0 +1,29 @@
+uuid: cfa2925a-44b2-4592-80c0-9daaaf9e2d23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.og_group_ref_area
+    - node.type.news
+id: node.news.og_group_ref_area
+field_name: og_group_ref_area
+entity_type: node
+bundle: news
+label: 'Grupos de audiencia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      og_behavior:
+        status: true
+    membership_type: og_membership_type_default
+field_type: entity_reference

@@ -1,0 +1,214 @@
+uuid: b387ab83-8dd0-4334-af85-e66f15745cda
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.taxonomy_term.sige_process_type.field_allowed_roles
+    - field.field.taxonomy_term.sige_process_type.field_allowed_users
+    - field.field.taxonomy_term.sige_process_type.field_attachments
+    - field.field.taxonomy_term.sige_process_type.field_header_area
+    - field.field.taxonomy_term.sige_process_type.field_internal_links
+    - field.field.taxonomy_term.sige_process_type.field_pg_caracterization
+    - field.field.taxonomy_term.sige_process_type.field_pg_objective
+    - taxonomy.vocabulary.sige_process_type
+    - views.view.sige_process
+  module:
+    - bootstrap_layouts
+    - file
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5f5e7305-b2d3-4fb7-9fdc-29ec06dfee15:
+            uuid: 5f5e7305-b2d3-4fb7-9fdc-29ec06dfee15
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sige_process_type:field_header_area'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          fe8579ef-7d8c-49c4-a1e6-d287cfe0e3c7:
+            uuid: fe8579ef-7d8c-49c4-a1e6-d287cfe0e3c7
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:sige_process_type:field_pg_caracterization'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e4bc8cef-18a2-4289-80e6-f16dc28d0034:
+            uuid: e4bc8cef-18a2-4289-80e6-f16dc28d0034
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:sige_process_type:field_pg_objective'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          ebcd7707-7e77-4864-8d7d-9804325b7bb4:
+            uuid: ebcd7707-7e77-4864-8d7d-9804325b7bb4
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:sige_process_type:field_internal_links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          91497d29-6295-42d5-b69f-f64e84a0eb6a:
+            uuid: 91497d29-6295-42d5-b69f-f64e84a0eb6a
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: 'Información del Proceso'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_id: 1826
+              block_revision_id: 96
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          b45512bd-b2f3-4ae6-a66b-2477255a2edc:
+            uuid: b45512bd-b2f3-4ae6-a66b-2477255a2edc
+            region: first
+            configuration:
+              id: 'views_block:sige_process-block_4'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+              exposed: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.sige_process_type.default
+targetEntityType: taxonomy_term
+bundle: sige_process_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_attachments:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_internal_links:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pg_caracterization:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_objective:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_allowed_roles: true
+  field_allowed_users: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

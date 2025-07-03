@@ -1,0 +1,27 @@
+uuid: e257a8e1-f9ce-44cd-a8cf-75e3a21b59a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - node.type.forum
+  module:
+    - file
+id: node.forum.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: forum
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'mp3 mp4 ogg avi mov wmv flv ogv webm'
+  max_filesize: 4mb
+  description_field: false
+field_type: file

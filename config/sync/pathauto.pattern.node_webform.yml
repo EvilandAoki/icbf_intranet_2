@@ -1,0 +1,21 @@
+uuid: 8fd2bd6c-90f7-4838-a490-94ff180e113c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_webform
+label: 'Contenido - Webform'
+type: 'canonical_entities:node'
+pattern: 'encuestas/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      webform: webform
+selection_logic: and
+weight: 0
+relationships: {  }

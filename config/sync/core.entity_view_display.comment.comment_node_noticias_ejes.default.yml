@@ -1,0 +1,29 @@
+uuid: 80d8eb6f-3313-472a-89e4-3b2642196c48
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_noticias_ejes
+    - field.field.comment.comment_node_noticias_ejes.comment_body
+  module:
+    - text
+id: comment.comment_node_noticias_ejes.default
+targetEntityType: comment
+bundle: comment_node_noticias_ejes
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

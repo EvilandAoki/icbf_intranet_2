@@ -1,0 +1,19 @@
+uuid: ab358c86-1dd1-4c51-8ac6-95758cf6d844
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modalidad_e_idioma
+    - node.type.convocatorias_talento_humano
+id: node.convocatorias_talento_humano.field_modalidad_e_idioma
+field_name: field_modalidad_e_idioma
+entity_type: node
+bundle: convocatorias_talento_humano
+label: 'Modalidad e idioma'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

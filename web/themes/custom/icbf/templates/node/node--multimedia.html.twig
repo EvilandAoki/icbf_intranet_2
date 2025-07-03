@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme override to display a node, based on core/themes/stable9.
+ *
+ * Available variables:
+ * - node: The node entity with limited access.
+ * - label: (optional) Title of the node.
+ * - content: All node items. Use {{ content }} or subsets {{ content.field_xxx }}.
+ * - author_picture, metadata, date, author_name, url, display_submitted, etc.
+ * - attributes, title_attributes, content_attributes, author_attributes.
+ * - title_prefix, title_suffix.
+ * - view_mode, teaser, page (flags).
+ *
+ * @see template_preprocess_node()
+ */
+#}
+<article {{ attributes.addClass('node', 'node--type-' ~ (node.bundle()|clean_class)) }}>
+  {{ title_prefix }}
+
+  {# Si no es vista “page” imprimimos título enlazado #}
+  {% if not page %}
+    <header>
+      <h2 {{ title_attributes }}><a href="{{ url }}" rel="bookmark">{{ label }}</a></h2>
+    </header>
+  {% endif %}
+
+  {# Meta de autor y fecha #}
+  {% if display_submitted %}
+    <footer>
+      {% if author_picture %}
+        {{ author_picture }}
+      {% endif %}
+      <span>{{ 'Submitted by'|t }} {{ author_name }} {{ date }}</span>
+      {{ metadata }}
+    </footer>
+  {% endif %}
+
+  {# Contenido del nodo #}
+  <div class="document-internal-content">
+  
+    <div class="document-title">
+      <h1>{{ label }}</h1>
+    </div>
+    <div {{ content_attributes }}>{{ content }}</div>
+  </div>
+  {{ title_suffix }}
+</article>

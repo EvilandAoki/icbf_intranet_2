@@ -1,0 +1,22 @@
+uuid: 3932ee00-ec4f-42ae-a38e-93ac295faaab
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_frase_de_la_semana
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_frase_de_la_semana.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_frase_de_la_semana
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

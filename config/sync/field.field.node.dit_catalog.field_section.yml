@@ -1,0 +1,28 @@
+uuid: c8ce0a39-5f9b-44aa-889c-73fda4e2238f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.dit_catalog
+    - taxonomy.vocabulary.secctions
+id: node.dit_catalog.field_section
+field_name: field_section
+entity_type: node
+bundle: dit_catalog
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '6992'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

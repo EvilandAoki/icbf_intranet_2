@@ -1,0 +1,14 @@
+uuid: 78344ccd-073c-4c72-a613-06cca9ae318e
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term
+label: 'Término de taxonomía - default'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:parents]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

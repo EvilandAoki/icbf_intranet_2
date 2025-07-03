@@ -1,0 +1,29 @@
+uuid: df51f3da-eb96-4bd1-a869-129cb9c4883c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_categoria
+    - node.type.promocionales_home
+    - taxonomy.vocabulary.file_category
+id: node.promocionales_home.field_file_categoria
+field_name: field_file_categoria
+entity_type: node
+bundle: promocionales_home
+label: 'Categoría del archivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      file_category: file_category
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

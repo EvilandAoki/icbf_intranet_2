@@ -1,0 +1,18 @@
+uuid: cbea4bec-ef2f-436f-a4bd-176a6bb04706
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_casanare
+label: 'Regional Casanare'
+weight: 24
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

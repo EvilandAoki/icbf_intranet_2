@@ -1,0 +1,148 @@
+{#
+/**
+ * @file
+ * Bootstrap Barrio's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ * - logo: The url of the logo image, as defined in theme settings.
+ * - site_name: The name of the site. This is empty when displaying the site
+ *   name has been disabled in the theme settings.
+ * - site_slogan: The slogan of the site. This is empty when displaying the site
+ *   slogan has been disabled in theme settings.
+
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.content: The main content of the current page.
+ * - page.footer_first: Items for the footer section.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ *
+ * Theme variables:
+ * - navbar_top_attributes: Items for the header region.
+ * - navbar_attributes: Items for the header region.
+ * - content_attributes: Items for the header region.
+ * - sidebar_first_attributes: Items for the highlighted region.
+ * - sidebar_second_attributes: Items for the primary menu region.
+ * - sidebar_collapse: If the sidebar_first will collapse.
+ *
+ * @see template_preprocess_page()
+ * @see bootstrap_barrio_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+{# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
+
+{% block top_menu %}
+  {% if page.top_menu %}
+    {{ page.top_menu }}
+  {% endif %}
+{% endblock %}
+<header id="navbar" role="banner" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {% block header %}
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+      {% endblock %}
+    </div>
+  </div>
+  <div class="navbar" id="navbar-collapse">
+    <div class="container-fluid">
+      <nav role="navigation">
+        {% block navigation %}
+          {% if page.navigation %}
+            {{ page.navigation }}
+          {% endif %}
+        {% endblock %}
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div {{ attributes.addClass('main-container', container_class) }}>
+  <dev id="page-header" class="py-3 border-bottom mb-4">
+    {% if site_slogan %}
+      <p class="h5 text-muted mb-0">{{ site_slogan }}</p>
+    {% endif %}
+    {{ page.top_bar }}
+  </dev>
+
+  <div class="row gx-4 gy-3">
+    {% if page.sidebar_first %}
+      <aside class="col-lg-3">{{ page.sidebar_first }}</aside>
+    {% endif %}
+
+    <main class="{{ content_column_class }}">
+      {% if page.highlighted %}
+        <div class="alert alert-info">{{ page.highlighted }}</div>
+      {% endif %}
+
+      {% if breadcrumb %}
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">{{ 'Usted está en:'|t }}</li>
+            {{ breadcrumb }}
+          </ol>
+        </nav>
+      {% endif %}
+
+      <a id="main-content" tabindex="-1"></a>
+      {{ title_prefix }}
+      {% if title %}
+        <h1 class="display-4 mb-3">{{ title }}</h1>
+      {% endif %}
+      {{ title_suffix }}
+
+      {{ messages }}
+
+      {% if tabs %}
+        <div class="mb-3">{{ tabs }}</div>
+      {% endif %}
+
+      {% if page.help %}
+        <div class="mb-3">{{ page.help }}</div>
+      {% endif %}
+
+      {% if action_links %}
+        <ul class="list-inline mb-3">{{ action_links }}</ul>
+      {% endif %}
+      {# Probamos si este contenedor me funciona para el ampliar esa clase #}
+      <div class="prueba_x">{{ page.content }}</div>
+    </main>
+
+    {% if page.sidebar_second %}
+      <aside class="col-lg-3">{{ page.sidebar_second }}</aside>
+    {% endif %}
+  </div>
+</div>
+
+{% if page.footer_top %}
+  <div class="{{ container_class }} py-4">{{ page.footer_top }}</div>
+{% endif %}
+
+{% if page.footer %}
+  <footer class="{{ container_class }} py-3 border-top">{{ page.footer }}</footer>
+{% endif %}
+{# {{ page.hidden_megamenu }} #}

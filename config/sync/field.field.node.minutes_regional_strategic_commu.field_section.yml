@@ -1,0 +1,28 @@
+uuid: 0ae66663-af0c-4030-81b3-b0fd4b8eca11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.minutes_regional_strategic_commu
+    - taxonomy.vocabulary.secctions
+id: node.minutes_regional_strategic_commu.field_section
+field_name: field_section
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '7009'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

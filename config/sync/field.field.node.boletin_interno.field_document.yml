@@ -1,0 +1,27 @@
+uuid: 9086bc09-179f-4f70-bc01-ee18ee4b0ec0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.boletin_interno
+  module:
+    - file
+id: node.boletin_interno.field_document
+field_name: field_document
+entity_type: node
+bundle: boletin_interno
+label: 'Documento Adjunto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf jpg'
+  max_filesize: ''
+  description_field: true
+field_type: file

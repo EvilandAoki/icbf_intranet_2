@@ -5,31 +5,7 @@ use Drupal\migrate\Plugin\MigrateSourceInterface;
 use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\field\Entity\FieldConfig;
-
-/**
- * Implements hook_migrate_source_row_alter().
- *
- * Permite modificar la fila de origen antes de construir el objeto Row.
- *
- * @param array &$row
- *   La fila de origen.
- * @param \Drupal\migrate\Plugin\MigrationInterface $migration
- *   La migración en proceso.
- */
-// function icbf_migrations_migrate_source_row_alter(array &$row, \Drupal\migrate\Plugin\MigrationInterface $migration) {
-//   if ($migration->id() === 'upgrade_d7_field_instance') {
-//     if (!isset($row['settings']) || !is_array($row['settings'])) {
-//       $row['settings'] = [];
-//     }
-//     if (!isset($row['settings']['handler_settings']) || !is_array($row['settings']['handler_settings'])) {
-//       $row['settings']['handler_settings'] = [];
-//     }
-//     if (!isset($row['settings']['handler_settings']['sort']) || !is_array($row['settings']['handler_settings']['sort'])) {
-//       $row['settings']['handler_settings']['sort'] = [];
-//       \Drupal::logger('mymodule')->notice('En source alter: normalizando handler_settings[sort] a un array vacío.');
-//     }
-//   }
-// }
+use Drupal\views\ViewExecutable;
 
 
 /**
@@ -196,30 +172,7 @@ function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $s
       $entity_type = $row->getSourceProperty('entity_type');
       $bundle = $row->getSourceProperty('bundle');
       $field_name = $row->getSourceProperty('field_name');
-
-
-      // if (!is_array($source) || empty($source) || $entity_type == 'bean') {
-      //   return FALSE;
-      // }
-
       $type = $row->getSourceProperty('type');
-      // if ($bundle == 'news' && $field_name == 'field_images') {
-      //   $instances = $row->getSourceProperty('instances');
-
-      //   foreach ($instances as $key => $instance) {
-      //     if (isset($instance['data'])) {
-      //       $data = unserialize($instance['data']);
-      //       if ($data['display']['default']['type'] == 'slick') {
-      //         $data['display']['default']['type'] == 'slick_image';
-      //         $data['display']['default']['module'] == 'slick';
-      //         $instance['data'] = serialize($data);
-      //         $instances[$key] = $instance;
-      //       }
-      //     }
-      //   }
-      //   $row->setSourceProperty('instances', $instances);
-      // }
-
       if ($type == 'text_long' || $type == 'text_with_summary') {
 
         $instances = $row->getSourceProperty('instances');
@@ -246,39 +199,6 @@ function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $s
           }
         }
       }
-      // elseif ($entity_type == 'bean') {}
-    //   if (!$row->hasSourceProperty('field_name')) {
-    //     $row->setSourceProperty('field_name', 'default_field');
-    //   }
-    // // Deserializar 'data' si está en formato serializado.
-    // $data = $row->getSourceProperty('data');
-    // if (is_string($data) && str_starts_with($data, 'a:')) {
-    //   $data = unserialize($data);
-    //   if ($data !== false) {
-    //     $row->setSourceProperty('data', $data);
-    //   }
-    // }
-
-    // // Deserializar 'field_definition["data"]'
-    // if ($row->hasSourceProperty('field_definition')) {
-    //   $field_definition = $row->getSourceProperty('field_definition');
-    //   if (isset($field_definition['data']) && is_string($field_definition['data']) && str_starts_with($field_definition['data'], 'a:')) {
-    //     $field_definition['data'] = unserialize($field_definition['data']);
-    //     $row->setSourceProperty('field_definition', $field_definition);
-    //   }
-    // }
-    //   if (!$row->hasSourceProperty('settings') || !is_array($row->getSourceProperty('settings'))) {
-    //     $row->setSourceProperty('settings', ['text_processing' => 0, 'user_register_form' => false]);
-    //   }
-    //   if (!$row->hasSourceProperty('formatter') || !is_array($row->getSourceProperty('formatter'))) {
-    //     $row->setSourceProperty('formatter', [
-    //       'label' => 'above',
-    //       'type' => 'text_default',
-    //       'settings' => ['field_formatter_class' => ''],
-    //       'module' => 'text',
-    //       'weight' => 11,
-    //     ]);
-    //   }
       break;
 
     case 'upgrade_d7_bean_block':
@@ -290,47 +210,101 @@ function icbf_migrations_migrate_prepare_row(Row $row, MigrateSourceInterface $s
 
       break;
     case 'd7_menu_links':
-      $uri = $row->getSourceProperty('link_uri');
-      if (is_string($uri) && str_starts_with($uri, 'entity:')) {
-        $parts = explode(':', $uri);
-        if (count($parts) === 3) {
-          [$prefix, $entity_type, $entity_id] = $parts;
-          $entity_storage = \Drupal::entityTypeManager()->getStorage($entity_type);
-          $entity = $entity_storage->load($entity_id);
-          if ($entity) {
-            $row->setSourceProperty('link_uri', "entity:$entity_type:$entity_id");
-          }
-          else {
-            \Drupal::logger('mi_modulo')->warning('Entidad no encontrada para URI: @uri', ['@uri' => $uri]);
-            $row->setSourceProperty('link_uri', NULL); // Eliminar el link roto
-          }
+      if ($source['plid'] == 1741 || $source['plid'] == 50) {
+        $row->setSourceProperty('plid', 0);
+      }
+
+      if ($row->hasSourceProperty('link_path')) {
+        $link_path = $row->getSourceProperty('link_path');
+
+        if (strpos($link_path, 'node/') === 0) {
+          $link_path = str_replace('node/', 'internal:/node/', $link_path);
         }
-        else {
-          \Drupal::logger('mi_modulo')->notice('Formato inesperado en link_uri: @uri', ['@uri' => $uri]);
-          $row->setSourceProperty('link_uri', NULL);
+        elseif (strpos($link_path, 'taxonomy/term/') === 0) {
+          $link_path = str_replace('taxonomy/term/', 'entity:taxonomy_term/', $link_path);
+        }
+        elseif (strpos($link_path, 'admin/') === 0) {
+          $link_path = str_replace('admin/', 'internal:/admin/', $link_path);
+        }
+        elseif (strpos($link_path, 'citaciones/') === 0) {
+          $link_path = str_replace('citaciones/', 'internal:/citaciones/', $link_path);
+        }
+
+        $row->setSourceProperty('link_path', $link_path);
+      }
+      elseif ($row->hasSourceProperty('parent_link_path')) {
+        $link_path = $row->getSourceProperty('parent_link_path');
+
+        if (strpos($link_path, 'admin/') === 0) {
+          $link_path = str_replace('admin/', 'internal:/admin/', $link_path);
+        }
+        $row->setSourceProperty('parent_link_path', $link_path);
+      }
+      break;
+    case 'search_api_server':
+      $plugin_id = $row->getSourceProperty('plugin_id') ?: 'search_api_db';
+      $row->setSourceProperty('plugin_id', $plugin_id);
+
+      $options = $row->getSourceProperty('options');
+      if (is_string($options)) {
+        $un = @unserialize($options);
+        $row->setSourceProperty('backend_config', is_array($un) ? $un : []);
+      }
+      elseif (is_array($options)) {
+        $row->setSourceProperty('backend_config', $options);
+      }
+      else {
+        $row->setSourceProperty('backend_config', []);
+      }
+      break;
+    case 'search_api_index':
+      foreach (['options', 'datasource_configuration', 'tracker_configuration'] as $prop) {
+        $value = $row->getSourceProperty($prop);
+        if (is_string($value)) {
+          $un = @unserialize($value);
+          $row->setSourceProperty($prop, is_array($un) ? $un : []);
+        }
+        elseif (!is_array($value)) {
+          $row->setSourceProperty($prop, []);
         }
       }
-  
-      // Validación para internal:*
-      elseif (is_string($uri) && str_starts_with($uri, 'internal:')) {
-        $internal_path = str_replace('internal:/', '', $uri);
-  
-        // Ignorar rutas admin/* o node/add/*
-        if (str_starts_with($internal_path, 'admin/') || str_starts_with($internal_path, 'node/add/')) {
-          \Drupal::logger('mi_modulo')->notice('Ruta ignorada en menú: @uri', ['@uri' => $uri]);
-          $row->setSourceProperty('link_uri', NULL);
-          return;
-        }
-  
-        // Validar existencia de terminos taxonomy/term/*
-        if (str_starts_with($internal_path, 'taxonomy/term/')) {
-          $tid = (int) str_replace('taxonomy/term/', '', $internal_path);
-          $exists = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($tid);
-          if (!$exists) {
-            \Drupal::logger('mi_modulo')->warning('Término no encontrado para URI: @uri', ['@uri' => $uri]);
-            $row->setSourceProperty('link_uri', NULL);
-          }
-        }
+      return TRUE;
+        break;
+    case 'upgrade_d7_views_migration':
+      $views_id = [
+        'usuarios',
+        'editorial_last_content',
+        'calendario_rendici_n',
+        'taxonomy_term',
+        'tranpsarencia_listado_temas',
+        'glosario_icbf',
+        'contexto_micrositios',
+        'ada_home_grid',
+        'micrositios_contextos',
+        'documentos_contratacion',
+        'ubicaciones_20',
+        'tracker',
+        'botones_home',
+        'ni_os_migrantes_venezolanos',
+        'me_conoces_ni_os_venezolanos',
+        'proveedores',
+        'media_browser_plus',
+        'media_default',
+        'informes_regionales_rendici_n_de_cuestas_',
+        'sitemap',
+        'notificaciones_pc_coactivos',
+        'admin_views_node',
+        'transparencia_home',
+        'actas_contentivas_',
+        'estudios_de_sector_v1',
+        // 'calendar',
+      ];
+      if (in_array($source['name'], $views_id)) {
+        // dump($source['name']);
+        // dump($source);
+      }
+      else {
+        return FALSE;
       }
       break;
   }
@@ -368,6 +342,105 @@ function icbf_migrations_views_migration_alter(array &$migration) {
         if (strpos($key, 'tid') !== FALSE) {
           unset($migration['process']['display:default']['filters'][$key]);
           \Drupal::logger('icbf_migrations')->notice('Filtro de taxonomía eliminado de la migración: ' . $key);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function icbf_migrations_form_layout_builder_update_block_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (strpos($form_id, 'layout_builder_') !== FALSE) {
+    if (isset($form['settings']['provider']['#type']) && $form['settings']['provider']['#value'] === 'views') {
+      $build_info = $form_state->getBuildInfo();
+
+      if (!empty($build_info['args'][0])) {
+        /** @var \Drupal\layout_builder\SectionComponent $component */
+        $section_storage = $build_info['args'][0];
+
+        $arguments = $form['settings']['views_label']['#description']->getArguments();
+        $url  = explode('/', $arguments[':url']);
+        $view_id = $url[5];
+        $display_id = $url[7];
+
+        foreach ($section_storage->getSections() as $section) {
+          foreach ($section->getComponents() as $component) {
+            $component_id = $component->getPluginId();
+            if ($component_id === "views_block:{$view_id}-{$display_id}") {
+              $form['settings']['override']['items_per_page']['#title'] = t('Contextual filters');
+              $form['settings']['override']['items_per_page']['#type'] = 'textfield';
+              // $default_value = $component ? $component->get('configuration')['contextual_filters'] ?? '' : '';
+              // $form['settings']['contextual_filters'] = [
+              //   '#type' => 'textfield',
+              //   '#title' => t('Contextual filters'),
+              //   '#default_value' => $default_value,
+              //   '#description' => t('Contextual filters to pass to the view.'),
+              // ];
+              // $form['settings']['component_id'] = [
+              //   '#type' => 'hidden',
+              //   '#value' => $component_id,
+              // ];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implementa hook_views_pre_view().
+ */
+function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  if (empty($args[0])) {
+    $args = [];
+    $view_id = $view->id();
+
+    $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+    if ($term instanceof \Drupal\taxonomy\Entity\Term ) {
+      $term_id = $term->id();
+      $layout_configs = \Drupal::database()->select('taxonomy_term__layout_builder__layout', 'tl')
+        ->fields('tl', ['layout_builder__layout_section'])
+        ->condition('entity_id', $term_id)
+        ->execute()->fetchAll();
+
+      if (empty($layout_configs)) {
+        $vocabulary = $term->bundle();
+        $items_per_page = $view->getItemsPerPage();
+        $config_display = \Drupal::database()->select('config', 'c')
+          ->fields('c', ['data'])
+          ->condition('name', "core.entity_view_display.taxonomy_term.{$vocabulary}.default")
+          ->execute()->fetchAll();
+
+        foreach ($config_display as $config_value) {
+          $layout_config = $config_value->data;
+          $layout_config = unserialize($layout_config);
+          if (isset($layout_config['third_party_settings']['layout_builder']['sections'])) {
+            $sections = $layout_config['third_party_settings']['layout_builder']['sections'];
+            foreach ($sections as $section) {
+              if (isset($section['components'])) {
+                foreach ($section['components'] as $component) {
+                  if ($component['configuration']['id'] == "views_block:{$view_id}-{$display_id}" && $component['configuration']['items_per_page'] == $items_per_page) {
+                    if (!empty($component['configuration']['items_per_page'])) {
+                      $filters = explode('/', $component['configuration']['items_per_page']);
+                      foreach ($filters as $filter_value) {
+                        if ($filter_value == '%tid') {
+                          $args[] = $term_id;
+                        }
+                        else {
+                          $args[] = $filter_value;
+                        }
+                      }
+                    }
+
+                    break;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

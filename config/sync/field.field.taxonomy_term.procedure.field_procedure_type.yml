@@ -1,0 +1,26 @@
+uuid: d6797234-52df-4fbc-becd-937dfb26c33e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_procedure_type
+    - taxonomy.vocabulary.procedure
+    - taxonomy.vocabulary.procedure_type
+id: taxonomy_term.procedure.field_procedure_type
+field_name: field_procedure_type
+entity_type: taxonomy_term
+bundle: procedure
+label: 'Tipo trámite'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      procedure_type: procedure_type
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: cb45e128-20b4-4d6d-84be-a7b06f1cb0cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_guaviare
+  module:
+    - user
+id: user_add_role_action.regional_guaviare
+label: 'Añade el rol Regional Guaviare al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_guaviare

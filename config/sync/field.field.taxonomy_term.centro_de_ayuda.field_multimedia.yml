@@ -1,0 +1,27 @@
+uuid: 4c0ece01-2e94-4ece-be3e-8158e1fc8afe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_multimedia
+    - taxonomy.vocabulary.centro_de_ayuda
+  module:
+    - file
+id: taxonomy_term.centro_de_ayuda.field_multimedia
+field_name: field_multimedia
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

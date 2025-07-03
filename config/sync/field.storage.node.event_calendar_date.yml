@@ -1,0 +1,24 @@
+uuid: 72ccbf4c-f632-406a-b365-25d8eb8d41db
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.event_calendar_date
+field_name: event_calendar_date
+entity_type: node
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

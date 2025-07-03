@@ -1,0 +1,23 @@
+uuid: 21b73b65-2fe3-4ff5-985b-d539e317bbeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_priority
+    - taxonomy.vocabulary.centro_de_ayuda
+id: taxonomy_term.centro_de_ayuda.field_priority
+field_name: field_priority
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,8 @@
+uuid: 864aaa9d-a00f-4ca0-a554-ae63c115cfb0
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_cifras_proteccion
+label: 'Cifras Proteccion comment'
+target_entity_type_id: node
+description: null

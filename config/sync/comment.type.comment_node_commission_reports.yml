@@ -1,0 +1,8 @@
+uuid: 6d62f1f0-d88e-444c-bbd5-22e0aa9e3a96
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_commission_reports
+label: 'Informes de Comisión comment'
+target_entity_type_id: node
+description: null

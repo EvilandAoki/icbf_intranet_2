@@ -1,0 +1,9 @@
+uuid: e55c3470-66f7-4f32-ab89-10d7e90bf7dc
+langcode: es
+status: true
+dependencies: {  }
+name: 'Departamentos y municipios'
+vid: departments_municipalities
+description: null
+weight: -4
+new_revision: false

@@ -1,0 +1,19 @@
+uuid: 4903d190-b107-4c8f-8a6a-935b9be07e9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.multimedia
+id: node.multimedia.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: multimedia
+label: 'Url relaciodada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

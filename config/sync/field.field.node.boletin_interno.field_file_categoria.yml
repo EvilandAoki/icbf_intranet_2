@@ -1,0 +1,30 @@
+uuid: 9e6c7650-f485-41b0-b3fb-6194eda592a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_categoria
+    - node.type.boletin_interno
+    - taxonomy.vocabulary.file_category
+id: node.boletin_interno.field_file_categoria
+field_name: field_file_categoria
+entity_type: node
+bundle: boletin_interno
+label: 'Categoría del archivo'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '7190'
+  -
+    tid: '7208'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      file_category: file_category
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 43292772-6eba-4cfc-9918-673397b04aa6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_magdalena
+  module:
+    - user
+id: user_add_role_action.regional_magdalena
+label: 'Añade el rol Regional Magdalena al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_magdalena

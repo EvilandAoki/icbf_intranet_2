@@ -1,0 +1,22 @@
+uuid: 08e52d96-b95d-40f8-a89c-5991735de079
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_documentos_juridica
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_documentos_juridica.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_documentos_juridica
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

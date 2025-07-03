@@ -1,0 +1,78 @@
+uuid: de657a97-b579-4f51-a34a-7e9ba4b5c5f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.feeds_item
+    - field.field.user.user.ldap_user_current_dn
+    - field.field.user.user.ldap_user_last_checked
+    - field.field.user.user.ldap_user_ldap_exclude
+    - field.field.user.user.ldap_user_prov_entries
+    - field.field.user.user.ldap_user_puid
+    - field.field.user.user.ldap_user_puid_property
+    - field.field.user.user.ldap_user_puid_sid
+    - field.field.user.user.og_user_node
+    - field.field.user.user.og_user_taxonomy_term
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - path
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  google_analytics:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    type: image_image
+    weight: 31
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  langcode: true
+  ldap_user_current_dn: true
+  ldap_user_last_checked: true
+  ldap_user_ldap_exclude: true
+  ldap_user_prov_entries: true
+  ldap_user_puid: true
+  ldap_user_puid_property: true
+  ldap_user_puid_sid: true
+  og_user_node: true
+  og_user_taxonomy_term: true

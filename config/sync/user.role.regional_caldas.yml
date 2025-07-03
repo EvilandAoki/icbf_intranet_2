@@ -1,0 +1,18 @@
+uuid: 3f6cf777-5206-4384-8d6f-01f94b611f31
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_caldas
+label: 'Regional Caldas'
+weight: 22
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

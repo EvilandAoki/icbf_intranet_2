@@ -1,0 +1,21 @@
+uuid: 8186dc64-7303-45f7-9045-7a843f8ba170
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: forums
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

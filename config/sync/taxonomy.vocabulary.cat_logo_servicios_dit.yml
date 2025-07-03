@@ -1,0 +1,9 @@
+uuid: 9b815cf1-5a92-4a00-8ec4-ffedfc6daa5f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Catálogo Servicios DIT'
+vid: cat_logo_servicios_dit
+description: 'Catálogo Servicios DIT'
+weight: 0
+new_revision: false

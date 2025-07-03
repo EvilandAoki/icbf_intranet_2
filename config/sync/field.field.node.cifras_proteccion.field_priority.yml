@@ -1,0 +1,23 @@
+uuid: 82a6adc0-857f-490d-acd3-4a1a693010b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.cifras_proteccion
+id: node.cifras_proteccion.field_priority
+field_name: field_priority
+entity_type: node
+bundle: cifras_proteccion
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 34
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,11 @@
+uuid: 8ba77b9c-1d11-4317-95b1-bf251db9e54d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.live_results_search
+label: live_results_search
+description: ''
+targetEntityType: node
+cache: true

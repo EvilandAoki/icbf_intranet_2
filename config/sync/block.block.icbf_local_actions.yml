@@ -1,0 +1,20 @@
+uuid: 8733d91d-b6ca-412d-a7df-9528869c0f5e
+langcode: es
+status: false
+dependencies:
+  theme:
+    - icbf
+_core:
+  default_config_hash: tNurnJSdEfA7DgYp_LUkSa7-qj7q1wEZJb2fuEMvHr8
+id: icbf_local_actions
+theme: icbf
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

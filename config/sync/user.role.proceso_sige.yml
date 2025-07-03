@@ -1,0 +1,31 @@
+uuid: ee67c5af-cb76-471c-bda6-df59b00f654f
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.clean
+    - filter.format.full_html
+    - node.type.document
+    - node.type.process_sige
+  module:
+    - filter
+    - node
+    - system
+id: proceso_sige
+label: 'Proceso SIGE'
+weight: 6
+is_admin: null
+permissions:
+  - 'create document content'
+  - 'create process_sige content'
+  - 'delete any process_sige content'
+  - 'delete own document content'
+  - 'delete own process_sige content'
+  - 'edit any document content'
+  - 'edit any process_sige content'
+  - 'edit own document content'
+  - 'edit own process_sige content'
+  - 'use text format clean'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

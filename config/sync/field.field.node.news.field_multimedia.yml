@@ -1,0 +1,27 @@
+uuid: 5b97b0ef-c3de-4d28-b273-3031fec4f70c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - node.type.news
+  module:
+    - file
+id: node.news.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: news
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'avi wav mp3 mp4 mpg mpeg'
+  max_filesize: 40mb
+  description_field: false
+field_type: file

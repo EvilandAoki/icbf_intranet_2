@@ -1,0 +1,21 @@
+uuid: 88489bb4-efe7-4cf1-ae4e-54dc24242707
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.tipos_de_ubicaci_n
+id: taxonomy_term.tipos_de_ubicaci_n.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: tipos_de_ubicaci_n
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

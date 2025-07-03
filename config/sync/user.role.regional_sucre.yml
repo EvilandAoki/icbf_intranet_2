@@ -1,0 +1,19 @@
+uuid: 79bc7a95-bb65-4054-ad98-8429973e472c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_sucre
+label: 'Regional Sucre'
+weight: 43
+is_admin: null
+permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'delete own minutes_regional_strategic_commu content'
+  - 'edit any minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

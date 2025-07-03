@@ -1,0 +1,14 @@
+uuid: 74a8e0e9-cd4c-4b7f-8fc7-3975685fccbd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_narino
+  module:
+    - user
+id: user_add_role_action.regional_narino
+label: 'Añade el rol Regional Nariño al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_narino

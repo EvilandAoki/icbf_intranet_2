@@ -1,0 +1,16 @@
+uuid: 1834a586-de37-41c3-9ed1-f875ad884948
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: 'Proceso SIGE'
+type: process_sige
+description: 'Procesos ICBF: Modelo de operación por procesos del SIGE'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

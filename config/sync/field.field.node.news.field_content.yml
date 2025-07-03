@@ -1,0 +1,22 @@
+uuid: 77d03a00-c31f-4462-94d6-1c2e8440870f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.news
+  module:
+    - text
+id: node.news.field_content
+field_name: field_content
+entity_type: node
+bundle: news
+label: Contenido
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

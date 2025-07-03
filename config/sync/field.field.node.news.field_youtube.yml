@@ -1,0 +1,21 @@
+uuid: 6d478054-fe8a-4589-8fa1-0efb9dcf2329
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube
+    - node.type.news
+  module:
+    - youtube
+id: node.news.field_youtube
+field_name: field_youtube
+entity_type: node
+bundle: news
+label: Youtube
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

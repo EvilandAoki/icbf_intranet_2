@@ -1,0 +1,14 @@
+uuid: 5dd68328-a6b4-48d7-ae62-a1a6e0c01abf
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.dit
+  module:
+    - user
+id: user_add_role_action.dit
+label: 'Añade el rol DIT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dit

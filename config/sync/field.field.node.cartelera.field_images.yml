@@ -1,0 +1,41 @@
+uuid: b23b52b9-8944-479b-bbdf-8b29f1afdd7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images
+    - node.type.cartelera
+  module:
+    - image
+id: node.cartelera.field_images
+field_name: field_images
+entity_type: node
+bundle: cartelera
+label: 'Imagen(es) complementarias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    fid: null
+  caption_field: false
+  caption_field_required: false
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+field_type: image

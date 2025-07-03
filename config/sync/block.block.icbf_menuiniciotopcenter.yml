@@ -1,0 +1,25 @@
+uuid: c6c05b92-76cc-4d9b-a290-c07d06e56335
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1dc48dca-0377-4404-8443-3a01a0368619'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_menuiniciotopcenter
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:1dc48dca-0377-4404-8443-3a01a0368619'
+settings:
+  id: 'block_content:1dc48dca-0377-4404-8443-3a01a0368619'
+  label: 'Menu Inicio Top - center'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,190 @@
+uuid: 4a0932b7-2f77-4f1f-a36e-be4106779588
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pieza_sgsi.field_date
+    - field.field.node.pieza_sgsi.field_file_categoria
+    - field.field.node.pieza_sgsi.field_link_url
+    - field.field.node.pieza_sgsi.field_list_image
+    - field.field.node.pieza_sgsi.field_priority
+    - field.field.node.pieza_sgsi.field_section
+    - field.field.node.pieza_sgsi.layout_builder__layout
+    - node.type.pieza_sgsi
+  module:
+    - bootstrap_layouts
+    - datetime
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              clearfix: clearfix
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                clearfix: clearfix
+              add_region_classes: 1
+              attributes: ''
+        components:
+          013b809e-c00d-4ee4-8078-8e7fc3c07c7d:
+            uuid: 013b809e-c00d-4ee4-8078-8e7fc3c07c7d
+            region: main
+            configuration:
+              id: 'field_block:node:pieza_sgsi:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2bd5dc91-5ef6-43b4-ae6b-14c2b4d218ba:
+            uuid: 2bd5dc91-5ef6-43b4-ae6b-14c2b4d218ba
+            region: content
+            configuration:
+              id: 'field_block:node:pieza_sgsi:field_list_image'
+              label: 'Imagen Listado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  field_formatter_class:
+                    class: img-noticia-eje
+            weight: 0
+            additional: {  }
+          64d8e426-2b45-4791-a0dc-4860df92c806:
+            uuid: 64d8e426-2b45-4791-a0dc-4860df92c806
+            region: content
+            configuration:
+              id: 'field_block:node:pieza_sgsi:field_priority'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          54b36015-5786-436b-a0c6-53614392eb68:
+            uuid: 54b36015-5786-436b-a0c6-53614392eb68
+            region: content
+            configuration:
+              id: 'extra_field_block:node:pieza_sgsi:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.pieza_sgsi.default
+targetEntityType: node
+bundle: pieza_sgsi
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_link_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_list_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_priority:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

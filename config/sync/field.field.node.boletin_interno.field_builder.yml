@@ -1,0 +1,22 @@
+uuid: acb627a5-d319-413f-b95b-1ce96d2b71be
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_builder
+    - node.type.boletin_interno
+  module:
+    - text
+id: node.boletin_interno.field_builder
+field_name: field_builder
+entity_type: node
+bundle: boletin_interno
+label: Builder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

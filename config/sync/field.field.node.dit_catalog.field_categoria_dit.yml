@@ -1,0 +1,26 @@
+uuid: 9f7c488b-e7a7-48c0-8fd3-fc9925b031d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_dit
+    - node.type.dit_catalog
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+id: node.dit_catalog.field_categoria_dit
+field_name: field_categoria_dit
+entity_type: node
+bundle: dit_catalog
+label: 'Categoria DIT'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      cat_logo_servicios_dit: cat_logo_servicios_dit
+    sort:
+      field: _none
+field_type: entity_reference

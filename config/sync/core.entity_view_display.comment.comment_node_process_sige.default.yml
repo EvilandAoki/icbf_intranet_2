@@ -1,0 +1,29 @@
+uuid: 6a897bcf-bbe6-44f3-b716-ab06d7ee6224
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_process_sige
+    - field.field.comment.comment_node_process_sige.comment_body
+  module:
+    - text
+id: comment.comment_node_process_sige.default
+targetEntityType: comment
+bundle: comment_node_process_sige
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

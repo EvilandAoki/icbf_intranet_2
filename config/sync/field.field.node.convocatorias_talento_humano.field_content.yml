@@ -1,0 +1,22 @@
+uuid: 75d8581d-4feb-49c2-9d09-d3407aa5d287
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.convocatorias_talento_humano
+  module:
+    - text
+id: node.convocatorias_talento_humano.field_content
+field_name: field_content
+entity_type: node
+bundle: convocatorias_talento_humano
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

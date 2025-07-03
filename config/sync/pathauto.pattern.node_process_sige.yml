@@ -1,0 +1,21 @@
+uuid: e4e6a74a-7073-4143-b1a5-a70581642f66
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_process_sige
+label: 'Contenido - Proceso SIGE'
+type: 'canonical_entities:node'
+pattern: '[node:field-section:parents:join-path]/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      process_sige: process_sige
+selection_logic: and
+weight: 0
+relationships: {  }

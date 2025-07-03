@@ -1,0 +1,22 @@
+uuid: 06ad465b-32bf-4b14-a04d-7a5331e2b4e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_constructor_glazedb
+    - node.type.articulo_de_seccion
+  module:
+    - text
+id: node.articulo_de_seccion.field_constructor_glazedb
+field_name: field_constructor_glazedb
+entity_type: node
+bundle: articulo_de_seccion
+label: Constructor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,159 @@
+uuid: 1bef891e-bbee-45e1-9299-00b3412269f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cargos_persona_.field_allowed_roles
+    - field.field.taxonomy_term.cargos_persona_.field_allowed_users
+    - field.field.taxonomy_term.cargos_persona_.layout_builder__layout
+    - taxonomy.vocabulary.cargos_persona_
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          6b70f051-91fc-4a2d-810d-972584f06a18:
+            uuid: 6b70f051-91fc-4a2d-810d-972584f06a18
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:cargos_persona_:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: generic-title
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          94dc62c4-6f88-4b01-9aff-1366172d0298:
+            uuid: 94dc62c4-6f88-4b01-9aff-1366172d0298
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cargos_persona_:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b08e55e1-cbc2-44d1-a2f6-51ef107097a1:
+            uuid: b08e55e1-cbc2-44d1-a2f6-51ef107097a1
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cargos_persona_:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8b5674c7-685a-4045-9326-aed2c75d9d1f:
+            uuid: 8b5674c7-685a-4045-9326-aed2c75d9d1f
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:cargos_persona_:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          cdb0b73f-23e3-4da4-80bb-395353c09a36:
+            uuid: cdb0b73f-23e3-4da4-80bb-395353c09a36
+            region: content
+            configuration:
+              id: 'extra_field_block:taxonomy_term:cargos_persona_:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.cargos_persona_.default
+targetEntityType: taxonomy_term
+bundle: cargos_persona_
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

@@ -1,0 +1,52 @@
+uuid: 37169a9d-3e11-4301-b5e5-e4b3285bc3ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: rendici_n_de_cuentas_sapi_
+name: 'Rendición de cuentas (SAPI)'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles: {  }
+  fields:
+    field_date:
+      type: date
+    'field_document:file':
+      type: integer
+      entity_type: file
+    field_location:
+      type: integer
+      entity_type: taxonomy_term
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    search_api_language:
+      type: string
+    title:
+      type: text
+  'additional fields':
+    'field_document:file': 'field_document:file'
+server: local_solr

@@ -1,0 +1,17 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      dist/css/main.css: {}
+      dist/assets/icons/et-line/css/et-line-font.css: {}
+      dist/assets/icons/Stroke/css/pe-icon-7-stroke.css: {}
+      dist/assets/owlcarousel/css/owl.carousel.min.css: {}
+      dist/assets/owlcarousel/css/owl.theme.default.min.css: {}
+  js:
+    dist/assets/owlcarousel/js/owl.carousel.min.js: {}
+    js/script.js: {}
+    bootstrap/javascripts/bootstrap/carousel.js: {}
+  dependencies:
+    - bootstrap5/bootstrap
+    - core/jquery
+      

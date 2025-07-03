@@ -1,0 +1,46 @@
+uuid: 45957a76-ca22-43bd-9fb3-86d4dc6b65b4
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.live_results_search
+    - field.field.node.multimedia.field_content
+    - field.field.node.multimedia.field_date
+    - field.field.node.multimedia.field_file_categoria
+    - field.field.node.multimedia.field_images
+    - field.field.node.multimedia.field_link_url
+    - field.field.node.multimedia.field_list_image
+    - field.field.node.multimedia.field_location
+    - field.field.node.multimedia.field_multimedia
+    - field.field.node.multimedia.field_priority
+    - field.field.node.multimedia.field_resume
+    - field.field.node.multimedia.field_section
+    - field.field.node.multimedia.field_video_file
+    - node.type.multimedia
+  module:
+    - user
+id: node.multimedia.live_results_search
+targetEntityType: node
+bundle: multimedia
+mode: live_results_search
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_date: true
+  field_file_categoria: true
+  field_images: true
+  field_link_url: true
+  field_list_image: true
+  field_location: true
+  field_multimedia: true
+  field_priority: true
+  field_resume: true
+  field_section: true
+  field_video_file: true
+  langcode: true
+  search_api_excerpt: true

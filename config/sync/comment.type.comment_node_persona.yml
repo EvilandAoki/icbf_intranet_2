@@ -1,0 +1,8 @@
+uuid: 3b6d5e85-c156-4cfb-b20f-4bcb93c20219
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_persona
+label: 'Persona comment'
+target_entity_type_id: node
+description: null

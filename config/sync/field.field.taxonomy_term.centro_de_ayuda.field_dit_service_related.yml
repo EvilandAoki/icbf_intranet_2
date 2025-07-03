@@ -1,0 +1,19 @@
+uuid: e4f9fdf1-9725-4892-ac3c-e07ecb71c019
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_dit_service_related
+    - taxonomy.vocabulary.centro_de_ayuda
+id: taxonomy_term.centro_de_ayuda.field_dit_service_related
+field_name: field_dit_service_related
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Servicio DIT relacionado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

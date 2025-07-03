@@ -1,0 +1,283 @@
+uuid: c85af6ad-abbf-4c57-a645-9d19bb0d3ffb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.eventos_galeria.field_date
+    - field.field.node.eventos_galeria.field_description_gallery
+    - field.field.node.eventos_galeria.field_event_type
+    - field.field.node.eventos_galeria.field_image_gallery_cover
+    - field.field.node.eventos_galeria.field_image_gallery_list
+    - field.field.node.eventos_galeria.field_location
+    - field.field.node.eventos_galeria.layout_builder__layout
+    - node.type.eventos_galeria
+  module:
+    - bootstrap_layouts
+    - datetime
+    - image
+    - image_field_caption
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          be9d52dc-87be-46ef-8c46-54dabc91d443:
+            uuid: be9d52dc-87be-46ef-8c46-54dabc91d443
+            region: main
+            configuration:
+              id: 'field_block:node:eventos_galeria:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: class|custom-date-text
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          f641b511-e103-4b0d-a232-fb42b2899f04:
+            uuid: f641b511-e103-4b0d-a232-fb42b2899f04
+            region: main
+            configuration:
+              id: 'field_block:node:eventos_galeria:field_date'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: olivero_medium
+                third_party_settings:
+                  field_formatter_class:
+                    class: custom-date-text
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_2col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            left:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            right:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+        components:
+          744f801e-1c69-40b2-9ce4-2727ac430bd1:
+            uuid: 744f801e-1c69-40b2-9ce4-2727ac430bd1
+            region: left
+            configuration:
+              id: 'field_block:node:eventos_galeria:field_image_gallery_cover'
+              label: 'Imagen Portada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: colorbox
+                label: hidden
+                settings:
+                  colorbox_image_style: ''
+                  colorbox_gallery: post
+                  colorbox_gallery_custom: ''
+                  colorbox_caption: auto
+                  colorbox_caption_custom: ''
+                  colorbox_node_style: ''
+                  colorbox_node_style_first: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          8e58be01-3b26-4874-b3dd-a92abb284eca:
+            uuid: 8e58be01-3b26-4874-b3dd-a92abb284eca
+            region: right
+            configuration:
+              id: 'field_block:node:eventos_galeria:field_image_gallery_list'
+              label: 'Imágenes secundarias'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: colorbox
+                label: hidden
+                settings:
+                  colorbox_image_style: ''
+                  colorbox_gallery: post
+                  colorbox_gallery_custom: ''
+                  colorbox_caption: auto
+                  colorbox_caption_custom: ''
+                  colorbox_node_style: ''
+                  colorbox_node_style_first: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+          698cd24c-024a-4048-a051-6f3f9a09fc0f:
+            uuid: 698cd24c-024a-4048-a051-6f3f9a09fc0f
+            region: right
+            configuration:
+              id: 'field_block:node:eventos_galeria:field_description_gallery'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4120f06e-2402-4249-84c1-c54d680a2f61:
+            uuid: 4120f06e-2402-4249-84c1-c54d680a2f61
+            region: right
+            configuration:
+              id: 'extra_field_block:node:eventos_galeria:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.eventos_galeria.default
+targetEntityType: node
+bundle: eventos_galeria
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_description_gallery:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_gallery_cover:
+    type: image_caption
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_gallery_list:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

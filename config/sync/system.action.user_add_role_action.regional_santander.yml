@@ -1,0 +1,14 @@
+uuid: 2e5f1edc-7be5-4337-91cc-926514de5c1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_santander
+  module:
+    - user
+id: user_add_role_action.regional_santander
+label: 'Añade el rol Regional Santander al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_santander

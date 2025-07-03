@@ -1,0 +1,50 @@
+uuid: b07c0e4c-9091-4729-90e9-b8c4a3ef579d
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: curriculum_vitae
+name: 'Hojas de vida API'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles: {  }
+  fields:
+    'body:value':
+      type: text
+    created:
+      type: date
+    'field_document:file':
+      type: integer
+      entity_type: file
+    'field_document:file:name':
+      type: text
+    'field_document:file:url':
+      type: text
+    search_api_language:
+      type: string
+    title:
+      type: text
+server: local_solr

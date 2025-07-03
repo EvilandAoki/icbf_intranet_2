@@ -1,0 +1,22 @@
+uuid: e4304876-b05d-41f9-ab85-53728354605a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_content
+    - taxonomy.vocabulary.dependencies
+  module:
+    - text
+id: taxonomy_term.dependencies.field_content
+field_name: field_content
+entity_type: taxonomy_term
+bundle: dependencies
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

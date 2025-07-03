@@ -1,0 +1,22 @@
+uuid: 8c009998-4865-4c2a-871c-5fd90eceb05a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icbf
+_core:
+  default_config_hash: gJ_fEe-AFT-q5U59HD5kPXwau8zXL8k8Tu_fTuCofys
+id: icbf_breadcrumbs
+theme: icbf
+region: help
+weight: -18
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Usted está en:'
+  label_display: visible
+  provider: system
+visibility: {  }

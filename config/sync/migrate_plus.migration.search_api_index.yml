@@ -1,0 +1,35 @@
+uuid: 98e19914-db47-43eb-b2d7-4ac0fb02963b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8JAySmNPWijApCjj7RaJ4gd70fvUMgawq6DS4hPzHd8
+id: search_api_index
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: custom_migrations
+label: 'Migración Search API Indexes D7'
+source:
+  plugin: d7_search_api_index
+  key: migrate
+process:
+  id: machine_name
+  name: name
+  description: description
+  server: server
+  datasource: item_type
+  options: options
+  datasource_configuration: datasource_configuration
+  tracker_configuration: tracker_configuration
+  enabled: enabled
+  read_only: read_only
+  status: status
+  module: module
+destination:
+  plugin: 'entity:search_api_index'
+migration_dependencies:
+  required:
+    - upgrade_d7_search_api_server
+  optional: {  }

@@ -1,0 +1,8 @@
+uuid: b402c87d-c0c6-4781-b833-b52ed3ff1122
+langcode: es
+status: true
+dependencies: {  }
+id: t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
+label: 'http://default'
+context:
+  language: es

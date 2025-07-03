@@ -1,0 +1,27 @@
+uuid: cc1a115b-3af6-4cfc-b30a-334eb5d1d7b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_documents
+    - node.type.articulo_de_seccion
+  module:
+    - file
+id: node.articulo_de_seccion.field_post_documents
+field_name: field_post_documents
+entity_type: node
+bundle: articulo_de_seccion
+label: 'Documentos de Post'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf doc xls xlsx xlsm xlsmx docx ppt pptx pps ppsx png jpg jpeg tiff tif gif zip rar msg xps mp3 mp4 wmv mpeg pptm'
+  max_filesize: ''
+  description_field: true
+field_type: file

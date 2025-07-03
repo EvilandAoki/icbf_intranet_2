@@ -1,0 +1,52 @@
+// Default
+@use 'abstracts/variables';
+@use 'abstracts/base';
+@use 'abstracts/fonts';
+@use 'abstracts/general';
+
+
+@use 'layout/header/header-bottom';
+@use 'layout/header/header-top';
+@use 'layout/footer/footer';
+@use 'layout/header/mega-menu';
+
+@use 'layout/navigation/pagination';
+@use 'layout/navigation/accesibility';
+
+@use 'components/notice';
+@use 'components/regional-acts';
+@use 'components/institutional-stationery';
+@use 'components/syndicate-publications';
+@use 'components/persons';
+@use 'components/document-internal';
+@use 'components/general-elements';
+@use 'components/default-documents';
+@use 'components/taxonomias/general-taxonomias';
+
+@use 'components/elements/breadcrumb';
+@use 'components/elements/custom-table';
+@use 'components/elements/page-general';
+@use 'components/elements/internal-page';
+@use 'components/elements/internal-news';
+@use 'components/elements/table-filter';
+@use 'components/elements/multitable-filter';
+@use 'components/elements/table-general';
+@use 'components/elements/table-links';
+@use 'components/elements/list-video';
+@use 'components/elements/webform';
+
+@use 'components/taxonomias/taxonomia';
+@use 'components/taxonomias/area';
+@use 'components/taxonomias/list-news';
+@use 'components/taxonomias/box-news';
+@use 'components/taxonomias/list-cards';
+@use 'components/taxonomias/catalogo';
+@use 'components/taxonomias/tecnologica';
+@use 'components/taxonomias/calidad';
+
+@use 'pages/home/slideNews';
+@use 'pages/home/slidePrincipal';
+@use 'pages/home/slideGH';
+@use 'pages/home/slideEnlaces';
+@use 'pages/home/circulars';
+@use 'pages/home/others';

@@ -1,0 +1,22 @@
+uuid: 2f58aa48-b796-4e2e-aace-e8d407c0e777
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_pg_objective
+    - taxonomy.vocabulary.sige_process_type
+  module:
+    - text
+id: taxonomy_term.sige_process_type.field_pg_objective
+field_name: field_pg_objective
+entity_type: taxonomy_term
+bundle: sige_process_type
+label: Objetivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

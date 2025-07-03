@@ -1,0 +1,22 @@
+uuid: 2619792d-d7ce-41a5-b4ad-6d7923589bf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_header_area
+    - taxonomy.vocabulary.sige_process_type
+  module:
+    - text
+id: taxonomy_term.sige_process_type.field_header_area
+field_name: field_header_area
+entity_type: taxonomy_term
+bundle: sige_process_type
+label: Encabezado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,14 @@
+uuid: 787848bb-13c6-40ff-9aec-573ca0f728fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.catalogo_dit
+  module:
+    - user
+id: user_remove_role_action.catalogo_dit
+label: 'Elimina el rol Catálogo DIT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: catalogo_dit

@@ -1,0 +1,24 @@
+uuid: 400e17dc-a787-4569-bebb-51d17a751f42
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mdp_full_popup
+    - field.field.node.cb_drag_drop_page.field_glazed_content_design
+    - node.type.cb_drag_drop_page
+  module:
+    - user
+id: node.cb_drag_drop_page.mdp_full_popup
+targetEntityType: node
+bundle: cb_drag_drop_page
+mode: mdp_full_popup
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_glazed_content_design: true
+  langcode: true
+  search_api_excerpt: true

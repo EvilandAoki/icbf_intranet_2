@@ -1,0 +1,14 @@
+uuid: 3799dc63-e0a3-4178-abec-192328a0012f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_san_andres
+  module:
+    - user
+id: user_remove_role_action.regional_san_andres
+label: 'Elimina el rol Regional San Andres al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_san_andres

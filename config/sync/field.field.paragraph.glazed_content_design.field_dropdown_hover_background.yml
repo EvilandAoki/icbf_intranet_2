@@ -1,0 +1,19 @@
+uuid: 1a4dc51e-ddea-4c9d-adfa-2838648ee144
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dropdown_hover_background
+    - paragraphs.paragraphs_type.glazed_content_design
+id: paragraph.glazed_content_design.field_dropdown_hover_background
+field_name: field_dropdown_hover_background
+entity_type: paragraph
+bundle: glazed_content_design
+label: 'Dropdown Hover Background'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: bbd04155-d3c3-426a-9881-c9be03b6e4e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace_smo
+    - node.type.contacto_nacional
+id: node.contacto_nacional.field_enlace_smo
+field_name: field_enlace_smo
+entity_type: node
+bundle: contacto_nacional
+label: 'Enlace Subdirección de Mejoramiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

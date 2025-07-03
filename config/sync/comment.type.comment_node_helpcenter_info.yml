@@ -1,0 +1,8 @@
+uuid: 7f0ca76a-07e3-4775-8946-a9be052381fd
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_helpcenter_info
+label: 'Centro de Ayuda comment'
+target_entity_type_id: node
+description: null

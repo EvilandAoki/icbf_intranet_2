@@ -1,0 +1,49 @@
+uuid: 1373c127-708f-4daf-b210-cea186fe6d4b
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_36875
+title: 'Pregunta de la Semana 1'
+description: null
+categories: {  }
+elements: |-
+  _con_qu_frecuencia_consulta_el_bolet_n_vive_icbf_:
+    '#type': radios
+    '#options':
+      1: Diariamente
+      2: Semanalmente
+      3: 'No lo consulto'
+    '#title': '¿Con qué frecuencia consulta el Boletín Vive ICBF?'
+  _qu_opini_n_tiene_sobre_el_bolet_n_vive_icbf_:
+    '#type': textfield
+    '#title': '¿Qué opinión tiene sobre el Boletín Vive ICBF?'
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: "<p>Gracias por tus respuestas.</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

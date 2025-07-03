@@ -1,0 +1,27 @@
+uuid: 3be3c67f-2ee1-4e74-896a-0f695ba7bd22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_process_resolution
+    - node.type.process_sige
+  module:
+    - file
+id: node.process_sige.field_process_resolution
+field_name: field_process_resolution
+entity_type: node
+bundle: process_sige
+label: Resoluciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf doc xls xlsx docx ppt pptx xlm'
+  max_filesize: ''
+  description_field: false
+field_type: file

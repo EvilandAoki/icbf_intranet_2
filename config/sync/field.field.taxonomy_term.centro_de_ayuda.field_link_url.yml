@@ -1,0 +1,19 @@
+uuid: ca4fbb8e-597d-4d7f-8d3f-868afb75ebe2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link_url
+    - taxonomy.vocabulary.centro_de_ayuda
+id: taxonomy_term.centro_de_ayuda.field_link_url
+field_name: field_link_url
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Url relaciodada'
+description: 'aplicativo de referencia'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

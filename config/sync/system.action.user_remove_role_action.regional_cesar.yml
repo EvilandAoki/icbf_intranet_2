@@ -1,0 +1,14 @@
+uuid: 087816a1-75a7-4782-805e-6afaf72607ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_cesar
+  module:
+    - user
+id: user_remove_role_action.regional_cesar
+label: 'Elimina el rol Regional Cesar al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_cesar

@@ -1,0 +1,21 @@
+uuid: 87c6ff6e-d652-4cb7-9247-516e12a0aea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_users
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.field_allowed_users
+field_name: field_allowed_users
+entity_type: taxonomy_term
+bundle: tags
+label: 'Allowed users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

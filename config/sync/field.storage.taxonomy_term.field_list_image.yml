@@ -1,0 +1,30 @@
+uuid: 91b5631d-154d-4a98-a34b-a28909e1b5f6
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+    - image
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_list_image
+field_name: field_list_image
+entity_type: taxonomy_term
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+  default_image:
+    uuid: ''
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

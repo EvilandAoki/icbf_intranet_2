@@ -1,0 +1,14 @@
+uuid: cdd2c298-9099-4350-b780-86139c69662e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_risaralda
+  module:
+    - user
+id: user_remove_role_action.regional_risaralda
+label: 'Elimina el rol Regional Risaralda al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_risaralda

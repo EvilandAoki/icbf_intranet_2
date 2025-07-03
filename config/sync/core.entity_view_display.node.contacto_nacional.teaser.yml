@@ -1,0 +1,52 @@
+uuid: 0559d90e-84b6-4af4-b827-45f3dd813938
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contacto_nacional.body
+    - field.field.node.contacto_nacional.field_coordinador_planeacion
+    - field.field.node.contacto_nacional.field_enlace_seys
+    - field.field.node.contacto_nacional.field_enlace_smo
+    - field.field.node.contacto_nacional.field_enlace_sp
+    - field.field.node.contacto_nacional.field_file_categoria
+    - field.field.node.contacto_nacional.field_file_priority
+    - field.field.node.contacto_nacional.field_imagen_region
+    - field.field.node.contacto_nacional.field_referent_calidad_regional
+    - field.field.node.contacto_nacional.field_regional
+    - field.field.node.contacto_nacional.layout_builder__layout
+    - node.type.contacto_nacional
+  module:
+    - text
+    - user
+id: node.contacto_nacional.teaser
+targetEntityType: node
+bundle: contacto_nacional
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_coordinador_planeacion: true
+  field_enlace_seys: true
+  field_enlace_smo: true
+  field_enlace_sp: true
+  field_file_categoria: true
+  field_file_priority: true
+  field_imagen_region: true
+  field_referent_calidad_regional: true
+  field_regional: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

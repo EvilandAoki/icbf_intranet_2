@@ -1,0 +1,8 @@
+uuid: 4bedaa18-bae1-4095-99f6-ebdd54156739
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_encuesta_interna
+label: 'Encuesta Interna comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,19 @@
+@use "../../abstracts/variables" as var;
+
+#block-icbf-breadcrumbs{
+     h2 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: 'Asap-Regular';
+    }
+    
+    .breadcrumb-item {
+        font-family: 'Asap-Regular';
+        color: #125e81;
+        margin-left: 1rem;
+    }
+    .breadcrumb-item + .breadcrumb-item {
+        padding-left: 0px !important;
+    }
+}

@@ -1,0 +1,26 @@
+uuid: cbb89e02-a54e-45f0-bf88-8ea6f4ef21a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.document
+    - taxonomy.vocabulary.secctions
+id: node.document.field_section
+field_name: field_section
+entity_type: node
+bundle: document
+label: Sección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: ff65fe09-75d9-41a7-8a5e-57771ee7e622
+langcode: es
+status: true
+dependencies: {  }
+name: 1129_x_367_-_slider_header_micrositios
+label: '1129 x 367 - Slider Header Micrositios'
+effects:
+  7a14274e-df71-48e8-9e57-dd25b86d9fde:
+    uuid: 7a14274e-df71-48e8-9e57-dd25b86d9fde
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1129
+      height: 367
+      anchor: center-center

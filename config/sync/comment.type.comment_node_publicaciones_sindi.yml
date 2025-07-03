@@ -1,0 +1,8 @@
+uuid: a6a19b21-993e-480b-97a5-0ebea4a5c360
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_publicaciones_sindi
+label: 'Publicaciones Sindicato comment'
+target_entity_type_id: node
+description: null

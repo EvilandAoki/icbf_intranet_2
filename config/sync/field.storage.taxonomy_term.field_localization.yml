@@ -1,0 +1,24 @@
+uuid: e56afa46-7fe1-45b5-b323-378c2f17f4e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - geofield
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_localization
+field_name: field_localization
+entity_type: taxonomy_term
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

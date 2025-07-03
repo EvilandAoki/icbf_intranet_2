@@ -1,0 +1,27 @@
+uuid: c145f8ef-2cce-4e62-80ce-ca61b2e525b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documento
+    - node.type.publicaciones_sindicato
+  module:
+    - file
+id: node.publicaciones_sindicato.field_documento
+field_name: field_documento
+entity_type: node
+bundle: publicaciones_sindicato
+label: Documento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf doc docx'
+  max_filesize: ''
+  description_field: true
+field_type: file

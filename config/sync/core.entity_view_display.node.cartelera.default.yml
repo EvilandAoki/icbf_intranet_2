@@ -1,0 +1,108 @@
+uuid: 81ac7a27-c672-4082-939b-7adc393607dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.cartelera.field_date
+    - field.field.node.cartelera.field_document
+    - field.field.node.cartelera.field_file_categoria
+    - field.field.node.cartelera.field_images
+    - field.field.node.cartelera.field_list_image
+    - field.field.node.cartelera.field_lugar
+    - field.field.node.cartelera.field_multimedia
+    - field.field.node.cartelera.field_section
+    - node.type.cartelera
+  module:
+    - datetime
+    - field_formatter_class
+    - file
+    - image
+    - user
+id: node.cartelera.default
+targetEntityType: node
+bundle: cartelera
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+  field_document:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 3
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_list_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lugar:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_multimedia:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

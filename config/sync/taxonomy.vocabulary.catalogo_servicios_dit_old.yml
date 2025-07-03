@@ -1,0 +1,9 @@
+uuid: 356efb79-9ef0-4a10-82dd-dcf9095de73b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Catalogo servicios DIT old'
+vid: catalogo_servicios_dit_old
+description: null
+weight: 0
+new_revision: false

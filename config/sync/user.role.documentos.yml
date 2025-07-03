@@ -1,0 +1,26 @@
+uuid: 11c163a6-efc5-4c5c-800a-924de893f492
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.clean
+    - filter.format.full_html
+    - node.type.document
+  module:
+    - filter
+    - node
+    - system
+id: documentos
+label: Documentos
+weight: 13
+is_admin: null
+permissions:
+  - 'create document content'
+  - 'delete any document content'
+  - 'delete own document content'
+  - 'edit any document content'
+  - 'edit own document content'
+  - 'use text format clean'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

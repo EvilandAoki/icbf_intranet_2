@@ -1,0 +1,14 @@
+uuid: 32cb68ab-01ba-4c7b-ac34-e3fba169ff83
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.centro_de_ayuda
+  module:
+    - user
+id: user_remove_role_action.centro_de_ayuda
+label: 'Elimina el rol Centro de Ayuda al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: centro_de_ayuda

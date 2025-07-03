@@ -1,0 +1,29 @@
+uuid: 73b47eb5-5099-4715-90a4-e22ca8ce4b45
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_boletin_interno
+    - field.field.comment.comment_node_boletin_interno.comment_body
+  module:
+    - text
+id: comment.comment_node_boletin_interno.default
+targetEntityType: comment
+bundle: comment_node_boletin_interno
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

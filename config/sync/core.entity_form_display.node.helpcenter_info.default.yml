@@ -1,0 +1,174 @@
+uuid: 3b78250f-ae53-4389-91d4-222a555b7d91
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.helpcenter_info.field_file_categoria
+    - field.field.node.helpcenter_info.field_file_priority
+    - field.field.node.helpcenter_info.field_header_area
+    - field.field.node.helpcenter_info.field_helpcenter_category
+    - field.field.node.helpcenter_info.field_helpcenter_content_body
+    - field.field.node.helpcenter_info.field_helpcenter_document
+    - field.field.node.helpcenter_info.field_helpcenter_tooltip
+    - field.field.node.helpcenter_info.field_list_image
+    - field.field.node.helpcenter_info.field_multimedia
+    - field.field.node.helpcenter_info.layout_builder__layout
+    - image.style.thumbnail
+    - node.type.helpcenter_info
+  module:
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - path
+    - text
+    - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.helpcenter_info.default
+targetEntityType: node
+bundle: helpcenter_info
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_categoria:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_file_priority:
+    type: options_select
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_header_area:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_helpcenter_category:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_helpcenter_content_body:
+    type: text_textarea
+    weight: 125
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_helpcenter_document:
+    type: file_generic
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_helpcenter_tooltip:
+    type: text_textarea
+    weight: 127
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_list_image:
+    type: image_image
+    weight: 128
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_multimedia:
+    type: file_generic
+    weight: 129
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true
+  publish_on: true
+  unpublish_on: true

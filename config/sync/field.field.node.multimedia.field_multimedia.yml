@@ -1,0 +1,27 @@
+uuid: f2d860e3-a8f8-47d6-9082-085b58986802
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - node.type.multimedia
+  module:
+    - file
+id: node.multimedia.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: multimedia
+label: 'Audio y/o Vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'mp3 mp4 mpeg wav avi mov zip rar'
+  max_filesize: 45mb
+  description_field: true
+field_type: file

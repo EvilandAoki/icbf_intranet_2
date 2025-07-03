@@ -1,0 +1,15 @@
+uuid: 2c238936-b45b-450a-9283-2e2b04aa2091
+langcode: es
+status: true
+dependencies: {  }
+name: ubicaci_n
+label: ubicación
+effects:
+  c817b8e3-7b50-425e-a178-3d5b0a90f283:
+    uuid: c817b8e3-7b50-425e-a178-3d5b0a90f283
+    id: image_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

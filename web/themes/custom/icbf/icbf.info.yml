@@ -1,0 +1,28 @@
+name: icbf
+type: theme
+description: 'icbf subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^10.1 || ^11.0'
+'base theme': bootstrap5
+libraries:
+  - icbf/global-styling
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  navigation: 'Navigation'
+  top_bar: 'Top Bar'
+  header: 'Header'
+  top_menu: 'Top Menu'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer_top: 'Footer Top'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  hidden_megamenu: 'Mega Menu Blocks'
+libraries-override:
+  bootstrap5/global-styling: false

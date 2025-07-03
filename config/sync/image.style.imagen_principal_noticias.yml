@@ -1,0 +1,15 @@
+uuid: d8bd9181-03f6-4ca5-89a9-b7b593a188d1
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_principal_noticias
+label: 'Imagen Principal Noticias'
+effects:
+  b64cb048-aff1-4ca2-947e-1b6a58a15603:
+    uuid: b64cb048-aff1-4ca2-947e-1b6a58a15603
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 490
+      height: 356
+      anchor: center-center

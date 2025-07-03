@@ -1,0 +1,24 @@
+uuid: dba2c760-7beb-49d4-945d-707874fa86e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.articulo_de_seccion
+  module:
+    - text
+id: node.articulo_de_seccion.body
+field_name: body
+entity_type: node
+bundle: articulo_de_seccion
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

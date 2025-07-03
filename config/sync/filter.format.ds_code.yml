@@ -1,0 +1,24 @@
+uuid: 97890186-3540-4d83-80d2-482fd06b8fdf
+langcode: es
+status: false
+dependencies:
+  module:
+    - slick
+name: 'Display Suite code'
+format: ds_code
+weight: -6
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

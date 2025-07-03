@@ -1,0 +1,22 @@
+uuid: 61cad2a9-4cf3-44a7-9270-0030a9f96de6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - text
+id: node.minutes_regional_strategic_commu.field_resume
+field_name: field_resume
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

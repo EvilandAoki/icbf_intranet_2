@@ -1,0 +1,22 @@
+uuid: 8fce6d12-69f6-4e66-a02b-1beae93c506d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_publicaciones_sindi
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_publicaciones_sindi.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_publicaciones_sindi
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

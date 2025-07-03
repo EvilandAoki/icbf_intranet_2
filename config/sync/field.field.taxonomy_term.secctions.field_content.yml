@@ -1,0 +1,24 @@
+uuid: ac393e2d-2b29-4e0b-bed8-cde55c22be14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_content
+    - taxonomy.vocabulary.secctions
+  module:
+    - text
+id: taxonomy_term.secctions.field_content
+field_name: field_content
+entity_type: taxonomy_term
+bundle: secctions
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>.</p>\r\n"
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

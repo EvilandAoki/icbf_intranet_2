@@ -1,0 +1,21 @@
+uuid: de648fe8-9634-4135-a529-82d3a0b5620d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.eventos_icbf
+id: taxonomy_term.eventos_icbf.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: eventos_icbf
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

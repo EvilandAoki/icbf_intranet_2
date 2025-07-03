@@ -1,0 +1,28 @@
+uuid: 666724d6-8d05-4d51-a9d4-73baf3883580
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.estadisticas_institucionales
+    - taxonomy.vocabulary.secctions
+id: node.estadisticas_institucionales.field_section
+field_name: field_section
+entity_type: node
+bundle: estadisticas_institucionales
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '6999'
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      secctions: secctions
+    sort:
+      field: _none
+field_type: entity_reference

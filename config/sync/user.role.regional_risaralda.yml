@@ -1,0 +1,17 @@
+uuid: 8878b01e-f6f1-4c1a-b29a-f9267c2b7428
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_risaralda
+label: 'Regional Risaralda'
+weight: 40
+is_admin: null
+permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

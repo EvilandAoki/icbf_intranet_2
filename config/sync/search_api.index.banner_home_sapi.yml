@@ -1,0 +1,87 @@
+uuid: f10963d7-9f87-47ac-9ae7-0da10ae35a6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.database_local
+  module:
+    - search_api_solr
+id: banner_home_sapi
+name: 'Banner Home SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - pieza_sgsi
+  fields:
+    created:
+      type: date
+    field_date:
+      type: date
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_link_url:
+      type: text
+    'field_list_image:file':
+      type: integer
+      entity_type: file
+    'field_list_image:file:fid':
+      type: integer
+    'field_list_image:file:field_file_image_alt_text':
+      type: text
+    'field_list_image:file:field_file_image_title_text':
+      type: text
+    'field_list_image:file:field_folder':
+      type: integer
+      entity_type: taxonomy_term
+    'field_list_image:file:mime':
+      type: text
+    'field_list_image:file:name':
+      type: text
+    'field_list_image:file:owner':
+      type: integer
+      entity_type: user
+    'field_list_image:file:size':
+      type: integer
+    'field_list_image:file:timestamp':
+      type: date
+    'field_list_image:file:type':
+      type: string
+    'field_list_image:file:url':
+      type: text
+    field_priority:
+      type: integer
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    title:
+      type: text
+    title_az_glossary:
+      type: string
+    vid:
+      type: integer
+server: database_local

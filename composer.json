@@ -45,6 +45,7 @@
         "drupal/better_permissions_page": "^1.0",
         "drupal/block_class": "^4.0",
         "drupal/bootstrap": "^5.0",
+        "drupal/bootstrap5": "4.0",
         "drupal/bootstrap_layout_builder": "^2.2",
         "drupal/bootstrap_layouts": "^5.5",
         "drupal/cacheexclude": "^2.0",
@@ -52,6 +53,7 @@
         "drupal/charts": "^5.1",
         "drupal/charts_google": "^5.1",
         "drupal/charts_highcharts": "^5.1",
+        "drupal/ck5_block_embed": "^1.0",
         "drupal/colorbox": "^2.1",
         "drupal/computed_field": "^3.0",
         "drupal/config_split": "^2.0",
@@ -69,6 +71,8 @@
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/easy_email": "^3.0",
         "drupal/email_registration": "^2.0@RC",
+        "drupal/embed": "^1.10",
+        "drupal/entity_embed": "^1.7",
         "drupal/entity_reference_tree": "^2.4",
         "drupal/entityqueue": "^1.9",
         "drupal/facets": "^3.0",
@@ -77,6 +81,7 @@
         "drupal/field_group": "^3.6",
         "drupal/field_permissions": "^1.4",
         "drupal/field_validation": "^1.1",
+        "drupal/file_resup": "2.0",
         "drupal/fivestar": "^1.0@alpha",
         "drupal/flood_control": "^3.0",
         "drupal/fontawesome": "^3.0",
@@ -119,6 +124,7 @@
         "drupal/panels": "^4.8",
         "drupal/paragraphs": "^1.18",
         "drupal/pathauto": "^1.13",
+        "drupal/pdf": "1.2",
         "drupal/pdf_api": "^2.4",
         "drupal/php": "^1.2",
         "drupal/plupload": "^2.2",
@@ -158,6 +164,7 @@
         "drupal/taxonomy_path_breadcrumb": "^1.1",
         "drupal/tb_megamenu": "^1.9",
         "drupal/term_reference_tree": "^2.0",
+        "drupal/twig_tweak": "^3.4",
         "drupal/upgrade_status": "^4.3",
         "drupal/varnish": "^2.0@alpha",
         "drupal/video": "^3.0",
@@ -181,6 +188,7 @@
         "drupal/webform": "^6.3@beta",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_migrate": "^2.0@alpha",
+        "drupal/webform_views": "^5.5",
         "drupal/workbench_moderation": "^1.9",
         "drupal/xmlsitemap": "^1.5",
         "drupal/youtube": "^2.0",
@@ -277,6 +285,12 @@
             },
             "drupal/core": {
                 "Fix error in FieldInstanceSettings (handler_settings sort)": "https://www.drupal.org/files/issues/2020-06-09/d7_field_instance-sort-3080034-6.patch"
+            },
+            "drupal/simple_page_manager": {
+                "Arregla fallo de traducción (issue 3438993)": "https://www.drupal.org/files/issues/2024-08-14/page-manager-3438993-MR34-24.patch"
+            },
+            "drupal/search_api": {
+                "Fix plugin_id empty bug #3280858": "https://www.drupal.org/files/issues/2022-05-17/plugin-issue-3280858-1.patch"
             }
         }
     }

@@ -1,0 +1,90 @@
+uuid: bc3ca2dc-df9c-4f1f-8563-159e1c8b028c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_roles
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_allowed_users
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_bg
+    - field.field.taxonomy_term.cat_logo_servicios_dit.field_cat_dit_icon
+    - field.field.taxonomy_term.cat_logo_servicios_dit.layout_builder__layout
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+  module:
+    - field_layout
+    - layout_discovery
+    - path
+    - text
+    - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: taxonomy_term.cat_logo_servicios_dit.default
+targetEntityType: taxonomy_term
+bundle: cat_logo_servicios_dit
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_allowed_roles:
+    type: options_buttons
+    weight: 102
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_allowed_users:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  menu:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  field_cat_dit_bg: true
+  field_cat_dit_icon: true
+  layout_builder__layout: true
+  publish_on: true
+  unpublish_on: true

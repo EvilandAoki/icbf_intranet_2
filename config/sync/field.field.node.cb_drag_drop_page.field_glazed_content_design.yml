@@ -1,0 +1,31 @@
+uuid: cc929b0a-7cae-482a-8998-730e2ab35b13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_glazed_content_design
+    - node.type.cb_drag_drop_page
+    - paragraphs.paragraphs_type.glazed_content_design
+  module:
+    - entity_reference_revisions
+id: node.cb_drag_drop_page.field_glazed_content_design
+field_name: field_glazed_content_design
+entity_type: node
+bundle: cb_drag_drop_page
+label: 'Glazed Page Settings'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      glazed_content_design: glazed_content_design
+    negate: 0
+    target_bundles_drag_drop:
+      glazed_content_design:
+        weight: 1
+        enabled: true
+field_type: entity_reference_revisions

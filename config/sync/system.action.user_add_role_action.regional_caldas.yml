@@ -1,0 +1,14 @@
+uuid: 60f14cf7-980d-46b7-94d1-8d5d8f00b826
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_caldas
+  module:
+    - user
+id: user_add_role_action.regional_caldas
+label: 'Añade el rol Regional Caldas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_caldas

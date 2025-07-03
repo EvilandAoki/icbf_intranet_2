@@ -1,0 +1,18 @@
+uuid: 2a969a8e-0a89-4efa-b7b3-9149ec3e0d09
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Centro de Ayuda'
+type: helpcenter_info
+description: 'Información de consulta DSyA'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

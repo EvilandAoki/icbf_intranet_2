@@ -1,0 +1,159 @@
+uuid: c7d1d007-e182-4cf2-a3ff-0cdb7c37f5cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.periodo.field_allowed_roles
+    - field.field.taxonomy_term.periodo.field_allowed_users
+    - field.field.taxonomy_term.periodo.layout_builder__layout
+    - taxonomy.vocabulary.periodo
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          6da40d6e-32e4-4fe8-af06-47867596cda2:
+            uuid: 6da40d6e-32e4-4fe8-af06-47867596cda2
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:periodo:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: 'generic-title '
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e5cbabf2-4b10-4fd4-b952-f50b3a0e3b7c:
+            uuid: e5cbabf2-4b10-4fd4-b952-f50b3a0e3b7c
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:periodo:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          81f7671d-745f-4b3a-9bd6-379c9d8c4a3d:
+            uuid: 81f7671d-745f-4b3a-9bd6-379c9d8c4a3d
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:periodo:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          fd2c9d20-c4bd-4a80-a9b5-08cacf525d18:
+            uuid: fd2c9d20-c4bd-4a80-a9b5-08cacf525d18
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:periodo:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          149933c8-f378-44d2-9328-268f432af8d9:
+            uuid: 149933c8-f378-44d2-9328-268f432af8d9
+            region: content
+            configuration:
+              id: 'extra_field_block:taxonomy_term:periodo:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.periodo.default
+targetEntityType: taxonomy_term
+bundle: periodo
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

@@ -1,0 +1,335 @@
+uuid: 72636990-984f-4e1e-9e95-7aec18dfdea3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.helpcenter_info.field_file_categoria
+    - field.field.node.helpcenter_info.field_file_priority
+    - field.field.node.helpcenter_info.field_header_area
+    - field.field.node.helpcenter_info.field_helpcenter_category
+    - field.field.node.helpcenter_info.field_helpcenter_content_body
+    - field.field.node.helpcenter_info.field_helpcenter_document
+    - field.field.node.helpcenter_info.field_helpcenter_tooltip
+    - field.field.node.helpcenter_info.field_list_image
+    - field.field.node.helpcenter_info.field_multimedia
+    - field.field.node.helpcenter_info.layout_builder__layout
+    - node.type.helpcenter_info
+  module:
+    - bootstrap_layouts
+    - file
+    - image
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: id|custom-title
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          f358827e-605b-4841-a5a5-052b9dcb0064:
+            uuid: f358827e-605b-4841-a5a5-052b9dcb0064
+            region: main
+            configuration:
+              id: 'field_block:node:helpcenter_info:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          40840e95-c5a3-4ad1-9d87-08e607291061:
+            uuid: 40840e95-c5a3-4ad1-9d87-08e607291061
+            region: main
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_header_area'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          35f011bf-8a0c-4e8e-a192-c5659960f8ef:
+            uuid: 35f011bf-8a0c-4e8e-a192-c5659960f8ef
+            region: main
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_helpcenter_content_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dc660794-7eef-42d0-9f18-5475251a40fb:
+            uuid: dc660794-7eef-42d0-9f18-5475251a40fb
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_helpcenter_document'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: inline
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3d1ddccd-8f88-45cc-945d-2ef7595f84f3:
+            uuid: 3d1ddccd-8f88-45cc-945d-2ef7595f84f3
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_multimedia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: hidden
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          da47e0f7-2bfe-45bc-8035-974efee022af:
+            uuid: da47e0f7-2bfe-45bc-8035-974efee022af
+            region: content
+            configuration:
+              id: 'extra_field_block:node:helpcenter_info:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          03bb6ad1-2908-4f8f-8497-3ca4eebcd742:
+            uuid: 03bb6ad1-2908-4f8f-8497-3ca4eebcd742
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_file_categoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          2bef3516-4781-41a2-b41d-7851f921febc:
+            uuid: 2bef3516-4781-41a2-b41d-7851f921febc
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_file_priority'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          102c7ea6-bf58-4a42-8e4b-39744772f046:
+            uuid: 102c7ea6-bf58-4a42-8e4b-39744772f046
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_helpcenter_category'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          6e3e9329-8309-4ea8-a436-64fafebe7b59:
+            uuid: 6e3e9329-8309-4ea8-a436-64fafebe7b59
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_helpcenter_tooltip'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          8b7e8d10-fd62-434c-ae63-bf66c64d9039:
+            uuid: 8b7e8d10-fd62-434c-ae63-bf66c64d9039
+            region: content
+            configuration:
+              id: 'field_block:node:helpcenter_info:field_list_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+        third_party_settings: {  }
+id: node.helpcenter_info.default
+targetEntityType: node
+bundle: helpcenter_info
+mode: default
+content:
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_file_priority:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_header_area:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_helpcenter_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_helpcenter_content_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_helpcenter_document:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_helpcenter_tooltip:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_list_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_multimedia:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

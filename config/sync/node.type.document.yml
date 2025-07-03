@@ -1,0 +1,16 @@
+uuid: eceee157-7e17-44df-b1fd-6ed8afa2a629
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Documento
+type: document
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

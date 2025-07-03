@@ -1,0 +1,14 @@
+uuid: 2074c41e-141e-4622-b3e7-00070df30097
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_san_andres
+  module:
+    - user
+id: user_add_role_action.regional_san_andres
+label: 'Añade el rol Regional San Andres al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_san_andres

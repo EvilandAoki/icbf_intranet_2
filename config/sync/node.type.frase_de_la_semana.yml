@@ -1,0 +1,18 @@
+uuid: 6b804d45-6158-46b4-80f7-6f4f98443a95
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Frase de la semana'
+type: frase_de_la_semana
+description: 'texto corto'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

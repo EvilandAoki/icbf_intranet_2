@@ -1,0 +1,31 @@
+uuid: 011abbd3-01de-4f9e-9e0f-dff7d0b3c5f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.clean
+    - filter.format.full_html
+    - node.type.dit_catalog
+    - node.type.pieza_sgsi
+  module:
+    - filter
+    - node
+    - system
+id: catalogo_dit
+label: 'Catálogo DIT'
+weight: 8
+is_admin: null
+permissions:
+  - 'access content'
+  - 'create dit_catalog content'
+  - 'create pieza_sgsi content'
+  - 'delete own dit_catalog content'
+  - 'delete own pieza_sgsi content'
+  - 'edit any dit_catalog content'
+  - 'edit any pieza_sgsi content'
+  - 'edit own dit_catalog content'
+  - 'edit own pieza_sgsi content'
+  - 'use text format clean'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,14 @@
+uuid: e7694018-57ac-4d2c-9c89-ebc0c1ac1ca8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.estadisticas
+  module:
+    - user
+id: user_remove_role_action.estadisticas
+label: 'Elimina el rol Estadísticas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: estadisticas

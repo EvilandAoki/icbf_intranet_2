@@ -1,0 +1,9 @@
+uuid: 8cfca18f-2dbf-4ac9-a4ba-bc165b1e9b31
+langcode: es
+status: true
+dependencies: {  }
+name: Trámite
+vid: procedure
+description: null
+weight: 0
+new_revision: false

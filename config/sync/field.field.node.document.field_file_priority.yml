@@ -1,0 +1,21 @@
+uuid: d7421e91-1075-400e-bb17-cad46fe6f5a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_priority
+    - node.type.document
+  module:
+    - options
+id: node.document.field_file_priority
+field_name: field_file_priority
+entity_type: node
+bundle: document
+label: Prioridad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

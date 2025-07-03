@@ -1,0 +1,8 @@
+uuid: 64673354-37b6-47dd-8577-1307fe2ce7cc
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_articulo_de_seccion
+label: 'Artículo de Sección comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,21 @@
+uuid: 0159615a-5608-4277-9018-5f326c34daa7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - datetime
+id: node.minutes_regional_strategic_commu.field_date
+field_name: field_date
+entity_type: node
+bundle: minutes_regional_strategic_commu
+label: Fecha
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

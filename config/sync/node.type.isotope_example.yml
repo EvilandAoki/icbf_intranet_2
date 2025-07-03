@@ -1,0 +1,11 @@
+uuid: 8ce333cb-42d6-489b-ba2d-2400182b4225
+langcode: es
+status: true
+dependencies: {  }
+name: 'Isotope Example Node Type'
+type: isotope_example
+description: 'This is an example node type with a few fields.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

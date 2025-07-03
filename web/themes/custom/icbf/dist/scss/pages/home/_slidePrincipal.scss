@@ -1,0 +1,32 @@
+.Home-NoticeBannerPrincipal{
+    .img-fluid {
+        width: 100%;
+    }
+    .slick-arrow::before {
+        color: #343332f0;
+        font-size: 2rem;
+    }
+    .slick-arrow:hover::before {
+        color: #3cb371;
+    }
+    .slick-dots{
+       bottom: 0;  
+         li {
+            padding: 0;
+            margin: 0;
+            button:before {
+                color: transparent;
+                background-color: rgb(35 28 28);
+                border-radius: 10px;
+                border: 2px solid #2c2321;
+                width: 14px;
+                height: 14px;
+            }
+            &.slick-active button:before {
+                background: #3cb371;
+                border:2px solid #3cb371;
+                color:transparent;
+            }
+        }
+    }
+}

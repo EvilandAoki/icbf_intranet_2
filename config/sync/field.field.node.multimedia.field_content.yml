@@ -1,0 +1,22 @@
+uuid: a34895e8-f054-4b53-9540-4b814d7daffe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.multimedia
+  module:
+    - text
+id: node.multimedia.field_content
+field_name: field_content
+entity_type: node
+bundle: multimedia
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

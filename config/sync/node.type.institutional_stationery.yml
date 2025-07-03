@@ -1,0 +1,18 @@
+uuid: 6515b5c8-a2ad-468b-963c-6c17018183ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Papelería Institucional'
+type: institutional_stationery
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,84 @@
+uuid: f16313f0-19d0-4937-a900-9d2b0e4911f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: actas_comit_estrat_gico_regional_sapi
+name: 'Actas Comité Estratégico Regional SAPI'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - minutes_regional_strategic_commu
+  fields:
+    edit_url:
+      type: uri
+    field_date:
+      type: date
+    'field_document_proceedings:description':
+      type: text
+    'field_document_proceedings:file':
+      type: integer
+      entity_type: file
+    'field_document_proceedings:file:fid':
+      type: integer
+    'field_document_proceedings:file:field_file_image_alt_text':
+      type: text
+    'field_document_proceedings:file:field_file_image_title_text':
+      type: text
+    'field_document_proceedings:file:field_folder':
+      type: integer
+      entity_type: taxonomy_term
+    'field_document_proceedings:file:mime':
+      type: text
+    'field_document_proceedings:file:name':
+      type: text
+    'field_document_proceedings:file:owner':
+      type: integer
+      entity_type: user
+    'field_document_proceedings:file:size':
+      type: integer
+    'field_document_proceedings:file:timestamp':
+      type: date
+    'field_document_proceedings:file:type':
+      type: string
+    'field_document_proceedings:file:url':
+      type: text
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    field_regional:
+      type: integer
+      entity_type: taxonomy_term
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    search_api_language:
+      type: string
+    title:
+      type: text
+    url:
+      type: uri
+server: local_solr

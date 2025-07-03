@@ -1,0 +1,24 @@
+uuid: d8498bda-e77b-43a3-ae73-4a54bb726745
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.encuesta_interna
+  module:
+    - text
+id: node.encuesta_interna.body
+field_name: body
+entity_type: node
+bundle: encuesta_interna
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

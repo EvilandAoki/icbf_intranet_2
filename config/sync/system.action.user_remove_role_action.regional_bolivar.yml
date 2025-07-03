@@ -1,0 +1,14 @@
+uuid: f2f0a376-e9f4-433f-8bdb-71d01d9036d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_bolivar
+  module:
+    - user
+id: user_remove_role_action.regional_bolivar
+label: 'Elimina el rol Regional Bolívar al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_bolivar

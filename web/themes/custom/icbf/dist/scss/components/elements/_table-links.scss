@@ -1,0 +1,54 @@
+.link-table{
+    margin: 2rem auto;
+    #edit-field-date-value {
+        font-family: 'montserrat-regular';
+        font-size: 16px;
+    }
+    input#edit-submit-documents {
+        width: 100%;
+        background-color: #0073ff;
+        color: #fff;
+        border-radius: 30px;
+        border: 1px solid #0073ff;
+        display: inline-block;
+        font-family: "montserrat-regular";
+        font-weight: 600;
+        font-size: 12px;
+        margin: .2em .3em .4em 0;
+        padding: .2em .83em;
+        text-decoration: none;
+        -webkit-transition: all .3s linear;
+        &:hover{
+            background-color: #fff;
+            color: #0073ff;
+        }
+    }
+    thead{
+        tr{
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+            padding: 8px;
+            line-height: 1.428571429;
+            color: #555;
+            font-family:  "montserrat";
+        }
+    }
+    table{
+        --bs-table-bg: inherit;
+        --bs-table-color: inherit;
+        width: 100%;
+        tbody{
+            tr{
+                &:nth-child(odd), &:hover {
+                background-color: #f9f9f9;
+                }
+            }
+            td {
+                font-family: 'montserrat-regular';
+            }
+        }
+    }
+    nav.pager {
+        width: 100%;
+    }
+}

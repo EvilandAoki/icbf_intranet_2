@@ -1,0 +1,66 @@
+uuid: 69e9612b-0304-4b09-befe-441d068b9d42
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_contacto_nacional
+    - field.field.comment.comment_node_contacto_nacional.comment_body
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          96ce2eba-51d4-4a42-8a69-b7d7fe89633d:
+            uuid: 96ce2eba-51d4-4a42-8a69-b7d7fe89633d
+            region: content
+            configuration:
+              id: 'field_block:comment:comment_node_contacto_nacional:comment_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          54bb7345-e89e-4d8e-b3cf-fa53ab2f6f99:
+            uuid: 54bb7345-e89e-4d8e-b3cf-fa53ab2f6f99
+            region: content
+            configuration:
+              id: 'extra_field_block:comment:comment_node_contacto_nacional:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: comment.comment_node_contacto_nacional.default
+targetEntityType: comment
+bundle: comment_node_contacto_nacional
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

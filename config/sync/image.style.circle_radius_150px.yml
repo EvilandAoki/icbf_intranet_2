@@ -1,0 +1,15 @@
+uuid: 3f76949d-b393-45b0-b50c-2a6db713b780
+langcode: es
+status: true
+dependencies: {  }
+name: circle_radius_150px
+label: 'Circle Radius 150px'
+effects:
+  f6cef6ea-f049-4467-a3e6-213126ab8f36:
+    uuid: f6cef6ea-f049-4467-a3e6-213126ab8f36
+    id: image_scale
+    weight: 1
+    data:
+      width: 130
+      height: 130
+      upscale: false

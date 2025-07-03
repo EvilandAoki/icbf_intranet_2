@@ -1,0 +1,30 @@
+uuid: 948a10b0-aa19-459a-935c-2b0d85b652c1
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+    - image
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_imagen_region
+field_name: field_imagen_region
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+  default_image:
+    uuid: ''
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 123b1dee-5842-48d2-8cb7-1c20f643f5d5
+langcode: es
+status: true
+dependencies: {  }
+name: Panel
+type: panel
+description: 'Un diseño de paneles dividido en filas y columnas.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

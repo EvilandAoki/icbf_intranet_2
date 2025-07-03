@@ -1,0 +1,25 @@
+uuid: 9f07faa9-119c-4994-a49c-b1e9f487d009
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8432c476-c926-4e35-ba23-49351cab61fe'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_estructuratop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:8432c476-c926-4e35-ba23-49351cab61fe'
+settings:
+  id: 'block_content:8432c476-c926-4e35-ba23-49351cab61fe'
+  label: 'Estructura - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

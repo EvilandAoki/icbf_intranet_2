@@ -1,0 +1,24 @@
+uuid: 37f44faa-97ce-4187-a272-5a799a1df775
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_area
+    - node.type.area
+  module:
+    - text
+id: node.area.field_header_area
+field_name: field_header_area
+entity_type: node
+bundle: area
+label: 'Header Area'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: .
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

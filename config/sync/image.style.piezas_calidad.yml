@@ -1,0 +1,15 @@
+uuid: cff01b0f-9340-4717-8214-a61f7b5b1a2f
+langcode: es
+status: true
+dependencies: {  }
+name: piezas_calidad
+label: 'piezas calidad'
+effects:
+  b192c587-1e50-4633-bb7b-a0d72c6b2e35:
+    uuid: b192c587-1e50-4633-bb7b-a0d72c6b2e35
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 345
+      anchor: center-center

@@ -1,0 +1,20 @@
+uuid: fbe1e0e5-86e0-4108-a252-260fcee64fef
+langcode: es
+status: false
+dependencies:
+  theme:
+    - icbf
+_core:
+  default_config_hash: 6UnvmWZl7NrFEcTPqz8lpfZsWHdoN4qvRam_r8kgGkY
+id: icbf_page_title
+theme: icbf
+region: content
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: fb73f03f-0d49-467e-b4d9-e50fa29613e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_allowed_roles
+    - taxonomy.vocabulary.centro_de_ayuda
+id: taxonomy_term.centro_de_ayuda.field_allowed_roles
+field_name: field_allowed_roles
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Allowed roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,69 @@
+uuid: de14b738-0b36-4225-a259-64af9f4cce47
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estadisticas_institucionales.field_date
+    - field.field.node.estadisticas_institucionales.field_document
+    - field.field.node.estadisticas_institucionales.field_file_categoria
+    - field.field.node.estadisticas_institucionales.field_parent
+    - field.field.node.estadisticas_institucionales.field_section
+    - node.type.estadisticas_institucionales
+  module:
+    - datetime
+    - file
+    - user
+id: node.estadisticas_institucionales.default
+targetEntityType: node
+bundle: estadisticas_institucionales
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_document:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_file_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_parent:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

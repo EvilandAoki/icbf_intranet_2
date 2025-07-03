@@ -1,0 +1,17 @@
+uuid: da6ec5e3-cae7-46ee-b5e2-7d65ae81146c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_norte_de_santander
+label: 'Regional Norte de Santander'
+weight: 37
+is_admin: null
+permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

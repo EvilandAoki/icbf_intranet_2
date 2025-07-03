@@ -1,0 +1,23 @@
+uuid: ce5a6d3a-d23c-41e2-909c-0c1f44371587
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.group_group
+    - taxonomy.vocabulary.dependencies
+id: taxonomy_term.dependencies.group_group
+field_name: group_group
+entity_type: taxonomy_term
+bundle: dependencies
+label: Grupo
+description: 'Determina si este es un grupo OG.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Group
+  off_label: 'Not a group'
+field_type: boolean

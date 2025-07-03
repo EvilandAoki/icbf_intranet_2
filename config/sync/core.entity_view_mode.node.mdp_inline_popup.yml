@@ -1,0 +1,11 @@
+uuid: c145aac8-c851-4192-8a9f-997ff2b9fa10
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.mdp_inline_popup
+label: mdp_inline_popup
+description: ''
+targetEntityType: node
+cache: true

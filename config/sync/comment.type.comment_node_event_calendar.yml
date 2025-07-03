@@ -1,0 +1,8 @@
+uuid: 0f986b5e-87a4-4c63-8baa-0ba1510e29fa
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_event_calendar
+label: 'Evento comment'
+target_entity_type_id: node
+description: null

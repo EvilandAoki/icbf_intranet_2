@@ -1,0 +1,22 @@
+uuid: 953dae97-be0c-431d-9215-b8115f1658e9
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - icbf
+_core:
+  default_config_hash: 4nY08iE2L9dUBdtKcWeEmEb2FlG-IH3oGuas-HJTUoQ
+id: icbf_powered_by_drupal
+theme: icbf
+region: footer
+weight: -13
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

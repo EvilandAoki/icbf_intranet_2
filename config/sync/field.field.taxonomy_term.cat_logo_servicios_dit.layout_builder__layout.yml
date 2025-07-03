@@ -1,0 +1,21 @@
+uuid: 4714cf88-3d05-498f-9583-8474ca003c46
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+  module:
+    - layout_builder
+id: taxonomy_term.cat_logo_servicios_dit.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: cat_logo_servicios_dit
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

@@ -1,0 +1,29 @@
+uuid: 58ff0767-5dbc-4d69-b959-c0cb6211251b
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_cartelera
+    - field.field.comment.comment_node_cartelera.comment_body
+  module:
+    - text
+id: comment.comment_node_cartelera.default
+targetEntityType: comment
+bundle: comment_node_cartelera
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

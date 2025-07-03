@@ -1,0 +1,159 @@
+uuid: 85dc4c91-51f8-403f-a150-275977527f11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.eventos_icbf.field_allowed_roles
+    - field.field.taxonomy_term.eventos_icbf.field_allowed_users
+    - field.field.taxonomy_term.eventos_icbf.layout_builder__layout
+    - taxonomy.vocabulary.eventos_icbf
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: bs_1col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          c9995c9f-074c-4882-be0a-24fb4c3aad7e:
+            uuid: c9995c9f-074c-4882-be0a-24fb4c3aad7e
+            region: main
+            configuration:
+              id: 'field_block:taxonomy_term:eventos_icbf:name'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: 'generic-title '
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4611745a-e462-47e9-b6f0-f7a26d39cb6d:
+            uuid: 4611745a-e462-47e9-b6f0-f7a26d39cb6d
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:eventos_icbf:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2c3f2516-0cf1-4199-b0e3-6b073198fe5b:
+            uuid: 2c3f2516-0cf1-4199-b0e3-6b073198fe5b
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:eventos_icbf:field_allowed_users'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          6ebc4b90-06e6-452c-bb81-25dece7b5eb8:
+            uuid: 6ebc4b90-06e6-452c-bb81-25dece7b5eb8
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:eventos_icbf:field_allowed_roles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          47ef7526-b5c8-471f-83b9-8e583e49dc51:
+            uuid: 47ef7526-b5c8-471f-83b9-8e583e49dc51
+            region: content
+            configuration:
+              id: 'extra_field_block:taxonomy_term:eventos_icbf:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.eventos_icbf.default
+targetEntityType: taxonomy_term
+bundle: eventos_icbf
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_allowed_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_allowed_users:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

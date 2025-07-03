@@ -1,0 +1,25 @@
+uuid: 47278212-c0b0-4414-b954-6a4b5da68ef2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b10f3bc0-fa81-4f47-af3a-0cc112f0a890'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_sigtop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:b10f3bc0-fa81-4f47-af3a-0cc112f0a890'
+settings:
+  id: 'block_content:b10f3bc0-fa81-4f47-af3a-0cc112f0a890'
+  label: 'SIG - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

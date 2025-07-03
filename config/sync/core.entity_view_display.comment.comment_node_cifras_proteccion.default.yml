@@ -1,0 +1,29 @@
+uuid: 38523b31-f7ff-4596-81ca-4e20a96b5b41
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_cifras_proteccion
+    - field.field.comment.comment_node_cifras_proteccion.comment_body
+  module:
+    - text
+id: comment.comment_node_cifras_proteccion.default
+targetEntityType: comment
+bundle: comment_node_cifras_proteccion
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

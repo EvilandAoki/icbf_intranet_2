@@ -1,0 +1,24 @@
+uuid: 9b1f1f05-22b7-44f9-9a72-050938abd8b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.event_calendar
+  module:
+    - text
+id: node.event_calendar.field_body
+field_name: field_body
+entity_type: node
+bundle: event_calendar
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

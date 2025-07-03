@@ -1,0 +1,26 @@
+uuid: 3d418e99-0360-47d6-a68a-dbf2035b46c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_location
+    - taxonomy.vocabulary.locations
+    - taxonomy.vocabulary.procedure
+id: taxonomy_term.procedure.field_location
+field_name: field_location
+entity_type: taxonomy_term
+bundle: procedure
+label: Ubicación
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+field_type: entity_reference

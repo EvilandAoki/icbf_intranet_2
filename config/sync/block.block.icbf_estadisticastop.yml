@@ -1,0 +1,25 @@
+uuid: 80fddaca-2b4c-48df-8835-189728ff9d8b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:645c897e-7b0f-48c4-b525-08f394ff6366'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_estadisticastop
+theme: icbf
+region: hidden_megamenu
+weight: 0
+provider: null
+plugin: 'block_content:645c897e-7b0f-48c4-b525-08f394ff6366'
+settings:
+  id: 'block_content:645c897e-7b0f-48c4-b525-08f394ff6366'
+  label: 'Estadisticas - Top'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

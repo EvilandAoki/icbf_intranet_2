@@ -1,0 +1,24 @@
+uuid: a410df54-e26b-4709-88f1-04ff92e00bb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cb_drag_drop_page.field_glazed_content_design
+    - node.type.cb_drag_drop_page
+  module:
+    - user
+id: node.cb_drag_drop_page.teaser
+targetEntityType: node
+bundle: cb_drag_drop_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_glazed_content_design: true
+  langcode: true
+  search_api_excerpt: true

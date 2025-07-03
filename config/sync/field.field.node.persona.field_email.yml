@@ -1,0 +1,19 @@
+uuid: 42700005-7241-4bac-9fe1-a82f350faa50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.persona
+id: node.persona.field_email
+field_name: field_email
+entity_type: node
+bundle: persona
+label: 'Correo Electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

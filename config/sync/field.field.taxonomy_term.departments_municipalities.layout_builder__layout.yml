@@ -1,0 +1,21 @@
+uuid: 6520cb22-0c02-4578-b7aa-0e599dbec875
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_builder__layout
+    - taxonomy.vocabulary.departments_municipalities
+  module:
+    - layout_builder
+id: taxonomy_term.departments_municipalities.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: taxonomy_term
+bundle: departments_municipalities
+label: Diseño
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

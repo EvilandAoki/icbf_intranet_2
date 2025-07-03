@@ -1,0 +1,14 @@
+uuid: ad624441-bb32-4752-86e7-e25f8caf0540
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_infraestructura
+  module:
+    - user
+id: user_add_role_action.administrador_infraestructura
+label: 'Añade el rol Administrador Infraestructura al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_infraestructura

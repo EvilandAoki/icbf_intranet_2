@@ -1,0 +1,8 @@
+uuid: 7ecb427c-b42c-40de-8b8d-ba5144819896
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_dit_catalog
+label: 'Catalogo DIT comment'
+target_entity_type_id: node
+description: null

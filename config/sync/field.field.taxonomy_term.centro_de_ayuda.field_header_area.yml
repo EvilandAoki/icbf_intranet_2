@@ -1,0 +1,24 @@
+uuid: 9946a93b-1376-4be4-ac18-84a418565d49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_header_area
+    - taxonomy.vocabulary.centro_de_ayuda
+  module:
+    - text
+id: taxonomy_term.centro_de_ayuda.field_header_area
+field_name: field_header_area
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Header Area'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div id=\"a4ecxpma\" class=\"az-element az-section\" style=\"\" data-az-id=\"a4ecxpma\" data-azb=\"az_section\"><div class=\"az-ctnr container\" data-azcnt=\"true\"><div class=\"az-element az-row row  az-row--sm az-row--equal-height\" style=\"padding-bottom:2em;background-color:#666666;background-image: url(-base-url-/-files-directory-/bg-blue-canales_1.jpg?fid=64292);background-position:center bottom;\" data-az-id=\"txw8rtdd\" data-azb=\"az_row\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"padding-bottom:2em;background-color:#666666;background-image: url(-base-url-/-files-directory-/bg-blue-canales_1.jpg?fid=64292);background-position:center bottom;\" data-azcnt=\"true\"><div class=\"az-element az-ctnr az-column  col-sm-12\" style=\"\" data-az-id=\"8zx57w1l\" data-azb=\"az_column\" data-azcnt=\"true\"><div class=\"az-element az-text text-center\" style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\" data-az-id=\"8ri5ciy0\" data-azb=\"az_text\" data-azat-el_class=\"text-center\" data-azat-style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\" data-azcnt=\"true\"><h1 class=\"id-ca-w\"><strong>Centro de Ayuda</strong> y Aprendizaje</h1>\r\n<h3 class=\"subt-ca-w\">Dirección de Servicios y Atención</h3>\r\n</div><div class=\"az-element az-row row center-block text-center container az-row--sm\" style=\"\" data-az-id=\"oftc6o01\" data-azb=\"az_row\" data-azat-device=\"sm\" data-azat-el_class=\"center-block text-center container\" data-azcnt=\"true\"><div class=\"az-element az-ctnr az-column  col-sm-12\" style=\"\" data-az-id=\"0njj4ppx\" data-azb=\"az_column\" data-azat-width=\"1/1\" data-azcnt=\"true\"><div class=\"az-element az-cms-element\" style=\"\" data-az-id=\"nnffyiqj\" data-azb=\"az_block-bean-centro-de-ayuda---top-level1\"></div></div></div></div></div></div></div><div class=\"az-element az-row row  az-row--sm az-row--equal-height\" style=\"padding-bottom:1em;background-color:#f8f8f8;background-position:center bottom;\" data-az-id=\"g5o1cc00\" data-azb=\"az_row\" data-azat-device=\"sm\" data-azat-equal=\"yes\" data-azat-style=\"padding-bottom:1em;background-color:#f8f8f8;background-position:center bottom;\" data-azcnt=\"true\"><div class=\"az-element az-ctnr az-column  col-sm-12\" style=\"\" data-az-id=\"lx240aiq\" data-azb=\"az_column\" data-azcnt=\"true\"><div class=\"az-element az-text text-center\" style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\" data-az-id=\"vewcknkc\" data-azb=\"az_text\" data-azat-el_class=\"text-center\" data-azat-style=\"margin-top:2em;margin-bottom:2em;padding-top:1em;padding-bottom:2em;padding-left:2em;padding-right:2em;color:#ffffff;\" data-azcnt=\"true\"><h2 class=\"id-ca-level1\">Aprende el correcto uso del SIM</h2>\r\n<h3 class=\"subt-ca-level1\">Sistema de Información Misional</h3>\r\n</div></div></div><script src=\"-base-url-/-module-directory-/glazed_builder/glazed_frontend.min.js\"></script>\r\n"
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

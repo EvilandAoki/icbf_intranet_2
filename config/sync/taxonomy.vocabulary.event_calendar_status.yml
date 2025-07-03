@@ -1,0 +1,9 @@
+uuid: c7f2939f-b7a1-4ceb-919e-5064f5ba79d9
+langcode: es
+status: true
+dependencies: {  }
+name: 'Event Status'
+vid: event_calendar_status
+description: Descripción
+weight: 8
+new_revision: false

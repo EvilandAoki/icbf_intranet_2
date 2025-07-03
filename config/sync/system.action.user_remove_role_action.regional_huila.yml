@@ -1,0 +1,14 @@
+uuid: 2eb88597-501b-48b9-a9ec-4f0b1c24d6b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_huila
+  module:
+    - user
+id: user_remove_role_action.regional_huila
+label: 'Elimina el rol Regional Huila al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_huila

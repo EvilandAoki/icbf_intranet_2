@@ -1,0 +1,29 @@
+uuid: fe6def31-c1b7-4155-9306-85c0ac214f80
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_institutional_stati
+    - field.field.comment.comment_node_institutional_stati.comment_body
+  module:
+    - text
+id: comment.comment_node_institutional_stati.default
+targetEntityType: comment
+bundle: comment_node_institutional_stati
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

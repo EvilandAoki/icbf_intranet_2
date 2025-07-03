@@ -1,0 +1,27 @@
+uuid: 6f8a8dba-55a5-47dc-b071-e8c3e99c3b1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documento
+    - node.type.dit_catalog
+  module:
+    - file
+id: node.dit_catalog.field_documento
+field_name: field_documento
+entity_type: node
+bundle: dit_catalog
+label: Documento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf xls xlsx doc docx ppt pptx zip rar mov mp3'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,26 @@
+uuid: ee2e7a27-8c17-43a3-b2af-e3200fdf32d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar
+    - node.type.cartelera
+    - taxonomy.vocabulary.departments_municipalities
+id: node.cartelera.field_lugar
+field_name: field_lugar
+entity_type: node
+bundle: cartelera
+label: Lugar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      departments_municipalities: departments_municipalities
+    sort:
+      field: _none
+field_type: entity_reference

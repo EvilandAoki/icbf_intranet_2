@@ -1,0 +1,16 @@
+uuid: 6900d362-ef72-48ac-a1ee-7bf95c29a8b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Noticia
+type: news
+description: 'Comunicados de Prensa - Comunicaciones'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

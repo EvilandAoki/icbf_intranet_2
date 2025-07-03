@@ -1,0 +1,46 @@
+uuid: 7accdcb2-1794-46e7-9c8b-4615790883e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_tabs_dit1
+field_name: field_tabs_dit1
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: p1
+      label: 'Paso 1 Oficio de legalización'
+    -
+      value: p2
+      label: 'Paso 2 Registro de Obligaciones Contractuales'
+    -
+      value: p3
+      label: 'Paso 3 Cargue de Evidencias'
+    -
+      value: p4
+      label: 'Paso 4 Generar Informe'
+    -
+      value: p5
+      label: 'Paso 5 Revisión Previa'
+    -
+      value: p6
+      label: 'Paso 6 Vistos Buenos'
+    -
+      value: p7
+      label: 'Paso 7 Aprobación SIGEPCYP y cargue en SECOP'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

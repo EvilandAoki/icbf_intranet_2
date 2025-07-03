@@ -1,0 +1,25 @@
+uuid: 7b856b89-cc65-40ad-8e34-9b0950cb1051
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d97e01b5-3521-43ca-b54f-8f500e2d210d'
+  module:
+    - block_content
+  theme:
+    - icbf
+id: icbf_footergovco21
+theme: icbf
+region: footer
+weight: -15
+provider: null
+plugin: 'block_content:d97e01b5-3521-43ca-b54f-8f500e2d210d'
+settings:
+  id: 'block_content:d97e01b5-3521-43ca-b54f-8f500e2d210d'
+  label: 'Footer GOVCO 21'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

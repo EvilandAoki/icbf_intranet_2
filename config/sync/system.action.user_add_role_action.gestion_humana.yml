@@ -1,0 +1,14 @@
+uuid: a5abfc0c-1cda-4246-96d6-2115dfbe57fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestion_humana
+  module:
+    - user
+id: user_add_role_action.gestion_humana
+label: 'Añade el rol Gestión Humana al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestion_humana

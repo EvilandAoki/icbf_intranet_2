@@ -1,0 +1,18 @@
+uuid: 0dccf81c-f091-458c-8e77-7f5e41ec074d
+langcode: es
+status: true
+dependencies:
+  module:
+    - slick
+name: 'Sin Formato'
+format: clean
+weight: -7
+filters:
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

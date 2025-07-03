@@ -1,0 +1,14 @@
+uuid: cd5dc1af-1829-48ef-af3a-8719a74e0c9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_arauca
+  module:
+    - user
+id: user_remove_role_action.regional_arauca
+label: 'Elimina el rol Regional Arauca al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional_arauca

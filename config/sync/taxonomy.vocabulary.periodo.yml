@@ -1,0 +1,9 @@
+uuid: d45e83dd-a2cb-4fa4-96be-9d518e38f505
+langcode: es
+status: true
+dependencies: {  }
+name: Periodo
+vid: periodo
+description: null
+weight: 0
+new_revision: false

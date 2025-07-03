@@ -1,0 +1,25 @@
+uuid: a0616506-51da-49ba-a653-46de4c0d1ca2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category_helpcenter
+    - taxonomy.vocabulary.centro_de_ayuda
+id: taxonomy_term.centro_de_ayuda.field_category_helpcenter
+field_name: field_category_helpcenter
+entity_type: taxonomy_term
+bundle: centro_de_ayuda
+label: 'Categoría Centro de Ayuda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      centro_de_ayuda: centro_de_ayuda
+    sort:
+      field: _none
+field_type: entity_reference

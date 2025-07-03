@@ -1,0 +1,19 @@
+uuid: 38b6c570-b8b9-4610-8b0c-a9f2ecbf173d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cat_dit_bg
+    - taxonomy.vocabulary.cat_logo_servicios_dit
+id: taxonomy_term.cat_logo_servicios_dit.field_cat_dit_bg
+field_name: field_cat_dit_bg
+entity_type: taxonomy_term
+bundle: cat_logo_servicios_dit
+label: 'Color de fondo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

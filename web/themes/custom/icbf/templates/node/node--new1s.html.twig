@@ -1,0 +1,123 @@
+<div
+	class="notice">
+
+	<!-- Título -->
+	<div class="notice-news_title">
+		<h1>{{ label }}</h1>
+	</div>
+
+	<!-- Lugar y Fecha / Sociales-->
+	<div class="notice-news_city clearfix">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="notice-news-place">
+					<div class="notice-news-field-city">
+						<span>{{ content.field_lugar }}
+						</span>
+					</div>
+					<div class="notice-field-day">
+						<span>{{ content.field_date }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Imagen principal -->
+	<div class="notice-news_mainImage">
+		<div class="notice-views-field">
+			<span class="notice-field-content">
+				{{ content.field_list_image }}
+			</span>
+		</div>
+	</div>
+	<div class="notice-news-separator-content">
+		<hr></hr>
+</div>
+
+<!-- Contenido principal -->
+<div class="notice-panels-flexible-row notice-panels-flexible-row-last clearfix">
+	<div class="notice-panels-flexible-region-inside">
+		<!-- Resumen -->
+		<div class="notice-panel-pane">
+			<div class="notice-news-field-abstract">
+				<p>{{ content.field_resume }}</p>
+			</div>
+		</div>
+
+		<!-- Cuerpo de la noticia -->
+		<div class="notice-panel-separator">
+		</div>
+		<div class="notice-panel-pane">
+			<div class="notice-news-field-paragraph">
+			    {{ content.field_multimedia }}
+				{{ content.field_content }}
+			</div>
+		</div>
+
+		<div class="notice-news-separator-content">
+			<hr></hr>
+	</div>
+
+	<!-- Banner Carrusel -->
+	{% if not node.field_images.isEmpty %}
+		<div class="notice-cards-pane">
+			<div class="notice-cards-content">
+				<div class="notice-view notice-banners">
+					<div
+						id="notice-carousel-1" class="carousel slide" data-bs-ride="carousel">
+						<!-- Carousel indicators -->
+						<div class="carousel-indicators">
+							{% for delta, item in node.field_images %}
+								<button type="button" data-bs-target="#notice-carousel-{{delta}}" data-bs-slide-to="{{delta}}" class="{% if delta == 0 %}active{% endif %}" aria-current="true" aria-label="Slide {{delta}}"></button>
+							{% endfor %}
+						</div>
+
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							{% for delta, item in node.field_images %}
+								<div class="carousel-item {% if delta == 0 %}active{% endif %}">
+									<div class="notice-views-field">
+										<span class="notice-field-content">
+											<img class="img-fluid d-block w-100" src="{{ file_url(item.entity.uri.value) }}" alt="{{ item.alt }}"/>
+										</span>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+
+						<!-- Carousel navigation -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#notice-carousel-1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#notice-carousel-1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{{ content.field_attached_files }}
+	{% if node.field_youtube.input %}
+		<div class="notice-container">
+			<div class="notice-video-wrapper">
+				<iframe class="notice-video" src={{node.field_youtube.input}} title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	{% endif %}
+	<!-- Pie de noticia -->
+	<div class="notice-news-intranet">
+		<div>
+			<a href="/" class="notice-news-intranet_name">{{ content.field_location }}</a>
+			<div class="notice-news-intranet_link">
+				<p>PBX: (571)4377630</p>
+				<p>ICBFPrensa@icbf.gov.co</p>
+				<p>Instituto Colombiano de Bienestar Familiar - ICBF Comunicaciones</p>
+			</div>
+		</div>
+	</div>
+</div></div></div>

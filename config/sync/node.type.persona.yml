@@ -1,0 +1,16 @@
+uuid: f9c0b75b-3b9d-49ee-9e3c-9152e19fe0ba
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Persona
+type: persona
+description: 'Perfiles de Funcionarios Directivos'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

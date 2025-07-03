@@ -1,0 +1,8 @@
+uuid: 0573ef80-ddd9-4f03-9ecf-d2b1d29acfd5
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_contacto_nacional
+label: 'Contacto Nacional comment'
+target_entity_type_id: node
+description: null

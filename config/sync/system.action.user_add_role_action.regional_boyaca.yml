@@ -1,0 +1,14 @@
+uuid: c8acdabf-659c-4dcb-8c90-45635ad5ec51
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regional_boyaca
+  module:
+    - user
+id: user_add_role_action.regional_boyaca
+label: 'Añade el rol Regional Boyacá al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional_boyaca

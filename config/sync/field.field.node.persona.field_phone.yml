@@ -1,0 +1,19 @@
+uuid: 0f61eec5-b5a2-4810-9aaf-030d28b46079
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.persona
+id: node.persona.field_phone
+field_name: field_phone
+entity_type: node
+bundle: persona
+label: Extensión
+description: 'Extensión IP'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

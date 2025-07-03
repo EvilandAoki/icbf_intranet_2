@@ -1,0 +1,18 @@
+uuid: 8ab096ee-5df6-4274-828f-a2156aef6509
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_arauca
+label: 'Regional Arauca'
+weight: 17
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

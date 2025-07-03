@@ -1,0 +1,23 @@
+uuid: 619aebcc-c50f-42bc-9c5f-957013ff85ef
+langcode: es
+status: true
+dependencies:
+  module:
+    - address
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_direccion
+field_name: field_direccion
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

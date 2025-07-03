@@ -1,0 +1,18 @@
+uuid: bb6d40a4-fcc7-4594-809a-77134ef7c500
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Cartelera
+type: cartelera
+description: 'Cartelera Regional - Nacional ICBF'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

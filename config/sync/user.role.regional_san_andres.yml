@@ -1,0 +1,17 @@
+uuid: bace75ec-9945-4af5-9d30-1c19fcbc3f2f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_san_andres
+label: 'Regional San Andres'
+weight: 41
+is_admin: null
+permissions:
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

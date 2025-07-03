@@ -1,0 +1,18 @@
+uuid: 018fafc6-9f9b-45b4-be1a-2167c5ab633e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_huila
+label: 'Regional Huila'
+weight: 33
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

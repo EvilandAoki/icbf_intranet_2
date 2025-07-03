@@ -1,0 +1,18 @@
+uuid: c311f5f1-8095-4ef3-9cd0-4be92e8395bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.minutes_regional_strategic_commu
+  module:
+    - node
+    - system
+id: regional_cordoba
+label: 'Regional Córdoba'
+weight: 28
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create minutes_regional_strategic_commu content'
+  - 'edit own minutes_regional_strategic_commu content'
+  - 'view the administration theme'

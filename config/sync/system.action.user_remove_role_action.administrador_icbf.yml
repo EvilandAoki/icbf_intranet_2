@@ -1,0 +1,14 @@
+uuid: 7fe08c57-5806-4b04-986f-76118d0e8e4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_icbf
+  module:
+    - user
+id: user_remove_role_action.administrador_icbf
+label: 'Elimina el rol Administrador ICBF al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_icbf

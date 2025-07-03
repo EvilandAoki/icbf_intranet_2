@@ -1,0 +1,22 @@
+uuid: e52d58eb-0d74-46d5-b057-a1c17cc7f208
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.commission_reports
+  module:
+    - text
+id: node.commission_reports.field_resume
+field_name: field_resume
+entity_type: node
+bundle: commission_reports
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

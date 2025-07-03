@@ -1,0 +1,33 @@
+uuid: 4c636c76-edba-453d-aa5e-265f19c5d9e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.page
+  module:
+    - file
+    - file_resup
+third_party_settings:
+  file_resup:
+    enabled: 0
+    max_upload_size: ''
+    auto_upload: 0
+id: node.page.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: page
+label: 'Archivos adjuntos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf doc xls xlsx docx ppt pptx xlm xlsm zip'
+  max_filesize: '50 MB'
+  description_field: true
+field_type: file

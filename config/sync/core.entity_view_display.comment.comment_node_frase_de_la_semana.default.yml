@@ -1,0 +1,29 @@
+uuid: 855e73de-2412-42f1-a91d-ac37ef61bf23
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_frase_de_la_semana
+    - field.field.comment.comment_node_frase_de_la_semana.comment_body
+  module:
+    - text
+id: comment.comment_node_frase_de_la_semana.default
+targetEntityType: comment
+bundle: comment_node_frase_de_la_semana
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+uuid: 69cf9073-2eb1-43a2-a0e0-051eff0d6a9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.documentos
+  module:
+    - user
+id: user_add_role_action.documentos
+label: 'Añade el rol Documentos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: documentos

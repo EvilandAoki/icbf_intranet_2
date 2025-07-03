@@ -1,0 +1,75 @@
+uuid: 62f73bc8-e4a8-4d8e-8c25-89d75a7f0467
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.server.local_solr
+  module:
+    - search_api_solr
+id: procesos_sige
+name: 'Procesos SIGE API'
+description: null
+read_only: false
+field_settings: {  }
+datasource_settings: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+  datasource:
+    bundles:
+      - process_sige
+  fields:
+    'field_document:file':
+      type: integer
+      entity_type: file
+    field_file_categoria:
+      type: list<integer>
+      entity_type: taxonomy_term
+    'field_file_categoria:tid':
+      type: list<integer>
+    field_hiring_process_type:
+      type: list<integer>
+      entity_type: taxonomy_term
+    'field_hiring_process_type:parent':
+      type: list<list<integer>>
+      entity_type: taxonomy_term
+    'field_hiring_process_type:parents_all':
+      type: list<list<integer>>
+      entity_type: taxonomy_term
+    'field_hiring_process_type:pb_join:name':
+      type: list<string>
+    field_parent:
+      type: integer
+      entity_type: node
+    field_priority:
+      type: integer
+    field_process_code:
+      type: text
+    field_section:
+      type: integer
+      entity_type: taxonomy_term
+    nid:
+      type: integer
+    search_api_language:
+      type: string
+    status:
+      type: boolean
+    title:
+      type: text
+    url:
+      type: uri
+server: local_solr

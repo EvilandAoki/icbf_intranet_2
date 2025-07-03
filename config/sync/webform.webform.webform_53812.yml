@@ -1,0 +1,76 @@
+uuid: 3b725e96-b6e8-4217-9310-3ad8e57c3822
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1696
+template: false
+archive: false
+id: webform_53812
+title: 'Formulario_Ubicaciones (GH)'
+description: null
+categories: {  }
+elements: |-
+  c_dula_de_ciudadan_a:
+    '#type': textfield
+    '#size': 20
+    '#unique': true
+    '#title': 'Cédula de ciudadanía'
+    '#required': true
+  nombre_del_servidor_p_blico:
+    '#type': textfield
+    '#title': 'Nombre del Servidor Público'
+    '#required': true
+  estudios:
+    '#type': textfield
+    '#title': Estudios
+    '#required': true
+  cargo_desempe_ado:
+    '#type': textfield
+    '#title': 'Cargo desempeñado'
+    '#required': true
+  ubicaci_n_actual:
+    '#type': textfield
+    '#title': 'Ubicación actual'
+    '#required': true
+  ubicaci_n_solicitada:
+    '#type': textfield
+    '#title': 'Ubicación solicitada'
+    '#required': true
+  rol_de_empleo_que_desempe_a:
+    '#type': textfield
+    '#title': 'Rol de empleo que desempeña'
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': previsualizar
+    '#submit__attributes':
+      class:
+        - form-53812
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<h2>La información ha sido guardada</h2>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

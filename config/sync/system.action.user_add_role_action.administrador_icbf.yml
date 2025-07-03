@@ -1,0 +1,14 @@
+uuid: bc360d3f-f81f-4151-9845-da1c69693f8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_icbf
+  module:
+    - user
+id: user_add_role_action.administrador_icbf
+label: 'Añade el rol Administrador ICBF al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_icbf

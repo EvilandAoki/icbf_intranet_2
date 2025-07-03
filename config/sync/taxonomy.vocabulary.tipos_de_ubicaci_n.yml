@@ -1,0 +1,9 @@
+uuid: b0bdab06-8914-4b82-9b5e-c7830a43fbba
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipos de Ubicación'
+vid: tipos_de_ubicaci_n
+description: null
+weight: 3
+new_revision: false

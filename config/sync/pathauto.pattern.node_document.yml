@@ -1,0 +1,21 @@
+uuid: add18cf2-43c7-42fa-a43d-2e15ac3d2ea0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_document
+label: 'Contenido - Documento'
+type: 'canonical_entities:node'
+pattern: '[node:field-section:parents:join-path]/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      document: document
+selection_logic: and
+weight: 0
+relationships: {  }

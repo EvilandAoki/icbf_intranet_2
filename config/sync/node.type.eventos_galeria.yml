@@ -1,0 +1,18 @@
+uuid: 5e8f0a1d-e99d-46a6-a24e-37fcad54b7af
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Eventos de Galería'
+type: eventos_galeria
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true
