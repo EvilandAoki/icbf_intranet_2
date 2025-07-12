@@ -254,14 +254,14 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
-          delta_first_last: false
+          delta_first_last: true
           multi_type: separator
           separator: ', '
           field_api_classes: false
@@ -637,7 +637,11 @@ display:
       style:
         type: views_bootstrap_table
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_file_categoria
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
           override: 1
@@ -713,6 +717,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: filter-table
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -3587,7 +3592,7 @@ display:
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 25
+          items_per_page: 33
           total_pages: null
           id: 0
           tags:
@@ -4002,7 +4007,7 @@ display:
         arguments: false
         filters: false
         filter_groups: false
-      css_class: filter-table
+      css_class: filter-multitable
       display_description: 'Tablero de Control'
       display_extenders: {  }
     cache_metadata:
