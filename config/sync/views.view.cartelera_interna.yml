@@ -302,6 +302,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -1020,7 +1021,7 @@ display:
       pager:
         type: mini
         options:
-          offset: 0
+          offset: 2
           pagination_heading_level: h4
           items_per_page: 3
           total_pages: null
