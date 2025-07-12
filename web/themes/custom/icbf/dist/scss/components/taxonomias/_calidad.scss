@@ -51,3 +51,61 @@
     }
 }
 
+.bootstrap-tabs-processed{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    #views-bootstrap-referentes-nacional-block-refqa{
+       img.img-fluid {
+            width: 57px;
+        }
+         a {
+            min-width: 74px;
+            margin-bottom: 3px;
+            margin-right: -1px;
+            border-radius: 4px 0 0 4px;
+            font-size: 18px;
+        } 
+    }
+
+     ul.nav.nav-tabs {
+         float: left;
+         margin-right: 19px;
+         border: 0px solid #ddd;
+         border-bottom: none !important;
+         padding-bottom: 20px;
+         width: 220px;
+    }  
+    
+    a {
+        min-width: 74px;
+        margin-bottom: 3px;
+        margin-right: -1px;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+    } 
+    li {
+        width: 100%;
+        margin: .5rem 0;
+        padding: 0.5rem;
+        height: max-content !important;
+        background: white;
+    }
+    h4.panel-title {
+        padding: 10px;
+        background: white;
+        margin: 3px;
+    }
+    
+    .tab-content {
+        border: 1px solid #dddddd;
+        padding: 1rem 2rem;
+    }
+}
+
+
+
+
+
+
