@@ -1,0 +1,113 @@
+uuid: 9d6c5d8c-ea3e-42ec-9c5f-5d2cf7d5d499
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.actas_comite_estrategico_regional_panel
+    - views.view.actas_comite_regional
+    - views.view.menu_lista_regionales
+  content:
+    - 'block_content:footer:83c49108-9107-4351-b54f-0e9af9ed652e'
+  module:
+    - block_content
+    - bootstrap_layouts
+    - layout_builder
+    - views
+id: actas_comite_estrategico_regional_panel-layout_builder-0
+label: Panel
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: c02a1209-f53e-4a13-8688-c636ed91db52
+  sections:
+    -
+      layout_id: bs_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+      components:
+        b242f467-fc13-40b1-ad52-b5a25b2b661a:
+          uuid: b242f467-fc13-40b1-ad52-b5a25b2b661a
+          region: main
+          configuration:
+            id: 'block_content:83c49108-9107-4351-b54f-0e9af9ed652e'
+            label: 'top actas regional'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+        38703e1f-9e1f-437f-b894-535d521ef726:
+          uuid: 38703e1f-9e1f-437f-b894-535d521ef726
+          region: main
+          configuration:
+            id: 'views_block:actas_comite_regional-block_2'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 1
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: layout_twocol_section
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        column_widths: 25-75
+      components:
+        2db79d42-e32a-4428-b819-11ac0984c244:
+          uuid: 2db79d42-e32a-4428-b819-11ac0984c244
+          region: first
+          configuration:
+            id: 'views_block:menu_lista_regionales-block_1'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+        4fdc2dad-d5a2-4d08-bad7-6fb5a35bef36:
+          uuid: 4fdc2dad-d5a2-4d08-bad7-6fb5a35bef36
+          region: second
+          configuration:
+            id: 'views_block:actas_comite_regional-block_1'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+            exposed: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: actas_comite_estrategico_regional_panel
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

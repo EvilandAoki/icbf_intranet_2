@@ -9,6 +9,7 @@ global-styling:
       dist/assets/owlcarousel/css/owl.theme.default.min.css: {}
   js:
     dist/assets/owlcarousel/js/owl.carousel.min.js: {}
+    js/global_components.js: {}
     js/script.js: {}
     bootstrap/javascripts/bootstrap/carousel.js: {}
   dependencies:
