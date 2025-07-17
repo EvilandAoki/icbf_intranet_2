@@ -273,7 +273,7 @@ display:
             field_frase: field_frase
             edit_node: '0'
             title: '0'
-          optionset: default
+          optionset: carousel_example
           class: ''
           image: ''
           link: ''
