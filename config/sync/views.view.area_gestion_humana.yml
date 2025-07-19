@@ -4929,7 +4929,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Categoría
           exclude: false
           alter:
             alter_text: false
@@ -5057,7 +5057,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: entity_link_edit
-          label: 'Enlace para editar Contenido'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -5090,7 +5090,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true

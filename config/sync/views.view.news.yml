@@ -531,7 +531,7 @@ display:
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 30
+          items_per_page: 7
           total_pages: null
           id: 0
           tags:
@@ -696,19 +696,21 @@ display:
           limit: true
           error_message: true
       style:
-        type: views_bootstrap_grid
+        type: views_bootstrap_thumbnail
         options:
           grouping: {  }
+          uses_fields: false
           alignment: horizontal
-          col_class_default: 1
-          col_class_custom: prueba-col
-          row_class_default: 1
-          row_class_custom: prueba-fila
           columns: '12'
           col_xs: col-xs-4
           col_sm: col-sm-3
           col_md: col-md-6
           col_lg: col-lg-12
+          automatic_width: false
+          col_class_custom: prueba-col
+          col_class_default: 1
+          row_class_custom: prueba-fila
+          row_class_default: 1
       row:
         type: fields
       query:
@@ -720,6 +722,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: news-card-list
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -1760,10 +1763,30 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: views_bootstrap_thumbnail
+        options:
+          grouping: {  }
+          alignment: horizontal
+          col_class_default: 1
+          col_class_custom: news-col-1
+          row_class_default: 1
+          row_class_custom: news-fila
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-4
+      row:
+        type: fields
+        options: {  }
       defaults:
+        css_class: false
+        style: false
+        row: false
         fields: false
         filters: false
         filter_groups: false
+      css_class: news-card-list
       display_description: 'Noticias SNBF (SAT)'
       display_extenders: {  }
     cache_metadata:
