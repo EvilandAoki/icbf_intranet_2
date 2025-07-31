@@ -93,6 +93,7 @@
 
         tbody {
             tr {
+                color: #555;
 
                 &:nth-child(odd),
                 &:hover {
@@ -102,6 +103,7 @@
 
             td {
                 font-family: 'montserrat-regular';
+                color: #555;
             }
         }
     }
@@ -152,4 +154,12 @@
             border-color: #204d74;
         }
     }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: #555;
+}
+
+.table-hover>tbody>tr:hover>* {
+    --bs-table-color-state: #555;
 }
