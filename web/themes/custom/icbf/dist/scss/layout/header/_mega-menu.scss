@@ -24,8 +24,25 @@
     color: #004686;
 }
 
+.tb-megamenu .nav>.active {
+    background-color: transparent;
+    color: #004686;
 
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
+}
 
+.tb-megamenu .nav>.active>a {
+    background-color: transparent;
+    color: #004686;
+
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
+}
 
 // organizacion y estructura en desktop
 
