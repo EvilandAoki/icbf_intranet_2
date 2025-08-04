@@ -19,11 +19,21 @@
 .tb-megamenu .nav>.active {
     background-color: transparent;
     color: #004686;
+
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
 }
 
 .tb-megamenu .nav>.active>a {
     background-color: transparent;
     color: #004686;
+
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
 }
 
 // organizacion y estructura en desktop
@@ -1493,6 +1503,30 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     font-size: .9em;
 }
 
+.btn-mm1 {
+    background-color: var.$color-primary-white;
+    border-radius: 30px;
+    height: 26px;
+    border: 2px solid var.$color-primary-blue;
+    color: var.$color-primary-blue;
+    display: inline-block;
+    font-family: var.$font-montserrat;
+    font-size: 12.88px;
+    margin: 0.2em 0.3em 0.4em 0;
+    padding: 0.2em 0.83em;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+
+    &:hover {
+        background-color: var.$color-primary-blue;
+        border: 2px solid var.$color-primary-blue;
+        color: var.$color-primary-white;
+        text-decoration: underline;
+    }
+}
 
 
 li.tb-megamenu-item.level-1.mega.logo.active.active-trail {
