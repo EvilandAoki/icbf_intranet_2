@@ -16,25 +16,16 @@
     padding: 0;
 }
 
-.tb-megamenu .nav>.active {
+.tb-megamenu .nav li.dropdown.active>.dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active>.dropdown-toggle,
+.tb-megamenu .nav>li.dropdown.open.active>a:hover,
+.tb-megamenu .nav>li.dropdown.open.active>span.tb-megamenu-no-link:hover {
     background-color: transparent;
     color: #004686;
-
-    &:hover {
-        color: #0073ff;
-        background-color: transparent;
-    }
 }
 
-.tb-megamenu .nav>.active>a {
-    background-color: transparent;
-    color: #004686;
 
-    &:hover {
-        color: #0073ff;
-        background-color: transparent;
-    }
-}
+
 
 // organizacion y estructura en desktop
 
