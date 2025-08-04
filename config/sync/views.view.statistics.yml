@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_date
     - field.storage.node.field_document
     - field.storage.node.field_file_categoria
+    - node.type.document
     - node.type.estadisticas_institucionales
     - taxonomy.vocabulary.file_category
     - taxonomy.vocabulary.secctions
@@ -463,7 +464,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            7352: 7352
+            7000: 7000
           group: 1
           exposed: false
           expose:
@@ -814,280 +815,6 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            estadisticas_institucionales: estadisticas_institucionales
-        field_section_target_id:
-          id: field_section_target_id
-          table: node__field_section
-          field: field_section_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            7000: 7000
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: secctions
-          type: select
-          hierarchy: true
-          limit: true
-          error_message: true
-        field_file_categoria_target_id:
-          id: field_file_categoria_target_id
-          table: node__field_file_categoria
-          field: field_file_categoria_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            7151: 7151
-            7152: 7152
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: file_category
-          type: select
-          hierarchy: true
-          limit: true
-          error_message: true
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_date_value_op
-            label: 'Fecha (field_date)'
-            description: null
-            use_operator: false
-            operator: field_date_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_date_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: null
-            max_placeholder: null
-            placeholder: null
-          is_grouped: true
-          group_info:
-            label: 'Filtrar por año'
-            description: ''
-            identifier: field_date_value
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: '2018'
-                operator: between
-                value:
-                  min: '2018-01-01 00:00:00'
-                  max: '2018-12-31 23:59:59'
-                  value: ''
-                  type: date
-        field_file_categoria_target_id_1:
-          id: field_file_categoria_target_id_1
-          table: node__field_file_categoria
-          field: field_file_categoria_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            7151: 7151
-            7152: 7152
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_file_categoria_target_id_1_op
-            label: 'Filtrar por categoría'
-            description: ''
-            use_operator: false
-            operator: field_file_categoria_target_id_1_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_file_categoria_target_id_1
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrador_funcional: '0'
-              content_editor: '0'
-              administrator: '0'
-              migracion: '0'
-              administrador_icbf: '0'
-              comunicaciones: '0'
-              proceso_sige: '0'
-              dit: '0'
-              catalogo_dit: '0'
-              proteccion: '0'
-              juridica: '0'
-              estadisticas: '0'
-              gestion_humana: '0'
-              documentos: '0'
-              builder: '0'
-              regional_amazonas: '0'
-              regional_antioquia: '0'
-              regional_arauca: '0'
-              regional_atlantico: '0'
-              regional_bogota: '0'
-              regional_boyaca: '0'
-              regional_bolivar: '0'
-              regional_caldas: '0'
-              regional_caqueta: '0'
-              regional_casanare: '0'
-              regional_cauca: '0'
-              regional_cesar: '0'
-              regional_choco: '0'
-              regional_cordoba: '0'
-              regional_cundinamarca: '0'
-              regional_la_guajira: '0'
-              regional_guainia: '0'
-              regional_guaviare: '0'
-              regional_huila: '0'
-              regional_magdalena: '0'
-              regional_meta: '0'
-              regional_narino: '0'
-              regional_norte_de_santander: '0'
-              regional_putumayo: '0'
-              regional_quindio: '0'
-              regional_risaralda: '0'
-              regional_san_andres: '0'
-              regional_santander: '0'
-              regional_sucre: '0'
-              regional_tolima: '0'
-              regional_valle: '0'
-              regional_vichada: '0'
-              administrador_infraestructura: '0'
-              regional_vaupes: '0'
-              personas: '0'
-              ejes_sige: '0'
-              centro_de_ayuda: '0'
-            reduce: true
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          vid: file_category
-          type: select
-          hierarchy: true
-          limit: true
-          error_message: true
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      defaults:
-        filters: false
-        filter_groups: false
       display_description: 'Fichas Departamentales'
       display_extenders: {  }
     cache_metadata:
@@ -1139,7 +866,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 7298
+            7298: 7298
           group: 1
           exposed: false
           expose:
@@ -1171,7 +898,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: secctions
-          type: textfield
+          type: select
           hierarchy: true
           limit: true
           error_message: true
@@ -1221,168 +948,13 @@ display:
           hierarchy: true
           limit: true
           error_message: true
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_date_value_op
-            label: 'Fecha (field_date)'
-            description: null
-            use_operator: false
-            operator: field_date_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_date_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: null
-            max_placeholder: null
-            placeholder: null
-          is_grouped: true
-          group_info:
-            label: 'Filtrar por año'
-            description: ''
-            identifier: field_date_value
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: '2018'
-                operator: between
-                value:
-                  min: '2018-01-01 00:00:00'
-                  max: '2018-12-31 23:59:59'
-                  value: ''
-                  type: date
-        field_file_categoria_target_id_1:
-          id: field_file_categoria_target_id_1
-          table: node__field_file_categoria
-          field: field_file_categoria_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            7151: 7151
-            7152: 7152
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_file_categoria_target_id_1_op
-            label: 'Filtrar por categoría'
-            description: ''
-            use_operator: false
-            operator: field_file_categoria_target_id_1_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_file_categoria_target_id_1
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrador_funcional: '0'
-              content_editor: '0'
-              administrator: '0'
-              migracion: '0'
-              administrador_icbf: '0'
-              comunicaciones: '0'
-              proceso_sige: '0'
-              dit: '0'
-              catalogo_dit: '0'
-              proteccion: '0'
-              juridica: '0'
-              estadisticas: '0'
-              gestion_humana: '0'
-              documentos: '0'
-              builder: '0'
-              regional_amazonas: '0'
-              regional_antioquia: '0'
-              regional_arauca: '0'
-              regional_atlantico: '0'
-              regional_bogota: '0'
-              regional_boyaca: '0'
-              regional_bolivar: '0'
-              regional_caldas: '0'
-              regional_caqueta: '0'
-              regional_casanare: '0'
-              regional_cauca: '0'
-              regional_cesar: '0'
-              regional_choco: '0'
-              regional_cordoba: '0'
-              regional_cundinamarca: '0'
-              regional_la_guajira: '0'
-              regional_guainia: '0'
-              regional_guaviare: '0'
-              regional_huila: '0'
-              regional_magdalena: '0'
-              regional_meta: '0'
-              regional_narino: '0'
-              regional_norte_de_santander: '0'
-              regional_putumayo: '0'
-              regional_quindio: '0'
-              regional_risaralda: '0'
-              regional_san_andres: '0'
-              regional_santander: '0'
-              regional_sucre: '0'
-              regional_tolima: '0'
-              regional_valle: '0'
-              regional_vichada: '0'
-              administrador_infraestructura: '0'
-              regional_vaupes: '0'
-              personas: '0'
-              ejes_sige: '0'
-              centro_de_ayuda: '0'
-            reduce: true
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          vid: file_category
-          type: select
-          hierarchy: true
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
       defaults:
-        use_ajax: false
         filters: false
         filter_groups: false
-      use_ajax: true
       display_description: 'Fichas Oferta Institucional'
       display_extenders: {  }
     cache_metadata:
@@ -1390,7 +962,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -1419,11 +990,45 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
+            document: document
             estadisticas_institucionales: estadisticas_institucionales
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_section_target_id:
           id: field_section_target_id
           table: node__field_section
@@ -1434,7 +1039,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 7352
+            7352: 7352
           group: 1
           exposed: false
           expose:
@@ -1466,7 +1071,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: secctions
-          type: textfield
+          type: select
           hierarchy: true
           limit: true
           error_message: true
@@ -1675,10 +1280,8 @@ display:
         groups:
           1: AND
       defaults:
-        use_ajax: false
         filters: false
         filter_groups: false
-      use_ajax: true
       display_description: 'Fichas Municipales'
       display_extenders: {  }
     cache_metadata:
@@ -2067,7 +1670,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 7002
+            7002: 7002
           group: 1
           exposed: false
           expose:
@@ -2099,7 +1702,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: secctions
-          type: textfield
+          type: select
           hierarchy: true
           limit: true
           error_message: true
@@ -2223,12 +1826,10 @@ display:
         groups:
           1: AND
       defaults:
-        use_ajax: false
         fields: false
         sorts: false
         filters: false
         filter_groups: false
-      use_ajax: true
       display_description: Focalización
       display_extenders: {  }
     cache_metadata:

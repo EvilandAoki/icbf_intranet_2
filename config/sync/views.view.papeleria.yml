@@ -13,12 +13,15 @@ dependencies:
     - 'taxonomy_term:file_category:03b87934-a7b4-4064-bf45-652afd7cf1eb'
     - 'taxonomy_term:file_category:191ddb7b-ae36-41f8-a782-12f7c5216d56'
     - 'taxonomy_term:file_category:7080843a-9fff-4a7c-84f3-cee2d9f423cb'
-    - 'taxonomy_term:file_category:7f72b6a0-2f3e-45ff-bd10-30624ded1369'
     - 'taxonomy_term:file_category:8037c2d8-d88e-4873-89dd-7f3a2ac096b1'
     - 'taxonomy_term:file_category:9291ff11-7745-408e-9275-5b930079619a'
     - 'taxonomy_term:file_category:d817163f-d853-4cd0-9cfd-15106db5e1da'
     - 'taxonomy_term:secctions:05aba444-f90a-45b5-80a4-3566e1730260'
+    - 'taxonomy_term:secctions:068c4042-17de-4831-97d7-e0e0b4b0c241'
+    - 'taxonomy_term:secctions:5dacc300-d7fd-4673-bcb3-c458693172bd'
+    - 'taxonomy_term:secctions:7680aeeb-a0c9-47b4-bf8c-87dcd84d8fa5'
     - 'taxonomy_term:secctions:8867f32e-a112-4b32-a504-230d0982d06c'
+    - 'taxonomy_term:secctions:f47f0e28-fa7e-48bc-8b70-e77c75735f8c'
   module:
     - better_exposed_filters
     - datetime
@@ -472,7 +475,10 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            7180: 7180
+            6988: 6988
+            7185: 7185
+            7186: 7186
+            7187: 7187
           group: 1
           exposed: false
           expose:
@@ -565,14 +571,16 @@ display:
             offset_label: Desplazamiento
           quantity: 9
       sorts:
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
+        created:
+          id: created
+          table: node_field_data
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
+          entity_type: node
+          entity_field: created
+          plugin_id: date
           order: DESC
           expose:
             label: ''
@@ -610,8 +618,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 7183
-            - 7347
+            7347: 7347
           group: 1
           exposed: false
           expose:
@@ -643,7 +650,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: file_category
-          type: textfield
+          type: select
           hierarchy: true
           limit: true
           error_message: true
@@ -698,14 +705,10 @@ display:
         groups:
           1: AND
       defaults:
-        css_class: false
-        use_ajax: false
         pager: false
         sorts: false
         filters: false
         filter_groups: false
-      css_class: filter-table
-      use_ajax: true
       display_description: 'Información General (Paginado)'
       display_extenders: {  }
     cache_metadata:
@@ -764,28 +767,6 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      pager:
-        type: full
-        options:
-          offset: 0
-          pagination_heading_level: h4
-          items_per_page: 15
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
-            first: '« Primero'
-            last: 'Último »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
-            offset: false
-            offset_label: Desplazamiento
-          quantity: 9
       exposed_form:
         type: bef
         options:
@@ -1059,7 +1040,6 @@ display:
           1: AND
       defaults:
         css_class: false
-        pager: false
         exposed_form: false
         sorts: false
         filters: false
@@ -1073,7 +1053,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
