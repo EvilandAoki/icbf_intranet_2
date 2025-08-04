@@ -163,3 +163,44 @@
 .table-hover>tbody>tr:hover>* {
     --bs-table-color-state: #555;
 }
+
+
+.ct-table-7256 {
+
+    .view-filters {
+        width: 25%;
+        float: left;
+
+        .form--inline.clearfix {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 0 0 1rem;
+
+            li {
+                font-family: "montserrat-regular";
+                word-break: break-word;
+                max-width: 100%;
+            }
+        }
+    }
+
+    table {
+        --bs-table-bg: inherit;
+        --bs-table-color: inherit;
+        width: 75%;
+        float: right;
+    }
+
+
+
+}
