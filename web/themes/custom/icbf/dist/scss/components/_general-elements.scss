@@ -511,6 +511,11 @@
         margin-bottom: 10px;
     }
 
+    .views-field-field-email,
+    .views-field-field-phone {
+        font-family: var.$font-montserrat-regular;
+    }
+
     .views-field-field-date time {
         font-family: var.$font-montserrat-regular;
     }
