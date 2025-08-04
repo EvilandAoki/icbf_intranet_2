@@ -17,10 +17,14 @@
 }
 
 .tb-megamenu .nav>.active {
-    background-color: #e54e4b;
+    background-color: transparent;
     color: #004686;
 }
 
+.tb-megamenu .nav>.active>a {
+    background-color: transparent;
+    color: #004686;
+}
 
 // organizacion y estructura en desktop
 
