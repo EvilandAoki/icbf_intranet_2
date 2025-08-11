@@ -7,6 +7,43 @@
     color: var.$color-primary-blue;
 }
 
+.tb-megamenu .nav li.dropdown.active>.dropdown-toggle {
+    color: #004686;
+    background-color: white;
+}
+
+.tb-megamenu .mega-inner {
+    padding: 0;
+}
+
+.tb-megamenu .nav li.dropdown.active>.dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active>.dropdown-toggle,
+.tb-megamenu .nav>li.dropdown.open.active>a:hover,
+.tb-megamenu .nav>li.dropdown.open.active>span.tb-megamenu-no-link:hover {
+    background-color: transparent;
+    color: #004686;
+}
+
+.tb-megamenu .nav>.active {
+    background-color: transparent;
+    color: #004686;
+
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
+}
+
+.tb-megamenu .nav>.active>a {
+    background-color: transparent;
+    color: #004686;
+
+    &:hover {
+        color: #0073ff;
+        background-color: transparent;
+    }
+}
+
 // organizacion y estructura en desktop
 
 .tb-megamenu {
@@ -160,11 +197,7 @@
 
 
 
-.m20-separator {
-    border-bottom: 2px solid #e2eefd;
-    clear: both;
-    // margin: 8px 0 15px 0;
-}
+
 
 #submenu-row-icbf_menuiniciotopleft {
     h2 {
@@ -173,12 +206,6 @@
         font-weight: 600;
         font-size: 1.1em;
         text-transform: none;
-    }
-
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
     }
 
     .m20-link {
@@ -241,11 +268,6 @@
 }
 
 #submenu-row-icbf_menuiniciobotton {
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
-    }
 
     .tb-megamenu .tb-block {
         width: 100%;
@@ -424,12 +446,6 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         }
     }
 
-
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
-    }
 }
 
 #submenu-row-icbf_itbotton {
@@ -557,7 +573,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         color: #4b4b4b;
         font-family: var.$font-montserrat-regular;
         font-weight: 600;
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-transform: none;
     }
 
@@ -605,12 +621,6 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         clear: both;
         display: block;
         height: 8px;
-    }
-
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
     }
 
     .btn-mm2 {
@@ -808,7 +818,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     }
 
     .btn-mm2 {
-
+        height: 26px;
         background-color: var.$color-primary-blue;
         border-radius: 30px;
         border: 1px solid var.$color-primary-blue;
@@ -873,12 +883,6 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         clear: both;
         display: block;
         height: 8px;
-    }
-
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
     }
 
     .btn-mm1 {
@@ -996,11 +1000,7 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         height: 8px;
     }
 
-    .m20-separator {
-        border-bottom: 2px solid #e2eefd;
-        clear: both;
-        margin: 8px 0 15px 0;
-    }
+
 
     .m20-icon-l {
         border-radius: .4em;
@@ -1314,31 +1314,6 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
         font-family: 'Fontawesome';
         font-size: .9em;
     }
-
-    .btn-mm1 {
-        background-color: var.$color-primary-white;
-        border-radius: 30px;
-        height: 26px;
-        border: 2px solid var.$color-primary-blue;
-        color: var.$color-primary-blue;
-        display: inline-block;
-        font-family: var.$font-montserrat;
-        font-size: 12.88px;
-        margin: 0.2em 0.3em 0.4em 0;
-        padding: 0.2em 0.83em;
-        text-decoration: none;
-        transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
-
-        &:hover {
-            background-color: var.$color-primary-blue;
-            border: 2px solid var.$color-primary-blue;
-            color: var.$color-primary-white;
-            text-decoration: underline;
-        }
-    }
 }
 
 #submenu-row-icbf_mediostop {
@@ -1536,13 +1511,33 @@ li[data-id="menu_link_content:b0951b7e-9330-4539-89c8-71a2a127a1c5"] .tb-megamen
     font-size: .9em;
 }
 
-.m20-separator {
-    border-bottom: 2px solid #e2eefd;
-    clear: both;
-    margin: 8px 0 15px 0;
+.btn-mm1 {
+    background-color: var.$color-primary-white;
+    border-radius: 30px;
+    height: 26px;
+    border: 2px solid var.$color-primary-blue;
+    color: var.$color-primary-blue;
+    display: inline-block;
+    font-family: var.$font-montserrat;
+    font-size: 12.88px;
+    margin: 0.2em 0.3em 0.4em 0;
+    padding: 0.2em 0.83em;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+
+    &:hover {
+        background-color: var.$color-primary-blue;
+        border: 2px solid var.$color-primary-blue;
+        color: var.$color-primary-white;
+        text-decoration: underline;
+    }
 }
 
-li.tb-megamenu-item.level-1.mega.logo.active.active-trail {
+
+li.tb-megamenu-item.level-1.mega.logo {
     width: 11vw;
     background: url('../img/logo_icbf_1.png');
     font-size: 0px;
@@ -1555,18 +1550,16 @@ li.tb-megamenu-item.level-1.mega.logo.active.active-trail {
     font-size: 0px !important;
 }
 
-.tb-megamenu-item.active-trail a {
-    background-color: white !important;
-    color: #004686 !important;
-}
-
-.tb-megamenu-item.active-trail a:hover {
-    color: #0073ff !important;
-}
 
 .tb-megamenu .nav>li>a:focus,
 .tb-megamenu .nav>li>a:hover,
 .tb-megamenu .nav>li>span.tb-megamenu-no-link:focus,
 .tb-megamenu .nav>li>span.tb-megamenu-no-link:hover {
     color: #0073ff;
+}
+
+.m20-separator {
+    border-bottom: 2px solid #e2eefd;
+    clear: both;
+    margin: -12px 0 10px 0;
 }

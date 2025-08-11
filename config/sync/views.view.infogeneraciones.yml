@@ -13,6 +13,7 @@ dependencies:
     - taxonomy.vocabulary.secctions
   content:
     - 'taxonomy_term:file_category:9f36b6c9-4957-4a8e-9ce3-6d93d69fae54'
+    - 'taxonomy_term:file_category:e728e172-52ee-452d-ad7a-1fd39398e7c2'
     - 'taxonomy_term:locations:04b6d6d6-e558-4e54-94ad-82a343e1ec0c'
     - 'taxonomy_term:locations:0aa73ac4-17ca-4631-99e3-b7bb0f7fe53f'
     - 'taxonomy_term:locations:0c980856-ed68-47f9-91c6-07ce2ec50890'
@@ -964,8 +965,8 @@ display:
         - 'config:field.storage.node.field_document'
         - 'config:field.storage.node.field_location'
         - 'config:field.storage.node.field_regional'
-  block_1:
-    id: block_1
+  block:
+    id: block
     display_title: Infogeneraciones
     display_plugin: block
     position: 1
@@ -1310,7 +1311,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 7119
+            - 7096
           group: 1
           exposed: false
           expose:
@@ -1491,6 +1492,14 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
+                title: '2020'
+                operator: between
+                value:
+                  min: '2020-01-01 00:00:00'
+                  max: '2020-12-31 23:59:59'
+                  value: ''
+                  type: date
+              2:
                 title: '2019'
                 operator: between
                 value:
@@ -1498,7 +1507,7 @@ display:
                   max: '2019-12-31 23:59:59'
                   value: ''
                   type: date
-              2:
+              3:
                 title: '2018'
                 operator: between
                 value:
@@ -1506,7 +1515,7 @@ display:
                   max: '2018-12-31 23:59:59'
                   value: ''
                   type: date
-              3:
+              4:
                 title: '2017'
                 operator: between
                 value:
@@ -1514,7 +1523,7 @@ display:
                   max: '2017-12-31 23:59:59'
                   value: ''
                   type: date
-              4:
+              5:
                 title: '2016'
                 operator: between
                 value:
@@ -1522,7 +1531,7 @@ display:
                   max: '2016-12-31 23:59:59'
                   value: ''
                   type: date
-              5:
+              6:
                 title: '2015'
                 operator: between
                 value:
@@ -1530,7 +1539,7 @@ display:
                   max: '2015-12-31 23:59:59'
                   value: ''
                   type: date
-              6:
+              7:
                 title: '2014'
                 operator: between
                 value:
@@ -1538,7 +1547,7 @@ display:
                   max: '2014-12-31 23:59:59'
                   value: ''
                   type: date
-              7:
+              8:
                 title: '2013'
                 operator: between
                 value:
@@ -1699,8 +1708,8 @@ display:
         - 'config:field.storage.node.field_date'
         - 'config:field.storage.node.field_document'
         - 'config:field.storage.node.field_location'
-  block_2:
-    id: block_2
+  block_1:
+    id: block_1
     display_title: 'Informes de comisión'
     display_plugin: block
     position: 1

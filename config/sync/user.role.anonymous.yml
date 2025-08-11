@@ -12,6 +12,7 @@ dependencies:
     - core.entity_view_display.node.pieza_sgsi.default
     - core.entity_view_display.node.promocionales_home.default
     - core.entity_view_display.node.publicaciones_sindicato.default
+    - core.entity_view_display.taxonomy_term.dependencies.default
     - core.entity_view_display.taxonomy_term.file_category.default
     - core.entity_view_display.taxonomy_term.secctions.default
     - feeds.feed_type.documentos_cifras_pard
@@ -22,13 +23,16 @@ dependencies:
     - node.type.promocionales_home
     - node.type.publicaciones_sindicato
     - taxonomy.vocabulary.departments_municipalities
+    - taxonomy.vocabulary.dependencies
     - taxonomy.vocabulary.file_category
     - taxonomy.vocabulary.locations
     - taxonomy.vocabulary.secctions
+    - taxonomy.vocabulary.sige_process_type
   module:
     - access_by_taxonomy
     - captcha
     - comment
+    - contextual
     - feeds
     - layout_builder
     - node
@@ -45,8 +49,10 @@ label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access by taxonomy administer access for terms in dependencies'
   - 'access by taxonomy administer access for terms in file_category'
   - 'access by taxonomy administer access for terms in secctions'
+  - 'access by taxonomy administer access for terms in sige_process_type'
   - 'access by taxonomy view any cartelera content'
   - 'access by taxonomy view any cifras_proteccion content'
   - 'access by taxonomy view any documentos_juridica content'
@@ -55,6 +61,7 @@ permissions:
   - 'access by taxonomy view any publicaciones_sindicato content'
   - 'access comments'
   - 'access content'
+  - 'access contextual links'
   - 'administer CAPTCHA settings'
   - 'administer views'
   - 'clear documentos_cifras_pard feeds'
@@ -62,6 +69,7 @@ permissions:
   - 'configure all area node layout overrides'
   - 'configure all cifras_proteccion node layout overrides'
   - 'configure all contacto_nacional node layout overrides'
+  - 'configure all dependencies taxonomy_term layout overrides'
   - 'configure all file_category taxonomy_term layout overrides'
   - 'configure all news node layout overrides'
   - 'configure all noticias_ejes node layout overrides'
@@ -73,6 +81,7 @@ permissions:
   - 'configure editable area node layout overrides'
   - 'configure editable cifras_proteccion node layout overrides'
   - 'configure editable contacto_nacional node layout overrides'
+  - 'configure editable dependencies taxonomy_term layout overrides'
   - 'configure editable file_category taxonomy_term layout overrides'
   - 'configure editable news node layout overrides'
   - 'configure editable noticias_ejes node layout overrides'
@@ -88,8 +97,10 @@ permissions:
   - 'create enlace content'
   - 'create promocionales_home content'
   - 'create publicaciones_sindicato content'
+  - 'create terms in dependencies'
   - 'create terms in file_category'
   - 'create terms in secctions'
+  - 'create terms in sige_process_type'
   - 'delete any cartelera content'
   - 'delete any cifras_proteccion content'
   - 'delete any documentos_juridica content'
@@ -110,10 +121,14 @@ permissions:
   - 'delete own publicaciones_sindicato content'
   - 'delete promocionales_home revisions'
   - 'delete publicaciones_sindicato revisions'
+  - 'delete term revisions in dependencies'
   - 'delete term revisions in file_category'
   - 'delete term revisions in secctions'
+  - 'delete term revisions in sige_process_type'
+  - 'delete terms in dependencies'
   - 'delete terms in file_category'
   - 'delete terms in secctions'
+  - 'delete terms in sige_process_type'
   - 'edit any cartelera content'
   - 'edit any cifras_proteccion content'
   - 'edit any documentos_juridica content'
@@ -126,29 +141,41 @@ permissions:
   - 'edit own enlace content'
   - 'edit own promocionales_home content'
   - 'edit own publicaciones_sindicato content'
+  - 'edit terms in dependencies'
   - 'edit terms in file_category'
   - 'edit terms in secctions'
+  - 'edit terms in sige_process_type'
   - 'import documentos_cifras_pard feeds'
   - 'import own documentos_cifras_pard feeds'
+  - 'reorder terms in dependencies'
   - 'reorder terms in file_category'
   - 'reorder terms in secctions'
+  - 'reorder terms in sige_process_type'
+  - 'reset dependencies'
   - 'reset file_category'
   - 'reset secctions'
+  - 'reset sige_process_type'
   - 'revert cartelera revisions'
   - 'revert cifras_proteccion revisions'
   - 'revert documentos_juridica revisions'
   - 'revert enlace revisions'
   - 'revert promocionales_home revisions'
   - 'revert publicaciones_sindicato revisions'
+  - 'revert term revisions in dependencies'
   - 'revert term revisions in file_category'
   - 'revert term revisions in secctions'
+  - 'revert term revisions in sige_process_type'
   - 'schedule_import documentos_cifras_pard feeds'
   - 'schedule_import own documentos_cifras_pard feeds'
   - 'search content'
+  - 'select terms in dependencies'
   - 'select terms in file_category'
   - 'select terms in secctions'
+  - 'select terms in sige_process_type'
+  - 'select unpublished terms in dependencies'
   - 'select unpublished terms in file_category'
   - 'select unpublished terms in secctions'
+  - 'select unpublished terms in sige_process_type'
   - 'unlock documentos_cifras_pard feeds'
   - 'unlock own documentos_cifras_pard feeds'
   - 'update documentos_cifras_pard feeds'
@@ -169,18 +196,30 @@ permissions:
   - 'view promocionales_home revisions'
   - 'view publicaciones_sindicato revisions'
   - 'view term names in departments_municipalities'
+  - 'view term names in dependencies'
   - 'view term names in file_category'
   - 'view term names in locations'
   - 'view term names in secctions'
+  - 'view term names in sige_process_type'
+  - 'view term revisions in dependencies'
   - 'view term revisions in file_category'
   - 'view term revisions in secctions'
+  - 'view term revisions in sige_process_type'
   - 'view terms in departments_municipalities'
+  - 'view terms in dependencies'
   - 'view terms in file_category'
   - 'view terms in locations'
   - 'view terms in secctions'
+  - 'view terms in sige_process_type'
+  - 'view unpublished term names in dependencies'
   - 'view unpublished term names in file_category'
   - 'view unpublished term names in secctions'
+  - 'view unpublished term names in sige_process_type'
+  - 'view unpublished terms in dependencies'
   - 'view unpublished terms in file_category'
   - 'view unpublished terms in secctions'
+  - 'view unpublished terms in sige_process_type'
+  - 'view vocabulary name of dependencies'
   - 'view vocabulary name of file_category'
   - 'view vocabulary name of secctions'
+  - 'view vocabulary name of sige_process_type'
