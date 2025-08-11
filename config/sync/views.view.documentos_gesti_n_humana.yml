@@ -31,7 +31,9 @@ dependencies:
     - 'taxonomy_term:file_category:c551b3b3-5b8a-4d7f-9ed6-698e51442e73'
     - 'taxonomy_term:file_category:cea08b2c-a7e1-491b-befe-2f86698b2132'
     - 'taxonomy_term:file_category:f3f1adfd-a390-48c0-a369-a63e11c7e8d0'
+    - 'taxonomy_term:file_category:f58c1b0e-0ba7-4ab4-b987-ed6ea8d6dc6c'
     - 'taxonomy_term:secctions:719c1876-24eb-4652-b183-20f520763981'
+    - 'taxonomy_term:secctions:808e67d4-8cbc-4fcd-8a8a-c3bb12242069'
   module:
     - better_exposed_filters
     - datetime
@@ -1385,6 +1387,7 @@ display:
         options: {  }
       defaults:
         css_class: false
+        use_ajax: false
         pager: false
         exposed_form: false
         style: false
@@ -1395,6 +1398,7 @@ display:
         filters: false
         filter_groups: false
       css_class: filter-multitable
+      use_ajax: true
       display_description: 'Documentos (Arg+fecha)'
       display_extenders: {  }
     cache_metadata:
@@ -2326,6 +2330,38 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       filters:
         status:
           id: status
@@ -2347,47 +2383,6 @@ display:
           plugin_id: bundle
           value:
             document: document
-        field_relevant_value:
-          id: field_relevant_value
-          table: node__field_relevant
-          field: field_relevant_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: list_field
-          operator: or
-          value:
-            1: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
         field_section_target_id:
           id: field_section_target_id
           table: node__field_section
@@ -2398,7 +2393,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            7233: 7233
+            7232: 7232
           group: 1
           exposed: false
           expose:
@@ -2444,7 +2439,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 8110
+            - 8039
           group: 1
           exposed: false
           expose:
@@ -2485,6 +2480,7 @@ display:
         groups:
           1: AND
       defaults:
+        sorts: false
         filters: false
         filter_groups: false
       display_description: 'Alertas SGSI'
