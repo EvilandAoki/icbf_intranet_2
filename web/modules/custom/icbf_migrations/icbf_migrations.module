@@ -11,6 +11,7 @@ use Drupal\Core\Render\Element;
 
 function icbf_migrations_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
   if (empty($args[0])) {
+    $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
     // Get the arguments for nodes.
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node instanceof \Drupal\node\NodeInterface) {
