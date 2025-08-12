@@ -54,6 +54,8 @@
       height: 400px;
       max-height: 400px !important;
       min-height: 400px;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -81,9 +83,10 @@
       font-weight: 500;
       margin-top: 0.5rem;
     }
+
     &.views-field-field-list-image {
-        height: 400px;
-        max-height: 400px;
+      height: 400px;
+      max-height: 400px;
     }
   }
 }
@@ -150,6 +153,5 @@
 }
 
 .Home-NoticeBtn {
-    text-align: right;
+  text-align: right;
 }
-
